@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="ASCII"?>
+<model:MDescriptors xmlns:model="http://www.silabs.com/ss/Studio.ecore">
+  <descriptors name="blink_baremetal" label="Platform - Blink Bare-metal" description="This example project shows how to blink an LED in a bare-metal configuration.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="example/blink_baremetal/blink_baremetal.slcp"/>
+    <properties key="boardCompatibility" value="brd4100a brd4103a brd4104a brd4150a brd4150b brd4150c brd4151a brd4152a brd4153a brd4155a brd4158a brd4159a brd4161a brd4162a brd4163a brd4164a brd4165b brd4166a brd4167a brd4168a brd4169a brd4169b brd4170a brd4171a brd4172a brd4172b brd4173a brd4174a brd4174b brd4175a brd4176a brd4178a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4182a brd4183a brd4183b brd4184a brd4184b brd4250a brd4250b brd4251a brd4251b brd4251d brd4252a brd4253a brd4254a brd4255a brd4256a brd4257a brd4257b brd4258a brd4258b brd4259a brd4261a brd4262a brd4262b brd4300a brd4300b brd4301a brd4302a brd4303a brd4304a brd4305a brd4305c brd4305d brd4305e brd4306a brd4306b brd4306c brd4306d brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b brd4310a brd4311a brd4311b brd4312a brd4314a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*bgm1.* .*bgm13.* .*bgm22.* .*efr32bg12p.* .*efr32bg13p.* .*efr32bg1b.* .*efr32bg1p.* .*efr32bg22.* .*efr32fg12p.* .*efr32fg13p.* .*efr32fg14p.* .*efr32fg1p.* .*efr32mg12p.* .*efr32mg13p.* .*efr32mg14p.* .*efr32mg1p.* .*efr32mg21.* .*efr32mg22.* .*mgm1.* .*mgm12.* .*mgm13.* .*mgm21.* .*mgm22.*"/>
+    <properties key="category" value="Example|Platform"/>
+  </descriptors>
+  <descriptors name="blink_kernel" label="Platform - Blink Kernel" description="This example project shows how to blink an LED using a kernel task.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="example/blink_kernel/blink_kernel.slcp"/>
+    <properties key="boardCompatibility" value="brd4100a brd4103a brd4104a brd4150a brd4150b brd4150c brd4151a brd4152a brd4153a brd4155a brd4158a brd4159a brd4161a brd4162a brd4163a brd4164a brd4165b brd4166a brd4167a brd4168a brd4169a brd4169b brd4170a brd4171a brd4172a brd4172b brd4173a brd4174a brd4174b brd4175a brd4176a brd4178a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4182a brd4183a brd4183b brd4184a brd4184b brd4250a brd4250b brd4251a brd4251b brd4251d brd4252a brd4253a brd4254a brd4255a brd4256a brd4257a brd4257b brd4258a brd4258b brd4259a brd4261a brd4262a brd4262b brd4300a brd4300b brd4301a brd4302a brd4303a brd4304a brd4305a brd4305c brd4305d brd4305e brd4306a brd4306b brd4306c brd4306d brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b brd4310a brd4311a brd4311b brd4312a brd4314a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*bgm1.* .*bgm13.* .*bgm22.* .*efr32bg12p.* .*efr32bg13p.* .*efr32bg1b.* .*efr32bg1p.* .*efr32bg22.* .*efr32fg12p.* .*efr32fg13p.* .*efr32fg14p.* .*efr32fg1p.* .*efr32mg12p.* .*efr32mg13p.* .*efr32mg14p.* .*efr32mg1p.* .*efr32mg21.* .*efr32mg22.* .*mgm1.* .*mgm12.* .*mgm13.* .*mgm21.* .*mgm22.*"/>
+    <properties key="category" value="Example|Platform"/>
+  </descriptors>
+  <descriptors name="blink_pwm" label="Platform - Blink PWM" description="This example project uses the PWM driver that uses a TIMER to gradually adjust the intensity of an LED up and down.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="example/blink_pwm/blink_pwm.slcp"/>
+    <properties key="boardCompatibility" value="brd4100a brd4103a brd4104a brd4150a brd4150b brd4150c brd4151a brd4152a brd4153a brd4155a brd4158a brd4159a brd4161a brd4162a brd4163a brd4164a brd4165b brd4166a brd4167a brd4168a brd4169a brd4169b brd4170a brd4171a brd4172a brd4172b brd4173a brd4174a brd4174b brd4175a brd4176a brd4178a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4182a brd4183a brd4183b brd4184a brd4184b brd4250a brd4250b brd4251a brd4251b brd4251d brd4252a brd4253a brd4254a brd4255a brd4256a brd4257a brd4257b brd4258a brd4258b brd4259a brd4261a brd4262a brd4262b brd4300a brd4300b brd4301a brd4302a brd4303a brd4304a brd4305a brd4305c brd4305d brd4305e brd4306a brd4306b brd4306c brd4306d brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b brd4310a brd4311a brd4311b brd4312a brd4314a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*bgm1.* .*bgm13.* .*bgm22.* .*efr32bg12p.* .*efr32bg13p.* .*efr32bg1b.* .*efr32bg1p.* .*efr32bg22.* .*efr32fg12p.* .*efr32fg13p.* .*efr32fg14p.* .*efr32fg1p.* .*efr32mg12p.* .*efr32mg13p.* .*efr32mg14p.* .*efr32mg1p.* .*efr32mg21.* .*efr32mg22.* .*mgm1.* .*mgm12.* .*mgm13.* .*mgm21.* .*mgm22.*"/>
+    <properties key="category" value="Example|Platform"/>
+  </descriptors>
+  <descriptors name="iostream_usart_baremetal" label="Platform - I/O Stream USART Bare-metal" description="This example project uses the I/O Stream service running in a bare-metal configuration  to demonstrate the use of UART communication over the virtual COM port (VCOM). The  application will echo back any characters it receives over the serial connection. The  VCOM serial port can be used either over USB or by connecting to port 4902 if the kit  is connected via Ethernet. &#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="example/iostream_usart_baremetal/iostream_usart_baremetal.slcp"/>
+    <properties key="boardCompatibility" value="brd4100a brd4101a brd4101b brd4103a brd4104a brd4150a brd4150b brd4150c brd4151a brd4152a brd4153a brd4154a brd4155a brd4158a brd4159a brd4161a brd4162a brd4163a brd4164a brd4165b brd4166a brd4167a brd4168a brd4169a brd4169b brd4170a brd4171a brd4172a brd4172b brd4173a brd4174a brd4174b brd4175a brd4176a brd4178a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4182a brd4183a brd4183b brd4184a brd4184b brd4250a brd4250b brd4251a brd4251b brd4251d brd4252a brd4253a brd4254a brd4255a brd4256a brd4257a brd4257b brd4258a brd4258b brd4259a brd4261a brd4262a brd4262b brd4300a brd4300b brd4301a brd4302a brd4303a brd4304a brd4305a brd4305c brd4305d brd4305e brd4306a brd4306b brd4306c brd4306d brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b brd4310a brd4311a brd4311b brd4312a brd4314a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*bgm1.* .*bgm13.* .*bgm22.* .*efr32bg12p.* .*efr32bg13p.* .*efr32bg1b.* .*efr32bg1p.* .*efr32bg22.* .*efr32fg12p.* .*efr32fg13p.* .*efr32fg14p.* .*efr32fg1p.* .*efr32mg12p.* .*efr32mg13p.* .*efr32mg14p.* .*efr32mg1p.* .*efr32mg21.* .*efr32mg22.* .*mgm1.* .*mgm12.* .*mgm13.* .*mgm21.* .*mgm22.*"/>
+    <properties key="category" value="Example|Platform"/>
+  </descriptors>
+  <descriptors name="iostream_usart_kernel" label="Platform - I/O Stream USART Kernel" description="This example project uses the I/O Stream service running in a kernel task to demonstrate the use of UART communication over the virtual COM port (VCOM). The application will echo back  any characters it receives over the serial connection. The VCOM serial port can be used  either over USB or by connecting to port 4902 if the kit is connected via Ethernet. &#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="example/iostream_usart_kernel/iostream_usart_kernel.slcp"/>
+    <properties key="boardCompatibility" value="brd4100a brd4101a brd4101b brd4103a brd4104a brd4150a brd4150b brd4150c brd4151a brd4152a brd4153a brd4154a brd4155a brd4158a brd4159a brd4161a brd4162a brd4163a brd4164a brd4165b brd4166a brd4167a brd4168a brd4169a brd4169b brd4170a brd4171a brd4172a brd4172b brd4173a brd4174a brd4174b brd4175a brd4176a brd4178a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4182a brd4183a brd4183b brd4184a brd4184b brd4250a brd4250b brd4251a brd4251b brd4251d brd4252a brd4253a brd4254a brd4255a brd4256a brd4257a brd4257b brd4258a brd4258b brd4259a brd4261a brd4262a brd4262b brd4300a brd4300b brd4301a brd4302a brd4303a brd4304a brd4305a brd4305c brd4305d brd4305e brd4306a brd4306b brd4306c brd4306d brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b brd4310a brd4311a brd4311b brd4312a brd4314a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*bgm1.* .*bgm13.* .*bgm22.* .*efr32bg12p.* .*efr32bg13p.* .*efr32bg1b.* .*efr32bg1p.* .*efr32bg22.* .*efr32fg12p.* .*efr32fg13p.* .*efr32fg14p.* .*efr32fg1p.* .*efr32mg12p.* .*efr32mg13p.* .*efr32mg14p.* .*efr32mg1p.* .*efr32mg21.* .*efr32mg22.* .*mgm1.* .*mgm12.* .*mgm13.* .*mgm21.* .*mgm22.*"/>
+    <properties key="category" value="Example|Platform"/>
+  </descriptors>
+  <descriptors name="se_manager_asymmetric_key_handling" label="Platform - SE Manager Asymmetric Key Handling" description="This example project demonstrates the asymmetric key handling API of Secure Element Manager.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="example/se_manager_asymmetric_key_handling/se_manager_asymmetric_key_handling.slcp"/>
+    <properties key="boardCompatibility" value="brd4171a brd4176a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4182a brd4183a brd4183b brd4184a brd4184b brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b brd4310a brd4311a brd4311b brd4312a brd4314a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*bgm22.* .*efr32bg22.* .*efr32mg21.* .*efr32mg22.* .*mgm21.* .*mgm22.*"/>
+    <properties key="category" value="Example|Platform"/>
+  </descriptors>
+  <descriptors name="se_manager_block_cipher" label="Platform - SE Manager Block Cipher" description="This example project demonstrates the block cipher API of Secure Element Manager.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="example/se_manager_block_cipher/se_manager_block_cipher.slcp"/>
+    <properties key="boardCompatibility" value="brd4171a brd4176a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4182a brd4183a brd4183b brd4184a brd4184b brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b brd4310a brd4311a brd4311b brd4312a brd4314a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*bgm22.* .*efr32bg22.* .*efr32mg21.* .*efr32mg22.* .*mgm21.* .*mgm22.*"/>
+    <properties key="category" value="Example|Platform"/>
+  </descriptors>
+  <descriptors name="se_manager_ecdh" label="Platform - SE Manager Key Agreement (ECDH)" description="This example project demonstrates the key agreement (ECDH) API of Secure Element Manager.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="example/se_manager_ecdh/se_manager_ecdh.slcp"/>
+    <properties key="boardCompatibility" value="brd4171a brd4176a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4182a brd4183a brd4183b brd4184a brd4184b brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b brd4310a brd4311a brd4311b brd4312a brd4314a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*bgm22.* .*efr32bg22.* .*efr32mg21.* .*efr32mg22.* .*mgm21.* .*mgm22.*"/>
+    <properties key="category" value="Example|Platform"/>
+  </descriptors>
+  <descriptors name="se_manager_ecjpake" label="Platform - SE Manager Key Agreement (ECJPAKE)" description="This example project demonstrates the key agreement (ECJPAKE) API of Secure Element Manager.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="example/se_manager_ecjpake/se_manager_ecjpake.slcp"/>
+    <properties key="boardCompatibility" value="brd4171a brd4176a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4182a brd4183a brd4183b brd4184a brd4184b brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b brd4310a brd4311a brd4311b brd4312a brd4314a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*bgm22.* .*efr32bg22.* .*efr32mg21.* .*efr32mg22.* .*mgm21.* .*mgm22.*"/>
+    <properties key="category" value="Example|Platform"/>
+  </descriptors>
+  <descriptors name="se_manager_hash" label="Platform - SE Manager Hash" description="This example project demonstrates the Hash API of Secure Element Manager.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="example/se_manager_hash/se_manager_hash.slcp"/>
+    <properties key="boardCompatibility" value="brd4171a brd4176a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4182a brd4183a brd4183b brd4184a brd4184b brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b brd4310a brd4311a brd4311b brd4312a brd4314a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*bgm22.* .*efr32bg22.* .*efr32mg21.* .*efr32mg22.* .*mgm21.* .*mgm22.*"/>
+    <properties key="category" value="Example|Platform"/>
+  </descriptors>
+  <descriptors name="se_manager_host_firmware_upgrade" label="Platform - SE Manager Host Firmware Upgrade" description="This example project demonstrates the host firmware upgrade API of Secure Element Manager.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="example/se_manager_host_firmware_upgrade/se_manager_host_firmware_upgrade.slcp"/>
+    <properties key="boardCompatibility" value="brd4171a brd4176a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4182a brd4183a brd4183b brd4184a brd4184b brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b brd4310a brd4311a brd4311b brd4312a brd4314a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*bgm22.* .*efr32bg22.* .*efr32mg21.* .*efr32mg22.* .*mgm21.* .*mgm22.*"/>
+    <properties key="category" value="Example|Platform"/>
+  </descriptors>
+  <descriptors name="se_manager_kdf" label="Platform - SE Manager Key Derivation (HKDF and PBKDF2)" description="This example project demonstrates the key derivation (HKDF and PBKDF2) API of Secure Element Manager.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="example/se_manager_kdf/se_manager_kdf.slcp"/>
+    <properties key="boardCompatibility" value="brd4171a brd4176a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4182a brd4183a brd4183b brd4184a brd4184b brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b brd4310a brd4311a brd4311b brd4312a brd4314a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*bgm22.* .*efr32bg22.* .*efr32mg21.* .*efr32mg22.* .*mgm21.* .*mgm22.*"/>
+    <properties key="category" value="Example|Platform"/>
+  </descriptors>
+  <descriptors name="se_manager_key_provisioning" label="Platform - SE Manager Key Provisioning" description="This example project demonstrates the key provisioning API of Secure Element Manager.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="example/se_manager_key_provisioning/se_manager_key_provisioning.slcp"/>
+    <properties key="boardCompatibility" value="brd4171a brd4176a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4182a brd4183a brd4183b brd4184a brd4184b brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b brd4310a brd4311a brd4311b brd4312a brd4314a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*bgm22.* .*efr32bg22.* .*efr32mg21.* .*efr32mg22.* .*mgm21.* .*mgm22.*"/>
+    <properties key="category" value="Example|Platform"/>
+  </descriptors>
+  <descriptors name="se_manager_se_firmware_upgrade" label="Platform - SE Manager SE Firmware Upgrade" description="This example project demonstrates the SE firmware upgrade API of Secure Element Manager.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="example/se_manager_se_firmware_upgrade/se_manager_se_firmware_upgrade.slcp"/>
+    <properties key="boardCompatibility" value="brd4171a brd4176a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4182a brd4183a brd4183b brd4184a brd4184b brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b brd4310a brd4311a brd4311b brd4312a brd4314a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*bgm22.* .*efr32bg22.* .*efr32mg21.* .*efr32mg22.* .*mgm21.* .*mgm22.*"/>
+    <properties key="category" value="Example|Platform"/>
+  </descriptors>
+  <descriptors name="se_manager_secure_debug" label="Platform - SE Manager Secure Debug" description="This example project demonstrates the secure debug API of Secure Element Manager.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="example/se_manager_secure_debug/se_manager_secure_debug.slcp"/>
+    <properties key="boardCompatibility" value="brd4171a brd4176a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4182a brd4183a brd4183b brd4184a brd4184b brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b brd4310a brd4311a brd4311b brd4312a brd4314a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*bgm22.* .*efr32bg22.* .*efr32mg21.* .*efr32mg22.* .*mgm21.* .*mgm22.*"/>
+    <properties key="category" value="Example|Platform"/>
+  </descriptors>
+  <descriptors name="se_manager_secure_identity" label="Platform - SE Manager Secure Identity" description="This example project demonstrates the secure identity of Secure Vault device.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="example/se_manager_secure_identity/se_manager_secure_identity.slcp"/>
+    <properties key="boardCompatibility" value="brd4171a brd4176a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4182a brd4183a brd4183b brd4184a brd4184b brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b brd4310a brd4311a brd4311b brd4312a brd4314a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*bgm22.* .*efr32bg22.* .*efr32mg21.* .*efr32mg22.* .*mgm21.* .*mgm22.*"/>
+    <properties key="category" value="Example|Platform"/>
+  </descriptors>
+  <descriptors name="se_manager_signature" label="Platform - SE Manager Digital Signature (ECDSA and EdDSA)" description="This example project demonstrates the digital signature (ECDSA and EdDSA) API of Secure Element Manager.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="example/se_manager_signature/se_manager_signature.slcp"/>
+    <properties key="boardCompatibility" value="brd4171a brd4176a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4182a brd4183a brd4183b brd4184a brd4184b brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b brd4310a brd4311a brd4311b brd4312a brd4314a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*bgm22.* .*efr32bg22.* .*efr32mg21.* .*efr32mg22.* .*mgm21.* .*mgm22.*"/>
+    <properties key="category" value="Example|Platform"/>
+  </descriptors>
+  <descriptors name="se_manager_stream_cipher" label="Platform - SE Manager Stream Cipher" description="This example project demonstrates the stream cipher API of Secure Element Manager.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="example/se_manager_stream_cipher/se_manager_stream_cipher.slcp"/>
+    <properties key="boardCompatibility" value="brd4171a brd4176a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4182a brd4183a brd4183b brd4184a brd4184b brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b brd4310a brd4311a brd4311b brd4312a brd4314a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*bgm22.* .*efr32bg22.* .*efr32mg21.* .*efr32mg22.* .*mgm21.* .*mgm22.*"/>
+    <properties key="category" value="Example|Platform"/>
+  </descriptors>
+  <descriptors name="se_manager_symmetric_key_handling" label="Platform - SE Manager Symmetric Key Handling" description="This example project demonstrates the symmetric key handling API of Secure Element Manager.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="example/se_manager_symmetric_key_handling/se_manager_symmetric_key_handling.slcp"/>
+    <properties key="boardCompatibility" value="brd4171a brd4176a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4182a brd4183a brd4183b brd4184a brd4184b brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b brd4310a brd4311a brd4311b brd4312a brd4314a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*bgm22.* .*efr32bg22.* .*efr32mg21.* .*efr32mg22.* .*mgm21.* .*mgm22.*"/>
+    <properties key="category" value="Example|Platform"/>
+  </descriptors>
+  <descriptors name="se_manager_tamper" label="Platform - SE Manager Tamper" description="This example project demonstrates the tamper feature of Secure Vault device.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="example/se_manager_tamper/se_manager_tamper.slcp"/>
+    <properties key="boardCompatibility" value="brd4171a brd4176a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4182a brd4183a brd4183b brd4184a brd4184b brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b brd4310a brd4311a brd4311b brd4312a brd4314a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*bgm22.* .*efr32bg22.* .*efr32mg21.* .*efr32mg22.* .*mgm21.* .*mgm22.*"/>
+    <properties key="category" value="Example|Platform"/>
+  </descriptors>
+  <descriptors name="se_manager_user_data" label="Platform - SE Manager User Data" description="This example project demonstrates the user data API of Secure Element Manager.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="example/se_manager_user_data/se_manager_user_data.slcp"/>
+    <properties key="boardCompatibility" value="brd4171a brd4176a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4182a brd4183a brd4183b brd4184a brd4184b brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b brd4310a brd4311a brd4311b brd4312a brd4314a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*bgm22.* .*efr32bg22.* .*efr32mg21.* .*efr32mg22.* .*mgm21.* .*mgm22.*"/>
+    <properties key="category" value="Example|Platform"/>
+  </descriptors>
+</model:MDescriptors>

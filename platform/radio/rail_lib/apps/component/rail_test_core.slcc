@@ -1,0 +1,1924 @@
+id: rail_test_core
+label: RAILtest, Core
+description: RAILtest Application Core Support
+package: platform
+category: Platform|Radio
+quality: production
+provides:
+  - name: rail_test_core
+documentation:
+  docset: rail
+  document: rail-test-core
+
+requires:
+  # rail_util
+  - name: rail_util_init
+
+  # silabs_core
+  - name: silabs_core_memory_manager
+  - name: silabs_core_circular_queue
+  - name: silabs_core_response_print
+
+  # emdrv
+  - name: gpiointerrupt
+  - name: power_manager
+
+  # emlib
+  - name: emlib_rmu
+
+define:
+  - name: RAILTEST
+    value: '1' # Identify RAILtest builds
+
+  # LED support
+  - name: SL_RAIL_TEST_LED_SUPPORT_ENABLE
+    value: '1'
+    condition:
+      - simple_led
+
+  # Button support
+  - name: SL_RAIL_TEST_BUTTON_SUPPORT_ENABLE
+    value: '1'
+    condition:
+      - simple_button
+
+  # - name: DEBUG_EFM
+  - name: CLI_INTERFACE
+  - name: RAILAPP_RMR
+  - name: RAIL_PA_AUTO_MODE
+
+config_file:
+  - path: platform/radio/rail_lib/apps/railtest/config/efr32xg1x/sl_rail_test_config.h
+    condition:
+      - device_series_1
+  - path: platform/radio/rail_lib/apps/railtest/config/efr32xg21/sl_rail_test_config.h
+    condition:
+      - device_series_2
+      - device_sdid_200
+  - path: platform/radio/rail_lib/apps/railtest/config/efr32xg22/sl_rail_test_config.h
+    condition:
+      - device_series_2
+      - device_sdid_205
+
+include:
+  - path: platform/radio/rail_lib/hal
+    file_list:
+      - path: hal_common.h
+  - path: platform/radio/rail_lib/plugin/pa-auto-mode
+    file_list:
+      - path: pa_auto_mode.h
+  - path: platform/radio/rail_lib/apps/railtest
+    file_list:
+      - path: app_common.h
+      - path: app_trx.h
+  - path: platform/radio/rail_lib/apps/railapp
+    file_list:
+      - path: railapp_antenna.h
+      - path: railapp_rmr.h
+      - path: railapp_malloc.h
+
+source:
+  - path: platform/radio/rail_lib/apps/railtest/app_main.c
+  - path: platform/radio/rail_lib/apps/railtest/app_trx.c
+  - path: platform/radio/rail_lib/apps/railtest/railtest_helpers.c
+  - path: platform/radio/rail_lib/apps/railtest/app_hal.c
+  - path: platform/radio/rail_lib/apps/railtest/app_modes.c
+  - path: platform/radio/rail_lib/apps/railtest/mode_helpers.c
+
+  - path: platform/radio/rail_lib/apps/railtest/app_ci/autoack_ci.c
+  - path: platform/radio/rail_lib/apps/railtest/app_ci/ble_ci.c
+  - path: platform/radio/rail_lib/apps/railtest/app_ci/channel_hopping_ci.c
+  - path: platform/radio/rail_lib/apps/railtest/app_ci/radio_config_ci.c
+  - path: platform/radio/rail_lib/apps/railtest/app_ci/timer_ci.c
+  - path: platform/radio/rail_lib/apps/railtest/app_ci/address_filter_ci.c
+  - path: platform/radio/rail_lib/apps/railtest/app_ci/trx_ci.c
+  - path: platform/radio/rail_lib/apps/railtest/app_ci/zwave_ci.c
+  - path: platform/radio/rail_lib/apps/railtest/app_ci/info_ci.c
+  - path: platform/radio/rail_lib/apps/railtest/app_ci/debug_ci.c
+  - path: platform/radio/rail_lib/apps/railtest/app_ci/154_rx_ci.c
+  - path: platform/radio/rail_lib/apps/railtest/app_ci/lbt_ci.c
+  - path: platform/radio/rail_lib/apps/railtest/app_ci/error_rate_ci.c
+  - path: platform/radio/rail_lib/apps/railtest/app_ci/packet_ci.c
+  - path: platform/radio/rail_lib/apps/railtest/app_ci/parameter_ci.c
+  - path: platform/radio/rail_lib/apps/railtest/app_ci/gpio_ci.c
+  - path: platform/radio/rail_lib/apps/railtest/app_ci/script_ci.c
+
+  - path: platform/radio/rail_lib/apps/railapp/railapp_rmr.c
+  - path: platform/radio/rail_lib/apps/railapp/railapp_malloc.c
+  - path: platform/radio/rail_lib/apps/railapp/railapp_antenna.c
+
+  - path: platform/radio/rail_lib/hal/efr32/hal_efr.c
+  - path: platform/radio/rail_lib/hal/hal_common.c
+
+  - path: platform/radio/rail_lib/plugin/pa-auto-mode/pa_auto_mode.c
+
+template_contribution:
+  - name: rail_util_callbacks
+    value:
+      event: assert_failed
+      include: app_common.h
+      handler: RAILCb_AssertFailedFunction
+  - name: rail_util_callbacks
+    value:
+      event: rf_ready
+      include: app_common.h
+      handler: RAILCb_RfReady
+  - name: rail_util_callbacks
+    value:
+      event: rail_event
+      include: app_common.h
+      handler: RAILCb_Event
+
+  - name: event_handler
+    value:
+      event:    internal_app_init
+      include:  app_common.h
+      handler:  sl_rail_test_internal_app_init
+    priority:   0
+  - name: event_handler
+    value:
+      event:    internal_app_process_action
+      include:  app_common.h
+      handler:  sl_rail_test_internal_app_process_action
+    priority:   0
+
+  - name: cli_command
+    value:
+      name: setEventConfig
+      handler: setEventConfig
+      help: "Modify the RAIL_ConfigEvents with mask and events"
+      argument:
+        - type: uint32
+          help: "mask<31:0>"
+        - type: uint32
+          help: "events<31:0>"
+        - type: uint32opt
+          help: "(mask<63:32>) (events<63:32>)"
+
+  - name: cli_command
+    value:
+      name: printDataRates
+      handler: printDataRates
+      help: "Print the data rates of the current PHY"
+
+  - name: cli_command
+    value:
+      name: resetCounters
+      handler: resetCounters
+      help: "Resets the Tx and Rx counters"
+
+  - name: cli_command
+    value:
+      name: setPeripheralEnable
+      handler: setPeripheralEnable
+      help: "Enable or Disable LEDs and LCD peripherals"
+      argument:
+        - type: uint8
+          help: "1=Enable 0=Disable"
+
+  - name: cli_command
+    value:
+      name: setNotifications
+      handler: setNotifications
+      help: "Enable or Disable status prints that happen asynchronously (rxPacket, txEnd, txError)"
+      argument:
+        - type: uint8
+          help: "1=Enable 0=Disable"
+
+  - name: cli_command
+    value:
+      name: getLogLevels
+      handler: getLogLevels
+      help: "Get whether notifications are set or peripherals are enabled"
+
+  - name: cli_command
+    value:
+      name: getVersion
+      handler: getVersion
+      help: "Get version information"
+
+  - name: cli_command
+    value:
+      name: getVersionVerbose
+      handler: getVersionVerbose
+      help: "Get verbose version information"
+
+  - name: cli_command
+    value:
+      name: setPtiProtocol
+      handler: setPtiProtocol
+      help: "Set PTI protocol for Network Analyzer"
+      argument:
+        - type: uint8
+          help: "0=Custom 2=Thread 3=BLE 4=Connect 5=Zigbee 6=Z-Wave"
+
+  - name: cli_command
+    value:
+      name: setPrintingEnable
+      handler: setPrintingEnable
+      help: "Universally enable or disable all printing in RAILtest. Enabled by default"
+      argument:
+        - type: uint8
+          help: "1=enable 0=disable"
+
+  - name: cli_command
+    value:
+      name: rx
+      handler: rx
+      help: "Enable or Disable receive mode"
+      shortcuts:
+        - name: r
+      argument:
+        - type: uint8
+          help: "1=enable 0=disable"
+
+  - name: cli_command
+    value:
+      name: rxAt
+      handler: rxAt
+      help: "Configure scheduled receive"
+      argument:
+        - type: uint32
+          help: "start"
+        - type: string
+          help: "mode"
+        - type: uint32
+          help: "end"
+        - type: string
+          help: "mode"
+        - type: uint8opt
+          help: "(rxTransEndSched) (hardEnd)"
+
+  - name: cli_command
+    value:
+      name: setRxOptions
+      handler: setRxOptions
+      help: "Configure receive options, based on RAIL_RX_OPTION defines. If called without any parameters, prints the current state of these options."
+      shortcuts:
+        - name: configRxOptions
+      argument:
+        - type: uint32opt
+          help: "(rxOptionsBitField)"
+
+  - name: cli_command
+    value:
+      name: tx
+      handler: tx
+      help: "Transmit n packets with tx options. If n is 0 transmit infinitely. Defaults are don't wait for ack, send CRC, use sync word 0."
+      shortcuts:
+        - name: t
+      argument:
+        - type: uint32
+          help: "n=transmit n packets 0=transmit packets infinitely"
+
+  - name: cli_command
+    value:
+      name: txWithOptions
+      handler: txWithOptions
+      help: "Same functionality as tx command. This command is deprecated"
+      argument:
+        - type: uint32
+          help: "n=transmit n packets 0=transmit packets infinitely"
+
+  - name: cli_command
+    value:
+      name: txAfterRx
+      handler: txAfterRx
+      help: "Schedule a TX for a delay in us after each receive"
+      argument:
+        - type: uint32
+          help: "n=delay in us. 0=disable"
+
+  - name: cli_command
+    value:
+      name: configTxOptions
+      handler: configTxOptions
+      help: "Sets the bitmask to be used as the tx options. See #defines starting with 'RAIL_TX_OPTION_' in rail_types.h. Can be called without any parameters to print the current state of these options."
+      shortcuts:
+        - name: setTxOptions
+      argument:
+        - type: uint32opt
+          help: "(txOptionsBitfield)"
+
+  - name: cli_command
+    value:
+      name: setFixedLength
+      handler: setFixedLength
+      help: "Configure fixed length"
+      argument:
+        - type: uint16
+          help: "fixedLength"
+
+  - name: cli_command
+    value:
+      name: setPower
+      handler: setPower
+      help: "Set the current transmit power in deci dBm, or raw units if 'raw' is specified. The radio must be IDLE for setPower to succeed."
+      argument:
+        - type: int32
+          help: "power"
+        - type: stringopt
+          help: "(raw) 'raw' = set power in raw"
+
+  - name: cli_command
+    value:
+      name: getPower
+      handler: getPower
+      help: "Get the current transmit power in deci dBm"
+
+  - name: cli_command
+    value:
+      name: setPowerConfig
+      handler: setPowerConfig
+      help: "Set the current transmit power config"
+      argument:
+        - type: uint8
+          help: "mode"
+        - type: uint16
+          help: "voltage"
+        - type: uint16
+          help: "rampTime"
+
+  - name: cli_command
+    value:
+      name: getPowerConfig
+      handler: getPowerConfig
+      help: "Get the current transmit power config"
+
+  - name: cli_command
+    value:
+      name: enablePaAutoMode
+      handler: enablePaAutoMode
+      help: "Enable automatic configuration of PA's when setting dBm power levels"
+      argument:
+        - type: uint8
+          help: "1=enable 0=disable"
+
+  - name: cli_command
+    value:
+      name: configPaAutoMode
+      handler: configPaAutoMode
+      help: "Configure the entries of default PA Auto Mode configuration provided by the PA Auto Mode plugin"
+      argument:
+        - type: uint8
+          help: "index"
+        - type: int32
+          help: "min"
+        - type: int32
+          help: "max"
+        - type: uint8
+          help: "mode"
+
+  - name: cli_command
+    value:
+      name: sweepTxPower
+      handler: sweepTxPower
+      help: "Sweep power levels for the current PA and stream at each level"
+
+  - name: cli_command
+    value:
+      name: offsetLqi
+      handler: offsetLqi
+      help: "Add this offset value to the hardware's 8-bit hardware LQI value before being made available to the application"
+      argument:
+        - type: int32
+          help: "offset"
+
+  - name: cli_command
+    value:
+      name: getRssi
+      handler: getRssi
+      help: "Get RSSI in dBm if the receiver is turned on. Optionally specify whether or not to wait for a valid value in case it is initially invalid"
+      argument:
+        - type: uint32opt
+          help: "(wait)"
+
+  - name: cli_command
+    value:
+      name: sweepPower
+      handler: sweepPower
+      help: "Sweep power in square wave fashion. Specify power in deci dBm, period in microseconds"
+      argument:
+        - type: int32
+          help: "lowPower"
+        - type: int32
+          help: "hiPower"
+        - type: uint32
+          help: "period"
+
+  - name: cli_command
+    value:
+      name: startAvgRssi
+      handler: startAvgRssi
+      help: "Start AGC RSSI averaging"
+      argument:
+        - type: uint32
+          help: "averageTimeUs"
+        - type: uint16opt
+          help: "(channel)"
+
+  - name: cli_command
+    value:
+      name: getAvgRssi
+      handler: getAvgRssi
+      help: "Get AGC RSSI averaging result"
+
+  - name: cli_command
+    value:
+      name: setTxTone
+      handler: setTxTone
+      help: "Enable or Disable a tone from the radio with option of selecting antenna"
+      argument:
+        - type: uint32
+          help: "1=enable 0=disable"
+        - type: uint32opt
+          help: "(antenna)"
+
+  - name: cli_command
+    value:
+      name: setTxStream
+      handler: setTxStream
+      help: "Enable or Disable a PN9 stream from the radio based on selection of RAIL_StreamMode_t and antenna.(Option : Unspecified - Any, 0 - TX_ANTENNA0, 1 - TX_ANTENNA1). Default settings for streamMode is RAIL_STREAM_PN9_STREAM and for antenna is RAIL_TX_OPTIONS_DEFAULT."
+      argument:
+        - type: uint32
+          help: "1=enable 0=disable"
+        - type: uint32opt
+          help: "(streamMode) (antenna)"
+
+  - name: cli_command
+    value:
+      name: status
+      handler: getStatus
+      help: "Print the current status counters"
+
+  - name: cli_command
+    value:
+      name: fifoStatus
+      handler: fifoStatus
+      help: "Print the current fifo related counters"
+
+  - name: cli_command
+    value:
+      name: setTxHoldOff
+      handler: setTxHoldOff
+      help: "Enable or Disable transmit hold-off (blocking of transmits)"
+      argument:
+        - type: uint32
+          help: "1=enable 0=disable"
+
+  - name: cli_command
+    value:
+      name: setTxDelay
+      handler: setTxDelay
+      help: "Set the inter-packet delay in milliseconds for repeated Tx"
+      argument:
+        - type: uint32
+          help: "delay"
+
+  - name: cli_command
+    value:
+      name: getTxDelay
+      handler: getTxDelay
+      help: "Get the inter-packet delay in milliseconds for repeated Tx"
+
+  - name: cli_command
+    value:
+      name: setTxPayload
+      handler: setTxPayload
+      help: "Set the packet bytes to be sent"
+      argument:
+        - type: uint16
+          help: "offset"
+        - type: uint8opt
+          help: "(byte0) (byte1) (...)"
+
+  - name: cli_command
+    value:
+      name: setRfSenseTxPayload
+      handler: setRfSenseTxPayload
+      help: "Set the RfSense Wakeup Syncword (1-4 bytes) in TX FIFO to wake up a receiving node configured for Selective(OOK) RFSENSE"
+      argument:
+        - type: uint8
+          help: "syncwordNumBytes"
+        - type: uint32
+          help: "syncWord"
+
+  - name: cli_command
+    value:
+      name: setTxPayloadQuiet
+      handler: setTxPayloadQuiet
+      help: "Functions like 'setTxPayload', but outputs less information"
+      argument:
+        - type: uint16
+          help: "offset"
+        - type: uint8opt
+          help: "(byte0) (byte1) (...)"
+
+  - name: cli_command
+    value:
+      name: setTxLength
+      handler: setTxLength
+      help: "Set the number of bytes to load into the FIFO before transmitting. Actual packet length may vary based on radio configuration"
+      argument:
+        - type: uint16
+          help: "length"
+
+  - name: cli_command
+    value:
+      name: printTxPacket
+      handler: printTxPacket
+      help: "Print the current Tx data and length"
+
+  - name: cli_command
+    value:
+      name: peek
+      handler: peekRx
+      help: "Peek at the start of receive buffer"
+      argument:
+        - type: uint16
+          help: "number of bytes"
+        - type: uint16opt
+          help: "(offset)"
+
+  - name: cli_command
+    value:
+      name: getTime
+      handler: getTime
+      help: "Get the current time from the RAIL timebase in microseconds"
+
+  - name: cli_command
+    value:
+      name: setTime
+      handler: setTime
+      help: "Set the current time in the RAIL timebase in microseconds"
+      argument:
+        - type: uint32
+          help: "time"
+
+  - name: cli_command
+    value:
+      name: dataConfig
+      handler: dataConfig
+      help: "Choose between 'pkt' and 'fifo' data methods for RAIL Tx and Rx"
+      argument:
+        - type: string
+          help: "txMethod"
+        - type: string
+          help: "rxMethod"
+
+  - name: cli_command
+    value:
+      name: setRxFifo
+      handler: setRxFifo
+      help: "Set the receive buffer length, which is used in both packet mode and FIFO mode. The length cannot be set above RX_BUFFER_SIZE"
+      argument:
+        - type: uint16
+          help: "length"
+
+  - name: cli_command
+    value:
+      name: setTxFifoThreshold
+      handler: setTxFifoThreshold
+      help: "Set the Tx Fifo Almost Emtpy threshold"
+      argument:
+        - type: uint16
+          help: "txFifoThreshold"
+
+  - name: cli_command
+    value:
+      name: setRxFifoThreshold
+      handler: setRxFifoThreshold
+      help: "Set the Rx Fifo Almost Emtpy threshold"
+      argument:
+        - type: uint16
+          help: "txFifoThreshold"
+
+  - name: cli_command
+    value:
+      name: fifoModeTestOptions
+      handler: fifoModeTestOptions
+      help: "Manual control over RAILtest fifo actions"
+      argument:
+        - type: uint8
+          help: "txFifoManual"
+        - type: uint8
+          help: "rxFifoManual"
+
+  - name: cli_command
+    value:
+      name: rxFifoManualRead
+      handler: rxFifoManualRead
+      help: "Read bytes out of receive fifo and print"
+      argument:
+        - type: uint8
+          help: "appendedInfo"
+        - type: uint16
+          help: "bytesToRead"
+        - type: uint8opt
+          help: "(printTiming)"
+
+  - name: cli_command
+    value:
+      name: txFifoManualLoad
+      handler: txFifoManualLoad
+      help: "Will attempt to load data into the fifo if there is space"
+
+  - name: cli_command
+    value:
+      name: fifoReset
+      handler: fifoReset
+      help: "Reset the transmit or receive fifo"
+      argument:
+        - type: uint8
+          help: "tx"
+        - type: uint8
+          help: "rx"
+
+  - name: cli_command
+    value:
+      name: abortRxPacket
+      handler: abortRxPacket
+      help: "Delay after sync word before idling radio"
+      argument:
+        - type: uint32
+          help: "abortOffset"
+
+  - name: cli_command
+    value:
+      name: printTxAcks
+      handler: printTxAcks
+      help: "Enable printing of tx ack packets as they happen"
+      argument:
+        - type: uint8
+          help: "printTxAcks"
+
+  - name: cli_command
+    value:
+      name: configRxChannelHopping
+      handler: configRxChannelHopping
+      help: "Configure RX Channel Hopping to hop in the sequence provided, for the given RAIL_RxChannelHoppingMode_t mode, parameter, and interchannel delay. One mode and parameter must be provided per channel."
+      shortcuts:
+        - name: configChannelHopping
+      argument:
+        - type: uint32opt
+          help: "(channel) (mode) (parameter) (delay)"
+
+  - name: cli_command
+    value:
+      name: enableRxChannelHopping
+      handler: enableRxChannelHopping
+      help: "Enable/disable rx channel hopping. The channel hopping will start again from the first member of the sequence is reset is true."
+      shortcuts:
+        - name: enableChannelHopping
+      argument:
+        - type: uint8
+          help: "enable"
+        - type: uint8opt
+          help: "(reset)"
+
+  - name: cli_command
+    value:
+      name: configChannelHoppingOptions
+      handler: configChannelHoppingOptions
+      help: "Configure channel hopping options for the entry of specified index. Must call configRxChannelHopping after this, for options to take effect."
+      argument:
+        - type: uint8
+          help: "index"
+        - type: uint8
+          help: "options"
+        - type: int8opt
+          help: "(rssiThreshold)"
+
+  - name: cli_command
+    value:
+      name: configChannelHoppingMulti
+      handler: configChannelHoppingMulti
+      help: "Configure channel hopping multi-sense mode parameters for the entry of specified index. Must call configRxChannelHopping after this."
+      argument:
+        - type: uint8
+          help: "index"
+        - type: uint32
+          help: "syncDetect"
+        - type: uint32
+          help: "preambleSense"
+        - type: uint32
+          help: "timingSense"
+        - type: uint32
+          help: "timingReSense"
+
+  - name: cli_command
+    value:
+      name: getChannelHoppingRssi
+      handler: getChannelHoppingRssi
+      help: "Get the latest RSSI for the channel at the index of the hopping sequence specified."
+      argument:
+        - type: uint8
+          help: "channelIndex"
+
+  - name: cli_command
+    value:
+      name: spectrumAnalyzer
+      handler: spectrumAnalyzer
+      help: "Emulate spectrum analyzer functionality to get the power across min and max channels (number of channels limited by MAX_NUMBER_CHANNELS) of the current PHY using channel hopping. Specify graphics = 1 for an ASCII-Art graph, which will break out of the standard RAILtest response format."
+      argument:
+        - type: uint8
+          help: "Enable/disable graphics if you want to specify min and max channels"
+        - type: uint16opt
+          help: "(min) (max)"
+
+  - name: cli_command
+    value:
+      name: configRxDutyCycle
+      handler: configRxDutyCycle
+      help: "Configure RX Duty Cycle mode to cycle the receiver with the given parameters and options."
+      argument:
+        - type: uint32
+          help: "mode"
+        - type: int32
+          help: "parameter(s) {sync pream timing retiming}"
+        - type: int32
+          help: "delay"
+        - type: int32opt
+          help: "(options) (rssiThreshold)"
+
+  - name: cli_command
+    value:
+      name: enableRxDutyCycle
+      handler: enableRxDutyCycle
+      help: "Enable/disable rx duty cycle mode."
+      argument:
+        - type: uint8
+          help: "1=enable 0=disable"
+        - type: uint8opt
+          help: "(1=enable 0=disable Rx Duty Cycle schedule wakeup, defaults to disabled.)"
+
+  - name: cli_command
+    value:
+      name: setTxAltPreambleLen
+      handler: setTxAltPreambleLen
+      help: "Set an alternate preamble length for transmit, which can be enabled in txOptions."
+      argument:
+        - type: uint32
+          help: "length"
+
+  - name: cli_command
+    value:
+      name: configSyncWords
+      handler: configSyncWords
+      help: "Set the sync word bit length and value(s). It can be only set when radio is off."
+      argument:
+        - type: uint8
+          help: "bits"
+        - type: uint32
+          help: "sync1"
+        - type: uint32opt
+          help: "(sync2)"
+
+  - name: cli_command
+    value:
+      name: getSyncWords
+      handler: getSyncWords
+      help: "Get the sync word length(in bits) and value(s)."
+
+  - name: cli_command
+    value:
+      name: printRxErrors
+      handler: printRxErrors
+      help: "Enable or Disable printing of Rx error packets. Defaults to disabled."
+      argument:
+        - type: uint8
+          help: "1=enable 0=disable"
+
+  - name: cli_command
+    value:
+      name: printRxFreqOffsets
+      handler: printRxFreqOffsets
+      help: "Enable or Disable printing of Rx frequency offsets. Defaults to disabled."
+      argument:
+        - type: uint8
+          help: "1=enable 0=disable"
+
+  - name: cli_command
+    value:
+      name: stopInfinitePreambleTx
+      handler: stopInfinitePreambleTx
+      help: "Stops the infinite preamble transmission."
+
+  - name: cli_command
+    value:
+      name: sleep
+      handler: sleep
+      help: "Sleep in EM# with RFSenseUs on RfBand (0=none,1=2.4GHz,2=SubGHz,3=both) (and UART input) for Legacy Mode or SyncwordSize(bytes) and Syncword on RfBand for Selective(OOK) Mode. To enter EM1P if supported, request EM2 with the radio on."
+      argument:
+        - type: uint8
+          help: "EM#"
+        - type: uint32opt
+          help: "(Legacy Mode - RfSenseUs; Selective(OOK) Mode - SyncwordSize(bytes)) (Legacy Mode - RfBand (0=none,1=2.4GHz,2=SubGHz,3=both); Selective(OOK) Mode - Syncword followed by RfBand)"
+
+  - name: cli_command
+    value:
+      name: rfsense
+      handler: rfSense
+      help: "Start RfSensing with RSenseUs on RfBand for Legacy Mode or SyncwordSize(bytes) and Syncword on RfBand for Selective(OOK) Mode."
+      argument:
+        - type: uint32
+          help: "Legacy Mode - RfSenseUs; Selective(OOK) Mode - SyncwordSize(bytes)"
+        - type: uint32opt
+          help: "(Legacy Mode - RfBand (0=none,1=2.4GHz,2=SubGHz,3=both); Selective(OOK) Mode - Syncword) (Selective(OOK) Mode - RfBand)"
+
+  - name: cli_command
+    value:
+      name: configRfSenseWakeupPhy
+      handler: configRfSenseSelectiveOokWakeupPhy
+      help: "Configure the transmitting node with RFSense Selective(OOK) Wakeup PHY."
+
+  - name: cli_command
+    value:
+      name: configAddressFilter
+      handler: setAddressFilterConfig
+      help: "Configure the addresss filter."
+      argument:
+        - type: uint32
+          help: "matchTable"
+        - type: uint8opt
+          help: "(offset0) (size0) (offset1 size1 ...) Enter more offsets followed by the sizes if required"
+
+  - name: cli_command
+    value:
+      name: setAddressFiltering
+      handler: setAddressFilter
+      help: "Enable or Disable address filtering."
+      argument:
+        - type: uint8
+          help: "1=enable 0=disable"
+
+  - name: cli_command
+    value:
+      name: getAddressFiltering
+      handler: getAddressFilter
+      help: "Print the current state of address filtering."
+
+  - name: cli_command
+    value:
+      name: printAddresses
+      handler: printAddresses
+      help: "Print the current address filtering addresses."
+
+  - name: cli_command
+    value:
+      name: setAddress
+      handler: setAddress
+      help: "Set the address value at (field, index) to value."
+      argument:
+        - type: uint8
+          help: "field"
+        - type: uint8
+          help: "index"
+        - type: uint8opt
+          help: "(value)"
+
+  - name: cli_command
+    value:
+      name: setAddressEnable
+      handler: enableAddress
+      help: "Enable address filtering for the given address."
+      argument:
+        - type: uint8
+          help: "field"
+        - type: uint8
+          help: "index"
+        - type: uint8
+          help: "1=enable 0=disable"
+
+  - name: cli_command
+    value:
+      name: perRx
+      handler: startPerMode
+      help: "Start a Packet Error Rate test. 'perRx 0 0' will disable ongoing test."
+      argument:
+        - type: uint32
+          help: "packets"
+        - type: uint32
+          help: "delayUs"
+
+  - name: cli_command
+    value:
+      name: perStatus
+      handler: getPerStats
+      help: "Output the results of the PER test. Also see 'status' command."
+
+  - name: cli_command
+    value:
+      name: setBerConfig
+      handler: berConfigSet
+      help: "Set number of bytes to receive in BER mode; 536870911 = max number of bytes to test; 0 = set max number of bytes to test"
+      argument:
+        - type: uint32
+          help: "number of bytes"
+
+  - name: cli_command
+    value:
+      name: berRx
+      handler: berRx
+      help: "Enable or Disable BER receive mode."
+      argument:
+        - type: uint8
+          help: "enable"
+
+  - name: cli_command
+    value:
+      name: berStatus
+      handler: berStatusGet
+      help: "Get status of last BER test or of current running test; status information is reset for commands setBerConfig and berRx enable."
+
+  - name: cli_command
+    value:
+      name: setLbtMode
+      handler: setLbtMode
+      help: "Set LBT mode to off, csma, lbt. If no input parameters, get current state."
+      argument:
+        - type: stringopt
+          help: "(modeStr) off, csma, lbt"
+
+  - name: cli_command
+    value:
+      name: getLbtParams
+      handler: getLbtParams
+      help: "Get the current LBT parameters"
+
+  - name: cli_command
+    value:
+      name: setLbtParams
+      handler: setLbtParams
+      help: "Set LBT parameters"
+      argument:
+        - type: uint8
+          help: "minBo"
+        - type: uint8
+          help: "maxBo"
+        - type: uint8
+          help: "tries"
+        - type: int32
+          help: "thresh"
+        - type: uint16
+          help: "backoff"
+        - type: uint16
+          help: "duration"
+        - type: uint32
+          help: "timeout"
+
+  - name: cli_command
+    value:
+      name: enable802154
+      handler: ieee802154Enable
+      help: "Enable 802.15.4 mode"
+      argument:
+        - type: string
+          help: "defaultState"
+        - type: uint16
+          help: "idleTime"
+        - type: uint16
+          help: "turnaroundTime"
+        - type: int16
+          help: "ackTimeout"
+        - type: uint8opt
+          help: "(defaultFramePending) Data request ACKs are sent without (0) or with (1) frame pending set by default."
+
+  - name: cli_command
+    value:
+      name: config2p4GHz802154
+      handler: config2p4Ghz802154
+      help: "Configure the radio for 2.4 GHz 802.15.4. This should be called in addition to 'enable802154'."
+      argument:
+        - type: uint8opt
+          help: "(antDiv) (coex)"
+
+  - name: cli_command
+    value:
+      name: config863MHz802154
+      handler: config863Mhz802154
+      help: "Configure the radio for 863 MHz 802.15.4 GB868. This should be called in addition to 'enable802154'."
+
+  - name: cli_command
+    value:
+      name: config915MHz802154
+      handler: config915Mhz802154
+      help: "Configure the radio for 915 MHz 802.15.4 GB868. This should be called in addition to 'enable802154'."
+
+  - name: cli_command
+    value:
+      name: set802154e
+      handler: ieee802154SetE
+      help: "Configure 802.15.4E options, based on RAIL_IEEE802154_E_OPTION_ defines."
+      argument:
+        - type: uint32
+          help: "EOptionsBitfield"
+
+  - name: cli_command
+    value:
+      name: set802154g
+      handler: ieee802154SetG
+      help: "Configure 802.15.4G options, based on RAIL_IEEE802154_G_OPTION_ defines."
+      argument:
+        - type: uint32
+          help: "GOptionsBitfield"
+
+  - name: cli_command
+    value:
+      name: set802154FpMode
+      handler: ieee802154SetFpMode
+      help: "Enable(1) or Disable(0) early frame pending lookup and data frame pending lookup. Default settings are 0 0"
+      argument:
+        - type: uint8
+          help: "early"
+        - type: uint8
+          help: "dataframes"
+
+  - name: cli_command
+    value:
+      name: acceptFrames
+      handler: ieee802154AcceptFrames
+      help: "Enable(1) or Disable(0) 802.15.4 frame acceptance. Default settings for 802.15.4 are 1 0 1 1 0."
+      argument:
+        - type: uint8
+          help: "command"
+        - type: uint8
+          help: "ack"
+        - type: uint8
+          help: "data"
+        - type: uint8
+          help: "beacon"
+        - type: uint8opt
+          help: "(multipurpose)"
+
+  - name: cli_command
+    value:
+      name: setPromiscuousMode
+      handler: ieee802154SetPromiscuousMode
+      help: "Enable or Disable promiscuous mode"
+      argument:
+        - type: uint8
+          help: "1=Enable 0=Disable"
+
+  - name: cli_command
+    value:
+      name: setPanCoordinator
+      handler: ieee802154SetPanCoordinator
+      help: "Enable or Disable the node acting as a PAN coordinator"
+      argument:
+        - type: uint8
+          help: "1=Enable 0=Disable"
+
+  - name: cli_command
+    value:
+      name: setPanId802154
+      handler: ieee802154SetPanId
+      help: "Set the PAN ID for the given index. Index defaults to 0 if not given"
+      argument:
+        - type: uint16
+          help: "panId"
+        - type: uint8opt
+          help: "(index)"
+
+  - name: cli_command
+    value:
+      name: setShortAddr802154
+      handler: ieee802154SetShortAddress
+      help: "Set the short address(es) for the given index. Index defaults to 0 if not given"
+      argument:
+        - type: uint16
+          help: "shortAddr"
+        - type: uint8opt
+          help: "(index) Specify additional shortAddr and index if required"
+
+  - name: cli_command
+    value:
+      name: setLongAddr802154
+      handler: ieee802154SetLongAddress
+      help: "Set the short address(es) for the given index. Index defaults to 0 if not given"
+      argument:
+        - type: uint8
+          help: "longAddr_0"
+        - type: uint8
+          help: "longAddr_1"
+        - type: uint8
+          help: "longAddr_2"
+        - type: uint8
+          help: "longAddr_3"
+        - type: uint8
+          help: "longAddr_4"
+        - type: uint8
+          help: "longAddr_5"
+        - type: uint8
+          help: "longAddr_6"
+        - type: uint8
+          help: "longAddr_7"
+        - type: uint8opt
+          help: "(index)"
+
+  - name: cli_command
+    value:
+      name: setAddresses802154
+      handler: ieee802154SetAddresses
+      help: "Set all 802.15.4 address information."
+      argument:
+        - type: uint16
+          help: "panId0"
+        - type: uint16
+          help: "shortAddr0"
+        - type: stringopt
+          help: "(longAddr0) (panId1 ...)"
+
+  - name: cli_command
+    value:
+      name: setDataReqLatency
+      handler: ieee802154SetDataReqLatency
+      help: "Set data request event processing latency."
+      argument:
+        - type: uint32
+          help: "microseconds"
+
+  - name: cli_command
+    value:
+      name: setBleMode
+      handler: bleEnable
+      help: "Set BLE mode to enabled or disabled"
+      argument:
+        - type: uint8
+          help: "1=enable 0=disable"
+
+  - name: cli_command
+    value:
+      name: getBleMode
+      handler: bleStatus
+      help: "Get the current BLE mode"
+
+  - name: cli_command
+    value:
+      name: setBleChannelParams
+      handler: bleSetChannelParams
+      help: "Configure channel parameters related to BLE"
+      argument:
+        - type: uint8
+          help: "logicalChannel"
+        - type: uint32opt
+          help: "(accessAddr) (crcInit) (disableWhiten)"
+
+  - name: cli_command
+    value:
+      name: setBlePhySwitchToRx
+      handler: blePhySwitchToRx
+      help: "Configure parameters for BLE PhySwitchToRx. RX is entered timeDelta us after sync word of received packet."
+      argument:
+        - type: uint8
+          help: "1=enable 0=disable"
+        - type: uint32opt
+          help: "(phy) (timeDelta) (physicalChannel) (logicalChannel) (accessAddr) (crcInit) (disableWhiten)"
+
+  - name: cli_command
+    value:
+      name: setBleAdvertising
+      handler: bleAdvertisingConfig
+      help: "Configure for BLE advertising on channel 37, 38, or 39"
+      argument:
+        - type: uint8
+          help: "advChannel"
+
+  - name: cli_command
+    value:
+      name: setBle1Mbps
+      handler: bleSet1MbpsPhy
+      help: "Switch to the 1Mbps BLE PHY"
+      argument:
+        - type: uint8opt
+          help: "(isViterbi)"
+
+  - name: cli_command
+    value:
+      name: setBle2Mbps
+      handler: bleSet2MbpsPhy
+      help: "Switch to the 2Mbps BLE PHY"
+      argument:
+        - type: uint8opt
+          help: "(isViterbi)"
+
+  - name: cli_command
+    value:
+      name: setBleCoding
+      handler: bleSetCoding
+      help: "Switch to the given RAIL_BLE_Coding_t value"
+      argument:
+        - type: uint8
+          help: "coding"
+
+  - name: cli_command
+    value:
+      name: setZWaveMode
+      handler: zwaveEnable
+      help: "Set Z-Wave mode to enabled or disabled"
+      argument:
+        - type: uint8opt
+          help: "(enable) (options)"
+
+  - name: cli_command
+    value:
+      name: getZWaveMode
+      handler: zwaveStatus
+      help: "Get the current Z-Wave mode"
+
+  - name: cli_command
+    value:
+      name: setZWaveRegion
+      handler: zwaveSetRegion
+      help: "Set Z-Wave region"
+      argument:
+        - type: uint8
+          help: "region"
+
+  - name: cli_command
+    value:
+      name: getZWaveRegion
+      handler: zwaveGetRegion
+      help: "Get the current Z-Wave region"
+
+  - name: cli_command
+    value:
+      name: listZWaveRegions
+      handler: zwaveListRegions
+      help: "List supported Z-Wave regions"
+
+  - name: cli_command
+    value:
+      name: getZWaveBaudRate
+      handler: zwaveGetBaudRate
+      help: "Get the baudrate of the current Z-Wave channel"
+
+  - name: cli_command
+    value:
+      name: setZWaveNodeId
+      handler: zwaveSetNodeId
+      help: "Sets Z-Wave NodeId"
+      argument:
+        - type: uint16
+          help: "nodeId"
+
+  - name: cli_command
+    value:
+      name: setZWaveHomeId
+      handler: zwaveSetHomeId
+      help: "Sets Z-Wave HomeId and its hash"
+      argument:
+        - type: uint32
+          help: "homeId"
+        - type: uint8
+          help: "hash"
+
+  - name: cli_command
+    value:
+      name: setZWaveOptions
+      handler: zwaveConfigureOptions
+      help: "Enable/Disable Z-Wave options"
+      argument:
+        - type: uint8opt
+          help: "(options)"
+
+  - name: cli_command
+    value:
+      name: setZWaveLowPower
+      handler: zwaveSetLowPowerLevel
+      help: "Set the low transmit power in deci dBm, or raw units if 'raw' is specified. This will be used during Low Power ACKing."
+      argument:
+        - type: int32
+          help: "power"
+        - type: stringopt
+          help: "(raw)"
+
+  - name: cli_command
+    value:
+      name: getZWaveLowPower
+      handler: zwaveGetLowPowerLevel
+      help: "Get the deci dBm value and raw value of the Low transmit power"
+
+  - name: cli_command
+    value:
+      name: zwaveReceiveBeam
+      handler: zwaveReceiveBeam
+      help: "Do the beam detection algorithm to receive Z-Wave beams."
+
+  - name: cli_command
+    value:
+      name: setTimer
+      handler: setTimer
+      help: "Set the RAIL timer timeout. You can use either an absolute (abs) or relative (rel) timer mode."
+      argument:
+        - type: uint32
+          help: "timeout"
+        - type: string
+          help: "mode"
+
+  - name: cli_command
+    value:
+      name: timerCancel
+      handler: timerCancel
+      help: "Cancel the RAIL timer if it is active."
+
+  - name: cli_command
+    value:
+      name: printTimerStats
+      handler: printTimerStats
+      help: "Print current timer configuration."
+
+  - name: cli_command
+    value:
+      name: enableMultiTimer
+      handler: enableMultiTimer
+      help: "Enable or disable the multiTimer API for use. By default the multiTimer is disabled for single protocol RAIL and enabled for multiprotocol RAIL."
+      argument:
+        - type: uint8
+          help: "1=enable 0=disable"
+
+  - name: cli_command
+    value:
+      name: setMultiTimer
+      handler: setMultiTimer
+      help: "Set a specific timer timeout, starting with timer 0. You can use either an absolute (abs) or relative (rel) timer mode."
+      argument:
+        - type: uint8
+          help: "timer"
+        - type: uint32
+          help: "timeout"
+        - type: string
+          help: "mode"
+
+  - name: cli_command
+    value:
+      name: multiTimerCancel
+      handler: multiTimerCancel
+      help: "Cancel a specific timer if it is active, starting with timer 0."
+      argument:
+        - type: uint8
+          help: "timer"
+
+  - name: cli_command
+    value:
+      name: printMultiTimerStats
+      handler: printMultiTimerStats
+      help: "Print configuration of a specific timer, starting with timer 0."
+      argument:
+        - type: uint8
+          help: "timer"
+
+  - name: cli_command
+    value:
+      name: delayUs
+      handler: delayUs
+      help: "Blocking delay for specified number of microseconds."
+      argument:
+        - type: uint32
+          help: "delay"
+
+  - name: cli_command
+    value:
+      name: autoAckConfig
+      handler: autoAckConfig
+      help: "Configure and enable auto ack functionality in RAIL."
+      argument:
+        - type: string
+          help: "defaultState"
+        - type: uint16
+          help: "idleTime"
+        - type: uint16
+          help: "turnaroundTime"
+        - type: uint16
+          help: "ackTimeout"
+
+  - name: cli_command
+    value:
+      name: autoAckDisable
+      handler: autoAckDisable
+      help: "Disable auto ack. Use autoAckConfig to reenable."
+
+  - name: cli_command
+    value:
+      name: setAckPayload
+      handler: setAckPayload
+      help: "Set the ack bytes to be sent."
+      argument:
+        - type: uint16
+          help: "offset"
+        - type: uint8opt
+          help: "(byte0) (byte1 ...)"
+
+  - name: cli_command
+    value:
+      name: setAckLength
+      handler: setAckLength
+      help: "Set the number of bytes to transmit for ack payloads"
+      argument:
+        - type: uint16
+          help: "length"
+
+  - name: cli_command
+    value:
+      name: printAckPacket
+      handler: printAckPacket
+      help: "Print the current ack data and length"
+
+  - name: cli_command
+    value:
+      name: getAutoAck
+      handler: getAutoAck
+      help: "Print the current state of auto acking."
+
+  - name: cli_command
+    value:
+      name: autoAckPause
+      handler: autoAckPause
+      help: "Pause(1) or Resume(0) Auto Acking"
+      argument:
+        - type: uint8
+          help: "RxPause"
+        - type: uint8
+          help: "TxPause"
+
+  - name: cli_command
+    value:
+      name: setTxAckOptions
+      handler: setTxAckOptions
+      help: "Enable(1) or Disable(0) feature for one receive"
+      shortcuts:
+        - name: autoAckPause
+      argument:
+        - type: uint8
+          help: "cancelAck"
+        - type: uint8
+          help: "useTxBuf"
+
+  - name: cli_command
+    value:
+      name: setGpioOutPin
+      handler: setGpioOutPin
+      help: "Set a GPIO pin data out bit."
+      argument:
+        - type: string
+          help: "port"
+        - type: uint8
+          help: "pin"
+        - type: uint8
+          help: "state"
+
+  - name: cli_command
+    value:
+      name: getConfigIndex
+      handler: getConfigIndex
+      help: "Get the index of the current radio configuration selected for use. See the entries in *channelConfigs[]. Start with index 0."
+
+  - name: cli_command
+    value:
+      name: setConfigIndex
+      handler: setConfigIndex
+      help: "Set the index of the current radio configuration selected for use, and associate this new configuration to the current rail handle. See the entries in *channelConfigs[]. Start with index 0."
+      argument:
+        - type: uint8
+          help: "index"
+
+  - name: cli_command
+    value:
+      name: setCtune
+      handler: setCtune
+      help: "Set the value of CTUNE in the CMU->HFXOSTEADYSTATECTRL register. The radio must be IDLE for setCtune to succeed."
+      argument:
+        - type: uint16
+          help: "ctune"
+
+  - name: cli_command
+    value:
+      name: getCtune
+      handler: getCtune
+      help: "Get the value of CTUNE in the CMU->HFXOSTEADYSTATECTRL register"
+
+  - name: cli_command
+    value:
+      name: setPaCtune
+      handler: setPaCtune
+      help: "Set the value of PACTUNE for TX and RX mode"
+      argument:
+        - type: uint8
+          help: "txPaCtune"
+        - type: uint8
+          help: "rxPaCtune"
+
+  - name: cli_command
+    value:
+      name: enablePaCal
+      handler: enablePaCal
+      help: "Enable(1) or Disable(0) PA power calibration"
+      argument:
+        - type: uint8
+          help: "enable"
+
+  - name: cli_command
+    value:
+      name: setDebugSignal
+      handler: setDebugSignal
+      help: "Configure chip specific debug output. Use 'setDebugSignal help' for more details."
+      argument:
+        - type: wildcard
+
+  - name: cli_command
+    value:
+      name: setDebugMode
+      handler: setDebugMode
+      help: "1 = Frequency Override. 0 = Disable debug mode"
+      argument:
+        - type: uint32
+          help: "mode"
+
+  - name: cli_command
+    value:
+      name: freqOverride
+      handler: setFrequency
+      help: "Change to freq specified in Hz. Requires debug mode to be enabled. Only small frequency deviations from the current configuration are supported."
+      argument:
+        - type: uint32
+          help: "freq"
+
+  - name: cli_command
+    value:
+      name: directMode
+      handler: setDirectMode
+      help: "Enable(1) or Disable(0) direct mode"
+      argument:
+        - type: uint8
+          help: "enable"
+
+  - name: cli_command
+    value:
+      name: directTx
+      handler: setDirectTx
+      help: "Enable(1) or Disable(0) TX in direct mode"
+      argument:
+        - type: uint8
+          help: "enable"
+
+  - name: cli_command
+    value:
+      name: txCancel
+      handler: txCancel
+      help: "Start a single TX that will be cancelled in delay microseconds using stopmode 0=RAIL_Idle(default) or >0=RAIL_StopMode_t."
+      argument:
+        - type: int32
+          help: "delay"
+        - type: uint8opt
+          help: "(stopmode)"
+
+  - name: cli_command
+    value:
+      name: startThermistorMeasurement
+      handler: startThermistorMeasurement
+      help: "Configures the thermistor pin and starts a thermistor measurement."
+
+  - name: cli_command
+    value:
+      name: getThermistorImpedance
+      handler: getThermistorImpedance
+      help: "Gets the thermistor impedance."
+
+  - name: cli_command
+    value:
+      name: getRandom
+      handler: getRandom
+      help: "Get len bytes of random data from the radio. Only print them to the screen if hidden is 0 (default)."
+      argument:
+        - type: int16
+          help: "len"
+        - type: uint8opt
+          help: "(hidden)"
+
+  - name: cli_command
+    value:
+      name: setTxUnderflow
+      handler: setTxUnderflow
+      help: "Enable(1) or Disable(0) TX underflows"
+      argument:
+        - type: uint8
+          help: "enable"
+
+  - name: cli_command
+    value:
+      name: setRxOverflow
+      handler: setRxOverflow
+      help: "Enable(1) or Disable(0) RX overflows. The overflow will be caused by hanging in the interrupt handler for delayUs"
+      argument:
+        - type: uint8
+          help: "enable"
+        - type: uint32opt
+          help: "(delayUs)"
+
+  - name: cli_command
+    value:
+      name: setCalibrations
+      handler: setCalibrations
+      help: "Enable(1) or Disable(0) RAIL calibrations"
+      argument:
+        - type: uint8
+          help: "enable"
+
+  - name: cli_command
+    value:
+      name: setTxTransitions
+      handler: setTxTransitions
+      help: "Set each RAIL TX state transition value to r(x) or i(dle)"
+      argument:
+        - type: string
+          help: "txSuccess"
+        - type: string
+          help: "txError"
+
+  - name: cli_command
+    value:
+      name: setRxTransitions
+      handler: setRxTransitions
+      help: "Set each RAIL RX state transition value to t(x), r(x), or i(dle)."
+      argument:
+        - type: string
+          help: "rxSuccess"
+        - type: string
+          help: "rxError"
+
+  - name: cli_command
+    value:
+      name: getTxTransitions
+      handler: getTxTransitions
+      help: "Get the RAIL TX state transitions for success and error."
+
+  - name: cli_command
+    value:
+      name: getRxTransitions
+      handler: getRxTransitions
+      help: "Get the RAIL RX state transitions for success and error."
+
+  - name: cli_command
+    value:
+      name: setTxTimePos
+      handler: setTxTimePos
+      help: "Set desired Tx timestamp position."
+      argument:
+        - type: uint8
+          help: "RAIL_PacketTimePosition_t"
+
+  - name: cli_command
+    value:
+      name: setRxTimePos
+      handler: setRxTimePos
+      help: "Set desired Rx timestamp position."
+      argument:
+        - type: uint8
+          help: "RAIL_PacketTimePosition_t"
+
+  - name: cli_command
+    value:
+      name: setTimings
+      handler: setTimings
+      help: "Set RAIL state transition timings in microseconds"
+      argument:
+        - type: uint32
+          help: "idleToRx"
+        - type: uint32
+          help: "rxToTx"
+        - type: uint32
+          help: "idleToTx"
+        - type: uint32opt
+          help: "(txToRx) (rxSearchTimeout) (txToRxSearchTimeout)"
+
+  - name: cli_command
+    value:
+      name: forceAssert
+      handler: forceAssert
+      help: "Force a RAIL assert with the given error code."
+      argument:
+        - type: uint32
+          help: "errorCode"
+
+  - name: cli_command
+    value:
+      name: getAppMode
+      handler: getAppMode
+      help: "Print the current app mode of RAILtest. Values printed are those to be found in AppMode_t."
+
+  - name: cli_command
+    value:
+      name: getRadioState
+      handler: getRadioState
+      help: "Get the RAIL radio state. Values returned correspond to RAIL_RadioState_t."
+
+  - name: cli_command
+    value:
+      name: verifyRadio
+      handler: verifyRadio
+      help: "Verify radio memory contents and return after duration in microseconds. Restart (1) or resume (0) from last run."
+      argument:
+        - type: uint32
+          help: "durationUs"
+        - type: uint8
+          help: "restart"
+        - type: uint8
+          help: "override"
+        - type: uint8
+          help: "callback"
+
+  - name: cli_command
+    value:
+      name: getChannel
+      handler: getChannel
+      help: "Set the current radio channel"
+
+  - name: cli_command
+    value:
+      name: setchannel
+      handler: setChannel
+      help: "Set the current radio channel"
+      argument:
+        - type: uint16
+          help: "channel"
+
+  - name: cli_command
+    value:
+      name: reset
+      handler: resetChip
+      help: "Perform a reboot of the chip "
+
+  - name: cli_command
+    value:
+      name: writeRmrStructure
+      handler: CI_writeRmrStructure
+      help: "This command should only be called by Simplicity Studio and not directly from the CI."
+      argument:
+        - type: uint8
+        - type: uint16
+        - type: uint8
+        - type: uint32opt
+
+  - name: cli_command
+    value:
+      name: updateConfigurationPointer
+      handler: CI_updateConfigurationPointer
+      help: "This command should only be called by Simplicity Studio and not directly from the CI."
+      argument:
+        - type: uint8
+        - type: uint16
+        - type: uint8
+
+  - name: cli_command
+    value:
+      name: reconfigureModem
+      handler: CI_reconfigureModem
+      help: "This command should only be called by Simplicity Studio and not directly from the CI."
+
+  - name: cli_command
+    value:
+      name: setRfPath
+      handler: CI_SetRfPath
+      help: "Set RF path"
+      argument:
+        - type: uint32
+          help: "[rfPath]. 0=Path0, 1=Path1"
+    condition:
+      - device_series_2
+
+  - name: cli_command
+    value:
+      name: printEvents
+      handler: configPrintEvents
+      help: "Configure printing of RAIL events in chronological order as they occur. Pass no parameters to see a list of all available event enum names and values."
+      argument:
+        - type: uint32opt
+          help: "(printEvents<31:0>) (printEvents<63:32>) (mask<31:0>) (mask<63:32>)"
+
+  - name: cli_command
+    value:
+      name: printChipFeatures
+      handler: printChipFeatures
+      help: "Display RAIL features supported at compile and runtime on the chip."
+
+  - name: cli_command
+    value:
+      name: getmemw
+      handler: getMemWord
+      help: "Read count 32bit words starting at address."
+      argument:
+        - type: uint32
+          help: "address"
+        - type: uint32opt
+          help: "(count)"
+
+  - name: cli_command
+    value:
+      name: setmemw
+      handler: setMemWord
+      help: "Write as many 32bit values as specified starting at address"
+      argument:
+        - type: uint32
+          help: "address"
+        - type: uint32opt
+          help: "(value)"
+
+  - name: cli_command
+    value:
+      name: throughput
+      handler: throughput
+      help: "Throughput test"
+      argument:
+        - type: uint32
+          help: "number of packets"
+
+  - name: cli_command
+    value:
+      name: setRssiOffset
+      handler: setRssiOffset
+      help: "Sets the RSSI offset in dBm"
+      argument:
+        - type: int32
+          help: "offset"
+
+  - name: cli_command
+    value:
+      name: getRssiOffset
+      handler: getRssiOffset
+      help: "Gets the RSSI offset"
+
+  - name: cli_command
+    value:
+      name: txAt
+      handler: txAtTime
+      help: "Transmit a packet at the time and mode specified"
+      argument:
+        - type: uint32
+          help: "time"
+        - type: stringopt
+          help: "(mode) (abort) If the string 'abort' is specified and the TX tries to go out during packet reception, the TX will abort, as opposed to being postponed until the RX completes."
+
+  - name: cli_command
+    value:
+      name: setFreqOffset
+      handler: setFreqOffset
+      help: "Sets the frequency offset adjustment. With no argument displays the current offset setting."
+      argument:
+        - type: int32opt
+          help: "(offset)"
+
+  - name: cli_command
+    value:
+      name: holdRx
+      handler: holdRx
+      help: "Enable/Disable holding of received packets instead of instantly processing them."
+      argument:
+        - type: uint8
+          help: "enable"
+
+  - name: cli_command
+    value:
+      name: wait
+      handler: wait
+      help: "Suspend processing of any input until time in the future."
+      argument:
+      - type: uint32
+        help: "Time (in microseconds) to wait."
+      - type: stringopt
+        help: "(Mode) Optionally specify whether the time is relative (rel) (default) or absolute (abs)."
+
+  - name: cli_command
+    value:
+      name: clearScript
+      handler: clearScript
+      help: "Clear the script entered via enterScript. Clear the script in RAM (0, default) or in flash (1)."
+      argument:
+        - type: uint8opt
+          help: "Use flash storage (1) or RAM storage (0, none); default is RAM"
+
+  - name: cli_command
+    value:
+      name: printScript
+      handler: printScript
+      help: "Print the script entered via enterScript. Display the script in RAM (0, default) or in flash (1)."
+      argument:
+        - type: uint8opt
+          help: "Use flash storage (1) or RAM storage (0, none); default is RAM"
+
+  - name: cli_command
+    value:
+      name: enterScript
+      handler: enterScript
+      help: "Enter script entry mode. Conclude entry mode with text 'endScript'. Specify if script is saved to RAM (0, default) or RAM and flash (1). If saved to flash, script will run on boot."
+      argument:
+        - type: uint8opt
+          help: "Use flash storage (1) or RAM storage (0, none); default is RAM"
+
+  - name: cli_command
+    value:
+      name: runScript
+      handler: runScript
+      help: "Run the script entered via enterScript. Run the script in RAM (0, default) or in flash (1)."
+      argument:
+        - type: uint8opt
+          help: "Use flash storage (1) or RAM storage (0, none); default is RAM"

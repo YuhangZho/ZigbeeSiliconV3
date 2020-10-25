@@ -1,0 +1,27 @@
+id: ot_stack_mtd
+label: Stack (MTD)
+package: OpenThread
+category: OpenThread
+quality: production
+description: This component provides the OpenThread stack for a Minimal Thread Device (MTD)
+provides:
+  - name: ot_stack
+requires:
+  - name: ot_stack_common
+  - name: ot_platform_abstraction
+  - name: ot_thirdparty
+config_file:
+  - path: protocol/openthread/include/openthread_features_config.h
+  - path: protocol/openthread/include/openthread_config_generic.h
+toolchain_settings:
+  - option: preinclude
+    value: openthread_features_config.h
+define:
+  - name: OPENTHREAD_CONFIG_FILE
+    value: "\"openthread_config_generic.h\""
+  - name: OPENTHREAD_MTD
+    value: 1
+  - name: OPENTHREAD_SPINEL_CONFIG_OPENTHREAD_MESSAGE_ENABLE
+    value: 1
+    condition:
+    - ot_ncp

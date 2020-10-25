@@ -1,0 +1,9 @@
+What's new in Silicon Labs OpenThread SDK 1.0.1.0
+  * Selected quality improvements and bug fixes
+
+What's new in Silicon Labs OpenThread SDK 1.0.0.2 
+  * First release of OpenThread in the Gecko SDK Suite
+  * Dynamic multiprotocol OpenThread + BLE functionality
+  * Network co-processor (NCP) and radio co-processor (RCP) support
+  * Added EFR32 module support
+  * Network Analyzer support for OpenThread

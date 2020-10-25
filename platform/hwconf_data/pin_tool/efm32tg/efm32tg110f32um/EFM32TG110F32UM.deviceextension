@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<deviceextension:DocumentRoot xmlns:deviceextension="http://www.silabs.com/ss/hwconfig/deviceextension.ecore">
+  <deviceExtension id="pin_tool.efm32.efm32tg.efm32tg110f32um.extension">
+    <componentExtension componentName="TIMER0">
+      <overriddenProperties>
+        <integerProperty id="channel.count" defaultValue="3"/>
+        <stringProperty id="channel.0.name" hidden="false"/>
+        <stringProperty id="channel.1.name" hidden="false"/>
+        <stringProperty id="channel.2.name" hidden="false"/>
+      </overriddenProperties>
+    </componentExtension>
+    <componentExtension componentName="TIMER1">
+      <overriddenProperties>
+        <integerProperty id="channel.count" defaultValue="3"/>
+        <stringProperty id="channel.0.name" hidden="false"/>
+        <stringProperty id="channel.1.name" hidden="false"/>
+        <stringProperty id="channel.2.name" hidden="false"/>
+      </overriddenProperties>
+    </componentExtension>
+    <componentExtension componentName="USART0">
+      <overriddenProperties>
+        <boolProperty id="capability.irda" defaultValue="true"/>
+      </overriddenProperties>
+    </componentExtension>
+    <componentExtension componentName="USART1">
+      <overriddenProperties>
+        <boolProperty id="capability.i2s" defaultValue="true"/>
+      </overriddenProperties>
+    </componentExtension>
+    <componentExtension componentName="PA0">
+      <overriddenProperties>
+        <boolProperty id="capability.em4" defaultValue="true"/>
+      </overriddenProperties>
+    </componentExtension>
+    <componentExtension componentName="PE13">
+      <overriddenProperties>
+        <boolProperty id="capability.em4" defaultValue="true"/>
+      </overriddenProperties>
+    </componentExtension>
+    <componentExtension componentName="PF1">
+      <overriddenProperties>
+        <boolProperty id="capability.em4" defaultValue="true"/>
+      </overriddenProperties>
+    </componentExtension>
+    <componentExtension componentName="PF2">
+      <overriddenProperties>
+        <boolProperty id="capability.em4" defaultValue="true"/>
+      </overriddenProperties>
+    </componentExtension>
+  </deviceExtension>
+</deviceextension:DocumentRoot>

@@ -1,0 +1,9 @@
+What's new in Bluetooth SDK 3.0.1.0
+  * Selected quality improvements and bug fixes
+
+What's new in Bluetooth SDK 3.0.0.2
+  * Integrated with Gecko Platform component-based architecture
+  * New Bluetooth stack API
+  * Support for 32 simultaneous connections
+  * Support for Randomized Advertising Channel Indexing
+  * Support for BGM220P and BGM220S modules

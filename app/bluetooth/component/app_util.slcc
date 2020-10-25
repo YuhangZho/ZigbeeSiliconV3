@@ -1,0 +1,20 @@
+id: "app_util"
+label: "Utilities"
+package: "Bluetooth"
+description: "Component that provides application utilities."
+category: "Bluetooth|Utility"
+quality: "production"
+root_path: "app/bluetooth/common/app_util"
+config_file:
+  - path: "config/app_util_config.h"
+include:
+  - path: ""
+    file_list:
+      - path: "infrastructure.h"
+source:
+  - path: "infrastructure.c"
+provides:
+  - name: "app_util"
+template_contribution:
+  - name: component_catalog
+    value: app_util

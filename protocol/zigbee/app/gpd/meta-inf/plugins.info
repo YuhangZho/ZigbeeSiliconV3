@@ -1,0 +1,153 @@
+################################################## RAIL PLUGINS ############################################################
+# This file can list directories where to load plugins from or
+# declare virtual plugins.
+# Any line that says: pluginDirectory=RELATIVE/PATH/
+# will cause appbuilder to read in that directory for plugin subdirectories.
+#
+# Virtual plugins are declared with sections:
+# plugin(xxx) {
+#   BLOCK IDENTICAL TO plugin.properties
+# }
+
+
+# pluginDirectory=../plugin/
+
+
+plugin(gpd-components) {
+  name=GPD Components
+  description=This plugin provides the Componnets for the GPD application.
+
+  category=GPD
+  qualityString=Alpha Quality
+  quality=alpha
+  includedByDefault=true
+
+  architecture=efr32
+
+  providedApis=gpd-components
+
+  root=$FRAMEWORK/../gpd/components
+
+  gpd-nv.c
+  gpd-nwk.c
+  gpd-rail.c
+  gpd-security.c
+  gpd-send-receive.c
+
+  setup(additionalFiles) {
+    PATH(ABSOLUTE):$FRAMEWORK/../gpd/components
+    PATH(ABSOLUTE):$FRAMEWORK/../../../../util/silicon_labs/silabs_core
+    PATH(ABSOLUTE):$FRAMEWORK/../../../../platform/radio/mac
+    PATH(ABSOLUTE):$FRAMEWORK/../../../../platform/common/inc
+  }
+  callbacks=$FRAMEWORK/../gpd/components/callback.info
+}
+
+plugin(command-interpreter2) {
+  name=Command Interpreter
+  description=Processes commands coming from the serial port.
+  category=I/O
+  quality=production
+  root=$FRAMEWORK/../util/serial
+
+  providedApis=command-interpreter2
+  api.command-interpreter2.header=command-interpreter2.h
+
+  requiredApis=printf,serial
+
+  command-interpreter2.c
+
+  setup(bookkeeping) {
+    init=emberCommandReaderInit
+  }
+
+  setup(commandLineConfiguration) {
+    help, emberPrintCommandTable
+  }
+}
+
+plugin(ember-minimal-printf) {
+  name=Ember Minimal Printf
+  description=This plugin provides a simplified version of printf() via the emberSerialPrintf() primitive.  The supported printf format specifiers are non-standard but require a smaller flash foot-print than standard printf.
+  category=I/O
+  quality=production
+  root=$HAL/plugin/serial
+
+  architecture=efr32,em355,em3555,em356,em357,em3581,em3582,em3585,em3586,em3587,em3588,em3591,em3592,em3595,em3596,em3597,em3598,simulation
+
+  providedApis=printf
+  requiredApis=serial
+
+  # APP_UTIL:SERIAL
+  ember-printf.c
+}
+
+
+plugin(serial) {
+  name=Serial
+  description=High-level serial communication functions.
+  category=I/O
+  quality=production
+  root=$HAL/plugin/serial
+
+  architecture=efr32,em355,em3555,em356,em357,em3581,em3582,em3585,em3586,em3587,em3588,em3591,em3592,em3595,em3596,em3597,em3598,simulation
+
+  providedApis=serial
+  providedApis.serial.header=serial.h
+
+  requiredApis=hal,printf,system-timer
+
+  setup(hwConfig) {
+    dependentHwConfModules=SERIAL,USART0,USART1,USART2,USART3,USART4,USART5,LEUART0,LEUART1
+  }
+
+  # APP_UTIL:SERIAL
+  serial.c               (efr32,em355,em3555,em356,em357,em3581,em3582,em3585,em3586,em3587,em3588,em3591,em3592,em3595,em3596,em3597,em3598,simulation)
+}
+
+plugin(ccm-encryption) {
+  name=CCM* Encryption
+  description=This plugin provides the AES-CCM* api for encryption, decryption, and Message Integrity Authentication.  Implementation can be provided by the mbedTLS framework, or through software
+
+  category=Utility
+  qualityString=working
+  quality=working
+  includedByDefault=true
+
+  root=$FRAMEWORK/../../stack/framework/
+  ccm-star.c
+  $EMLIB/src/em_crypto.c
+
+  requiredApis=aes
+  providedApis=ccm-star
+  options=softwareCcm,mbedtlsCcm
+  conditions=singleton-deps,mbedtlsProvidesCcm
+
+  softwareCcm.name=AES-CCM Software Implementation
+  softwareCcm.description=Use a software implementation of AES-CCM
+  softwareCcm.type=BOOLEAN
+  softwareCcm.default=true
+  softwareCcm.macro=USE_SOFTWARE_CCM
+
+  mbedtlsCcm.name=mbedTLS Implementation
+  mbedtlsCcm.description=Use the mbedTLS framework to implement AES-CCM
+  mbedtlsCcm.type=BOOLEAN
+  mbedtlsCcm.default=false
+  mbedtlsCcm.macro=USE_MBEDTLS_CCM
+
+  singleton-deps.expression=((softwareCcm && !mbedtlsCcm) || (mbedtlsCcm && !softwareCcm))
+  singleton-deps.message=must pick exactly one (1) option between software and mbedtls
+
+  mbedtlsProvidesCcm.expression=!(!mbedtlsCcm && conf.pluginService().isFeatureEnabled("mbedtls/ccm"))
+  mbedtlsProvidesCcm.message=Mbed TLS provides CCM support, must pick mbedtls support in ccm-encryption plugin.
+
+  setup(pluginService) {
+    mbedtls {
+      # Switch on mbed TLS support for AES, CCM and Cipher
+      requiresIf(mbedtlsCcm): aes
+      requiresIf(mbedtlsCcm): ccm
+      requiresIf(mbedtlsCcm): cipher
+    }
+  }
+}
+

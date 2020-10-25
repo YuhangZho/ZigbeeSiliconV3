@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="ASCII"?>
+<model:MDescriptors xmlns:model="http://www.silabs.com/ss/Studio.ecore">
+  <descriptors name="ot-ble-dmp" label="ot-ble-dmp" description="This is a simple application to test DMP with OpenThread and Bluetooth running on FreeRTOS.">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="sample-apps/ot-ble-dmp/ot-ble-dmp.slcp"/>
+    <properties key="boardCompatibility" value="brd4150a brd4150b brd4150c brd4151a brd4152a brd4153a brd4154a brd4155a brd4158a brd4159a brd4161a brd4162a brd4163a brd4164a brd4165b brd4166a brd4167a brd4168a brd4169a brd4169b brd4170a brd4171a brd4172a brd4172b brd4173a brd4174a brd4174b brd4175a brd4176a brd4178a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4300b brd4304a brd4305d brd4305e brd4306c brd4306d brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32mg12p.* .*efr32mg13p.* .*efr32mg14p.* .*efr32mg1p.* .*efr32mg21.* .*mgm1.* .*mgm12.* .*mgm13.* .*mgm21.*"/>
+    <properties key="category" value="OpenThread Examples"/>
+  </descriptors>
+  <descriptors name="ot-cli-ftd" label="ot-cli-ftd" description="This is a very simple CLI application to test the Openthread stack on a Full Thread Device.">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="sample-apps/ot-cli-ftd/ot-cli-ftd.slcp"/>
+    <properties key="boardCompatibility" value="brd4150a brd4150b brd4150c brd4151a brd4152a brd4153a brd4154a brd4155a brd4158a brd4159a brd4161a brd4162a brd4163a brd4164a brd4165b brd4166a brd4167a brd4168a brd4169a brd4169b brd4170a brd4171a brd4172a brd4172b brd4173a brd4174a brd4174b brd4175a brd4176a brd4178a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4300b brd4304a brd4305d brd4305e brd4306c brd4306d brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32mg12p.* .*efr32mg13p.* .*efr32mg14p.* .*efr32mg1p.* .*efr32mg21.* .*mgm1.* .*mgm12.* .*mgm13.* .*mgm21.*"/>
+    <properties key="category" value="OpenThread Examples"/>
+  </descriptors>
+  <descriptors name="ot-cli-mtd" label="ot-cli-mtd" description="This is a very simple CLI application to test the Openthread stack on a Minimal Thread Device.">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="sample-apps/ot-cli-mtd/ot-cli-mtd.slcp"/>
+    <properties key="boardCompatibility" value="brd4150a brd4150b brd4150c brd4151a brd4152a brd4153a brd4154a brd4155a brd4158a brd4159a brd4161a brd4162a brd4163a brd4164a brd4165b brd4166a brd4167a brd4168a brd4169a brd4169b brd4170a brd4171a brd4172a brd4172b brd4173a brd4174a brd4174b brd4175a brd4176a brd4178a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4300b brd4304a brd4305d brd4305e brd4306c brd4306d brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32mg12p.* .*efr32mg13p.* .*efr32mg14p.* .*efr32mg1p.* .*efr32mg21.* .*mgm1.* .*mgm12.* .*mgm13.* .*mgm21.*"/>
+    <properties key="category" value="OpenThread Examples"/>
+  </descriptors>
+  <descriptors name="ot-ncp-ftd" label="ot-ncp-ftd" description="This is a simple OpenThread Full Thread Device NCP application.">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="sample-apps/ot-ncp-ftd/ot-ncp-ftd.slcp"/>
+    <properties key="boardCompatibility" value="brd4150a brd4150b brd4150c brd4151a brd4152a brd4153a brd4154a brd4155a brd4158a brd4159a brd4161a brd4162a brd4163a brd4164a brd4165b brd4166a brd4167a brd4168a brd4169a brd4169b brd4170a brd4171a brd4172a brd4172b brd4173a brd4174a brd4174b brd4175a brd4176a brd4178a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4300b brd4304a brd4305d brd4305e brd4306c brd4306d brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32mg12p.* .*efr32mg13p.* .*efr32mg14p.* .*efr32mg1p.* .*efr32mg21.* .*mgm1.* .*mgm12.* .*mgm13.* .*mgm21.*"/>
+    <properties key="category" value="OpenThread Examples"/>
+  </descriptors>
+  <descriptors name="ot-ncp-mtd" label="ot-ncp-mtd" description="This is a simple OpenThread Minimal Thread Device NCP application.">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="sample-apps/ot-ncp-mtd/ot-ncp-mtd.slcp"/>
+    <properties key="boardCompatibility" value="brd4150a brd4150b brd4150c brd4151a brd4152a brd4153a brd4154a brd4155a brd4158a brd4159a brd4161a brd4162a brd4163a brd4164a brd4165b brd4166a brd4167a brd4168a brd4169a brd4169b brd4170a brd4171a brd4172a brd4172b brd4173a brd4174a brd4174b brd4175a brd4176a brd4178a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4300b brd4304a brd4305d brd4305e brd4306c brd4306d brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32mg12p.* .*efr32mg13p.* .*efr32mg14p.* .*efr32mg1p.* .*efr32mg21.* .*mgm1.* .*mgm12.* .*mgm13.* .*mgm21.*"/>
+    <properties key="category" value="OpenThread Examples"/>
+  </descriptors>
+  <descriptors name="ot-rcp" label="ot-rcp" description="This is a simple OpenThread RCP application.">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="sample-apps/ot-rcp/ot-rcp.slcp"/>
+    <properties key="boardCompatibility" value="brd4150a brd4150b brd4150c brd4151a brd4152a brd4153a brd4154a brd4155a brd4158a brd4159a brd4161a brd4162a brd4163a brd4164a brd4165b brd4166a brd4167a brd4168a brd4169a brd4169b brd4170a brd4171a brd4172a brd4172b brd4173a brd4174a brd4174b brd4175a brd4176a brd4178a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4300b brd4304a brd4305d brd4305e brd4306c brd4306d brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32mg12p.* .*efr32mg13p.* .*efr32mg14p.* .*efr32mg1p.* .*efr32mg21.* .*mgm1.* .*mgm12.* .*mgm13.* .*mgm21.*"/>
+    <properties key="category" value="OpenThread Examples"/>
+  </descriptors>
+  <descriptors name="sleepy-demo-ftd" label="sleepy-demo-ftd" description="This is a sample application to start and form a Thread network on an FTD for the sleepy-demo.">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="sample-apps/sleepy-demo-ftd/sleepy-demo-ftd.slcp"/>
+    <properties key="boardCompatibility" value="brd4150a brd4150b brd4150c brd4151a brd4152a brd4153a brd4154a brd4155a brd4158a brd4159a brd4161a brd4162a brd4163a brd4164a brd4165b brd4166a brd4167a brd4168a brd4169a brd4169b brd4170a brd4171a brd4172a brd4172b brd4173a brd4174a brd4174b brd4175a brd4176a brd4178a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4300b brd4304a brd4305d brd4305e brd4306c brd4306d brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32mg12p.* .*efr32mg13p.* .*efr32mg14p.* .*efr32mg1p.* .*efr32mg21.* .*mgm1.* .*mgm12.* .*mgm13.* .*mgm21.*"/>
+    <properties key="category" value="OpenThread Examples"/>
+  </descriptors>
+  <descriptors name="sleepy-demo-mtd" label="sleepy-demo-mtd" description="This is a sample application to demonstrate Sleepy End Device behaviour on an MTD using the EFR32's low power EM2 mode.">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="sample-apps/sleepy-demo-mtd/sleepy-demo-mtd.slcp"/>
+    <properties key="boardCompatibility" value="brd4150a brd4150b brd4150c brd4151a brd4152a brd4153a brd4154a brd4155a brd4158a brd4159a brd4161a brd4162a brd4163a brd4164a brd4165b brd4166a brd4167a brd4168a brd4169a brd4169b brd4170a brd4171a brd4172a brd4172b brd4173a brd4174a brd4174b brd4175a brd4176a brd4178a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4300b brd4304a brd4305d brd4305e brd4306c brd4306d brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32mg12p.* .*efr32mg13p.* .*efr32mg14p.* .*efr32mg1p.* .*efr32mg21.* .*mgm1.* .*mgm12.* .*mgm13.* .*mgm21.*"/>
+    <properties key="category" value="OpenThread Examples"/>
+  </descriptors>
+</model:MDescriptors>

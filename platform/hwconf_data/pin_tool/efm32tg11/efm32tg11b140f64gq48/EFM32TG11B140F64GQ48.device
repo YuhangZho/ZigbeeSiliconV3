@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<device:DocumentRoot xmlns:device="http://www.silabs.com/ss/hwconfig/device.ecore">
+  <device description="" label="EFM32TG11B140F64GQ48" name="pin_tool.EFM32TG11B140F64GQ48" partId="mcu.arm.efm32.tg11.efm32tg11b140f64gq48" deviceExtensionIdRef="pin_tool.efm32.efm32tg11.efm32tg11b140f64gq48.extension" revision="A" singleMode="true">
+    <powerModel/>
+    <portIo componentIdRef="pin_tool.efm32.efm32tg11.efm32tg11b140f64gq48.portio" name="PORTIO" revision="A">
+      <crossBars/>
+      <interfaceToPinLists/>
+      <portBanks>
+        <portBank componentIdRef="pin_tool.efm32.efm32tg11.port" displayName="Port A" name="gpioPortA" revision="A" index="0">
+          <pin componentIdRef="pin_tool.efm32.efm32tg11.pin" displayName="PA0" name="PA0" index="0"/>
+          <pin componentIdRef="pin_tool.efm32.efm32tg11.pin" displayName="PA1" name="PA1" index="1"/>
+          <pin componentIdRef="pin_tool.efm32.efm32tg11.pin" displayName="PA2" name="PA2" index="2"/>
+          <pin componentIdRef="pin_tool.efm32.efm32tg11.pin" displayName="PA8" name="PA8" index="8"/>
+          <pin componentIdRef="pin_tool.efm32.efm32tg11.pin" displayName="PA9" name="PA9" index="9"/>
+          <pin componentIdRef="pin_tool.efm32.efm32tg11.pin" displayName="PA10" name="PA10" index="10"/>
+        </portBank>
+        <portBank componentIdRef="pin_tool.efm32.efm32tg11.port" displayName="Port B" name="gpioPortB" revision="A" index="1">
+          <pin componentIdRef="pin_tool.efm32.efm32tg11.pin" displayName="PB7" name="PB7" index="7"/>
+          <pin componentIdRef="pin_tool.efm32.efm32tg11.pin" displayName="PB8" name="PB8" index="8"/>
+          <pin componentIdRef="pin_tool.efm32.efm32tg11.pin" displayName="PB11" name="PB11" index="11"/>
+          <pin componentIdRef="pin_tool.efm32.efm32tg11.pin" displayName="PB13" name="PB13" index="13"/>
+          <pin componentIdRef="pin_tool.efm32.efm32tg11.pin" displayName="PB14" name="PB14" index="14"/>
+        </portBank>
+        <portBank componentIdRef="pin_tool.efm32.efm32tg11.port" displayName="Port C" name="gpioPortC" revision="A" index="2">
+          <pin componentIdRef="pin_tool.efm32.efm32tg11.pin" displayName="PC0" name="PC0" index="0"/>
+          <pin componentIdRef="pin_tool.efm32.efm32tg11.pin" displayName="PC1" name="PC1" index="1"/>
+          <pin componentIdRef="pin_tool.efm32.efm32tg11.pin" displayName="PC2" name="PC2" index="2"/>
+          <pin componentIdRef="pin_tool.efm32.efm32tg11.pin" displayName="PC3" name="PC3" index="3"/>
+          <pin componentIdRef="pin_tool.efm32.efm32tg11.pin" displayName="PC4" name="PC4" index="4"/>
+          <pin componentIdRef="pin_tool.efm32.efm32tg11.pin" displayName="PC8" name="PC8" index="8"/>
+          <pin componentIdRef="pin_tool.efm32.efm32tg11.pin" displayName="PC9" name="PC9" index="9"/>
+          <pin componentIdRef="pin_tool.efm32.efm32tg11.pin" displayName="PC10" name="PC10" index="10"/>
+          <pin componentIdRef="pin_tool.efm32.efm32tg11.pin" displayName="PC11" name="PC11" index="11"/>
+          <pin componentIdRef="pin_tool.efm32.efm32tg11.pin" displayName="PC13" name="PC13" index="13"/>
+          <pin componentIdRef="pin_tool.efm32.efm32tg11.pin" displayName="PC14" name="PC14" index="14"/>
+          <pin componentIdRef="pin_tool.efm32.efm32tg11.pin" displayName="PC15" name="PC15" index="15"/>
+        </portBank>
+        <portBank componentIdRef="pin_tool.efm32.efm32tg11.port" displayName="Port D" name="gpioPortD" revision="A" index="3">
+          <pin componentIdRef="pin_tool.efm32.efm32tg11.pin" displayName="PD4" name="PD4" index="4"/>
+          <pin componentIdRef="pin_tool.efm32.efm32tg11.pin" displayName="PD5" name="PD5" index="5"/>
+          <pin componentIdRef="pin_tool.efm32.efm32tg11.pin" displayName="PD6" name="PD6" index="6"/>
+          <pin componentIdRef="pin_tool.efm32.efm32tg11.pin" displayName="PD7" name="PD7" index="7"/>
+        </portBank>
+        <portBank componentIdRef="pin_tool.efm32.efm32tg11.port" displayName="Port E" name="gpioPortE" revision="A" index="4">
+          <pin componentIdRef="pin_tool.efm32.efm32tg11.pin" displayName="PE10" name="PE10" index="10"/>
+          <pin componentIdRef="pin_tool.efm32.efm32tg11.pin" displayName="PE11" name="PE11" index="11"/>
+          <pin componentIdRef="pin_tool.efm32.efm32tg11.pin" displayName="PE12" name="PE12" index="12"/>
+          <pin componentIdRef="pin_tool.efm32.efm32tg11.pin" displayName="PE13" name="PE13" index="13"/>
+        </portBank>
+        <portBank componentIdRef="pin_tool.efm32.efm32tg11.port" displayName="Port F" name="gpioPortF" revision="A" index="5">
+          <pin componentIdRef="pin_tool.efm32.efm32tg11.pin" displayName="PF0" name="PF0" index="0"/>
+          <pin componentIdRef="pin_tool.efm32.efm32tg11.pin" displayName="PF1" name="PF1" index="1"/>
+          <pin componentIdRef="pin_tool.efm32.efm32tg11.pin" displayName="PF2" name="PF2" index="2"/>
+          <pin componentIdRef="pin_tool.efm32.efm32tg11.pin" displayName="PF3" name="PF3" index="3"/>
+          <pin componentIdRef="pin_tool.efm32.efm32tg11.pin" displayName="PF4" name="PF4" index="4"/>
+          <pin componentIdRef="pin_tool.efm32.efm32tg11.pin" displayName="PF5" name="PF5" index="5"/>
+        </portBank>
+      </portBanks>
+    </portIo>
+    <pinOut description="48-pin QFP, 7x7" indicatorLocation="topleft" package="QFP" padDescription="GND" subtitle="(top view)">
+      <pin defaultLabel="PA0" location="left:0" number="1" portBankIndex="0" pinIndex="0"/>
+      <pin defaultLabel="PA1" location="left:1" number="2" portBankIndex="0" pinIndex="1"/>
+      <pin defaultLabel="PA2" location="left:2" number="3" portBankIndex="0" pinIndex="2"/>
+      <pin defaultLabel="IOVDD0" location="left:3" number="4"/>
+      <pin defaultLabel="VSS" location="left:4" number="5"/>
+      <pin defaultLabel="PC0" location="left:5" number="6" portBankIndex="2" pinIndex="0"/>
+      <pin defaultLabel="PC1" location="left:6" number="7" portBankIndex="2" pinIndex="1"/>
+      <pin defaultLabel="PC2" location="left:7" number="8" portBankIndex="2" pinIndex="2"/>
+      <pin defaultLabel="PC3" location="left:8" number="9" portBankIndex="2" pinIndex="3"/>
+      <pin defaultLabel="PC4" location="left:9" number="10" portBankIndex="2" pinIndex="4"/>
+      <pin defaultLabel="PB7" location="left:10" number="11" portBankIndex="1" pinIndex="7"/>
+      <pin defaultLabel="PB8" location="left:11" number="12" portBankIndex="1" pinIndex="8"/>
+      <pin defaultLabel="PA8" location="bottom:0" number="13" portBankIndex="0" pinIndex="8"/>
+      <pin defaultLabel="PA9" location="bottom:1" number="14" portBankIndex="0" pinIndex="9"/>
+      <pin defaultLabel="PA10" location="bottom:2" number="15" portBankIndex="0" pinIndex="10"/>
+      <pin defaultLabel="RESETn" location="bottom:3" number="16"/>
+      <pin defaultLabel="PB11" location="bottom:4" number="17" portBankIndex="1" pinIndex="11"/>
+      <pin defaultLabel="VSS" location="bottom:5" number="18"/>
+      <pin defaultLabel="AVDD" location="bottom:6" number="19"/>
+      <pin defaultLabel="PB13" location="bottom:7" number="20" portBankIndex="1" pinIndex="13"/>
+      <pin defaultLabel="PB14" location="bottom:8" number="21" portBankIndex="1" pinIndex="14"/>
+      <pin defaultLabel="IOVDD0" location="bottom:9" number="22"/>
+      <pin defaultLabel="AVDD" location="bottom:10" number="23"/>
+      <pin defaultLabel="PD4" location="bottom:11" number="24" portBankIndex="3" pinIndex="4"/>
+      <pin defaultLabel="PD5" location="right:0" number="25" portBankIndex="3" pinIndex="5"/>
+      <pin defaultLabel="PD6" location="right:1" number="26" portBankIndex="3" pinIndex="6"/>
+      <pin defaultLabel="PD7" location="right:2" number="27" portBankIndex="3" pinIndex="7"/>
+      <pin defaultLabel="DVDD" location="right:3" number="28"/>
+      <pin defaultLabel="DECOUPLE" location="right:4" number="29"/>
+      <pin defaultLabel="PC8" location="right:5" number="30" portBankIndex="2" pinIndex="8"/>
+      <pin defaultLabel="PC9" location="right:6" number="31" portBankIndex="2" pinIndex="9"/>
+      <pin defaultLabel="PC10" location="right:7" number="32" portBankIndex="2" pinIndex="10"/>
+      <pin defaultLabel="PC11" location="right:8" number="33" portBankIndex="2" pinIndex="11"/>
+      <pin defaultLabel="PC13" location="right:9" number="34" portBankIndex="2" pinIndex="13"/>
+      <pin defaultLabel="PC14" location="right:10" number="35" portBankIndex="2" pinIndex="14"/>
+      <pin defaultLabel="PC15" location="right:11" number="36" portBankIndex="2" pinIndex="15"/>
+      <pin defaultLabel="PF0" location="top:0" number="37" portBankIndex="5" pinIndex="0"/>
+      <pin defaultLabel="PF1" location="top:1" number="38" portBankIndex="5" pinIndex="1"/>
+      <pin defaultLabel="PF2" location="top:2" number="39" portBankIndex="5" pinIndex="2"/>
+      <pin defaultLabel="PF3" location="top:3" number="40" portBankIndex="5" pinIndex="3"/>
+      <pin defaultLabel="PF4" location="top:4" number="41" portBankIndex="5" pinIndex="4"/>
+      <pin defaultLabel="PF5" location="top:5" number="42" portBankIndex="5" pinIndex="5"/>
+      <pin defaultLabel="IOVDD0" location="top:6" number="43"/>
+      <pin defaultLabel="VSS" location="top:7" number="44"/>
+      <pin defaultLabel="PE10" location="top:8" number="45" portBankIndex="4" pinIndex="10"/>
+      <pin defaultLabel="PE11" location="top:9" number="46" portBankIndex="4" pinIndex="11"/>
+      <pin defaultLabel="PE12" location="top:10" number="47" portBankIndex="4" pinIndex="12"/>
+      <pin defaultLabel="PE13" location="top:11" number="48" portBankIndex="4" pinIndex="13"/>
+    </pinOut>
+    <peripherals>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.acmp" displayName="ACMP0" name="ACMP0" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.acmp" displayName="ACMP1" name="ACMP1" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.adc" displayName="ADC0" name="ADC0" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.aport" displayName="APORT" name="APORT" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.bu" displayName="BU" name="BU" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.can" displayName="CAN0" name="CAN0" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.cmu" displayName="CMU" name="CMU" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.cryotimer" displayName="CRYOTIMER" name="CRYOTIMER" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.crypto" displayName="CRYPTO0" name="CRYPTO0" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.csen" displayName="CSEN" name="CSEN" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.dbg" displayName="DBG" name="DBG" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.emu" displayName="EMU" name="EMU" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.gpcrc" displayName="GPCRC" name="GPCRC" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.gpio" displayName="GPIO" name="GPIO" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.i2c" displayName="I2C0" name="I2C0" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.i2c" displayName="I2C1" name="I2C1" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.ldma" displayName="LDMA" name="LDMA" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.lesense" displayName="LESENSE" name="LESENSE" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.letimer" displayName="LETIMER0" name="LETIMER0" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.leuart" displayName="LEUART0" name="LEUART0" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.lfxo" displayName="LFXO" name="LFXO" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.mtb" displayName="MTB" name="MTB" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.opa0" displayName="OPA0" name="OPA0" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.opa1" displayName="OPA1" name="OPA1" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.opa2" displayName="OPA2" name="OPA2" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.opa3" displayName="OPA3" name="OPA3" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.pcnt" displayName="PCNT0" name="PCNT0" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.prs.ch0" displayName="PRS Channel CH0" name="PRS.CH0" revision="A" category="PRS" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.prs.ch1" displayName="PRS Channel CH1" name="PRS.CH1" revision="A" category="PRS" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.prs.ch2" displayName="PRS Channel CH2" name="PRS.CH2" revision="A" category="PRS" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.prs.ch3" displayName="PRS Channel CH3" name="PRS.CH3" revision="A" category="PRS" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.prs.ch4" displayName="PRS Channel CH4" name="PRS.CH4" revision="A" category="PRS" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.prs.ch5" displayName="PRS Channel CH5" name="PRS.CH5" revision="A" category="PRS" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.prs.ch6" displayName="PRS Channel CH6" name="PRS.CH6" revision="A" category="PRS" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.prs.ch7" displayName="PRS Channel CH7" name="PRS.CH7" revision="A" category="PRS" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.rtcc" displayName="RTCC" name="RTCC" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.smu" displayName="SMU" name="SMU" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.timer" displayName="TIMER0" name="TIMER0" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.timer" displayName="TIMER1" name="TIMER1" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.trng" displayName="TRNG0" name="TRNG0" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.usart" displayName="UART0" name="UART0" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.usart" displayName="USART0" name="USART0" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.usart" displayName="USART1" name="USART1" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.usart" displayName="USART2" name="USART2" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.usart" displayName="USART3" name="USART3" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.vdac" displayName="VDAC0" name="VDAC0" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.wdog" displayName="WDOG0" name="WDOG0" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.wfxo" displayName="WFXO" name="WFXO" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.timer" displayName="WTIMER0" name="WTIMER0" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.efm32.efm32tg11.timer" displayName="WTIMER1" name="WTIMER1" revision="A" category="Other" hidden="false"/>
+    </peripherals>
+    <script uri="../../script/entrypoint.py">
+      <path>../../script</path>
+    </script>
+    <sourceMappings initialGroup="main_template">
+      <sourceMapping uri="../../script/generator/source_generator.srcmap"/>
+    </sourceMappings>
+  </device>
+</device:DocumentRoot>

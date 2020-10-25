@@ -1,0 +1,7 @@
+var searchData=
+[
+  ['data',['data',['../structuint8array.html#a6d9567b478549b3de2320751b34b533f',1,'uint8array::data()'],['../structbyte__array.html#aee7161a0b6630dcf56068a537ea76c57',1,'byte_array::data()'],['../structuuid__128.html#a9f76ac637112f3c966050df06d803513',1,'uuid_128::data()'],['../structaes__key__128.html#ade9b32f16f9392c4a487027766105540',1,'aes_key_128::data()'],['../structsl__bt__uuid__64__t.html#a4b47b6b700f7c775bec3f8bb8195fb16',1,'sl_bt_uuid_64_t::data()'],['../group__sl__bt__evt__system__error.html#ad3ae2e13e84d3fee8d1dd7841f1bf14c',1,'sl_bt_evt_system_error_s::data()'],['../group__sl__bt__evt__scanner__scan__report.html#a00a2c78b1e2b2c7d2d0843957ae106a3',1,'sl_bt_evt_scanner_scan_report_s::data()'],['../group__sl__bt__evt__sync__data.html#aeb959bea0ae0114314a9e8a1ed800c29',1,'sl_bt_evt_sync_data_s::data()'],['../structsl__bt__msg.html#a5b2cd22e8f6e5bed5d0bbf759093047b',1,'sl_bt_msg::data()']]],
+  ['data_5fstatus',['data_status',['../group__sl__bt__evt__sync__data.html#a14308252b4b30afd85b058dfe8110eb6',1,'sl_bt_evt_sync_data_s']]],
+  ['descriptor',['descriptor',['../group__sl__bt__evt__gatt__descriptor.html#a4d91feb5d985d6d7e81d96bc531c7f68',1,'sl_bt_evt_gatt_descriptor_s::descriptor()'],['../group__sl__bt__evt__gatt__descriptor__value.html#aa4bfc8e6da5f1b1ba349dd87f30c77ce',1,'sl_bt_evt_gatt_descriptor_value_s::descriptor()']]],
+  ['device_20firmware_20update',['Device Firmware Update',['../group__sl__bt__dfu.html',1,'']]]
+];

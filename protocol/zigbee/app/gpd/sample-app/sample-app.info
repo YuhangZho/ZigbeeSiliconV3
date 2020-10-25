@@ -1,0 +1,17 @@
+gpd-switch {
+  name=Green Power On/Off Switch
+  dir=gpd-switch
+  isc=gpd-switch/gpd-switch.isc
+  include=.internal_hwconfig
+  include=gpd-switch-callbacks.c
+  This is a Green Power On/Off Switch Device that pairs with a GP Combo or Sink Light and controls its operation.
+}
+
+gpd-sensor {
+  name=Green Power Sensor Device
+  dir=gpd-sensor
+  isc=gpd-sensor/gpd-sensor.isc
+  include=.internal_hwconfig
+  include=gpd-sensor-callbacks.c
+  This is a Green Power Sensor Device that pairs with a GP Combo or Sink device and sends gpd reports periodically.
+}

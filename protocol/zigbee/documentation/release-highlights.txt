@@ -1,0 +1,9 @@
+What's new in the Zigbee EmberZNet SDK 6.8.1.0
+  * Selected quality improvements and bug fixes
+
+What's new in the Zigbee EmberZNet SDK 6.8.0.2
+  * Concurrent support for secure and non-secure PAN 
+  * Expanded size of reporting table to 1024 entries
+  * Green Power sample application updates
+
+

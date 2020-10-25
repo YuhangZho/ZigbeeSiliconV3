@@ -1,0 +1,24 @@
+What's new in Gecko Platform 3.0.1.0
+* Example Applications
+  * Added applications to demonstrate using Secure Element Manager
+* Drivers
+  * NVM3: Improved worst case execution time of nvm3_repack()
+
+What's new in Gecko Platform 3.0.0.2
+* Services
+  * New Power Manager service replacing SLEEP driver
+  * Deprecated RTCDRV in favor of Sleep Timer service
+* Security
+  * Mbed TLS updated to v2.16.6
+  * Added hardware acceleration for AES-GCM
+* Gecko Bootloader
+  * Added rollback prevention feature
+  * Upgrade process speedup
+* RAIL Library
+  * Studio V5/GSDK 3.0 support for RAIL
+  * New channel hopping (Preamble Sense) and low duty cycle (LDC) modes to help performance in noisy environments 
+  * Optional support for the Silicon Labs Power Manager
+  * New and updated Sample Applications
+
+
+

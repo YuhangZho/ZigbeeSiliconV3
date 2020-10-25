@@ -1,0 +1,283 @@
+<?xml version="1.0" ?>
+<demos>
+	<demo label="ot-ble-dmp" name="brd4161a.demo.ot-ble-dmp">
+		<property key="blurb" value="ot-ble-dmp"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4161a"/>
+		<property key="imageFile" value="demos/ot-ble-dmp/ot-ble-dmp-brd4161a.s37"/>
+		<description>This is a simple application to test DMP with OpenThread and Bluetooth running on FreeRTOS.</description>
+	</demo>
+	<demo label="ot-ble-dmp" name="brd4166a.demo.ot-ble-dmp">
+		<property key="blurb" value="ot-ble-dmp"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4166a"/>
+		<property key="imageFile" value="demos/ot-ble-dmp/ot-ble-dmp-brd4166a.s37"/>
+		<description>This is a simple application to test DMP with OpenThread and Bluetooth running on FreeRTOS.</description>
+	</demo>
+	<demo label="ot-ble-dmp" name="brd4168a.demo.ot-ble-dmp">
+		<property key="blurb" value="ot-ble-dmp"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4168a"/>
+		<property key="imageFile" value="demos/ot-ble-dmp/ot-ble-dmp-brd4168a.s37"/>
+		<description>This is a simple application to test DMP with OpenThread and Bluetooth running on FreeRTOS.</description>
+	</demo>
+	<demo label="ot-ble-dmp" name="brd4180a.demo.ot-ble-dmp">
+		<property key="blurb" value="ot-ble-dmp"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4180a"/>
+		<property key="imageFile" value="demos/ot-ble-dmp/ot-ble-dmp-brd4180a.s37"/>
+		<description>This is a simple application to test DMP with OpenThread and Bluetooth running on FreeRTOS.</description>
+	</demo>
+	<demo label="ot-ble-dmp" name="brd4304a.demo.ot-ble-dmp">
+		<property key="blurb" value="ot-ble-dmp"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4304a"/>
+		<property key="imageFile" value="demos/ot-ble-dmp/ot-ble-dmp-brd4304a.s37"/>
+		<description>This is a simple application to test DMP with OpenThread and Bluetooth running on FreeRTOS.</description>
+	</demo>
+	<demo label="ot-cli-ftd" name="brd4161a.demo.ot-cli-ftd">
+		<property key="blurb" value="ot-cli-ftd"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4161a"/>
+		<property key="imageFile" value="demos/ot-cli-ftd/ot-cli-ftd-brd4161a.s37"/>
+		<description>This is a very simple CLI application to test the Openthread stack on a Full Thread Device.</description>
+	</demo>
+	<demo label="ot-cli-ftd" name="brd4166a.demo.ot-cli-ftd">
+		<property key="blurb" value="ot-cli-ftd"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4166a"/>
+		<property key="imageFile" value="demos/ot-cli-ftd/ot-cli-ftd-brd4166a.s37"/>
+		<description>This is a very simple CLI application to test the Openthread stack on a Full Thread Device.</description>
+	</demo>
+	<demo label="ot-cli-ftd" name="brd4168a.demo.ot-cli-ftd">
+		<property key="blurb" value="ot-cli-ftd"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4168a"/>
+		<property key="imageFile" value="demos/ot-cli-ftd/ot-cli-ftd-brd4168a.s37"/>
+		<description>This is a very simple CLI application to test the Openthread stack on a Full Thread Device.</description>
+	</demo>
+	<demo label="ot-cli-ftd" name="brd4180a.demo.ot-cli-ftd">
+		<property key="blurb" value="ot-cli-ftd"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4180a"/>
+		<property key="imageFile" value="demos/ot-cli-ftd/ot-cli-ftd-brd4180a.s37"/>
+		<description>This is a very simple CLI application to test the Openthread stack on a Full Thread Device.</description>
+	</demo>
+	<demo label="ot-cli-ftd" name="brd4304a.demo.ot-cli-ftd">
+		<property key="blurb" value="ot-cli-ftd"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4304a"/>
+		<property key="imageFile" value="demos/ot-cli-ftd/ot-cli-ftd-brd4304a.s37"/>
+		<description>This is a very simple CLI application to test the Openthread stack on a Full Thread Device.</description>
+	</demo>
+	<demo label="ot-cli-mtd" name="brd4161a.demo.ot-cli-mtd">
+		<property key="blurb" value="ot-cli-mtd"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4161a"/>
+		<property key="imageFile" value="demos/ot-cli-mtd/ot-cli-mtd-brd4161a.s37"/>
+		<description>This is a very simple CLI application to test the Openthread stack on a Minimal Thread Device.</description>
+	</demo>
+	<demo label="ot-cli-mtd" name="brd4166a.demo.ot-cli-mtd">
+		<property key="blurb" value="ot-cli-mtd"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4166a"/>
+		<property key="imageFile" value="demos/ot-cli-mtd/ot-cli-mtd-brd4166a.s37"/>
+		<description>This is a very simple CLI application to test the Openthread stack on a Minimal Thread Device.</description>
+	</demo>
+	<demo label="ot-cli-mtd" name="brd4168a.demo.ot-cli-mtd">
+		<property key="blurb" value="ot-cli-mtd"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4168a"/>
+		<property key="imageFile" value="demos/ot-cli-mtd/ot-cli-mtd-brd4168a.s37"/>
+		<description>This is a very simple CLI application to test the Openthread stack on a Minimal Thread Device.</description>
+	</demo>
+	<demo label="ot-cli-mtd" name="brd4180a.demo.ot-cli-mtd">
+		<property key="blurb" value="ot-cli-mtd"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4180a"/>
+		<property key="imageFile" value="demos/ot-cli-mtd/ot-cli-mtd-brd4180a.s37"/>
+		<description>This is a very simple CLI application to test the Openthread stack on a Minimal Thread Device.</description>
+	</demo>
+	<demo label="ot-cli-mtd" name="brd4304a.demo.ot-cli-mtd">
+		<property key="blurb" value="ot-cli-mtd"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4304a"/>
+		<property key="imageFile" value="demos/ot-cli-mtd/ot-cli-mtd-brd4304a.s37"/>
+		<description>This is a very simple CLI application to test the Openthread stack on a Minimal Thread Device.</description>
+	</demo>
+	<demo label="ot-ncp-ftd" name="brd4161a.demo.ot-ncp-ftd">
+		<property key="blurb" value="ot-ncp-ftd"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4161a"/>
+		<property key="imageFile" value="demos/ot-ncp-ftd/ot-ncp-ftd-brd4161a.s37"/>
+		<description>This is a simple OpenThread Full Thread Device NCP application.</description>
+	</demo>
+	<demo label="ot-ncp-ftd" name="brd4166a.demo.ot-ncp-ftd">
+		<property key="blurb" value="ot-ncp-ftd"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4166a"/>
+		<property key="imageFile" value="demos/ot-ncp-ftd/ot-ncp-ftd-brd4166a.s37"/>
+		<description>This is a simple OpenThread Full Thread Device NCP application.</description>
+	</demo>
+	<demo label="ot-ncp-ftd" name="brd4168a.demo.ot-ncp-ftd">
+		<property key="blurb" value="ot-ncp-ftd"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4168a"/>
+		<property key="imageFile" value="demos/ot-ncp-ftd/ot-ncp-ftd-brd4168a.s37"/>
+		<description>This is a simple OpenThread Full Thread Device NCP application.</description>
+	</demo>
+	<demo label="ot-ncp-ftd" name="brd4180a.demo.ot-ncp-ftd">
+		<property key="blurb" value="ot-ncp-ftd"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4180a"/>
+		<property key="imageFile" value="demos/ot-ncp-ftd/ot-ncp-ftd-brd4180a.s37"/>
+		<description>This is a simple OpenThread Full Thread Device NCP application.</description>
+	</demo>
+	<demo label="ot-ncp-ftd" name="brd4304a.demo.ot-ncp-ftd">
+		<property key="blurb" value="ot-ncp-ftd"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4304a"/>
+		<property key="imageFile" value="demos/ot-ncp-ftd/ot-ncp-ftd-brd4304a.s37"/>
+		<description>This is a simple OpenThread Full Thread Device NCP application.</description>
+	</demo>
+	<demo label="ot-ncp-mtd" name="brd4161a.demo.ot-ncp-mtd">
+		<property key="blurb" value="ot-ncp-mtd"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4161a"/>
+		<property key="imageFile" value="demos/ot-ncp-mtd/ot-ncp-mtd-brd4161a.s37"/>
+		<description>This is a simple OpenThread Minimal Thread Device NCP application.</description>
+	</demo>
+	<demo label="ot-ncp-mtd" name="brd4166a.demo.ot-ncp-mtd">
+		<property key="blurb" value="ot-ncp-mtd"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4166a"/>
+		<property key="imageFile" value="demos/ot-ncp-mtd/ot-ncp-mtd-brd4166a.s37"/>
+		<description>This is a simple OpenThread Minimal Thread Device NCP application.</description>
+	</demo>
+	<demo label="ot-ncp-mtd" name="brd4168a.demo.ot-ncp-mtd">
+		<property key="blurb" value="ot-ncp-mtd"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4168a"/>
+		<property key="imageFile" value="demos/ot-ncp-mtd/ot-ncp-mtd-brd4168a.s37"/>
+		<description>This is a simple OpenThread Minimal Thread Device NCP application.</description>
+	</demo>
+	<demo label="ot-ncp-mtd" name="brd4180a.demo.ot-ncp-mtd">
+		<property key="blurb" value="ot-ncp-mtd"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4180a"/>
+		<property key="imageFile" value="demos/ot-ncp-mtd/ot-ncp-mtd-brd4180a.s37"/>
+		<description>This is a simple OpenThread Minimal Thread Device NCP application.</description>
+	</demo>
+	<demo label="ot-ncp-mtd" name="brd4304a.demo.ot-ncp-mtd">
+		<property key="blurb" value="ot-ncp-mtd"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4304a"/>
+		<property key="imageFile" value="demos/ot-ncp-mtd/ot-ncp-mtd-brd4304a.s37"/>
+		<description>This is a simple OpenThread Minimal Thread Device NCP application.</description>
+	</demo>
+	<demo label="ot-rcp" name="brd4161a.demo.ot-rcp">
+		<property key="blurb" value="ot-rcp"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4161a"/>
+		<property key="imageFile" value="demos/ot-rcp/ot-rcp-brd4161a.s37"/>
+		<description>This is a simple OpenThread RCP application.</description>
+	</demo>
+	<demo label="ot-rcp" name="brd4166a.demo.ot-rcp">
+		<property key="blurb" value="ot-rcp"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4166a"/>
+		<property key="imageFile" value="demos/ot-rcp/ot-rcp-brd4166a.s37"/>
+		<description>This is a simple OpenThread RCP application.</description>
+	</demo>
+	<demo label="ot-rcp" name="brd4168a.demo.ot-rcp">
+		<property key="blurb" value="ot-rcp"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4168a"/>
+		<property key="imageFile" value="demos/ot-rcp/ot-rcp-brd4168a.s37"/>
+		<description>This is a simple OpenThread RCP application.</description>
+	</demo>
+	<demo label="ot-rcp" name="brd4180a.demo.ot-rcp">
+		<property key="blurb" value="ot-rcp"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4180a"/>
+		<property key="imageFile" value="demos/ot-rcp/ot-rcp-brd4180a.s37"/>
+		<description>This is a simple OpenThread RCP application.</description>
+	</demo>
+	<demo label="ot-rcp" name="brd4304a.demo.ot-rcp">
+		<property key="blurb" value="ot-rcp"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4304a"/>
+		<property key="imageFile" value="demos/ot-rcp/ot-rcp-brd4304a.s37"/>
+		<description>This is a simple OpenThread RCP application.</description>
+	</demo>
+	<demo label="sleepy-demo-ftd" name="brd4161a.demo.sleepy-demo-ftd">
+		<property key="blurb" value="sleepy-demo-ftd"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4161a"/>
+		<property key="imageFile" value="demos/sleepy-demo-ftd/sleepy-demo-ftd-brd4161a.s37"/>
+		<description>This is a sample application to start and form a Thread network on an FTD for the sleepy-demo.</description>
+	</demo>
+	<demo label="sleepy-demo-ftd" name="brd4166a.demo.sleepy-demo-ftd">
+		<property key="blurb" value="sleepy-demo-ftd"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4166a"/>
+		<property key="imageFile" value="demos/sleepy-demo-ftd/sleepy-demo-ftd-brd4166a.s37"/>
+		<description>This is a sample application to start and form a Thread network on an FTD for the sleepy-demo.</description>
+	</demo>
+	<demo label="sleepy-demo-ftd" name="brd4168a.demo.sleepy-demo-ftd">
+		<property key="blurb" value="sleepy-demo-ftd"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4168a"/>
+		<property key="imageFile" value="demos/sleepy-demo-ftd/sleepy-demo-ftd-brd4168a.s37"/>
+		<description>This is a sample application to start and form a Thread network on an FTD for the sleepy-demo.</description>
+	</demo>
+	<demo label="sleepy-demo-ftd" name="brd4180a.demo.sleepy-demo-ftd">
+		<property key="blurb" value="sleepy-demo-ftd"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4180a"/>
+		<property key="imageFile" value="demos/sleepy-demo-ftd/sleepy-demo-ftd-brd4180a.s37"/>
+		<description>This is a sample application to start and form a Thread network on an FTD for the sleepy-demo.</description>
+	</demo>
+	<demo label="sleepy-demo-ftd" name="brd4304a.demo.sleepy-demo-ftd">
+		<property key="blurb" value="sleepy-demo-ftd"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4304a"/>
+		<property key="imageFile" value="demos/sleepy-demo-ftd/sleepy-demo-ftd-brd4304a.s37"/>
+		<description>This is a sample application to start and form a Thread network on an FTD for the sleepy-demo.</description>
+	</demo>
+	<demo label="sleepy-demo-mtd" name="brd4161a.demo.sleepy-demo-mtd">
+		<property key="blurb" value="sleepy-demo-mtd"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4161a"/>
+		<property key="imageFile" value="demos/sleepy-demo-mtd/sleepy-demo-mtd-brd4161a.s37"/>
+		<description>This is a sample application to demonstrate Sleepy End Device behaviour on an MTD using the EFR32's low power EM2 mode.</description>
+	</demo>
+	<demo label="sleepy-demo-mtd" name="brd4166a.demo.sleepy-demo-mtd">
+		<property key="blurb" value="sleepy-demo-mtd"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4166a"/>
+		<property key="imageFile" value="demos/sleepy-demo-mtd/sleepy-demo-mtd-brd4166a.s37"/>
+		<description>This is a sample application to demonstrate Sleepy End Device behaviour on an MTD using the EFR32's low power EM2 mode.</description>
+	</demo>
+	<demo label="sleepy-demo-mtd" name="brd4168a.demo.sleepy-demo-mtd">
+		<property key="blurb" value="sleepy-demo-mtd"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4168a"/>
+		<property key="imageFile" value="demos/sleepy-demo-mtd/sleepy-demo-mtd-brd4168a.s37"/>
+		<description>This is a sample application to demonstrate Sleepy End Device behaviour on an MTD using the EFR32's low power EM2 mode.</description>
+	</demo>
+	<demo label="sleepy-demo-mtd" name="brd4180a.demo.sleepy-demo-mtd">
+		<property key="blurb" value="sleepy-demo-mtd"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4180a"/>
+		<property key="imageFile" value="demos/sleepy-demo-mtd/sleepy-demo-mtd-brd4180a.s37"/>
+		<description>This is a sample application to demonstrate Sleepy End Device behaviour on an MTD using the EFR32's low power EM2 mode.</description>
+	</demo>
+	<demo label="sleepy-demo-mtd" name="brd4304a.demo.sleepy-demo-mtd">
+		<property key="blurb" value="sleepy-demo-mtd"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4304a"/>
+		<property key="imageFile" value="demos/sleepy-demo-mtd/sleepy-demo-mtd-brd4304a.s37"/>
+		<description>This is a sample application to demonstrate Sleepy End Device behaviour on an MTD using the EFR32's low power EM2 mode.</description>
+	</demo>
+</demos>

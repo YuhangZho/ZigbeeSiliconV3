@@ -1,0 +1,26 @@
+var structEmberAfPluginPriceClientPrice =
+[
+    [ "active", "structEmberAfPluginPriceClientPrice.html#a67b2260a34e91e64a049035ed163467c", null ],
+    [ "alternateCostDelivered", "structEmberAfPluginPriceClientPrice.html#a2cdb6aa8113fed04cc04bb77d1acab4a", null ],
+    [ "alternateCostTrailingDigit", "structEmberAfPluginPriceClientPrice.html#a6f0c93cac617aee30243787850d51760", null ],
+    [ "alternateCostUnit", "structEmberAfPluginPriceClientPrice.html#aaaf9df70f77871ea2d21e9c62cbf3710", null ],
+    [ "clientEndpoint", "structEmberAfPluginPriceClientPrice.html#ac836755336f65a60e35cdc256895aeb7", null ],
+    [ "currency", "structEmberAfPluginPriceClientPrice.html#ac08256d2ffa92c918bff0efaf9c79878", null ],
+    [ "currentTime", "structEmberAfPluginPriceClientPrice.html#a569da2131ac515777bdd7c9c76dc23b9", null ],
+    [ "durationInMinutes", "structEmberAfPluginPriceClientPrice.html#a178f56f6ce05288a03b8c8934494d66e", null ],
+    [ "endTime", "structEmberAfPluginPriceClientPrice.html#a23276b5fd687f5f03001f6ae45eebc5b", null ],
+    [ "generationPrice", "structEmberAfPluginPriceClientPrice.html#a5fa814f59c1e0fca8c02d2f2ef6cc83a", null ],
+    [ "generationPriceRatio", "structEmberAfPluginPriceClientPrice.html#a9b4c1cad6c4c2ad37b7302642302b9c5", null ],
+    [ "issuerEventId", "structEmberAfPluginPriceClientPrice.html#a32203f1783e023041e455d80c9bde810", null ],
+    [ "numberOfBlockThresholds", "structEmberAfPluginPriceClientPrice.html#a50087af113269ec269024ce1a760a329", null ],
+    [ "numberOfPriceTiersAndRegisterTier", "structEmberAfPluginPriceClientPrice.html#a41e02cdacf677def56c1b6566dac785b", null ],
+    [ "price", "structEmberAfPluginPriceClientPrice.html#aab866cf673000e315c397d608e96663e", null ],
+    [ "priceControl", "structEmberAfPluginPriceClientPrice.html#a3cb61df74aa7a872442f8ab261c18b42", null ],
+    [ "priceRatio", "structEmberAfPluginPriceClientPrice.html#a327eb095fff560dae534866de6452c3c", null ],
+    [ "priceTrailingDigitAndPriceTier", "structEmberAfPluginPriceClientPrice.html#a24c9b9922c4d5fbe6506a7df30f20ab1", null ],
+    [ "providerId", "structEmberAfPluginPriceClientPrice.html#afa00b446bafbf6d16b2fe74f8737dd2d", null ],
+    [ "rateLabel", "structEmberAfPluginPriceClientPrice.html#ad2b1b7a2cb50ddecae5c5959c5cce5f0", null ],
+    [ "startTime", "structEmberAfPluginPriceClientPrice.html#a2a9bf3f07804325ae24653847a9e6a89", null ],
+    [ "unitOfMeasure", "structEmberAfPluginPriceClientPrice.html#a0e6f106b77ebf6b7ee8b95c2c9a38f5a", null ],
+    [ "valid", "structEmberAfPluginPriceClientPrice.html#a8e02f09129a3284c4c1ebca22a247192", null ]
+];

@@ -1,0 +1,20 @@
+id: app_log
+label: Log
+package: Bluetooth
+description: Component that provides logging functionality.
+category: Bluetooth|Utility
+quality: production
+root_path: app/bluetooth/common/app_log
+config_file:
+  - path: config/sl_app_log_config.h
+include:
+  - path: .
+    file_list:
+      - path: sl_app_log.h
+provides:
+  - name: app_log
+requires:
+  - name: printf
+template_contribution:
+  - name: component_catalog
+    value: app_log

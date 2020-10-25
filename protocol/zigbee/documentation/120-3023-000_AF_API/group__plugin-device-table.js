@@ -1,0 +1,15 @@
+var group__plugin_device_table =
+[
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_DEVICE_TABLE_PLUGIN_DEVICE_TABLE_CLEAR", "group__plugin-device-table.html#gad612fd88b1be8624c6b1c83fd4a986b4", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_DEVICE_TABLE_PLUGIN_DEVICE_TABLE_DISC", "group__plugin-device-table.html#ga6d1a6755137cf1dd611233a7bb120fb3", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_DEVICE_TABLE_PLUGIN_DEVICE_TABLE_IREMOVE", "group__plugin-device-table.html#gaba84e97444b2a65474427210ecb63fd9", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_DEVICE_TABLE_PLUGIN_DEVICE_TABLE_IREPAIR", "group__plugin-device-table.html#ga88f07dd68e06f4ad87c4fc0ae33b3e05", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_DEVICE_TABLE_PLUGIN_DEVICE_TABLE_ISEND", "group__plugin-device-table.html#gac1c30aa328a70e384441345477b1fbdd", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_DEVICE_TABLE_PLUGIN_DEVICE_TABLE_LEAVE", "group__plugin-device-table.html#ga50a8fd99646c49d43e52ce0c2014a0ad", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_DEVICE_TABLE_PLUGIN_DEVICE_TABLE_LOAD", "group__plugin-device-table.html#ga26b0d0173a8798ce43def64b145cf5ec", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_DEVICE_TABLE_PLUGIN_DEVICE_TABLE_PRINT", "group__plugin-device-table.html#ga06453f7d2fc7f4665e36b378f1f8cbb5", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_DEVICE_TABLE_PLUGIN_DEVICE_TABLE_REMOVE", "group__plugin-device-table.html#ga0bb12e3162482634f2e346dd59713297", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_DEVICE_TABLE_PLUGIN_DEVICE_TABLE_REPAIR", "group__plugin-device-table.html#gacb9c8797c2c8753daabc69a0ea8bee22", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_DEVICE_TABLE_PLUGIN_DEVICE_TABLE_SAVE", "group__plugin-device-table.html#ga013b3e92cbbf7c8cb648bc94f3db155d", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_DEVICE_TABLE_PLUGIN_DEVICE_TABLE_SEND", "group__plugin-device-table.html#ga061660c63b7a865175626ada53b749ce", null ]
+];

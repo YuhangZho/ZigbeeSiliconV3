@@ -1,0 +1,546 @@
+<?xml version="1.0" ?>
+<demos>
+	<demo label="Bluetooth - NCP Empty" name="brd4100a.demo.ncp_empty">
+		<property key="blurb" value="Bluetooth - NCP Empty"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4100a"/>
+		<property key="imageFile" value="demos/ncp_empty/ncp_empty-brd4100a.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-uart-bgapi/efr32bg1p232f256gm48-brd4100a/bootloader-uart-bgapi-combined.s37"/>
+		<description>Bluetooth NCP (Network Co-Processor) target application with a minimal GATT  database, that makes it possible to access  the Bluetooth stack from a host controller via UART. It provides access to the host layer via BGAPI and not to the link layer via HCI.
+</description>
+	</demo>
+	<demo label="Bluetooth - NCP Empty" name="brd4104a.demo.ncp_empty">
+		<property key="blurb" value="Bluetooth - NCP Empty"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4104a"/>
+		<property key="imageFile" value="demos/ncp_empty/ncp_empty-brd4104a.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-uart-bgapi/efr32bg13p632f512gm48-brd4104a/bootloader-uart-bgapi-combined.s37"/>
+		<description>Bluetooth NCP (Network Co-Processor) target application with a minimal GATT  database, that makes it possible to access  the Bluetooth stack from a host controller via UART. It provides access to the host layer via BGAPI and not to the link layer via HCI.
+</description>
+	</demo>
+	<demo label="Bluetooth - NCP Empty" name="brd4166a.demo.ncp_empty">
+		<property key="blurb" value="Bluetooth - NCP Empty"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4166a"/>
+		<property key="imageFile" value="demos/ncp_empty/ncp_empty-brd4166a.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-uart-bgapi/efr32mg12p332f1024gl125-brd4166a/bootloader-uart-bgapi-combined.s37"/>
+		<description>Bluetooth NCP (Network Co-Processor) target application with a minimal GATT  database, that makes it possible to access  the Bluetooth stack from a host controller via UART. It provides access to the host layer via BGAPI and not to the link layer via HCI.
+</description>
+	</demo>
+	<demo label="Bluetooth - NCP Empty" name="brd4180b.demo.ncp_empty">
+		<property key="blurb" value="Bluetooth - NCP Empty"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4180b"/>
+		<property key="imageFile" value="demos/ncp_empty/ncp_empty-brd4180b.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-uart-bgapi/efr32mg21a020f1024im32-brd4180b/bootloader-uart-bgapi.s37"/>
+		<description>Bluetooth NCP (Network Co-Processor) target application with a minimal GATT  database, that makes it possible to access  the Bluetooth stack from a host controller via UART. It provides access to the host layer via BGAPI and not to the link layer via HCI.
+</description>
+	</demo>
+	<demo label="Bluetooth - NCP Empty" name="brd4181b.demo.ncp_empty">
+		<property key="blurb" value="Bluetooth - NCP Empty"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4181b"/>
+		<property key="imageFile" value="demos/ncp_empty/ncp_empty-brd4181b.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-uart-bgapi/efr32mg21a010f1024im32-brd4181b/bootloader-uart-bgapi.s37"/>
+		<description>Bluetooth NCP (Network Co-Processor) target application with a minimal GATT  database, that makes it possible to access  the Bluetooth stack from a host controller via UART. It provides access to the host layer via BGAPI and not to the link layer via HCI.
+</description>
+	</demo>
+	<demo label="Bluetooth - NCP Empty" name="brd4182a.demo.ncp_empty">
+		<property key="blurb" value="Bluetooth - NCP Empty"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4182a"/>
+		<property key="imageFile" value="demos/ncp_empty/ncp_empty-brd4182a.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-uart-bgapi/efr32mg22c224f512im40-brd4182a/bootloader-uart-bgapi.s37"/>
+		<description>Bluetooth NCP (Network Co-Processor) target application with a minimal GATT  database, that makes it possible to access  the Bluetooth stack from a host controller via UART. It provides access to the host layer via BGAPI and not to the link layer via HCI.
+</description>
+	</demo>
+	<demo label="Bluetooth - NCP Empty" name="brd4183a.demo.ncp_empty">
+		<property key="blurb" value="Bluetooth - NCP Empty"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4183a"/>
+		<property key="imageFile" value="demos/ncp_empty/ncp_empty-brd4183a.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-uart-bgapi/efr32mg22c224f512im32-brd4183a/bootloader-uart-bgapi.s37"/>
+		<description>Bluetooth NCP (Network Co-Processor) target application with a minimal GATT  database, that makes it possible to access  the Bluetooth stack from a host controller via UART. It provides access to the host layer via BGAPI and not to the link layer via HCI.
+</description>
+	</demo>
+	<demo label="Bluetooth - NCP Empty" name="brd4184a.demo.ncp_empty">
+		<property key="blurb" value="Bluetooth - NCP Empty"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4184a"/>
+		<property key="imageFile" value="demos/ncp_empty/ncp_empty-brd4184a.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-uart-bgapi/efr32bg22c224f512im40-brd4184a/bootloader-uart-bgapi.s37"/>
+		<description>Bluetooth NCP (Network Co-Processor) target application with a minimal GATT  database, that makes it possible to access  the Bluetooth stack from a host controller via UART. It provides access to the host layer via BGAPI and not to the link layer via HCI.
+</description>
+	</demo>
+	<demo label="Bluetooth - NCP Empty" name="brd4184b.demo.ncp_empty">
+		<property key="blurb" value="Bluetooth - NCP Empty"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4184b"/>
+		<property key="imageFile" value="demos/ncp_empty/ncp_empty-brd4184b.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-uart-bgapi/efr32bg22c224f512im40-brd4184b/bootloader-uart-bgapi.s37"/>
+		<description>Bluetooth NCP (Network Co-Processor) target application with a minimal GATT  database, that makes it possible to access  the Bluetooth stack from a host controller via UART. It provides access to the host layer via BGAPI and not to the link layer via HCI.
+</description>
+	</demo>
+	<demo label="Bluetooth - NCP Empty" name="brd4305c.demo.ncp_empty">
+		<property key="blurb" value="Bluetooth - NCP Empty"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4305c"/>
+		<property key="imageFile" value="demos/ncp_empty/ncp_empty-brd4305c.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-uart-bgapi/bgm13s22f512ga-brd4305c/bootloader-uart-bgapi-combined.s37"/>
+		<description>Bluetooth NCP (Network Co-Processor) target application with a minimal GATT  database, that makes it possible to access  the Bluetooth stack from a host controller via UART. It provides access to the host layer via BGAPI and not to the link layer via HCI.
+</description>
+	</demo>
+	<demo label="Bluetooth - NCP Empty" name="brd4306a.demo.ncp_empty">
+		<property key="blurb" value="Bluetooth - NCP Empty"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4306a"/>
+		<property key="imageFile" value="demos/ncp_empty/ncp_empty-brd4306a.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-uart-bgapi/bgm13p22f512ga-brd4306a/bootloader-uart-bgapi-combined.s37"/>
+		<description>Bluetooth NCP (Network Co-Processor) target application with a minimal GATT  database, that makes it possible to access  the Bluetooth stack from a host controller via UART. It provides access to the host layer via BGAPI and not to the link layer via HCI.
+</description>
+	</demo>
+	<demo label="Bluetooth - NCP Empty" name="brd4308a.demo.ncp_empty">
+		<property key="blurb" value="Bluetooth - NCP Empty"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4308a"/>
+		<property key="imageFile" value="demos/ncp_empty/ncp_empty-brd4308a.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-uart-bgapi/mgm210pa32jia-brd4308a/bootloader-uart-bgapi.s37"/>
+		<description>Bluetooth NCP (Network Co-Processor) target application with a minimal GATT  database, that makes it possible to access  the Bluetooth stack from a host controller via UART. It provides access to the host layer via BGAPI and not to the link layer via HCI.
+</description>
+	</demo>
+	<demo label="Bluetooth - NCP Empty" name="brd4308b.demo.ncp_empty">
+		<property key="blurb" value="Bluetooth - NCP Empty"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4308b"/>
+		<property key="imageFile" value="demos/ncp_empty/ncp_empty-brd4308b.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-uart-bgapi/mgm210pa22jia-brd4308b/bootloader-uart-bgapi.s37"/>
+		<description>Bluetooth NCP (Network Co-Processor) target application with a minimal GATT  database, that makes it possible to access  the Bluetooth stack from a host controller via UART. It provides access to the host layer via BGAPI and not to the link layer via HCI.
+</description>
+	</demo>
+	<demo label="Bluetooth - NCP Empty" name="brd4310a.demo.ncp_empty">
+		<property key="blurb" value="Bluetooth - NCP Empty"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4310a"/>
+		<property key="imageFile" value="demos/ncp_empty/ncp_empty-brd4310a.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-uart-bgapi/bgm220sc12wga-brd4310a/bootloader-uart-bgapi.s37"/>
+		<description>Bluetooth NCP (Network Co-Processor) target application with a minimal GATT  database, that makes it possible to access  the Bluetooth stack from a host controller via UART. It provides access to the host layer via BGAPI and not to the link layer via HCI.
+</description>
+	</demo>
+	<demo label="Bluetooth - NCP Empty" name="brd4311a.demo.ncp_empty">
+		<property key="blurb" value="Bluetooth - NCP Empty"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4311a"/>
+		<property key="imageFile" value="demos/ncp_empty/ncp_empty-brd4311a.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-uart-bgapi/bgm220pc22hna-brd4311a/bootloader-uart-bgapi.s37"/>
+		<description>Bluetooth NCP (Network Co-Processor) target application with a minimal GATT  database, that makes it possible to access  the Bluetooth stack from a host controller via UART. It provides access to the host layer via BGAPI and not to the link layer via HCI.
+</description>
+	</demo>
+	<demo label="Bluetooth - NCP Empty" name="brd4312a.demo.ncp_empty">
+		<property key="blurb" value="Bluetooth - NCP Empty"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4312a"/>
+		<property key="imageFile" value="demos/ncp_empty/ncp_empty-brd4312a.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-uart-bgapi/bgm220sc22hna-brd4312a/bootloader-uart-bgapi.s37"/>
+		<description>Bluetooth NCP (Network Co-Processor) target application with a minimal GATT  database, that makes it possible to access  the Bluetooth stack from a host controller via UART. It provides access to the host layer via BGAPI and not to the link layer via HCI.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC iBeacon" name="brd4100a.demo.soc_ibeacon">
+		<property key="blurb" value="Bluetooth - SoC iBeacon"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4100a"/>
+		<property key="imageFile" value="demos/soc_ibeacon/soc_ibeacon-brd4100a.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-uart-bgapi/efr32bg1p232f256gm48-brd4100a/bootloader-uart-bgapi-combined.s37"/>
+		<description>An iBeacon device implementation that sends non-connectable advertisements in iBeacon format. The iBeacon Service gives Bluetooth accessories a simple and convenient way to send iBeacons to smartphones. This example can be tested together with the EFR Connect mobile app.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC iBeacon" name="brd4104a.demo.soc_ibeacon">
+		<property key="blurb" value="Bluetooth - SoC iBeacon"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4104a"/>
+		<property key="imageFile" value="demos/soc_ibeacon/soc_ibeacon-brd4104a.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-uart-bgapi/efr32bg13p632f512gm48-brd4104a/bootloader-uart-bgapi-combined.s37"/>
+		<description>An iBeacon device implementation that sends non-connectable advertisements in iBeacon format. The iBeacon Service gives Bluetooth accessories a simple and convenient way to send iBeacons to smartphones. This example can be tested together with the EFR Connect mobile app.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC iBeacon" name="brd4166a.demo.soc_ibeacon">
+		<property key="blurb" value="Bluetooth - SoC iBeacon"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4166a"/>
+		<property key="imageFile" value="demos/soc_ibeacon/soc_ibeacon-brd4166a.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-uart-bgapi/efr32mg12p332f1024gl125-brd4166a/bootloader-uart-bgapi-combined.s37"/>
+		<description>An iBeacon device implementation that sends non-connectable advertisements in iBeacon format. The iBeacon Service gives Bluetooth accessories a simple and convenient way to send iBeacons to smartphones. This example can be tested together with the EFR Connect mobile app.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC iBeacon" name="brd4180b.demo.soc_ibeacon">
+		<property key="blurb" value="Bluetooth - SoC iBeacon"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4180b"/>
+		<property key="imageFile" value="demos/soc_ibeacon/soc_ibeacon-brd4180b.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-uart-bgapi/efr32mg21a020f1024im32-brd4180b/bootloader-uart-bgapi.s37"/>
+		<description>An iBeacon device implementation that sends non-connectable advertisements in iBeacon format. The iBeacon Service gives Bluetooth accessories a simple and convenient way to send iBeacons to smartphones. This example can be tested together with the EFR Connect mobile app.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC iBeacon" name="brd4181b.demo.soc_ibeacon">
+		<property key="blurb" value="Bluetooth - SoC iBeacon"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4181b"/>
+		<property key="imageFile" value="demos/soc_ibeacon/soc_ibeacon-brd4181b.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-uart-bgapi/efr32mg21a010f1024im32-brd4181b/bootloader-uart-bgapi.s37"/>
+		<description>An iBeacon device implementation that sends non-connectable advertisements in iBeacon format. The iBeacon Service gives Bluetooth accessories a simple and convenient way to send iBeacons to smartphones. This example can be tested together with the EFR Connect mobile app.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC iBeacon" name="brd4182a.demo.soc_ibeacon">
+		<property key="blurb" value="Bluetooth - SoC iBeacon"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4182a"/>
+		<property key="imageFile" value="demos/soc_ibeacon/soc_ibeacon-brd4182a.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-uart-bgapi/efr32mg22c224f512im40-brd4182a/bootloader-uart-bgapi.s37"/>
+		<description>An iBeacon device implementation that sends non-connectable advertisements in iBeacon format. The iBeacon Service gives Bluetooth accessories a simple and convenient way to send iBeacons to smartphones. This example can be tested together with the EFR Connect mobile app.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC iBeacon" name="brd4183a.demo.soc_ibeacon">
+		<property key="blurb" value="Bluetooth - SoC iBeacon"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4183a"/>
+		<property key="imageFile" value="demos/soc_ibeacon/soc_ibeacon-brd4183a.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-uart-bgapi/efr32mg22c224f512im32-brd4183a/bootloader-uart-bgapi.s37"/>
+		<description>An iBeacon device implementation that sends non-connectable advertisements in iBeacon format. The iBeacon Service gives Bluetooth accessories a simple and convenient way to send iBeacons to smartphones. This example can be tested together with the EFR Connect mobile app.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC iBeacon" name="brd4184a.demo.soc_ibeacon">
+		<property key="blurb" value="Bluetooth - SoC iBeacon"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4184a"/>
+		<property key="imageFile" value="demos/soc_ibeacon/soc_ibeacon-brd4184a.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-uart-bgapi/efr32bg22c224f512im40-brd4184a/bootloader-uart-bgapi.s37"/>
+		<description>An iBeacon device implementation that sends non-connectable advertisements in iBeacon format. The iBeacon Service gives Bluetooth accessories a simple and convenient way to send iBeacons to smartphones. This example can be tested together with the EFR Connect mobile app.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC iBeacon" name="brd4184b.demo.soc_ibeacon">
+		<property key="blurb" value="Bluetooth - SoC iBeacon"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4184b"/>
+		<property key="imageFile" value="demos/soc_ibeacon/soc_ibeacon-brd4184b.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-uart-bgapi/efr32bg22c224f512im40-brd4184b/bootloader-uart-bgapi.s37"/>
+		<description>An iBeacon device implementation that sends non-connectable advertisements in iBeacon format. The iBeacon Service gives Bluetooth accessories a simple and convenient way to send iBeacons to smartphones. This example can be tested together with the EFR Connect mobile app.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC iBeacon" name="brd4305c.demo.soc_ibeacon">
+		<property key="blurb" value="Bluetooth - SoC iBeacon"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4305c"/>
+		<property key="imageFile" value="demos/soc_ibeacon/soc_ibeacon-brd4305c.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-uart-bgapi/bgm13s22f512ga-brd4305c/bootloader-uart-bgapi-combined.s37"/>
+		<description>An iBeacon device implementation that sends non-connectable advertisements in iBeacon format. The iBeacon Service gives Bluetooth accessories a simple and convenient way to send iBeacons to smartphones. This example can be tested together with the EFR Connect mobile app.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC iBeacon" name="brd4306a.demo.soc_ibeacon">
+		<property key="blurb" value="Bluetooth - SoC iBeacon"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4306a"/>
+		<property key="imageFile" value="demos/soc_ibeacon/soc_ibeacon-brd4306a.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-uart-bgapi/bgm13p22f512ga-brd4306a/bootloader-uart-bgapi-combined.s37"/>
+		<description>An iBeacon device implementation that sends non-connectable advertisements in iBeacon format. The iBeacon Service gives Bluetooth accessories a simple and convenient way to send iBeacons to smartphones. This example can be tested together with the EFR Connect mobile app.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC iBeacon" name="brd4308a.demo.soc_ibeacon">
+		<property key="blurb" value="Bluetooth - SoC iBeacon"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4308a"/>
+		<property key="imageFile" value="demos/soc_ibeacon/soc_ibeacon-brd4308a.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-uart-bgapi/mgm210pa32jia-brd4308a/bootloader-uart-bgapi.s37"/>
+		<description>An iBeacon device implementation that sends non-connectable advertisements in iBeacon format. The iBeacon Service gives Bluetooth accessories a simple and convenient way to send iBeacons to smartphones. This example can be tested together with the EFR Connect mobile app.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC iBeacon" name="brd4308b.demo.soc_ibeacon">
+		<property key="blurb" value="Bluetooth - SoC iBeacon"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4308b"/>
+		<property key="imageFile" value="demos/soc_ibeacon/soc_ibeacon-brd4308b.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-uart-bgapi/mgm210pa22jia-brd4308b/bootloader-uart-bgapi.s37"/>
+		<description>An iBeacon device implementation that sends non-connectable advertisements in iBeacon format. The iBeacon Service gives Bluetooth accessories a simple and convenient way to send iBeacons to smartphones. This example can be tested together with the EFR Connect mobile app.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC iBeacon" name="brd4310a.demo.soc_ibeacon">
+		<property key="blurb" value="Bluetooth - SoC iBeacon"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4310a"/>
+		<property key="imageFile" value="demos/soc_ibeacon/soc_ibeacon-brd4310a.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-uart-bgapi/bgm220sc12wga-brd4310a/bootloader-uart-bgapi.s37"/>
+		<description>An iBeacon device implementation that sends non-connectable advertisements in iBeacon format. The iBeacon Service gives Bluetooth accessories a simple and convenient way to send iBeacons to smartphones. This example can be tested together with the EFR Connect mobile app.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC iBeacon" name="brd4311a.demo.soc_ibeacon">
+		<property key="blurb" value="Bluetooth - SoC iBeacon"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4311a"/>
+		<property key="imageFile" value="demos/soc_ibeacon/soc_ibeacon-brd4311a.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-uart-bgapi/bgm220pc22hna-brd4311a/bootloader-uart-bgapi.s37"/>
+		<description>An iBeacon device implementation that sends non-connectable advertisements in iBeacon format. The iBeacon Service gives Bluetooth accessories a simple and convenient way to send iBeacons to smartphones. This example can be tested together with the EFR Connect mobile app.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC iBeacon" name="brd4312a.demo.soc_ibeacon">
+		<property key="blurb" value="Bluetooth - SoC iBeacon"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4312a"/>
+		<property key="imageFile" value="demos/soc_ibeacon/soc_ibeacon-brd4312a.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-uart-bgapi/bgm220sc22hna-brd4312a/bootloader-uart-bgapi.s37"/>
+		<description>An iBeacon device implementation that sends non-connectable advertisements in iBeacon format. The iBeacon Service gives Bluetooth accessories a simple and convenient way to send iBeacons to smartphones. This example can be tested together with the EFR Connect mobile app.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC Light RAIL DMP" name="brd4164a.demo.soc_light_rail_dmp">
+		<property key="blurb" value="Bluetooth - SoC Light RAIL DMP"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4164a"/>
+		<property key="imageFile" value="demos/soc_light_rail_dmp/soc_light_rail_dmp-brd4164a.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-storage-internal-single/efr32mg12p433f1024gl125-brd4164a/bootloader-storage-internal-single-combined.s37"/>
+		<description>This is a Dynamic Multiprotocol reference application demonstrating a light bulb that can be switched both via Bluetooth and via a Proprietary protocol. To switch it via Bluetooth use the Wireless Gecko smartphone app. To switch it via Proprietary protocol use the Flex (RAIL) - Switch sample app.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC Thermometer" name="brd4100a.demo.soc_thermometer">
+		<property key="blurb" value="Bluetooth - SoC Thermometer"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4100a"/>
+		<property key="imageFile" value="demos/soc_thermometer/soc_thermometer-brd4100a.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-storage-internal-ble/efr32bg1p232f256gm48-brd4100a/bootloader-storage-internal-ble-combined.s37"/>
+		<description>Implements a GATT Server with the Health Thermometer Profile, which enables a Client device to connect and get temperature data. Temperature is read from the Si7021 digital relative humidity and temperature sensor of the WSTK or of the Thunderboard.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC Thermometer" name="brd4104a.demo.soc_thermometer">
+		<property key="blurb" value="Bluetooth - SoC Thermometer"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4104a"/>
+		<property key="imageFile" value="demos/soc_thermometer/soc_thermometer-brd4104a.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-storage-internal-single-512k/efr32bg13p632f512gm48-brd4104a/bootloader-storage-internal-single-512k-combined.s37"/>
+		<description>Implements a GATT Server with the Health Thermometer Profile, which enables a Client device to connect and get temperature data. Temperature is read from the Si7021 digital relative humidity and temperature sensor of the WSTK or of the Thunderboard.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC Thermometer" name="brd4166a.demo.soc_thermometer">
+		<property key="blurb" value="Bluetooth - SoC Thermometer"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4166a"/>
+		<property key="imageFile" value="demos/soc_thermometer/soc_thermometer-brd4166a.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-storage-internal-single/efr32bg12p332f1024gl125-brd4103a/bootloader-storage-internal-single-combined.s37"/>
+		<description>Implements a GATT Server with the Health Thermometer Profile, which enables a Client device to connect and get temperature data. Temperature is read from the Si7021 digital relative humidity and temperature sensor of the WSTK or of the Thunderboard.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC Thermometer" name="brd4182a.demo.soc_thermometer">
+		<property key="blurb" value="Bluetooth - SoC Thermometer"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4182a"/>
+		<property key="imageFile" value="demos/soc_thermometer/soc_thermometer-brd4182a.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-storage-internal-single-512k/efr32mg22c224f512im40-brd4182a/bootloader-storage-internal-single-512k.s37"/>
+		<description>Implements a GATT Server with the Health Thermometer Profile, which enables a Client device to connect and get temperature data. Temperature is read from the Si7021 digital relative humidity and temperature sensor of the WSTK or of the Thunderboard.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC Thermometer" name="brd4184a.demo.soc_thermometer">
+		<property key="blurb" value="Bluetooth - SoC Thermometer"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4184a"/>
+		<property key="imageFile" value="demos/soc_thermometer/soc_thermometer-brd4184a.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-storage-internal-single-512k/efr32mg22c224f512im40-brd4182a/bootloader-storage-internal-single-512k.s37"/>
+		<description>Implements a GATT Server with the Health Thermometer Profile, which enables a Client device to connect and get temperature data. Temperature is read from the Si7021 digital relative humidity and temperature sensor of the WSTK or of the Thunderboard.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC Thermometer" name="brd4184b.demo.soc_thermometer">
+		<property key="blurb" value="Bluetooth - SoC Thermometer"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4184b"/>
+		<property key="imageFile" value="demos/soc_thermometer/soc_thermometer-brd4184b.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-storage-internal-single-512k/efr32mg22c224f512im40-brd4182a/bootloader-storage-internal-single-512k.s37"/>
+		<description>Implements a GATT Server with the Health Thermometer Profile, which enables a Client device to connect and get temperature data. Temperature is read from the Si7021 digital relative humidity and temperature sensor of the WSTK or of the Thunderboard.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC Thermometer" name="brd4305c.demo.soc_thermometer">
+		<property key="blurb" value="Bluetooth - SoC Thermometer"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4305c"/>
+		<property key="imageFile" value="demos/soc_thermometer/soc_thermometer-brd4305c.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-storage-internal-single-512k/efr32bg13p632f512gm48-brd4104a/bootloader-storage-internal-single-512k-combined.s37"/>
+		<description>Implements a GATT Server with the Health Thermometer Profile, which enables a Client device to connect and get temperature data. Temperature is read from the Si7021 digital relative humidity and temperature sensor of the WSTK or of the Thunderboard.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC Thermometer" name="brd4306a.demo.soc_thermometer">
+		<property key="blurb" value="Bluetooth - SoC Thermometer"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4306a"/>
+		<property key="imageFile" value="demos/soc_thermometer/soc_thermometer-brd4306a.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-storage-internal-single-512k/efr32bg13p632f512gm48-brd4104a/bootloader-storage-internal-single-512k-combined.s37"/>
+		<description>Implements a GATT Server with the Health Thermometer Profile, which enables a Client device to connect and get temperature data. Temperature is read from the Si7021 digital relative humidity and temperature sensor of the WSTK or of the Thunderboard.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC Thermometer" name="brd4310a.demo.soc_thermometer">
+		<property key="blurb" value="Bluetooth - SoC Thermometer"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4310a"/>
+		<property key="imageFile" value="demos/soc_thermometer/soc_thermometer-brd4310a.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-storage-internal-single-352k/bgm220sc12wga-brd4310a/bootloader-storage-internal-single-352k.s37"/>
+		<description>Implements a GATT Server with the Health Thermometer Profile, which enables a Client device to connect and get temperature data. Temperature is read from the Si7021 digital relative humidity and temperature sensor of the WSTK or of the Thunderboard.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC Thermometer" name="brd4311a.demo.soc_thermometer">
+		<property key="blurb" value="Bluetooth - SoC Thermometer"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4311a"/>
+		<property key="imageFile" value="demos/soc_thermometer/soc_thermometer-brd4311a.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-storage-internal-single-512k/efr32mg22c224f512im40-brd4182a/bootloader-storage-internal-single-512k.s37"/>
+		<description>Implements a GATT Server with the Health Thermometer Profile, which enables a Client device to connect and get temperature data. Temperature is read from the Si7021 digital relative humidity and temperature sensor of the WSTK or of the Thunderboard.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC Thermometer" name="brd4312a.demo.soc_thermometer">
+		<property key="blurb" value="Bluetooth - SoC Thermometer"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4312a"/>
+		<property key="imageFile" value="demos/soc_thermometer/soc_thermometer-brd4312a.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-storage-internal-single-512k/efr32mg22c224f512im40-brd4182a/bootloader-storage-internal-single-512k.s37"/>
+		<description>Implements a GATT Server with the Health Thermometer Profile, which enables a Client device to connect and get temperature data. Temperature is read from the Si7021 digital relative humidity and temperature sensor of the WSTK or of the Thunderboard.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC Thermometer (Mock)" name="brd4179b.demo.soc_thermometer_mock">
+		<property key="blurb" value="Bluetooth - SoC Thermometer (Mock)"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4179b"/>
+		<property key="imageFile" value="demos/soc_thermometer_mock/soc_thermometer_mock-brd4179b.s37"/>
+		<description>Implements a GATT Server with the Health Thermometer Profile, which enables a Client device to connect and get temperature data. Temperature is read from the mock relative humidity and temperature sensor.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC Thermometer (Mock)" name="brd4180a.demo.soc_thermometer_mock">
+		<property key="blurb" value="Bluetooth - SoC Thermometer (Mock)"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4180a"/>
+		<property key="imageFile" value="demos/soc_thermometer_mock/soc_thermometer_mock-brd4180a.s37"/>
+		<description>Implements a GATT Server with the Health Thermometer Profile, which enables a Client device to connect and get temperature data. Temperature is read from the mock relative humidity and temperature sensor.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC Thermometer (Mock)" name="brd4180b.demo.soc_thermometer_mock">
+		<property key="blurb" value="Bluetooth - SoC Thermometer (Mock)"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4180b"/>
+		<property key="imageFile" value="demos/soc_thermometer_mock/soc_thermometer_mock-brd4180b.s37"/>
+		<description>Implements a GATT Server with the Health Thermometer Profile, which enables a Client device to connect and get temperature data. Temperature is read from the mock relative humidity and temperature sensor.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC Thermometer (Mock)" name="brd4181a.demo.soc_thermometer_mock">
+		<property key="blurb" value="Bluetooth - SoC Thermometer (Mock)"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4181a"/>
+		<property key="imageFile" value="demos/soc_thermometer_mock/soc_thermometer_mock-brd4181a.s37"/>
+		<description>Implements a GATT Server with the Health Thermometer Profile, which enables a Client device to connect and get temperature data. Temperature is read from the mock relative humidity and temperature sensor.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC Thermometer (Mock)" name="brd4181b.demo.soc_thermometer_mock">
+		<property key="blurb" value="Bluetooth - SoC Thermometer (Mock)"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4181b"/>
+		<property key="imageFile" value="demos/soc_thermometer_mock/soc_thermometer_mock-brd4181b.s37"/>
+		<description>Implements a GATT Server with the Health Thermometer Profile, which enables a Client device to connect and get temperature data. Temperature is read from the mock relative humidity and temperature sensor.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC Thermometer (Mock)" name="brd4181c.demo.soc_thermometer_mock">
+		<property key="blurb" value="Bluetooth - SoC Thermometer (Mock)"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4181c"/>
+		<property key="imageFile" value="demos/soc_thermometer_mock/soc_thermometer_mock-brd4181c.s37"/>
+		<description>Implements a GATT Server with the Health Thermometer Profile, which enables a Client device to connect and get temperature data. Temperature is read from the mock relative humidity and temperature sensor.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC Thermometer (Mock)" name="brd4183a.demo.soc_thermometer_mock">
+		<property key="blurb" value="Bluetooth - SoC Thermometer (Mock)"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4183a"/>
+		<property key="imageFile" value="demos/soc_thermometer_mock/soc_thermometer_mock-brd4183a.s37"/>
+		<description>Implements a GATT Server with the Health Thermometer Profile, which enables a Client device to connect and get temperature data. Temperature is read from the mock relative humidity and temperature sensor.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC Thermometer (Mock)" name="brd4183b.demo.soc_thermometer_mock">
+		<property key="blurb" value="Bluetooth - SoC Thermometer (Mock)"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4183b"/>
+		<property key="imageFile" value="demos/soc_thermometer_mock/soc_thermometer_mock-brd4183b.s37"/>
+		<description>Implements a GATT Server with the Health Thermometer Profile, which enables a Client device to connect and get temperature data. Temperature is read from the mock relative humidity and temperature sensor.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC Thermometer (Mock)" name="brd4308a.demo.soc_thermometer_mock">
+		<property key="blurb" value="Bluetooth - SoC Thermometer (Mock)"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4308a"/>
+		<property key="imageFile" value="demos/soc_thermometer_mock/soc_thermometer_mock-brd4308a.s37"/>
+		<description>Implements a GATT Server with the Health Thermometer Profile, which enables a Client device to connect and get temperature data. Temperature is read from the mock relative humidity and temperature sensor.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC Thermometer (Mock)" name="brd4308b.demo.soc_thermometer_mock">
+		<property key="blurb" value="Bluetooth - SoC Thermometer (Mock)"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4308b"/>
+		<property key="imageFile" value="demos/soc_thermometer_mock/soc_thermometer_mock-brd4308b.s37"/>
+		<description>Implements a GATT Server with the Health Thermometer Profile, which enables a Client device to connect and get temperature data. Temperature is read from the mock relative humidity and temperature sensor.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC Thermometer (Mock)" name="brd4308c.demo.soc_thermometer_mock">
+		<property key="blurb" value="Bluetooth - SoC Thermometer (Mock)"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4308c"/>
+		<property key="imageFile" value="demos/soc_thermometer_mock/soc_thermometer_mock-brd4308c.s37"/>
+		<description>Implements a GATT Server with the Health Thermometer Profile, which enables a Client device to connect and get temperature data. Temperature is read from the mock relative humidity and temperature sensor.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC Thermometer (Mock)" name="brd4308d.demo.soc_thermometer_mock">
+		<property key="blurb" value="Bluetooth - SoC Thermometer (Mock)"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4308d"/>
+		<property key="imageFile" value="demos/soc_thermometer_mock/soc_thermometer_mock-brd4308d.s37"/>
+		<description>Implements a GATT Server with the Health Thermometer Profile, which enables a Client device to connect and get temperature data. Temperature is read from the mock relative humidity and temperature sensor.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC Thermometer (Mock)" name="brd4309a.demo.soc_thermometer_mock">
+		<property key="blurb" value="Bluetooth - SoC Thermometer (Mock)"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4309a"/>
+		<property key="imageFile" value="demos/soc_thermometer_mock/soc_thermometer_mock-brd4309a.s37"/>
+		<description>Implements a GATT Server with the Health Thermometer Profile, which enables a Client device to connect and get temperature data. Temperature is read from the mock relative humidity and temperature sensor.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC Thermometer (Mock)" name="brd4309b.demo.soc_thermometer_mock">
+		<property key="blurb" value="Bluetooth - SoC Thermometer (Mock)"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4309b"/>
+		<property key="imageFile" value="demos/soc_thermometer_mock/soc_thermometer_mock-brd4309b.s37"/>
+		<description>Implements a GATT Server with the Health Thermometer Profile, which enables a Client device to connect and get temperature data. Temperature is read from the mock relative humidity and temperature sensor.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC Thermometer (Mock)" name="brd4314a.demo.soc_thermometer_mock">
+		<property key="blurb" value="Bluetooth - SoC Thermometer (Mock)"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4314a"/>
+		<property key="imageFile" value="demos/soc_thermometer_mock/soc_thermometer_mock-brd4314a.s37"/>
+		<description>Implements a GATT Server with the Health Thermometer Profile, which enables a Client device to connect and get temperature data. Temperature is read from the mock relative humidity and temperature sensor.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC Thunderboard Sense 2" name="brd4166a.demo.soc_thunderboard_brd4166a">
+		<property key="blurb" value="Bluetooth - SoC Thunderboard Sense 2"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4166a"/>
+		<property key="imageFile" value="demos/soc_thunderboard_brd4166a/soc_thunderboard_brd4166a-brd4166a.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-storage-internal-single/efr32bg12p332f1024gl125-brd4103a/bootloader-storage-internal-single-combined.s37"/>
+		<description>Demonstrates the features of the Thunderboard Sense 2 Kit. This can be tested with the Thunderboard mobile app.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC Thunderboard EFR32BG22" name="brd4184a.demo.soc_thunderboard_brd4184a">
+		<property key="blurb" value="Bluetooth - SoC Thunderboard EFR32BG22"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4184a"/>
+		<property key="imageFile" value="demos/soc_thunderboard_brd4184a/soc_thunderboard_brd4184a-brd4184a.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-storage-internal-single-512k/efr32mg22c224f512im40-brd4182a/bootloader-storage-internal-single-512k.s37"/>
+		<description>Demonstrates the features of the Thunderboard EFR32BG22 Kit. This can be tested with the Thunderboard mobile app.
+</description>
+	</demo>
+	<demo label="Bluetooth - SoC Thunderboard EFR32BG22" name="brd4184b.demo.soc_thunderboard_brd4184b">
+		<property key="blurb" value="Bluetooth - SoC Thunderboard EFR32BG22"/>
+		<property key="partCompatibility" value=".*"/>
+		<property key="boardCompatibility" value="brd4184b"/>
+		<property key="imageFile" value="demos/soc_thunderboard_brd4184b/soc_thunderboard_brd4184b-brd4184b.s37"/>
+		<property key="bootloaderFile" value="../../platform/bootloader/sample-apps/bootloader-storage-internal-single-512k/efr32mg22c224f512im40-brd4182a/bootloader-storage-internal-single-512k.s37"/>
+		<description>Demonstrates the features of the Thunderboard EFR32BG22 Kit. This can be tested with the Thunderboard mobile app.
+</description>
+	</demo>
+</demos>

@@ -1,0 +1,4 @@
+include:
+  - ../../../../../app/esf_common/setup/quizz/dynamic-phy-quizz.yaml
+  - ../../../../../app/esf_common/setup/quizz/se-token-optimization-quiz.yaml
+  - ../../../../../app/esf_common/setup/quizz/stack-protection.yaml

@@ -1,0 +1,54 @@
+project_name: soc_dtm
+package: Bluetooth
+label: Bluetooth - SoC DTM
+description: >
+  This example demonstrates the direct test mode application.
+category: Bluetooth Examples
+quality: production
+
+component:
+  - id: bluetooth
+  - id: bluetooth_feature_test
+  - id: bluetooth_feature_cte_transmitter
+  - id: bluetooth_feature_cte_receiver
+  - id: ota_dfu
+  - id: bootloader_interface
+  - id: app_log
+  - id: app_assert
+  - id: component_catalog
+  - id: iostream_usart
+    instance:
+      - exp
+  - id: iostream_retarget_stdio
+  - id: printf
+  - id: mpu
+
+source:
+  - path: main.c
+  - path: app.c
+  - path: app_properties.c
+  - path: dtm.c
+
+include:
+  - path: .
+    file_list:
+    - path: app.h
+    - path: dtm.h
+
+other_file:
+  - path: ../../script/create_bl_files.bat
+  - path: ../../script/create_bl_files.sh
+
+configuration:
+  - name: SL_STACK_SIZE
+    value: "2048"
+  - name: SL_HEAP_SIZE
+    value: "8630"
+
+tag:
+  - hardware:rf:band:2400
+
+ui_hints:
+  highlight:
+    - path: config/btconf/gatt_configuration.btconf
+      focus: true

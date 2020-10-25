@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<cli>
+  <group id="plugin-multirail" name="Utility Commands: Multiple RAIL Demo Code">
+    <description>
+      Provides examples of using a second RAIL instance to send packets.
+    </description>
+  </group>
+  <command cli="plugin multirail init" functionName="emberAfPluginMultirailDemoCliInit" group="plugin-multirail">
+    <description>
+      Initialize the second RAIL instance.
+    </description>
+    <arg name="power" type="INT16S" description="Default TX power in deci-dBm (eg. -50 = -5dBm, 120 = -12 dBm)"/>
+  </command>
+  <command cli="plugin multirail get-handle" functionName="emberAfPluginMultirailDemoCliGetHandle" group="plugin-multirail">
+    <description>
+      Print the secods RAIL handle.
+    </description>
+  </command>
+  <command cli="plugin multirail send" functionName="emberAfPluginMultirailDemoCliSend" group="plugin-multirail">
+    <description>
+      Send a packet using the second RAIL instance.
+    </description>
+    <arg name="channel" type="INT8U" description="Channel (11-26, or 0 to use the current Zigbee channel)"/>
+    <arg name="data" type="OCTET_STRING" description="Packet data (empty string will send a default GPD packet)"/>
+  </command>
+</cli>

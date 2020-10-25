@@ -1,0 +1,96 @@
+# This file contains various standard callbacks that exist on 
+# the framework level. Any plugin can choose to implement these
+# callbacks without declaring or defining them. 
+
+InitCallback=INIT
+InitCallback.decl {
+void $--PREFIX--$InitCallback(void);
+}
+InitCallback.call {
+$--PREFIX--$InitCallback();
+}
+
+
+NcpInitCallback=NCP_INIT
+NcpInitCallback.decl {
+void $--PREFIX--$NcpInitCallback(bool memoryAllocation);
+}
+NcpInitCallback.call {
+$--PREFIX--$NcpInitCallback(memoryAllocation);
+}
+
+
+StackStatusCallback=STACK_STATUS
+StackStatusCallback.decl {
+void $--PREFIX--$StackStatusCallback(EmberStatus status);
+}
+StackStatusCallback.call {
+$--PREFIX--$StackStatusCallback(status);
+}
+
+
+MessageSentCallback=MESSAGE_SENT
+MessageSentCallback.decl {
+void $--PREFIX--$MessageSentCallback(
+  EmberOutgoingMessageType type,
+  uint16_t indexOrDestination,
+  EmberApsFrame *apsFrame,
+  EmberStatus status,
+  uint16_t messageLength,
+  uint8_t *messageContents);
+}
+MessageSentCallback.call {
+$--PREFIX--$MessageSentCallback(
+  type,
+  indexOrDestination,
+  apsFrame,
+  status,
+  messageLength,
+  messageContents);
+}
+
+
+TickCallback=TICK
+TickCallback.decl {
+void $--PREFIX--$TickCallback(void);
+}
+TickCallback.call{
+$--PREFIX--$TickCallback();
+}
+
+
+ZdoMessageReceivedCallback=ZDO_MESSAGE_RECEIVED
+ZdoMessageReceivedCallback.decl {
+void $--PREFIX--$ZdoMessageReceivedCallback(
+  EmberNodeId sender,
+  EmberApsFrame* apsFrame,
+  uint8_t* message,
+  uint16_t length);
+}
+ZdoMessageReceivedCallback.call {
+$--PREFIX--$ZdoMessageReceivedCallback(
+  sender,
+  apsFrame,
+  message,
+  length);
+}
+
+
+TrustCenterJoinCallback=TRUST_CENTER_JOIN
+TrustCenterJoinCallback.decl {
+void $--PREFIX--$TrustCenterJoinCallback(
+  EmberNodeId newNodeId,
+  EmberEUI64 newNodeEui64,
+  EmberNodeId parentOfNewNode,
+  EmberDeviceUpdate status,
+  EmberJoinDecision decision);
+}
+TrustCenterJoinCallback.call {
+$--PREFIX--$TrustCenterJoinCallback(
+  newNodeId,
+  newNodeEui64,
+  parentOfNewNode,
+  status,
+  decision);
+}
+

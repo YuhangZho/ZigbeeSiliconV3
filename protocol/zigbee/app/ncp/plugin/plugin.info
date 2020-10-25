@@ -1,0 +1,1275 @@
+pluginDirectory=.
+
+# Command Handlers
+
+plugin(ezsp-binding) {
+  name=Binding Library EZSP Command Handlers
+  description=This plugin provides functionality to manage the binding table on the NCP.
+  category=Command Handler
+  quality=production
+  root=$FRAMEWORK/../em260
+
+  architecture=efr32,em355,em3555,em356,em357,em3581,em3582,em3585,em3586,em3587,em3588,em3591,em3592,em3595,em3596,em3597,em3598,simulation
+
+  requiredApis=ezsp,binding
+
+  providedApis=ezsp-binding
+
+  files(ncp-binding-library-common) {
+    # APP:NCP_BINDING
+    command-handlers-binding.c
+  }
+
+  $ncp-binding-library-common
+
+  setup(ezsp) {
+    sections = Binding Frames
+
+    clearBindingTable      = emberClearBindingTable
+    setBindingRemoteNodeId = emberSetBindingRemoteNodeId
+    bindingIsActive        = emberBindingIsActive
+    getBinding             = emberGetBinding
+    getBindingRemoteNodeId = emberGetBindingRemoteNodeId
+  }
+
+  setup(bookkeeping) {
+    getPolicy             = emberAfPluginEzspBindingPolicyCommandCallback
+    setPolicy             = emberAfPluginEzspBindingPolicyCommandCallback
+    getConfigurationValue = emberAfPluginEzspBindingConfigurationValueCommandCallback
+    setConfigurationValue = emberAfPluginEzspBindingConfigurationValueCommandCallback
+    modifyMemoryAllocation = emInitializeBindingTable
+
+    permitHostToNcpFrame = emberAfPluginEzspBindingPermitHostToNcpFrameCallback
+  }
+
+  precompiled(efr32) {
+    file=$FRAMEWORK/../../build/ncp-binding-library-cortexm3-$--toolchainName--$-$--chipFamily;L--$$--dynamicPhy--$$--stackProtection--$/ncp-binding-library.a
+    $ncp-binding-library-common
+  }
+
+  precompiled(em355,em3555,em356,em357,em3581,em3582,em3585,em3586,em3587,em3588,em3591,em3592,em3595,em3596,em3597,em3598) {
+    file=$FRAMEWORK/../../build/ncp-binding-library-cortexm3-$--toolchainName--$-$--partNumber;L--$-em3xx$--stackProtection--$/ncp-binding-library.a
+    $ncp-binding-library-common
+  }
+
+  precompiled(simulation) {
+    file=$FRAMEWORK/../../build/ncp-binding-library-unix-gcc-simulation$--dynamicPhy--$$--stackProtection--$/ncp-binding-library.a
+    $ncp-binding-library-common
+  }
+}
+
+plugin(ezsp-cbke) {
+  name=CBKE Library EZSP Command Handlers
+  description=This plugin provides functionality to manage CBKE activity on the NCP.
+  category=Command Handler
+  quality=production
+  root=$FRAMEWORK/../em260
+
+  architecture=efr32,em355,em3555,em356,em357,em3581,em3582,em3585,em3586,em3587,em3588,em3591,em3592,em3595,em3596,em3597,em3598,simulation
+
+  requiredApis=ezsp,cbke
+
+  providedApis=ezsp-cbke
+
+  files(ncp-cbke-library-common) {
+    # APP:NCP_CBKE
+    command-handlers-cbke.c
+  }
+
+  $ncp-cbke-library-common
+
+  setup(ezsp) {
+    sections = Certificate Based Key Exchange (CBKE) Frames
+    include = EMBER_AF_API_CBKE
+
+    calculateSmacs          = emberCalculateSmacs
+    calculateSmacs283k1     = emberCalculateSmacs283k1
+    clearTemporaryDataMaybeStoreLinkKey = emberClearTemporaryDataMaybeStoreLinkKey
+    clearTemporaryDataMaybeStoreLinkKey283k1 = emberClearTemporaryDataMaybeStoreLinkKey283k1
+    dsaVerify               = emberDsaVerify
+    dsaVerify283k1          = emberDsaVerify283k1
+    getCertificate          = emberGetCertificate
+    getCertificate283k1     = emberGetCertificate283k1
+    generateCbkeKeys        = emberGenerateCbkeKeys
+    generateCbkeKeys283k1   = emberGenerateCbkeKeys283k1
+    setPreinstalledCbkeData = emberSetPreinstalledCbkeData
+  }
+
+  setup(bookkeeping) {
+    setValue              = emberAfPluginEzspCbkeSetValueCommandCallback
+    getConfigurationValue = emberAfPluginEzspCbkeConfigurationValueCommandCallback
+    setConfigurationValue = emberAfPluginEzspCbkeConfigurationValueCommandCallback
+
+    permitHostToNcpFrame = emberAfPluginEzspCbkePermitHostToNcpFrameCallback
+  }
+
+  precompiled(efr32) {
+    file=$FRAMEWORK/../../build/ncp-cbke-library-cortexm3-$--toolchainName--$-$--chipFamily;L--$$--dynamicPhy--$$--stackProtection--$/ncp-cbke-library.a
+    $ncp-cbke-library-common
+  }
+
+  precompiled(em355,em3555,em356,em357,em3581,em3582,em3585,em3586,em3587,em3588,em3591,em3592,em3595,em3596,em3597,em3598) {
+    file=$FRAMEWORK/../../build/ncp-cbke-library-cortexm3-$--toolchainName--$-$--partNumber;L--$-em3xx$--stackProtection--$/ncp-cbke-library.a
+    $ncp-cbke-library-common
+  }
+
+  precompiled(simulation) {
+    file=$FRAMEWORK/../../build/ncp-cbke-library-unix-gcc-simulation$--dynamicPhy--$$--stackProtection--$/ncp-cbke-library.a
+    $ncp-cbke-library-common
+  }
+}
+
+plugin(ezsp-mfglib) {
+  name=Manufacturing Library EZSP Command Handlers
+  description=This library provides functionality to support handling manufacturing library EZSP frames on the NCP.
+  category=Command Handler
+  quality=production
+  root=$FRAMEWORK/../em260
+
+  architecture=efr32,em355,em3555,em356,em357,em3581,em3582,em3585,em3586,em3587,em3588,em3591,em3592,em3595,em3596,em3597,em3598,simulation
+
+  requiredApis=ezsp,ember-types,mfglib
+
+  providedApis=ezsp-mfglib
+
+  files(ncp-mfglib-library-common) {
+    # APP:NCP_MFGLIB
+    command-handlers-mfglib.c
+  }
+
+  $ncp-mfglib-library-common
+
+  setup(ezsp) {
+    sections = Mfglib Frames
+    include = EMBER_AF_API_MFGLIB
+
+    mfglibSetPower    = mfglibSetPower
+    mfglibEnd         = mfglibEnd
+    mfglibStartTone   = mfglibStartTone
+    mfglibStopTone    = mfglibStopTone
+    mfglibStartStream = mfglibStartStream
+    mfglibStopStream  = mfglibStopStream
+    mfglibGetChannel  = mfglibGetChannel
+    mfglibSetChannel  = mfglibSetChannel
+    mfglibGetPower    = mfglibGetPower
+  }
+
+  setup(bookkeeping) {
+    getValue = emberAfPluginEzspMfglibGetValueCommandCallback
+    setValue = emberAfPluginEzspMfglibSetValueCommandCallback
+  }
+
+  precompiled(efr32) {
+    file=$FRAMEWORK/../../build/ncp-mfglib-library-cortexm3-$--toolchainName--$-$--chipFamily;L--$$--dynamicPhy--$$--stackProtection--$/ncp-mfglib-library.a
+    $ncp-mfglib-library-common
+  }
+
+  precompiled(em355,em3555,em356,em357,em3581,em3582,em3585,em3586,em3587,em3588,em3591,em3592,em3595,em3596,em3597,em3598) {
+    file=$FRAMEWORK/../../build/ncp-mfglib-library-cortexm3-$--toolchainName--$-$--partNumber;L--$-em3xx$--stackProtection--$/ncp-mfglib-library.a
+    $ncp-mfglib-library-common
+  }
+
+  precompiled(simulation) {
+    file=$FRAMEWORK/../../build/ncp-mfglib-library-unix-gcc-simulation$--dynamicPhy--$$--stackProtection--$/ncp-mfglib-library.a
+    $ncp-mfglib-library-common
+  }
+}
+
+plugin(ezsp-gp) {
+  name=GP Library EZSP Command Handlers
+  description=This plugin provides functionality to manage ZGP activity on the NCP.
+  category=Command Handler
+  quality=alpha
+  root=$FRAMEWORK/../em260
+
+  architecture=efr32,em355,em3555,em356,em357,em3581,em3582,em3585,em3586,em3587,em3588,em3591,em3592,em3595,em3596,em3597,em3598,simulation
+
+  requiredApis=ezsp,green-power
+
+  providedApis=ezsp-gp
+  #api.ezsp-gp.header=command-handlers-gp.h
+
+  files(ncp-gp-library-common) {
+    # APP:NCP_GP
+    command-handlers-gp.c
+  }
+
+  $ncp-gp-library-common
+
+  setup(ezsp) {
+    sections = Green Power Frames
+
+    dGpSend                           = emberDGpSend
+    gpepIncomingMessageHandler        = emberGpepIncomingMessageHandler
+    gpProxyTableProcessGpPairing      = emberGpProxyTableProcessGpPairing
+    gpProxyTableLookup                = emberGpProxyTableLookup
+    gpProxyTableGetEntry              = emberGpProxyTableGetEntry
+    gpSinkTableGetEntry               = emberGpSinkTableGetEntry
+    gpSinkTableLookup                 = emberGpSinkTableLookup
+    gpSinkTableSetEntry               = emberGpSinkTableSetEntry
+    gpSinkTableRemoveEntry            = emberGpSinkTableRemoveEntry
+    gpSinkTableFindOrAllocateEntry    = emberGpSinkTableFindOrAllocateEntry
+    gpSinkTableClearAll               = emberGpSinkTableClearAll
+    gpSinkTableInit                   = emberGpSinkTableInit
+    gpSinkTableSetSecurityFrameCounter= emberGpSinkTableSetSecurityFrameCounter
+  }
+
+  precompiled(efr32) {
+    file=$FRAMEWORK/../../build/ncp-gp-library-cortexm3-$--toolchainName--$-$--chipFamily;L--$$--dynamicPhy--$$--stackProtection--$/ncp-gp-library.a
+    $ncp-gp-library-common
+  }
+
+  precompiled(em355,em3555,em356,em357,em3581,em3582,em3585,em3586,em3587,em3588,em3591,em3592,em3595,em3596,em3597,em3598) {
+    file=$FRAMEWORK/../../build/ncp-gp-library-cortexm3-$--toolchainName--$-$--partNumber;L--$-em3xx$--stackProtection--$/ncp-gp-library.a
+    $ncp-gp-library-common
+  }
+
+  precompiled(simulation) {
+    file=$FRAMEWORK/../../build/ncp-gp-library-unix-gcc-simulation$--dynamicPhy--$$--stackProtection--$/ncp-gp-library.a
+    $ncp-gp-library-common
+  }
+}
+
+plugin(ezsp-source-route) {
+  name=source-route Library EZSP Command Handlers
+  description=This plugin provides functionality to manage ZGP activity on the NCP.
+  category=Command Handler
+  quality=alpha
+  root=$FRAMEWORK/../em260
+
+  architecture=efr32,em355,em3555,em356,em357,em3581,em3582,em3585,em3586,em3587,em3588,em3591,em3592,em3595,em3596,em3597,em3598,simulation
+
+  requiredApis=ezsp,source-route
+
+  providedApis=ezsp-source-route
+  #api.ezsp-source-route.header=command-handlers-source-route.h
+
+  files(ncp-source-route-library-common) {
+    # APP:NCP_SOURCE_ROUTE
+    command-handlers-source-route.c
+  }
+
+  $ncp-source-route-library-common
+
+  setup(bookkeeping) {
+    getConfigurationValue = emberAfPluginEzspSourceRouteGetConfigurationValueCommandCallback
+    setConfigurationValue = emberAfPluginEzspSourceRouteSetConfigurationValueCommandCallback
+    #modifyMemoryAllocation = emSourceRouteInit
+
+  }
+
+
+
+  precompiled(efr32) {
+    file=$FRAMEWORK/../../build/ncp-source-route-library-cortexm3-$--toolchainName--$-$--chipFamily;L--$$--dynamicPhy--$$--stackProtection--$/ncp-source-route-library.a
+    $ncp-source-route-library-common
+  }
+
+  precompiled(em355,em3555,em356,em357,em3581,em3582,em3585,em3586,em3587,em3588,em3591,em3592,em3595,em3596,em3597,em3598) {
+    file=$FRAMEWORK/../../build/ncp-source-route-library-cortexm3-$--toolchainName--$-$--partNumber;L--$-em3xx$--stackProtection--$/ncp-source-route-library.a
+    $ncp-source-route-library-common
+  }
+
+  precompiled(simulation) {
+    file=$FRAMEWORK/../../build/ncp-source-route-library-unix-gcc-simulation$--dynamicPhy--$$--stackProtection--$/ncp-source-route-library.a
+    $ncp-source-route-library-common
+  }
+}
+
+
+plugin(ezsp-security) {
+  name=Zigbee PRO Core Security Library EZSP Command Handlers
+  description=This plugin provides functionality to manage ZigBee PRO security on an NCP.
+  category=Command Handler
+  quality=production
+  root=$FRAMEWORK/../em260
+
+  architecture=efr32,em355,em3555,em356,em357,em3581,em3582,em3585,em3586,em3587,em3588,em3591,em3592,em3595,em3596,em3597,em3598,simulation
+
+  requiredApis=ezsp,security
+
+  providedApis=ezsp-security
+  api.ezsp-security.header=command-handlers-security.h
+
+  callbacks=../ncp/meta-inf/ezsp-security-callback.info
+
+  files(ncp-security-library-common) {
+    # APP:NCP_SECURITY
+    command-handlers-security.c
+  }
+
+  $ncp-security-library-common
+
+  implementedCallbacks=emberZigbeeKeyEstablishmentHandler
+
+  setup(ezsp) {
+    sections = Security Frames, Trust Center Frames
+
+    # Security Frames
+    setInitialSecurityState  = emberSetInitialSecurityState
+    getCurrentSecurityState  = emberGetCurrentSecurityState
+    setKeyTableEntry         = emberSetKeyTableEntry
+    findKeyTableEntry        = emberFindKeyTableEntry
+    addOrUpdateKeyTableEntry = emberAddOrUpdateKeyTableEntry
+    eraseKeyTableEntry       = emberEraseKeyTableEntry
+    requestLinkKey           = emberRequestLinkKey
+    updateTcLinkKey          = emberUpdateTcLinkKey
+    clearKeyTable            = emberClearKeyTable
+    getKey                   = emberGetKey
+    getKeyTableEntry         = emberGetKeyTableEntry
+    getTransientKeyTableEntry = emberGetTransientKeyTableEntry
+
+    # Trust Center Frames
+    broadcastNetworkKeySwitch = emberBroadcastNetworkKeySwitch
+    becomeTrustCenter         = emberBecomeTrustCenter
+    broadcastNextNetworkKey   = emberBroadcastNextNetworkKey
+    removeDevice              = emberSendRemoveDevice
+    unicastNwkKeyUpdate       = emberSendUnicastNetworkKeyUpdate
+    clearTransientLinkKeys    = emberClearTransientLinkKeys
+    sendTrustCenterLinkKey    = emberSendTrustCenterLinkKey
+  }
+
+  setup(bookkeeping) {
+    getValue              = emberAfPluginEzspSecurityGetValueCommandCallback
+    setValue              = emberAfPluginEzspSecuritySetValueCommandCallback
+    getPolicy             = emberAfPluginEzspSecurityPolicyCommandCallback
+    setPolicy             = emberAfPluginEzspSecurityPolicyCommandCallback
+    getConfigurationValue = emberAfPluginEzspSecurityGetConfigurationValueCommandCallback
+    setConfigurationValue = emberAfPluginEzspSecuritySetConfigurationValueCommandCallback
+  }
+
+  precompiled(efr32) {
+    file=$FRAMEWORK/../../build/ncp-security-library-cortexm3-$--toolchainName--$-$--chipFamily;L--$$--dynamicPhy--$$--stackProtection--$/ncp-security-library.a
+    $ncp-security-library-common
+  }
+
+  precompiled(em355,em3555,em356,em357,em3581,em3582,em3585,em3586,em3587,em3588,em3591,em3592,em3595,em3596,em3597,em3598) {
+    file=$FRAMEWORK/../../build/ncp-security-library-cortexm3-$--toolchainName--$-$--partNumber;L--$-em3xx$--stackProtection--$/ncp-security-library.a
+    $ncp-security-library-common
+  }
+
+  precompiled(simulation) {
+    file=$FRAMEWORK/../../build/ncp-security-library-unix-gcc-simulation$--dynamicPhy--$$--stackProtection--$/ncp-security-library.a
+    $ncp-security-library-common
+  }
+}
+
+plugin(ezsp-zigbee-pro) {
+  name=Zigbee PRO Library EZSP Command Handlers
+  description=This plugin provides functionality to manage a ZigBee PRO network on an NCP.
+  category=Command Handler
+  quality=production
+  root=$FRAMEWORK/../em260
+
+  architecture=efr32,em355,em3555,em356,em357,em3581,em3582,em3585,em3586,em3587,em3588,em3591,em3592,em3595,em3596,em3597,em3598,simulation
+
+  requiredApis=ezsp,zigbee-pro
+
+  providedApis=ezsp-zigbee-pro
+
+  callbacks=../ncp/meta-inf/ezsp-zigbee-pro-callback.info
+
+  implementedCallbacks=emberAfPluginEzspAddEndpointCommandCallback
+
+  files(ncp-pro-library-common) {
+    # APP:NCP_PRO
+    polling.c
+    endpoint-data.c
+    command-handlers-zigbee-pro.c
+      # APP_UTIL:SECURITY_ADDRESS_CACHE
+      ../util/security/security-address-cache.c
+  }
+
+  $ncp-pro-library-common
+
+  setup(ezsp) {
+
+    sections = Networking Frames, Messaging Frames
+    include = EMBER_AF_API_NEIGHBOR_HEADER
+
+    # Networking Frames
+    setManufacturerCode         = emberSetManufacturerCode
+    setPowerDescriptor          = emberSetPowerDescriptor
+    networkInit                 = emberNetworkInit
+    startScan                   = emberStartScan
+    findUnusedPanId             = emberFindUnusedPanId
+    formNetwork                 = emberFormNetwork
+    joinNetwork                 = emberJoinNetwork
+    joinNetworkDirectly         = emberJoinNetworkDirectly
+    energyScanRequest           = emberEnergyScanRequest
+    getNeighbor                 = emberGetNeighbor
+    getRouteTableEntry          = emberGetRouteTableEntry
+    setRadioPower               = emberSetRadioPower
+    multiPhyStart               = emberMultiPhyStart
+    multiPhyStop                = emberMultiPhyStop
+    multiPhySetRadioPower       = emberMultiPhySetRadioPower
+    multiPhySetRadioChannel     = emberMultiPhySetRadioChannel
+    getDutyCycleState           = emberGetDutyCycleState
+    setDutyCycleLimitsInStack   = emberSetDutyCycleLimitsInStack
+    getDutyCycleLimits          = emberGetDutyCycleLimits
+    getRadioParameters          = emberGetRadioParameters
+    writeNodeData               = emberWriteNodeData
+    getFirstBeacon              = emberGetFirstBeacon
+    getNextBeacon               = emberGetNextBeacon
+    getNumStoredBeacons         = emberGetNumStoredBeacons
+    clearStoredBeacons          = emberClearStoredBeacons
+
+    getNeighborFrameCounter     = emberGetNeighborFrameCounter
+    sendLinkPowerDeltaRequest   = emberSendLinkPowerDeltaRequest
+
+    networkState         = emberNetworkState
+    stopScan             = emberStopScan
+    leaveNetwork         = emberLeaveNetwork
+    neighborCount        = emberNeighborCount
+    setRadioChannel      = emberSetRadioChannel
+    getRadioChannel      = emberGetRadioChannel
+    setLogicalAndRadioChannel = emberSetLogicalAndRadioChannel
+    addressTableIsActive = emberAddressTableIsActive
+    getLibraryStatus     = emberGetLibraryStatus
+    permitJoining        = emberPermitJoining
+    getPhyInterfaceCount = emberGetPhyInterfaceCount
+
+
+    # Messaging Frames
+    sendManyToOneRouteRequest   = emberSendManyToOneRouteRequest
+    setAddressTableRemoteEui64  = emberSetAddressTableRemoteEui64
+    getAddressTableRemoteEui64  = emberGetAddressTableRemoteEui64
+    setAddressTableRemoteNodeId = emberSetAddressTableRemoteNodeId
+    getAddressTableRemoteNodeId = emberGetAddressTableRemoteNodeId
+    setExtendedTimeout          = emberSetExtendedTimeout
+    getExtendedTimeout          = emberGetExtendedTimeout
+    lookupNodeIdByEui64         = emberLookupNodeIdByEui64
+    lookupEui64ByNodeId         = emberLookupEui64ByNodeId
+    maximumPayloadLength        = emberMaximumApsPayloadLength
+    addressTableEntryIsActive   = emberAddressTableEntryIsActive
+    setMacPollFailureWaitTime       = emberSetMacPollFailureWaitTime
+    setParentClassificationEnabled = emberSetParentClassificationEnabled
+    getParentClassificationEnabled = emberGetParentClassificationEnabled
+    setBeaconClassificationParams = emberSetBeaconClassificationParams
+    getBeaconClassificationParams = emberGetBeaconClassificationParams
+  }
+
+  setup(eventConfiguration) {
+    emberAfPluginEzspZigbeeProPollTimer0EventControl, emberAfPluginEzspZigbeeProPollTimer0EventHandler
+    emberAfPluginEzspZigbeeProPollTimer1EventControl, emberAfPluginEzspZigbeeProPollTimer1EventHandler
+    emberAfPluginEzspZigbeeProPollTimer2EventControl, emberAfPluginEzspZigbeeProPollTimer2EventHandler
+    emberAfPluginEzspZigbeeProPollTimer3EventControl, emberAfPluginEzspZigbeeProPollTimer3EventHandler
+  }
+
+  setup(bookkeeping) {
+    getValue              = emberAfPluginEzspZigbeeProGetValueCommandCallback
+    getExtendedValue      = emberAfPluginEzspZigbeeProGetExtendedValueCommandCallback
+    setValue              = emberAfPluginEzspZigbeeProSetValueCommandCallback
+    getPolicy             = emberAfPluginEzspZigbeeProPolicyCommandCallback
+    setPolicy             = emberAfPluginEzspZigbeeProPolicyCommandCallback
+    getConfigurationValue = emberAfPluginEzspZigbeeProGetConfigurationValueCommandCallback
+    setConfigurationValue = emberAfPluginEzspZigbeeProSetConfigurationValueCommandCallback
+
+    modifyMemoryAllocation = emberAfPluginEzspZigbeeProModifyMemoryAllocationCallback
+  }
+
+  precompiled(efr32) {
+    file=$FRAMEWORK/../../build/ncp-pro-library-cortexm3-$--toolchainName--$-$--chipFamily;L--$$--dynamicPhy--$$--smartEnergyStackTokens--$$--stackProtection--$/ncp-pro-library.a
+    $ncp-pro-library-common
+  }
+
+  precompiled(em355,em3555,em356,em357,em3581,em3582,em3585,em3586,em3587,em3588,em3591,em3592,em3595,em3596,em3597,em3598) {
+    file=$FRAMEWORK/../../build/ncp-pro-library-cortexm3-$--toolchainName--$-$--partNumber;L--$-em3xx$--smartEnergyStackTokens--$$--stackProtection--$/ncp-pro-library.a
+    $ncp-pro-library-common
+  }
+
+  precompiled(simulation) {
+    file=$FRAMEWORK/../../build/ncp-pro-library-unix-gcc-simulation$--dynamicPhy--$$--stackProtection--$/ncp-pro-library.a
+    $ncp-pro-library-common
+  }
+}
+
+plugin(ezsp-zll) {
+  name=ZigBee Light Link EZSP Command Handlers
+  description=This plugin provides functionality to manage a ZLL network on an NCP.
+  category=Command Handler
+  quality=production
+  root=$FRAMEWORK/../em260
+
+  architecture=efr32,em355,em3555,em356,em357,em3581,em3582,em3585,em3586,em3587,em3588,em3591,em3592,em3595,em3596,em3597,em3598,simulation
+
+  requiredApis=ezsp,zll
+
+  providedApis=ezsp-zll
+
+  files(ncp-zll-library-common) {
+    # APP:NCP_ZLL
+    command-handlers-zll.c
+  }
+
+  $ncp-zll-library-common
+
+  setup(ezsp) {
+    sections = ZLL Frames
+
+    zllSetInitialSecurityState    = emberZllSetInitialSecurityState
+    zllSetSecurityStateWithoutKey = emberZllSetSecurityStateWithoutKey
+    zllStartScan                  = emberZllStartScan
+    zllSetRxOnWhenIdle            = emberZllSetRxOnWhenIdle
+    zllGetTokens                  = emberZllGetTokensStackZll
+    zllSetDataToken               = emberZllSetTokenStackZllData
+    zllSetNonZllNetwork           = emberZllSetNonZllNetwork
+    isZllNetwork                  = emberIsZllNetwork
+    setZllAdditionalState         = emberSetZllAdditionalState
+    setZllNodeType                = emberSetZllNodeType
+    zllSetRadioIdleMode           = emberZllSetRadioIdleMode
+    zllGetRadioIdleMode           = emberZllGetRadioIdleMode
+    zllOperationInProgress        = emberZllOperationInProgress
+    zllRxOnWhenIdleGetActive      = emberZllRxOnWhenIdleGetActive
+    zllScanningComplete           = emberZllScanningComplete
+    getZllPrimaryChannelMask      = emberGetZllPrimaryChannelMask
+    getZllSecondaryChannelMask    = emberGetZllSecondaryChannelMask
+    setZllPrimaryChannelMask      = emberSetZllPrimaryChannelMask
+    setZllSecondaryChannelMask    = emberSetZllSecondaryChannelMask
+    zllClearTokens                = emberZllClearTokens
+  }
+
+  setup(bookkeeping) {
+    getPolicy             = emberAfPluginEzspZllPolicyCommandCallback
+    setPolicy             = emberAfPluginEzspZllPolicyCommandCallback
+    getConfigurationValue = emberAfPluginEzspZllConfigurationValueCommandCallback
+    setConfigurationValue = emberAfPluginEzspZllConfigurationValueCommandCallback
+  }
+
+  precompiled(efr32) {
+    file=$FRAMEWORK/../../build/ncp-zll-library-cortexm3-$--toolchainName--$-$--chipFamily;L--$$--dynamicPhy--$$--stackProtection--$/ncp-zll-library.a
+    $ncp-zll-library-common
+  }
+
+  precompiled(em355,em3555,em356,em357,em3581,em3582,em3585,em3586,em3587,em3588,em3591,em3592,em3595,em3596,em3597,em3598) {
+    file=$FRAMEWORK/../../build/ncp-zll-library-cortexm3-$--toolchainName--$-$--partNumber;L--$-em3xx$--stackProtection--$/ncp-zll-library.a
+    $ncp-zll-library-common
+  }
+
+  precompiled(simulation) {
+    file=$FRAMEWORK/../../build/ncp-zll-library-unix-gcc-simulation$--dynamicPhy--$$--stackProtection--$/ncp-zll-library.a
+    $ncp-zll-library-common
+  }
+}
+
+# Core
+
+plugin(ncp-spi) {
+  name=NCP - SPI
+  description=This plugin provides the functionality for an NCP application to communicate with a host over SPI.
+  category=Core
+  quality=production
+  root=$FRAMEWORK/../em260
+
+  architecture=efr32,em355,em3555,em356,em357,em3581,em3582,em3585,em3586,em3587,em3588,em3591,em3592,em3595,em3596,em3597,em3598,simulation
+
+  requiredApis=antenna,buffer,ext-device,ezsp-protocol,hal,serial,random,xncp,secure-ezsp
+  api.ext-device.condition=!conf.architectureMatches("simulation")
+
+  providedApis=counters,ezsp,ezsp-protocol,main,ncp,ncp-serial
+  api.ezsp-protocol.header=../util/ezsp/ezsp-protocol.h
+  api.ezsp.header=command-context.h
+
+  implementedCallbacks=main,emberStackStatusHandler,emberCounterHandler,emberEnergyScanResultHandler
+
+  setup(hwConfig) {
+    dependentHwConfModules=SPINCP
+  }
+
+  files(em260-spi-util-library-common) {
+    # APP:EM260_SPI
+    serial-interface-spi.c
+    # APP:NCP_CORE
+    main.c
+    command-handlers.c
+    timers.c
+    memory-allocation.c
+    stack-callbacks.c
+    frame-utilities.c
+      # APP_UTIL:EZSP_FRAME_UTILITIES
+      ../util/ezsp/ezsp-frame-utilities.c
+    # APP_UTIL:COUNTERS
+    ../util/counters/counters.c
+  }
+
+  $em260-spi-util-library-common
+
+  # APP:EM260_COMMON
+  em260-common.c
+  # STACK:CONFIG
+  $FRAMEWORK/../../stack/config/ember-configuration.c
+
+  # HAL_MICRO_PLAT:SPI_PROTOCOL
+  $HAL/micro/cortexm3/efm32/spi-protocol.c          (efr32)
+  $HAL/micro/cortexm3/spi-protocol.c                (em355,em3555,em356,em357,em3581,em3582,em3585,em3586,em3587,em3588,em3591,em3592,em3595,em3596,em3597,em3598)
+  $HAL/micro/unix/simulation/spi-protocol-ncp-sim.c (simulation)
+
+  precompiled(efr32) {
+    file=$FRAMEWORK/../../build/em260-spi-util-library-cortexm3-$--toolchainName--$-$--chipFamily;L--$$--dynamicPhy--$$--smartEnergyStackTokens--$$--stackProtection--$/em260-spi-util-library.a
+    $em260-spi-util-library-common
+  }
+
+  precompiled(em355,em3555,em356,em357,em3581,em3582,em3585,em3586,em3587,em3588,em3591,em3592,em3595,em3596,em3597,em3598) {
+    file=$FRAMEWORK/../../build/em260-spi-util-library-cortexm3-$--toolchainName--$-$--partNumber;L--$-em3xx$--smartEnergyStackTokens--$$--stackProtection--$/em260-spi-util-library.a
+    $em260-spi-util-library-common
+  }
+
+  precompiled(simulation) {
+    file=$FRAMEWORK/../../build/em260-spi-util-library-unix-gcc-simulation$--dynamicPhy--$$--stackProtection--$/em260-spi-util-library.a
+    $em260-spi-util-library-common
+  }
+
+  setup(macros) {
+    -DEZSP_SPI
+    -DEMBER_SC2_MODE=EMBER_SPI_SLAVE
+
+    EZSP_TOKEN_SIZE=8
+    EZSP_TOKEN_ENTRIES=32
+
+    SOURCE_ROUTE_TABLE_MEMORY=40
+    BINDING_TABLE_MEMORY=60
+    BROADCAST_TABLE_MEMORY=(EMBER_BROADCAST_TABLE_SIZE*5)
+    EXTRA_MEMORY=(SOURCE_ROUTE_TABLE_MEMORY+BINDING_TABLE_MEMORY+BROADCAST_TABLE_MEMORY)
+    RESERVED_AVAILABLE_MEMORY=(EMBER_PACKET_BUFFER_COUNT+EXTRA_MEMORY)
+  }
+
+  setup(eventConfiguration) {
+    emberAfPluginEzspHostTimer0EventControl, emberAfPluginEzspHostTimer0EventHandler
+    emberAfPluginEzspHostTimer1EventControl, emberAfPluginEzspHostTimer1EventHandler
+  }
+
+  setup(bookkeeping) {
+    provides = getValue, getExtendedValue, setValue, getPolicy, setPolicy, getConfigurationValue, setConfigurationValue, modifyMemoryAllocation, permitHostToNcpFrame, init, tick
+
+    provides.getValue   = void emberAfEzspGetValueCommandCallback(EmberAfPluginEzspValueCommandContext* context)
+    provides.getValue.0 = emberAfPluginEzspGetValueCommandCallback
+
+    provides.getExtendedValue = void emberAfEzspGetExtendedValueCommandCallback(EmberAfPluginEzspValueCommandContext* context)
+
+    provides.setValue   = void emberAfEzspSetValueCommandCallback(EmberAfPluginEzspValueCommandContext* context)
+    provides.setValue.0 = emberAfPluginEzspSetValueCommandCallback
+
+    provides.getPolicy   = void emberAfEzspGetPolicyCommandCallback(EmberAfPluginEzspPolicyCommandContext* context)
+    provides.getPolicy.0 = emberAfPluginEzspPolicyCommandCallback
+
+    provides.setPolicy   = void emberAfEzspSetPolicyCommandCallback(EmberAfPluginEzspPolicyCommandContext* context)
+    provides.setPolicy.0 = emberAfPluginEzspPolicyCommandCallback
+
+    provides.getConfigurationValue   = void emberAfEzspGetConfigurationValueCommandCallback(EmberAfPluginEzspConfigurationValueCommandContext* context)
+    provides.getConfigurationValue.0 = emberAfPluginEzspGetConfigurationValueCommandCallback
+
+    provides.setConfigurationValue   = void emberAfEzspSetConfigurationValueCommandCallback(EmberAfPluginEzspConfigurationValueCommandContext* context)
+    provides.setConfigurationValue.0 = emberAfPluginEzspSetConfigurationValueCommandCallback
+
+    provides.modifyMemoryAllocation = void emberAfPluginEzspModifyMemoryAllocationCallback(void)
+
+    provides.permitHostToNcpFrame = void emberAfPluginEzspPermitHostToNcpFrameCallback(bool* permit)
+
+    provides.init   = void emberAfInit(void)
+    provides.init.0 = emberAfMainInitCallback
+
+    provides.tick   = void emberAfTick(void)
+    provides.tick.0 = emberAfMainTickCallback
+  }
+}
+
+plugin(ncp-uart) {
+  name=NCP - UART
+  description=This plugin provides the functionality for an NCP application to communicate with a host over a UART.
+  category=Core
+  quality=production
+  root=$FRAMEWORK/../em260
+
+  architecture=efr32,em355,em3555,em356,em357,em3581,em3582,em3585,em3586,em3587,em3588,em3591,em3592,em3595,em3596,em3597,em3598,simulation
+
+  requiredApis=antenna,buffer,ezsp-protocol,hal,serial,random,xncp,secure-ezsp
+
+  providedApis=counters,ezsp,ezsp-protocol,main,ncp,ncp-serial
+  api.ezsp-protocol.header=../util/ezsp/ezsp-protocol.h
+  api.ezsp.header=command-context.h
+
+  implementedCallbacks=main,emberStackStatusHandler,emberCounterHandler,emberEnergyScanResultHandler
+
+  setup(hwConfig) {
+    dependentHwConfModules=UARTNCP,USART0,USART1,USART2,USART3
+  }
+
+  files(em260-uart-util-library-common) {
+    # APP:NCP_CORE
+    main.c
+    command-handlers.c
+    timers.c
+    memory-allocation.c
+    stack-callbacks.c
+    frame-utilities.c
+      # APP_UTIL:EZSP_FRAME_UTILITIES
+      ../util/ezsp/ezsp-frame-utilities.c
+    # APP_UTIL:COUNTERS
+    ../util/counters/counters.c
+  }
+
+  files(ncp-ash-common) {
+    # HAL_MICRO:ASH_COMMON
+    $HAL/micro/generic/ash-common.c
+    # HAL_MICRO:ASH_NCP
+    $HAL/micro/generic/ash-ncp.c
+  }
+
+  $em260-uart-util-library-common
+  $ncp-ash-common
+
+  # APP:EM260_COMMON
+  em260-common.c
+  # APP:EM260_UART
+  serial-interface-uart.c
+  # STACK:CONFIG
+  ../../stack/config/ember-configuration.c
+
+  options=flowControl
+
+  flowControl.name=Flow Control Type
+  flowControl.description=Use this option to select the type of flow control to use for the application.
+  flowControl.type=LIST:Hardware,Software
+  flowControl.default=Hardware
+
+  precompiled(efr32) {
+    file=$FRAMEWORK/../../build/em260-uart-util-library-cortexm3-$--toolchainName--$-$--chipFamily;L--$$--dynamicPhy--$$--smartEnergyStackTokens--$$--stackProtection--$/em260-uart-util-library.a
+    $em260-uart-util-library-common
+  }
+
+  precompiled(em355,em3555,em356,em357,em3581,em3582,em3585,em3586,em3587,em3588,em3591,em3592,em3595,em3596,em3597,em3598) {
+    file=$FRAMEWORK/../../build/em260-uart-util-library-cortexm3-$--toolchainName--$-$--partNumber;L--$-em3xx$--smartEnergyStackTokens--$$--stackProtection--$/em260-uart-util-library.a
+    $em260-uart-util-library-common
+  }
+
+  precompiled(simulation) {
+    file=$FRAMEWORK/../../build/em260-uart-util-library-unix-gcc-simulation$--dynamicPhy--$$--stackProtection--$/em260-uart-util-library.a
+    $em260-uart-util-library-common
+  }
+
+  precompiled(efr32) {
+    file=$FRAMEWORK/../../build/ncp-ash-fifo-xon-xoff-library-cortexm3-$--toolchainName--$-$--chipFamily;L--$$--dynamicPhy--$$--stackProtection--$/ncp-ash-fifo-xon-xoff-library.a
+    option.flowControl=Software
+    $ncp-ash-common
+  }
+
+  precompiled(em355,em3555,em356,em357,em3581,em3582,em3585,em3586,em3587,em3588,em3591,em3592,em3595,em3596,em3597,em3598) {
+    file=$FRAMEWORK/../../build/ncp-ash-fifo-xon-xoff-library-cortexm3-$--toolchainName--$-$--partNumber;L--$-em3xx$--smartEnergyStackTokens--$$--stackProtection--$/ncp-ash-fifo-xon-xoff-library.a
+    option.flowControl=Software
+    $ncp-ash-common
+  }
+
+  precompiled(simulation) {
+    file=$FRAMEWORK/../../build/ncp-ash-fifo-xon-xoff-library-unix-gcc-simulation$--dynamicPhy--$$--stackProtection--$/ncp-ash-fifo-xon-xoff-library.a
+    option.flowControl=Software
+    $ncp-ash-common
+  }
+
+  precompiled(efr32) {
+    file=$FRAMEWORK/../../build/ncp-ash-fifo-rts-cts-library-cortexm3-$--toolchainName--$-$--chipFamily;L--$$--dynamicPhy--$$--stackProtection--$/ncp-ash-fifo-rts-cts-library.a
+    option.flowControl=Hardware
+    $ncp-ash-common
+  }
+
+  precompiled(em355,em3555,em356,em357,em3581,em3582,em3585,em3586,em3587,em3588,em3591,em3592,em3595,em3596,em3597,em3598) {
+    file=$FRAMEWORK/../../build/ncp-ash-fifo-rts-cts-library-cortexm3-$--toolchainName--$-$--partNumber;L--$-em3xx$--smartEnergyStackTokens--$$--stackProtection--$/ncp-ash-fifo-rts-cts-library.a
+    option.flowControl=Hardware
+    $ncp-ash-common
+  }
+
+  precompiled(simulation) {
+    file=$FRAMEWORK/../../build/ncp-ash-fifo-rts-cts-library-unix-gcc-simulation$--dynamicPhy--$$--stackProtection--$/ncp-ash-fifo-rts-cts-library.a
+    option.flowControl=Hardware
+    $ncp-ash-common
+  }
+
+  setup(macros) {
+    -DEZSP_UART
+    -DNO_USB
+
+    flowControl=Software : -DEMBER_SERIAL1_MODE=EMBER_SERIAL_FIFO
+    flowControl=Software : -DEMBER_SERIAL1_TX_QUEUE_SIZE=32
+    flowControl=Software : -DEMBER_SERIAL1_RX_QUEUE_SIZE=64
+    flowControl=Software : -DEMBER_SERIAL1_XONXOFF
+
+    flowControl=Hardware : -DEMBER_SERIAL1_MODE=EMBER_SERIAL_FIFO
+    flowControl=Hardware : -DEMBER_SERIAL1_TX_QUEUE_SIZE=64
+    flowControl=Hardware : -DEMBER_SERIAL1_RX_QUEUE_SIZE=64
+    flowControl=Hardware : -DEMBER_SERIAL1_RTSCTS
+    flowControl=Hardware : -DEMBER_SERIAL0_MODE=EMBER_SERIAL_FIFO
+    flowControl=Hardware : -DEMBER_SERIAL0_TX_QUEUE_SIZE=64
+    flowControl=Hardware : -DEMBER_SERIAL0_RX_QUEUE_SIZE=64
+
+    EZSP_TOKEN_SIZE=8
+    EZSP_TOKEN_ENTRIES=32
+
+    SOURCE_ROUTE_TABLE_MEMORY=40
+    BINDING_TABLE_MEMORY=60
+    BROADCAST_TABLE_MEMORY=(EMBER_BROADCAST_TABLE_SIZE*5)
+    EXTRA_MEMORY=(SOURCE_ROUTE_TABLE_MEMORY+BINDING_TABLE_MEMORY+BROADCAST_TABLE_MEMORY)
+    RESERVED_AVAILABLE_MEMORY=(EMBER_PACKET_BUFFER_COUNT+EXTRA_MEMORY)
+  }
+
+  setup(eventConfiguration) {
+    emberAfPluginEzspHostTimer0EventControl, emberAfPluginEzspHostTimer0EventHandler
+    emberAfPluginEzspHostTimer1EventControl, emberAfPluginEzspHostTimer1EventHandler
+  }
+
+  setup(bookkeeping) {
+    provides = getValue, getExtendedValue, setValue, getPolicy, setPolicy, getConfigurationValue, setConfigurationValue, modifyMemoryAllocation, permitHostToNcpFrame, init, tick
+
+    provides.getValue   = void emberAfEzspGetValueCommandCallback(EmberAfPluginEzspValueCommandContext* context)
+    provides.getValue.0 = emberAfPluginEzspGetValueCommandCallback
+
+    provides.getExtendedValue = void emberAfEzspGetExtendedValueCommandCallback(EmberAfPluginEzspValueCommandContext* context)
+
+    provides.setValue   = void emberAfEzspSetValueCommandCallback(EmberAfPluginEzspValueCommandContext* context)
+    provides.setValue.0 = emberAfPluginEzspSetValueCommandCallback
+
+    provides.getPolicy   = void emberAfEzspGetPolicyCommandCallback(EmberAfPluginEzspPolicyCommandContext* context)
+    provides.getPolicy.0 = emberAfPluginEzspPolicyCommandCallback
+
+    provides.setPolicy   = void emberAfEzspSetPolicyCommandCallback(EmberAfPluginEzspPolicyCommandContext* context)
+    provides.setPolicy.0 = emberAfPluginEzspPolicyCommandCallback
+
+    provides.getConfigurationValue   = void emberAfEzspGetConfigurationValueCommandCallback(EmberAfPluginEzspConfigurationValueCommandContext* context)
+    provides.getConfigurationValue.0 = emberAfPluginEzspGetConfigurationValueCommandCallback
+
+    provides.setConfigurationValue   = void emberAfEzspSetConfigurationValueCommandCallback(EmberAfPluginEzspConfigurationValueCommandContext* context)
+    provides.setConfigurationValue.0 = emberAfPluginEzspSetConfigurationValueCommandCallback
+
+    provides.modifyMemoryAllocation = void emberAfPluginEzspModifyMemoryAllocationCallback(void)
+
+    provides.permitHostToNcpFrame = void emberAfPluginEzspPermitHostToNcpFrameCallback(bool* permit)
+
+    provides.init   = void emberAfInit(void)
+    provides.init.0 = emberAfMainInitCallback
+
+    provides.tick   = void emberAfTick(void)
+    provides.tick.0 = emberAfMainTickCallback
+  }
+}
+
+plugin(ncp-usb) {
+  name=NCP - USB
+  description=This plugin provides the functionality for an NCP application to communicate with a host over USB.
+  category=Core
+  quality=development
+  root=$FRAMEWORK/../em260
+
+  architecture=em3582,em3586,em3588,em3592,em3596,em3598,simulation
+
+  requiredApis=antenna,buffer,ext-device,ezsp-protocol,hal,serial,random,xncp,secure-ezsp
+
+  providedApis=counters,ezsp,ezsp-protocol,main,ncp,ncp-serial
+  api.ezsp-protocol.header=../util/ezsp/ezsp-protocol.h
+  api.ezsp.header=command-context.h
+
+  implementedCallbacks=main,emberStackStatusHandler,emberCounterHandler,emberEnergyScanResultHandler
+
+  files(em260-usb-util-library-common) {
+    # APP:EM260_USB
+    serial-interface-usb.c
+    # APP:NCP_CORE
+    main.c
+    command-handlers.c
+    timers.c
+    memory-allocation.c
+    stack-callbacks.c
+    frame-utilities.c
+      # APP_UTIL:EZSP_FRAME_UTILITIES
+      ../util/ezsp/ezsp-frame-utilities.c
+    # APP_UTIL:COUNTERS
+    ../util/counters/counters.c
+  }
+
+  $em260-usb-util-library-common
+
+  # APP:EM260_COMMON
+  em260-common.c
+  # STACK:CONFIG
+  ../../stack/config/ember-configuration.c
+
+  precompiled(em3582,em3586,em3588,em3592,em3596,em3598) {
+    file=$FRAMEWORK/../../build/em260-usb-util-library-cortexm3-$--toolchainName--$-$--partNumber;L--$-em3xx/em260-usb-util-library.a
+    $em260-usb-util-library-common
+  }
+
+  precompiled(simulation) {
+    file=$FRAMEWORK/../../build/em260-usb-util-library-unix-gcc-simulation$--dynamicPhy--$$--stackProtection--$/em260-usb-util-library.a
+    $em260-usb-util-library-common
+  }
+
+  setup(macros) {
+    -DEZSP_USB
+
+    -DEMBER_SERIAL0_MODE=EMBER_SERIAL_FIFO
+    -DEMBER_SERIAL0_TX_QUEUE_SIZE=64
+    -DEMBER_SERIAL0_RX_QUEUE_SIZE=32
+
+    -DEMBER_SERIAL3_MODE=EMBER_SERIAL_FIFO
+    -DEMBER_SERIAL3_TX_QUEUE_SIZE=64
+    -DEMBER_SERIAL3_RX_QUEUE_SIZE=128
+
+    EZSP_TOKEN_SIZE=8
+    EZSP_TOKEN_ENTRIES=32
+
+    SOURCE_ROUTE_TABLE_MEMORY=40
+    BINDING_TABLE_MEMORY=60
+    BROADCAST_TABLE_MEMORY=(EMBER_BROADCAST_TABLE_SIZE*5)
+    EXTRA_MEMORY=(SOURCE_ROUTE_TABLE_MEMORY+BINDING_TABLE_MEMORY+BROADCAST_TABLE_MEMORY)
+    RESERVED_AVAILABLE_MEMORY=(EMBER_PACKET_BUFFER_COUNT+EXTRA_MEMORY)
+  }
+
+  setup(eventConfiguration) {
+    emberAfPluginEzspHostTimer0EventControl, emberAfPluginEzspHostTimer0EventHandler
+    emberAfPluginEzspHostTimer1EventControl, emberAfPluginEzspHostTimer1EventHandler
+  }
+
+  setup(bookkeeping) {
+    provides = getValue, getExtendedValue, setValue, getPolicy, setPolicy, getConfigurationValue, setConfigurationValue, modifyMemoryAllocation, permitHostToNcpFrame, init, tick
+
+    provides.getValue   = void emberAfEzspGetValueCommandCallback(EmberAfPluginEzspValueCommandContext* context)
+    provides.getValue.0 = emberAfPluginEzspGetValueCommandCallback
+
+    provides.getExtendedValue = void emberAfEzspGetExtendedValueCommandCallback(EmberAfPluginEzspValueCommandContext* context)
+
+    provides.setValue   = void emberAfEzspSetValueCommandCallback(EmberAfPluginEzspValueCommandContext* context)
+    provides.setValue.0 = emberAfPluginEzspSetValueCommandCallback
+
+    provides.getPolicy   = void emberAfEzspGetPolicyCommandCallback(EmberAfPluginEzspPolicyCommandContext* context)
+    provides.getPolicy.0 = emberAfPluginEzspPolicyCommandCallback
+
+    provides.setPolicy   = void emberAfEzspSetPolicyCommandCallback(EmberAfPluginEzspPolicyCommandContext* context)
+    provides.setPolicy.0 = emberAfPluginEzspPolicyCommandCallback
+
+    provides.getConfigurationValue   = void emberAfEzspGetConfigurationValueCommandCallback(EmberAfPluginEzspConfigurationValueCommandContext* context)
+    provides.getConfigurationValue.0 = emberAfPluginEzspGetConfigurationValueCommandCallback
+
+    provides.setConfigurationValue   = void emberAfEzspSetConfigurationValueCommandCallback(EmberAfPluginEzspConfigurationValueCommandContext* context)
+    provides.setConfigurationValue.0 = emberAfPluginEzspSetConfigurationValueCommandCallback
+
+    provides.modifyMemoryAllocation = void emberAfPluginEzspModifyMemoryAllocationCallback(void)
+
+    provides.permitHostToNcpFrame = void emberAfPluginEzspPermitHostToNcpFrameCallback(bool* permit)
+
+    provides.init   = void emberAfInit(void)
+    provides.init.0 = emberAfMainInitCallback
+
+    provides.tick   = void emberAfTick(void)
+    provides.tick.0 = emberAfMainTickCallback
+  }
+}
+
+plugin(secure-ezsp) {
+  name=Secure EZSP
+  description=This plugin provides the functionality for an NCP application to securely communicate with a Host.
+  category=Core
+  quality=development
+  qualityString=Alpha Release
+  root=$FRAMEWORK/../em260
+
+  architecture=efr32,em355,em3555,em356,em357,em3581,em3582,em3585,em3586,em3587,em3588,em3591,em3592,em3595,em3596,em3597,em3598,simulation
+
+  requiredApis=ezsp,ezsp-protocol,ccm-star
+  api.ext-device.condition=!conf.architectureMatches("simulation")
+
+  providedApis=secure-ezsp
+  api.secure-ezsp.header=../util/ezsp/secure-ezsp-protocol.h
+
+  # APP_UTIL:SECURE_EZSP
+  ../util/ezsp/secure-ezsp.c
+  ../util/ezsp/secure-ezsp-ncp.c
+  # APP:NCP_SECURE_EZSP
+  command-handlers-secure-ezsp.c
+
+  setup(token) {
+    files=../util/ezsp/secure-ezsp-token.h
+  }
+
+  setup(ezsp) {
+    sections = Secure EZSP Frames
+    include = EMBER_AF_API_SECURE_EZSP
+
+    # Secure EZSP
+    setSecurityKey                = ezspSetSecurityKey
+    setSecurityParameters         = ezspSetSecurityParameters
+    resetToFactoryDefaults        = ezspResetToFactoryDefaults
+    getSecurityKeyStatus          = ezspGetSecurityKeyStatus
+  }
+}
+
+plugin(secure-ezsp-stub) {
+  name=Secure EZSP Stub
+  description=This plugin provides the stubbed functionality for an NCP application to securely communicate with a Host.
+  category=Core
+  quality=development
+  qualityString=Alpha Release
+  root=$FRAMEWORK/../em260
+
+  architecture=efr32,em355,em3555,em356,em357,em3581,em3582,em3585,em3586,em3587,em3588,em3591,em3592,em3595,em3596,em3597,em3598,simulation
+
+  requiredApis=ezsp,ezsp-protocol
+  api.ext-device.condition=!conf.architectureMatches("simulation")
+
+  providedApis=secure-ezsp,ncp-secure-ezsp
+  api.secure-ezsp.header=../util/ezsp/secure-ezsp-protocol.h
+
+  # APP_UTIL:SECURE_EZSP_STUB
+  ../util/ezsp/secure-ezsp-stub.c
+  # APP:NCP_SECURE_EZSP_STUB
+  command-handlers-secure-ezsp-stub.c
+}
+
+plugin(xncp-stub) {
+  name=XNCP Stub Library
+  description=This library contains stub implementations of XNCP functionality on an NCP.
+  category=Core
+  quality=production
+  root=$FRAMEWORK/../xncp
+
+  architecture=efr32,em355,em3555,em356,em357,em3581,em3582,em3585,em3586,em3587,em3588,em3591,em3592,em3595,em3596,em3597,em3598,simulation
+
+  providedApis=xncp
+
+  files(em260-xncp-stub-library-common) {
+    # APP:EM260_XNCP_STUB
+    xncp-stubs.c
+  }
+
+  $em260-xncp-stub-library-common
+
+  precompiled(efr32) {
+    file=$FRAMEWORK/../../build/em260-xncp-stub-library-cortexm3-$--toolchainName--$-$--chipFamily;L--$$--dynamicPhy--$/em260-xncp-stub-library.a
+    $em260-xncp-stub-library-common
+  }
+
+  precompiled(em355,em3555,em356,em357,em3581,em3582,em3585,em3586,em3587,em3588,em3591,em3592,em3595,em3596,em3597,em3598) {
+    file=$FRAMEWORK/../../build/em260-xncp-stub-library-cortexm3-$--toolchainName--$-$--partNumber;L--$-em3xx/em260-xncp-stub-library.a
+    $em260-xncp-stub-library-common
+  }
+
+  precompiled(simulation) {
+    file=$FRAMEWORK/../../build/em260-xncp-stub-library-unix-gcc-simulation$--dynamicPhy--$/em260-xncp-stub-library.a
+    $em260-xncp-stub-library-common
+  }
+}
+
+plugin(ember-minimal-printf) {
+  name=Ember Minimal Printf
+  description=This plugin provides a simplified version of printf() via the emberSerialPrintf() primitive.  The supported printf format specifiers are non-standard but require a smaller flash foot-print than standard printf.
+  category=I/O
+  quality=production
+  root=$HAL/plugin/serial
+
+  architecture=efr32,em355,em3555,em356,em357,em3581,em3582,em3585,em3586,em3587,em3588,em3591,em3592,em3595,em3596,em3597,em3598,simulation
+
+  providedApis=printf
+  requiredApis=serial
+
+  # APP_UTIL:SERIAL
+  ember-printf.c
+}
+
+plugin(serial) {
+  name=Serial
+  description=High-level serial communication functions.
+  category=I/O
+  quality=production
+  root=$HAL/plugin/serial
+
+  architecture=efr32,em355,em3555,em356,em357,em3581,em3582,em3585,em3586,em3587,em3588,em3591,em3592,em3595,em3596,em3597,em3598,simulation
+
+  providedApis=serial
+  providedApis.serial.header=serial.h
+
+  requiredApis=hal,printf,system-timer
+
+  setup(hwConfig) {
+    dependentHwConfModules=SERIAL,USART0,USART1,USART2,USART3,USART4,USART5,LEUART0,LEUART1
+  }
+
+  # APP_UTIL:SERIAL
+  serial.c               (efr32,em355,em3555,em356,em357,em3581,em3582,em3585,em3586,em3587,em3588,em3591,em3592,em3595,em3596,em3597,em3598,simulation)
+}
+
+plugin(xncp-test-harness) {
+  name=xNCP Test Harness
+  description=This plugin allows a test harness running on a host control non-standard behavior on the NCP
+  category=Testing
+  quality=development
+  root=$FRAMEWORK/../xncp-test-harness
+
+  requiredApis=xncp
+
+  #APP:XNCP_TEST_HARNESS
+  xncp-test-harness.c
+
+  implementedCallbacks=emberAfMainInitCallback,emberAfPluginXncpGetXncpInformation,emberAfPluginCommandHandlerPermitNcpToHostFrameCallback,emberAfPluginCommandHandlerPermitHostToNcpFrameCallback,emberAfPluginXncpIncomingCustomFrameCallback,emberAfIncomingMessageCallback
+}
+
+#plugin(packet-handoff){
+  #name=Packet Handoff
+  #description=CURRENTLY NOT FUNCTIONAL FOR XNCP APPLICATIONS. This plugin hooks directly into the stack and provides a mechanism to intercept packets and hand them off to other plugins as a flat buffer.  Required for plugins implementing emberAfIncomingPacketFilterCallback/emberAfOutgoingPacketFilterCallback.
+  #category=Utility
+  #quality=maintenance
+  #qualityString=Under Maintenance
+  #includedByDefault=false
+  #hidden=true
+  #root=$FRAMEWORK/../framework/plugin-soc/packet-handoff
+
+  #providedApis=packet-handoff
+  #implementedCallbacks=emberPacketHandoffIncoming,emberPacketHandoffOutgoing
+  #callbacks=.callbacks.info-hidden
+  #packet-handoff.c
+
+  #options=allowAllPackets,allowRawMac,allowMacCommand,allowNetworkData,allowNetworkCommand,allowApsData,allowApsCommand,allowZdo,allowZcl,allowBeacon,handoffBufferSize
+
+  #allowAllPackets.name=Handoff All Packets
+  #allowAllPackets.type=BOOLEAN
+  #allowAllPackets.default=false
+
+  #allowRawMac.name=Handoff Raw Mac
+  #allowRawMac.type=BOOLEAN
+  #allowRawMac.default=false
+  #allowRawMac.enableIf=allowAllPackets
+
+  #allowMacCommand.name=Handoff Mac Commands
+  #allowMacCommand.type=BOOLEAN
+  #allowMacCommand.default=false
+  #allowMacCommand.enableIf=allowAllPackets
+
+  #allowNetworkData.name=Handoff Network Data
+  #allowNetworkData.type=BOOLEAN
+  #allowNetworkData.default=false
+  #allowNetworkData.enableIf=allowAllPackets
+
+  #allowNetworkCommand.name=Handoff Network Commands
+  #allowNetworkCommand.type=BOOLEAN
+  #allowNetworkCommand.default=false
+  #allowNetworkCommand.enableIf=allowAllPackets
+
+  #allowApsData.name=Handoff APS Data
+  #allowApsData.type=BOOLEAN
+  #allowApsData.default=false
+  #allowApsData.enableIf=allowAllPackets
+
+  #allowApsCommand.name=Handoff APS Commands
+  #allowApsCommand.type=BOOLEAN
+  #allowApsCommand.default=false
+  #allowApsCommand.enableIf=allowAllPackets
+
+  #allowZdo.name=Handoff ZDO Commands
+  #allowZdo.type=BOOLEAN
+  #allowZdo.default=false
+  #allowZdo.enableIf=allowAllPackets
+
+  #allowZcl.name=Handoff ZCL Commands
+  #allowZcl.type=BOOLEAN
+  #allowZcl.default=false
+  #allowZcl.enableIf=allowAllPackets
+
+  #allowBeacon.name=Handoff Beacons
+  #allowBeacon.type=BOOLEAN
+  #allowBeacon.default=false
+  #allowBeacon.enableIf=allowAllPackets
+
+  #handoffBufferSize.name=Packet Handoff Buffer Size
+  #handoffBufferSize.type=NUMBER:128,512
+  #handoffBufferSize.default=256
+  #handoffBufferSize.define=PACKET_HANDOFF_BUFFER_SIZE
+#}
+
+plugin(strong-random) {
+  name=Strong Random
+  description=Plugin provides apis for generating cryptographically strong random numbers.  Options select whether to use mbedtls integration or radio hardware.
+  category=Utility
+  qualityString=Alpha Quality
+  quality=alpha
+  includedByDefault=true
+
+  root=$FRAMEWORK/../../stack/framework/
+  ## STACK_FRAMEWORK:STRONG-RANDOM strong-random
+  strong-random-api.c
+
+  providedApis=strong-random
+  options=radioPrng,mbedtlsTrng
+  conditions=singleton-dep,mbedtlsProvidesTrng
+
+  radioPrng.name=Radio Hardware Support
+  radioPrng.description=Use radio hardware for true random number generation
+  radioPrng.type=BOOLEAN
+  radioPrng.default=true
+  radioPrng.macro=USE_RADIO_API_FOR_TRNG
+
+  mbedtlsTrng.name=mbedTLS Integration Support
+  mbedtlsTrng.description=Use mbedTLS framework for true random number generation
+  mbedtlsTrng.type=BOOLEAN
+  mbedtlsTrng.default=false
+  mbedtlsTrng.macro=USE_MBEDTLS_API_FOR_TRNG
+
+  singleton-dep.expression=((radioPrng && !mbedtlsTrng) || (mbedtlsTrng && !radioPrng))
+  singleton-dep.message=Must pick exactly one (1) option between radio and mbedtls
+
+  mbedtlsProvidesTrng.expression=!(!mbedtlsTrng \
+                                 && (conf.pluginService().isFeatureEnabled("mbedtls/entropy") \
+                                     || conf.pluginService().isFeatureEnabled("mbedtls/ctr-drbg")))
+  mbedtlsProvidesTrng.message=Mbed TLS provides Entropy and/or CTR-DRBG, must pick mbedtls support in strong-random plugin.
+
+  setup(pluginService) {
+    mbedtls {
+      # Switch on mbed TLS support for entropy, sha256 and CTR-DRBG.
+      requiresIf(mbedtlsTrng): ctr-drbg
+      requiresIf(mbedtlsTrng): entropy
+      requiresIf(mbedtlsTrng): sha256
+    }
+  }
+}
+
+plugin(ccm-encryption) {
+  name=CCM* Encryption
+  description=This plugin provides the AES-CCM* api for encryption, decryption, and Message Integrity Authentication.  Implementation can be provided by the mbedTLS framework, or through software
+
+  category=Utility
+  qualityString=working
+  quality=working
+  includedByDefault=true
+
+  root=$FRAMEWORK/../../stack/framework/
+  ccm-star.c
+
+  requiredApis=aes
+  providedApis=ccm-star
+  options=softwareCcm,mbedtlsCcm
+  conditions=singleton-deps,mbedtlsProvidesCcm
+
+  softwareCcm.name=AES-CCM Software Implementation
+  softwareCcm.description=Use a software implementation of AES-CCM
+  softwareCcm.type=BOOLEAN
+  softwareCcm.default=true
+  softwareCcm.macro=USE_SOFTWARE_CCM
+
+  mbedtlsCcm.name=mbedTLS Implementation
+  mbedtlsCcm.description=Use the mbedTLS framework to implement AES-CCM
+  mbedtlsCcm.type=BOOLEAN
+  mbedtlsCcm.default=false
+  mbedtlsCcm.macro=USE_MBEDTLS_CCM
+
+  singleton-deps.expression=((softwareCcm && !mbedtlsCcm) || (mbedtlsCcm && !softwareCcm))
+  singleton-deps.message=must pick exactly one (1) option between software and mbedtls
+
+  mbedtlsProvidesCcm.expression=!(!mbedtlsCcm && conf.pluginService().isFeatureEnabled("mbedtls/ccm"))
+  mbedtlsProvidesCcm.message=Mbed TLS provides CCM support, must pick mbedtls support in ccm-encryption plugin.
+
+  setup(pluginService) {
+    mbedtls {
+      # Switch on mbed TLS support for AES, CCM and Cipher
+      requiresIf(mbedtlsCcm): aes
+      requiresIf(mbedtlsCcm): ccm
+      requiresIf(mbedtlsCcm): cipher
+    }
+  }
+}
+
+singlePlugin?=../../framework/plugin/coulomb-counter/
+singlePlugin?=../../framework/plugin/multirail-demo/

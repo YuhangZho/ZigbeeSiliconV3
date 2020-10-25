@@ -1,0 +1,58 @@
+var group__sl__bt__gatt =
+[
+    [ "sl_bt_evt_gatt_mtu_exchanged", "group__sl__bt__evt__gatt__mtu__exchanged.html", "group__sl__bt__evt__gatt__mtu__exchanged" ],
+    [ "sl_bt_evt_gatt_service", "group__sl__bt__evt__gatt__service.html", "group__sl__bt__evt__gatt__service" ],
+    [ "sl_bt_evt_gatt_characteristic", "group__sl__bt__evt__gatt__characteristic.html", "group__sl__bt__evt__gatt__characteristic" ],
+    [ "sl_bt_evt_gatt_descriptor", "group__sl__bt__evt__gatt__descriptor.html", "group__sl__bt__evt__gatt__descriptor" ],
+    [ "sl_bt_evt_gatt_characteristic_value", "group__sl__bt__evt__gatt__characteristic__value.html", "group__sl__bt__evt__gatt__characteristic__value" ],
+    [ "sl_bt_evt_gatt_descriptor_value", "group__sl__bt__evt__gatt__descriptor__value.html", "group__sl__bt__evt__gatt__descriptor__value" ],
+    [ "sl_bt_evt_gatt_procedure_completed", "group__sl__bt__evt__gatt__procedure__completed.html", "group__sl__bt__evt__gatt__procedure__completed" ],
+    [ "gatt_att_opcode_t", "group__sl__bt__gatt.html#gaa9ca08392f3fe2d41dde8462fbb3f8b4", [
+      [ "gatt_read_by_type_request", "group__sl__bt__gatt.html#ggaa9ca08392f3fe2d41dde8462fbb3f8b4ad7ead9a95ecc918fe13de7342b2f2674", null ],
+      [ "gatt_read_by_type_response", "group__sl__bt__gatt.html#ggaa9ca08392f3fe2d41dde8462fbb3f8b4a74ad55fe8f293a270250ec21763e3fe3", null ],
+      [ "gatt_read_request", "group__sl__bt__gatt.html#ggaa9ca08392f3fe2d41dde8462fbb3f8b4ae89dd52fdc0cae524749aa274f32b825", null ],
+      [ "gatt_read_response", "group__sl__bt__gatt.html#ggaa9ca08392f3fe2d41dde8462fbb3f8b4ac3bad56e226c4fcd960a65254152373b", null ],
+      [ "gatt_read_blob_request", "group__sl__bt__gatt.html#ggaa9ca08392f3fe2d41dde8462fbb3f8b4ac8661cba38b5b537b1c083514f3a3f2a", null ],
+      [ "gatt_read_blob_response", "group__sl__bt__gatt.html#ggaa9ca08392f3fe2d41dde8462fbb3f8b4afc5edae855c68cec4091144a72622b35", null ],
+      [ "gatt_read_multiple_request", "group__sl__bt__gatt.html#ggaa9ca08392f3fe2d41dde8462fbb3f8b4a0ec41217bed3e7050b03764fc5b69c4a", null ],
+      [ "gatt_read_multiple_response", "group__sl__bt__gatt.html#ggaa9ca08392f3fe2d41dde8462fbb3f8b4ad51380ee8d6986ff44f1553dc4d7e21f", null ],
+      [ "gatt_write_request", "group__sl__bt__gatt.html#ggaa9ca08392f3fe2d41dde8462fbb3f8b4aefc298ae793c2b72d18c396ea2c18a75", null ],
+      [ "gatt_write_response", "group__sl__bt__gatt.html#ggaa9ca08392f3fe2d41dde8462fbb3f8b4a0e2091d7a759b48acdaf1125da908238", null ],
+      [ "gatt_write_command", "group__sl__bt__gatt.html#ggaa9ca08392f3fe2d41dde8462fbb3f8b4a0afa40b8c1ebd95b474d50a280be3832", null ],
+      [ "gatt_prepare_write_request", "group__sl__bt__gatt.html#ggaa9ca08392f3fe2d41dde8462fbb3f8b4a21f5b3b771fe3c6be33bac7bc70022d4", null ],
+      [ "gatt_prepare_write_response", "group__sl__bt__gatt.html#ggaa9ca08392f3fe2d41dde8462fbb3f8b4a5fa9e8dc3c928861fc1f4710bc0183ab", null ],
+      [ "gatt_execute_write_request", "group__sl__bt__gatt.html#ggaa9ca08392f3fe2d41dde8462fbb3f8b4a5af4a0cdc973577c60196c8f78da6ce3", null ],
+      [ "gatt_execute_write_response", "group__sl__bt__gatt.html#ggaa9ca08392f3fe2d41dde8462fbb3f8b4a3b9994419ff5c3d9ea5a5413d3951086", null ],
+      [ "gatt_handle_value_notification", "group__sl__bt__gatt.html#ggaa9ca08392f3fe2d41dde8462fbb3f8b4a13954920b92dd1bca9c0a12fafe825f2", null ],
+      [ "gatt_handle_value_indication", "group__sl__bt__gatt.html#ggaa9ca08392f3fe2d41dde8462fbb3f8b4ab85a32e56fd80e3cc05931138c9e066b", null ]
+    ] ],
+    [ "gatt_client_config_flag_t", "group__sl__bt__gatt.html#ga74130d1338c72428b9d9f0086427f96e", [
+      [ "gatt_disable", "group__sl__bt__gatt.html#gga74130d1338c72428b9d9f0086427f96ea230c4bdd268010b79d7cc98217dd4318", null ],
+      [ "gatt_notification", "group__sl__bt__gatt.html#gga74130d1338c72428b9d9f0086427f96ea9601c5089d695ded781221406cee18e8", null ],
+      [ "gatt_indication", "group__sl__bt__gatt.html#gga74130d1338c72428b9d9f0086427f96ea93e7cc0dcec81e790142ca1714d3087f", null ]
+    ] ],
+    [ "gatt_execute_write_flag_t", "group__sl__bt__gatt.html#gaac93dcd5812ce3e28b324174566db304", [
+      [ "gatt_cancel", "group__sl__bt__gatt.html#ggaac93dcd5812ce3e28b324174566db304a964af4749efd0f6291f1c1d23e649ad6", null ],
+      [ "gatt_commit", "group__sl__bt__gatt.html#ggaac93dcd5812ce3e28b324174566db304af2d7c1e4ff7f76f71953298932295e4d", null ]
+    ] ],
+    [ "sl_bt_gatt_set_max_mtu", "group__sl__bt__gatt.html#ga8acd415ed593fb75fcf408246293852f", null ],
+    [ "sl_bt_gatt_discover_primary_services", "group__sl__bt__gatt.html#gae95e41c59f0cf582b4146a9799c462ec", null ],
+    [ "sl_bt_gatt_discover_primary_services_by_uuid", "group__sl__bt__gatt.html#ga3d1fb78a2633169c54a9e26482cf7d70", null ],
+    [ "sl_bt_gatt_find_included_services", "group__sl__bt__gatt.html#gaeda4d6603d8ca67959461ff68df5eb08", null ],
+    [ "sl_bt_gatt_discover_characteristics", "group__sl__bt__gatt.html#ga46982679201ab309b2081775f1804ec5", null ],
+    [ "sl_bt_gatt_discover_characteristics_by_uuid", "group__sl__bt__gatt.html#gae648cf008d821f5d469eb9e40176183c", null ],
+    [ "sl_bt_gatt_discover_descriptors", "group__sl__bt__gatt.html#ga4e78f1820bf6585294186e655b3bfcf3", null ],
+    [ "sl_bt_gatt_set_characteristic_notification", "group__sl__bt__gatt.html#ga7d92298836408fba164c46cdb0e32b3d", null ],
+    [ "sl_bt_gatt_send_characteristic_confirmation", "group__sl__bt__gatt.html#ga691b8ffe8734ea853fe9315d0767db75", null ],
+    [ "sl_bt_gatt_read_characteristic_value", "group__sl__bt__gatt.html#ga875a2cfdfb8e5c6cad354b4c88846856", null ],
+    [ "sl_bt_gatt_read_characteristic_value_from_offset", "group__sl__bt__gatt.html#gaf8ccce3c700fbfa4268ebb77dc300b78", null ],
+    [ "sl_bt_gatt_read_multiple_characteristic_values", "group__sl__bt__gatt.html#ga1280056328305064307fee152f656623", null ],
+    [ "sl_bt_gatt_read_characteristic_value_by_uuid", "group__sl__bt__gatt.html#gaa0d581898bf4869cc80eeb040b2a8611", null ],
+    [ "sl_bt_gatt_write_characteristic_value", "group__sl__bt__gatt.html#gafd574a7a8faebb498751f3f90fb975a5", null ],
+    [ "sl_bt_gatt_write_characteristic_value_without_response", "group__sl__bt__gatt.html#ga2fb8049cafc0efc9f06bf2fae7c3c119", null ],
+    [ "sl_bt_gatt_prepare_characteristic_value_write", "group__sl__bt__gatt.html#ga11822aabde99210270f63636327ed0ee", null ],
+    [ "sl_bt_gatt_prepare_characteristic_value_reliable_write", "group__sl__bt__gatt.html#ga5d50f883c0424a733d9f5ebe1c0c6bc5", null ],
+    [ "sl_bt_gatt_execute_characteristic_value_write", "group__sl__bt__gatt.html#ga55769ce8b00e91a6141dbb2aa09d4e77", null ],
+    [ "sl_bt_gatt_read_descriptor_value", "group__sl__bt__gatt.html#gac154f2173eec80db460a927230214e83", null ],
+    [ "sl_bt_gatt_write_descriptor_value", "group__sl__bt__gatt.html#ga10bcb7ca88fb9244042fd812c454d68b", null ]
+];

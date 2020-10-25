@@ -1,0 +1,20 @@
+#include PLATFORM_HEADER
+
+#include "rail_types.h"
+
+/** @brief A callback called whenever a secondary instance RAIL event occurs.
+ *
+ * @param[in] handle A handle for a RAIL instance.
+ * @param[in] events A bit mask of RAIL events (full list in rail_types.h)
+ */
+void emberAfPluginMultirailDemoRailEventCallback(RAIL_Handle_t handle,
+                                                 RAIL_Events_t events)
+{
+  (void)handle; // unreferenced parameter
+  (void)events; // unreferenced parameter
+
+  // Suggested action:
+  // if (events & (...a bitmask made from event(s) from the list...)) {
+  //   do_something(handle);
+  // }
+}

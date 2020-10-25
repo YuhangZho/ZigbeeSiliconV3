@@ -1,0 +1,58 @@
+{% extends "base.j2" %}
+{% block filename %}{{filename}}.h{% endblock %}
+{% block title %}{{title}} Header{% endblock %}
+{% block content %}
+#ifndef __{{filename|upper}}_H__
+#define __{{filename|upper}}_H__
+
+#include <stdint.h>
+#include "rail_types.h"
+{%- if rail_internal %}
+#include "timing_state.h"
+{%- if enable_timing %}
+#define RADIO_CONFIG_ENABLE_TIMING
+{%- endif %}
+{%- endif %}
+
+#define {{protocol|upper}}_ACCELERATION_BUFFER {{protocol}}AccelerationBuffer
+extern uint32_t {{protocol}}AccelerationBuffer[];
+{% if multiPhyConfig.commonStructures.convDecodeBufferSize > 0 %}
+// NOTE: This buffer is to be used exclusively by hardware
+extern uint8_t convDecodeBuffer[];
+{% endif %}
+{%- if rail_internal %}
+{%- set timingConfigs = [] %}
+{%- for phyInfoEntryName, phyInfoEntry in multiPhyConfig.commonStructures.phyInfoEntries.items() %}
+{%- if phyInfoEntry.phyInfoData.timingConfig not in timingConfigs %}
+{%- do timingConfigs.append(phyInfoEntry.phyInfoData.timingConfig) %}
+{%- endif %}
+{%- endfor %}
+{%- for timingConfig in timingConfigs %}
+extern const ConfigTimings_t {{timingConfig}}_timing;
+{%- endfor %}
+{%- if multiPhyConfig.commonStructures.modemConfigEntriesBase|length > 0 %}
+{% for modemConfigName, modemConfig in multiPhyConfig.commonStructures.modemConfigEntriesBase.items() %}
+extern const uint32_t {{modemConfigName}}[];
+{%- endfor %}
+{%- endif %}
+{%- if multiPhyConfig.commonStructures.modemConfigEntries|length > 0 %}
+{% for modemConfigName, modemConfig in multiPhyConfig.commonStructures.modemConfigEntries.items() %}
+extern const uint32_t {{modemConfigName}}[];
+{%- endfor %}
+{%- endif %}
+{% for multiPhyConfigEntryName, multiPhyConfigEntry in multiPhyConfig.multiPhyConfigEntries.items() %}
+extern const RAIL_ChannelConfig_t {{multiPhyConfigEntryName}}_channelConfig;
+{%- endfor %}
+{% for multiPhyConfigEntryName, multiPhyConfigEntry in multiPhyConfig.multiPhyConfigEntries.items() %}
+extern const RAIL_ChannelConfigEntry_t {{multiPhyConfigEntryName}}_channels[];
+{%- endfor %}
+{%- else %}
+{%- set firstMultiPhyConfigEntryName, firstMultiPhyConfigEntryValue = multiPhyConfig.multiPhyConfigEntries|firstElement %}
+{%- set firstPhyConfigEntryName, firstPhyConfigEntryValue = firstMultiPhyConfigEntryValue.phyConfigEntries|firstElement %}
+#define RADIO_CONFIG_XTAL_FREQUENCY {{firstPhyConfigEntryValue.xtalFrequency}}UL
+
+extern const RAIL_ChannelConfig_t *channelConfigs[];
+{%- endif %}
+
+#endif // __{{filename|upper}}_H__
+{% endblock %}

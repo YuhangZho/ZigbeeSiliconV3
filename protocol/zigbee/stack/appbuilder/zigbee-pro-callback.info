@@ -1,0 +1,90 @@
+#include PLATFORM_HEADER
+#include CONFIGURATION_HEADER
+#include EMBER_AF_API_ZIGBEE_PRO
+
+void emberOrphanNotificationHandler(EmberEUI64 longId)
+{
+  return;
+}
+
+/**@brief Invoked by the EmberZNet stack to report the number of conflict reports 
+ * exceeding (EMBER_PAN_ID_CONFLICT_REPORT_THRESHOLD - 1) within a period of 1 minute.
+ * Application can take care of  what needs to be done after these number of conflicts 
+ * are detected, for example do a panId updtae if needed (emberSendPanIdUpdate()). 
+ * Without applications trigger, EmberZNet stack would not take any action on its own.
+ *
+ * @param conflictCount        Number of detected conflicts in last period
+ * @return EmberStatus EMBER_SUCCESS by default. This status is not currently checked by the stack.
+ */
+EmberStatus emberPanIdConflictHandler(int8_t conflictCount)
+{
+  return EMBER_SUCCESS;
+}
+
+
+/**@brief Invoked by the EmberZNet stack to filter out incoming
+ * application MAC passthrough messages. If this returns true for a message
+ * the complete message will be passed to emberMacPassthroughMessageHandler()
+ * with a type of EMBER_MAC_PASSTHROUGH_APPLICATION.
+ *
+ * Note that this callback may be invoked in ISR context and should execute as
+ * quickly as possible.
+ *
+ * Note that this callback may be called more than once per incoming message.
+ * Therefore, the callback code should not depend on being called only once,
+ * and should return the same value each time it is called with a given header.
+ *
+ * If the application includes this callback, it must define
+ * EMBER_APPLICATION_HAS_MAC_PASSTHROUGH_FILTER_HANDLER in its
+ * CONFIGURATION_HEADER.
+ *
+ * @param macHeader        A pointer to the initial portion of the
+ *     incoming MAC header. This contains the MAC frame control and
+ *     addressing fields. Subsequent MAC fields, and the MAC payload,
+ *     may not be present.
+ * @return true if the messages is an application MAC passthrough message.
+ */
+bool emberMacPassthroughFilterHandler(uint8_t *macHeader)
+{
+  return false;
+}
+
+/** @brief Intercepts an incoming packet from the stack and hands off to a plugin
+ * for further processing
+ *
+ * @param packetType  The type of packet and the target stack layer.  See
+ * ::EmberZigbeePacketType.
+ * @param packetBuffer  The ::EmberMessageBuffer containing the packet.
+ * @parma index  The starting index of the relevant packet data.  The plugin\
+ * will receive a flat copy of the packet starting from this index.
+ * @param data  Auxiliary data pointer
+ *
+ * @return  See ::EmberPacketAction
+ */
+EmberPacketAction emberPacketHandoffIncoming(EmberZigbeePacketType packetType,
+                                             EmberMessageBuffer packetBuffer,
+                                             uint8_t index,
+                                             void *data)
+{
+  return EMBER_ACCEPT_PACKET;
+}
+
+/** @brief Intercepts an outgoing packet from the stack and hands off to a plugin
+ * for further processing
+ *
+ * @param packetType  The type of packet and the source stack layer.  See
+ * ::EmberZigbeePacketType.
+ * @param packetBuffer  The ::EmberMessageBuffer containing the packet.
+ * @param index  The starting index of the relevant packet data.  The plugin\
+ * will receive a flat copy of the packet starting from this index.
+ * @param data  Auxiliary data pointer
+ *
+ * @return  See ::EmberPacketAction
+ */
+EmberPacketAction emberPacketHandoffOutgoing(EmberZigbeePacketType packetType,
+                                             EmberMessageBuffer packetBuffer,
+                                             uint8_t index,
+                                             void *data)
+{
+  return EMBER_ACCEPT_PACKET;
+}

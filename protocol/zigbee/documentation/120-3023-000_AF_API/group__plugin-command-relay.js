@@ -1,0 +1,9 @@
+var group__plugin_command_relay =
+[
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_COMMAND_RELAY_PLUGIN_COMMAND_RELAY_ADD", "group__plugin-command-relay.html#ga54d1df90fec2d3d52d7b43302f2f0d06", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_COMMAND_RELAY_PLUGIN_COMMAND_RELAY_CLEAR", "group__plugin-command-relay.html#ga20834c6ddca29431839d8bc926040319", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_COMMAND_RELAY_PLUGIN_COMMAND_RELAY_LOAD", "group__plugin-command-relay.html#gaa5bafd77168b6d865f12600af020c805", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_COMMAND_RELAY_PLUGIN_COMMAND_RELAY_PRINT", "group__plugin-command-relay.html#ga2ca886d9c8b783c80977a4b5e9707a57", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_COMMAND_RELAY_PLUGIN_COMMAND_RELAY_REMOVE", "group__plugin-command-relay.html#ga0c5069843ca4f31c8f32d59ae612329f", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_COMMAND_RELAY_PLUGIN_COMMAND_RELAY_SAVE", "group__plugin-command-relay.html#ga620f12b3972ad7c7c96139c54e187994", null ]
+];

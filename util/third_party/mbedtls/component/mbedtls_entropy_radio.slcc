@@ -1,0 +1,36 @@
+id: mbedtls_entropy_radio
+package: platform
+label: Mbed TLS support for radio entropy
+description: This component provides support for using entropy gathered from the radio of the EFR32.
+category: Platform|Security
+quality: production
+component_root_path: util/third_party/mbedtls
+source:
+  - path: sl_crypto/src/entropy_rail.c
+include:
+  - path: sl_crypto/include
+    file_list:
+      - path: entropy_rail.h
+provides:
+  - name: mbedtls_entropy_source
+    allow_multiple: true
+  - name: mbedtls_entropy_radio
+requires:
+  - name: rail_lib
+  - name: device_has_radio
+template_contribution:
+  - name: mbedtls_config
+    value: MBEDTLS_ENTROPY_RAIL_C
+  # Ensure that radio entropy is used by default for EFR32xG1, EFR32xG13, EFR32xG14
+  - name: mbedtls_config
+    value: MBEDTLS_ENTROPY_HARDWARE_ALT_RAIL
+    condition: [device_sdid_80]
+  - name: mbedtls_config
+    value: MBEDTLS_ENTROPY_HARDWARE_ALT_RAIL
+    condition: [device_sdid_89]
+  - name: mbedtls_config
+    value: MBEDTLS_ENTROPY_HARDWARE_ALT_RAIL
+    condition: [device_sdid_95]
+documentation:
+  docset: mbed-tls
+  document: group-sl-entropy-rail

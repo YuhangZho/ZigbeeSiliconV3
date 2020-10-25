@@ -1,0 +1,43 @@
+#include "gpd-components-common.h"
+
+/** @brief Called by framework from the application main enry to inform the user
+ * as the first call to the main.
+ *
+* @param gpd pointer to gpd instance
+ */
+void emberGpdAfPluginMainCallback(EmberGpd_t * gpd)
+{
+}
+
+/** @brief Called to get the application information payload from application. This callback
+ *         helps application to filled up the application specefic application information
+ *         that gets transmitted.
+ *
+ * @param messagePayload The pointer for the user to fillup.
+ * @param maxLength maximum length.
+ * @param last indicates the present application description packet is the last one.
+ * Ver.: always
+ *
+ * @return the length writen by application.
+ */
+uint8_t emberGpdAfPluginGetApplicationDescriptionCallback(uint8_t * messagePayload,
+                                                          uint8_t maxLength,
+                                                          bool * last)
+{
+  // This is an example of how to fill up an occupany sensor report as application description
+  // The following is a single report descriptor for the occupancy attribute.
+  uint8_t appDesc[13] = {0x01, 0x01, 0x00, 0x00, 0x07, 0x08, 0x06, 0x04, 0x00, 0x00, 0x18, 0x10, 0x00};
+  memcpy (messagePayload, appDesc, sizeof(appDesc));
+  *last = true;
+  return sizeof(appDesc);
+}
+
+/** @brief This is called by framework to receive a contact status in case of generic switch
+ *         info during commissioning request.
+ *
+ * @return a 8bit switch contact status.
+ */
+uint8_t emberGpdAfPluginGetSwitchContactStutusCallback(void)
+{
+  return 0;
+}

@@ -1,0 +1,18 @@
+id: mbedtls_ecdsa
+package: platform
+label: Mbed TLS support for ECDSA
+description: This component provides support for ECDSA support using Mbed TLS
+category: Platform|Security
+quality: production
+provides:
+  - name: mbedtls_ecdsa
+requires:
+  - name: mbedtls_hash
+  - name: mbedtls_ecc
+  - name: mbedtls_asn1
+template_contribution:
+  - name: mbedtls_config
+    value: MBEDTLS_ECDSA_C
+documentation:
+  docset: mbed-tls
+  document: index

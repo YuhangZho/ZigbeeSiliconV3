@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contentItems
+xmlns="http://www.silabs.com/ss/ContentItem.ecore"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.silabs.com/ss/ContentItem.ecore file:/C:/Users/CAOWENS/Documents/ssv4/contentItems.xsd">
+  <contentItemData
+    priority="9"
+    category="Getting Started"
+    itemURI="file:index.html"
+    label="Documentation Index"
+    description="Provides an overview and hyperlinks to all packaged documentation."
+  ></contentItemData>
+  <contentItemData
+    priority="30"
+    category="Application Notes"
+    itemURI="file:an718-mfg-test-overview.pdf"
+    label="AN718: Manufacturing Test Overview"
+    description="Provides a high-level description of the different options for integrating RF testing and characterization into standard  test flows. It is intended for customers who are moving from the early prototype development stage to the manufacturing production environment  and need assistance with manufacturing test. "
+  ></contentItemData>
+  <contentItemData
+    priority="10"
+    category="Fundamentals"
+    itemURI="file:ug103-01-fundamentals-wireless-network.pdf"
+    label="UG103.01: Wireless Networking Fundamentals"
+    description="Introduces some fundamental concepts of wireless networking. These concepts are referred to in other Fundamentals documents. If you are new to wireless networking, you should read this document first. "
+  ></contentItemData>
+  <contentItemData
+    priority="15"
+    category="Fundamentals"
+    itemURI="file:ug103-06-fundamentals-bootloading.pdf"
+    label="UG103.06: Bootloader Fundamentals"
+    description="Introduces bootloading for Silicon Labs networking devices. Discusses the Gecko Bootloader as well  as legacy Ember and Bluetooth bootloaders, and describes the file formats used by each. "
+  ></contentItemData>
+  <contentItemData
+    priority="10"
+    category="Fundamentals"
+    itemURI="file:ug103-11-fundamentals-thread.pdf"
+    label="UG103.11: Thread Fundamentals"
+    description="Includes a brief background on the emergence of Thread, provides a technology overview,  and describes some key features of Thread to consider when implementing a Thread solution."
+  ></contentItemData>
+  <contentItemData
+    priority="12"
+    category="Application Notes"
+    itemURI="file:an1256-using-sl-rcp-with-openthread-border-router.pdf"
+    label="AN1256: Using the Silicon Labs RCP with the OpenThread Border Router"
+    description="Describes using the OpenThread Border Router GitHub repository and the Silicon Labs OpenThread  Radio Co-Processor (RCP) application to create a Thread Border Router."
+  ></contentItemData>
+  <contentItemData
+    priority="25"
+    category="Fundamentals"
+    itemURI="file:ug103-16-multiprotocol-fundamentals.pdf"
+    label="UG103.16: Multiprotocol Fundamentals"
+    description="Describes the four multiprotocol modes, discusses considerations when selecting protocols for  multiprotocol implementations, and reviews the Radio Scheduler, a required component of a  dynamic multiprotocol solution."
+  ></contentItemData>
+  <contentItemData
+    priority="25"
+    category="User's Guides"
+    itemURI="file:ug305-dynamic-multiprotocol-users-guide.pdf"
+    label="UG305: Dynamic Multiprotocol User's Guide"
+    description="Describes how to implement a dynamic multiprotocol solution. "
+  ></contentItemData>
+  <contentItemData
+    priority="1"
+    category="Release Notes"
+    itemURI="file:OpenThread_Release_Notes.pdf"
+    label="Silicon Labs OpenThread Release Notes"
+    description="Lists compatibility requirements and sources for all software components  in the development environment. Discusses the latest changes to the Silicon  Labs OpenThread stack (and associated utilities) including added/deleted/deprecated  features/API, and lists bugs that have been fixed  since the last release and any pending ones."
+  ></contentItemData>
+  <contentItemData
+    priority="15"
+    category="User's Guides"
+    itemURI="file:ug266-gecko-bootloader-user-guide.pdf"
+    label="UG266: Silicon Labs Gecko Bootloader User's Guide"
+    description="Describes the high-level implementation of the Silicon Labs Gecko Bootloader for EFR32 SoCs and NCPs,  and provides information on how to get started using the Gecko Bootloader with Silicon Labs wireless protocol stacks.  "
+  ></contentItemData>
+  <contentItemData
+    priority="35"
+    category="Application Notes"
+    itemURI="file:an1142-mesh-network-performance-comparison.pdf"
+    label="AN1142: Mesh Network Performance Comparison"
+    description="Reviews the Zigbee, Thread, and Bluetooth mesh networks to evaluate their differences in performance and behavior."
+  ></contentItemData>
+  <contentItemData
+    priority="15"
+    category="Application Notes"
+    itemURI="file:an1218-secure-boot-with-rtsl.pdf"
+    label="AN1218: Series 2 Secure Boot with RTSL"
+    description="Contains detailed information on configuring and using the Secure Boot with hardware Root of Trust and Secure Loader on  Series 2 devices, including how to provision the signing key. This is a companion document to UG266: Silicon Labs Gecko  Bootloader User's Guide."
+  ></contentItemData>
+  <contentItemData
+    priority="30"
+    category="Application Notes"
+    itemURI="file:an700-1-mfg-test-guidelines-efr32.pdf"
+    label="AN700.1: Manufacturing Test Guidelines for the EFR32"
+    description="Details the different options for integrating RF testing and characterization into standard test flows."
+  ></contentItemData>
+  <contentItemData
+    priority="1"
+    category="API References"
+    itemURI="file:OpenThread-Doxygen/index.html"
+    label="Silicon Labs OpenThread API Reference Guide"
+    description="Contains a comprehensive list of APIs used to interface to the Silicon Labs OpenThread stack."
+  ></contentItemData>
+  <contentItemData
+    priority="25"
+    category="Application Notes"
+    itemURI="file:an1265-openthread-bluetooth-dynamic-multiprotocol-gsdk-v3x.pdf"
+    label="AN1265: Dynamic Multiprotocol Development with Bluetooth and OpenThread in GSDK v3.x"
+    description="Provides details on developing Dynamic Multiprotocol applications using Bluetooth and OpenThread."
+  ></contentItemData>
+  <contentItemData
+    priority="12"
+    category="User's Guides"
+    itemURI="file:ug162-simplicity-commander-reference-guide.pdf"
+    label="UG162: Simplicity Commander Reference Guide"
+    description="Describes how and when to use Simplicity Commander's Command-Line Interface.  Only EFR32 is currently supported. EM3xx is not supported at this time."
+  ></contentItemData>
+  <contentItemData
+    priority="1"
+    category="Quick Start Guides"
+    itemURI="file:qsg170-openthread-sdk-quick-start-guide.pdf"
+    label="QSG170: Silicon Labs OpenThread Quick Start Guide"
+    description="Provides basic information on configuring, building, and installing applications using the Silicon Labs OpenThread stack."
+  ></contentItemData>
+  <contentItemData
+    priority="3"
+    category="Release Notes"
+    itemURI="file:gecko-platform-release-notes.pdf"
+    label="Gecko Platform Release Notes"
+    description="A detailed overview of all the changes, additions, and fixes in the Gecko Platform components.  The Gecko Platform includes: EMLIB, EMDRV, RAIL Library, NVM3, and the component-based infrastructure."
+  ></contentItemData>
+  <contentItemData
+    priority="20"
+    category="Fundamentals"
+    itemURI="file:ug103-07-non-volatile-data-storage-fundamentals.pdf"
+    label="UG103.07: Non-Volatile Data Storage Fundamentals"
+    description="Introduces non-volatile data storage using flash and the three different storage implementations offered  for Silicon Labs microcontrollers and SoCs: Simulated EEPROM, PS Store, and NVM3.  "
+  ></contentItemData>
+  <contentItemData
+    priority="35"
+    category="Application Notes"
+    itemURI="file:an1141-thread-mesh-network-performance.pdf"
+    label="AN1141: Thread Mesh Network Performance"
+    description="Details methods for testing Thread mesh network performance; results are intended to provide guidance  on design practices and principles as well as expected field performance results."
+  ></contentItemData>
+  <contentItemData
+    priority="20"
+    category="Application Notes"
+    itemURI="file:an1135-using-third-generation-nonvolatile-memory.pdf"
+    label="AN1135: Using Third Generation Non-Volatile Memory (NVM3) Data Storage"
+    description="Explains how NVM3 can be used as non-volatile data storage in various protocol implementations."
+  ></contentItemData>
+</contentItems>

@@ -1,0 +1,7 @@
+var group__plugin_green_power_server =
+[
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_GREEN_POWER_SERVER_PLUGIN_GREEN_POWER_SERVER_COMMISSION", "group__plugin-green-power-server.html#gac2fd75c44df400eddd52619b69a392a1", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_GREEN_POWER_SERVER_PLUGIN_GREEN_POWER_SERVER_EXTEND_COMM", "group__plugin-green-power-server.html#gab4bb70202e164eaebabd7aca84b193c9", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_GREEN_POWER_SERVER_PLUGIN_GREEN_POWER_SERVER_SINK_TABLE_CLEAR", "group__plugin-green-power-server.html#gac438d24aeb3d8b0d81469b14019504f0", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_GREEN_POWER_SERVER_PLUGIN_GREEN_POWER_SERVER_SINK_TABLE_PRINT", "group__plugin-green-power-server.html#ga2ee10b1cc01308a4090a509b97338003", null ]
+];

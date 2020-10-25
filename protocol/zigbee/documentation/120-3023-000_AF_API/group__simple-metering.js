@@ -1,0 +1,27 @@
+var group__simple_metering =
+[
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_SIMPLE_METERING_CFG_MIRROR", "group__simple-metering.html#ga1190a6bf818fdb43d3e7d11c79e6f114", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_SIMPLE_METERING_CFG_NFT_FLAGS", "group__simple-metering.html#ga8203da34bbad25434d336c3a7845cd38", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_SIMPLE_METERING_CFG_NFT_SCHEME", "group__simple-metering.html#gae6b12e2dffa3d6bb7ef8d4d815fdca1e", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_SIMPLE_METERING_CHG_SUPPLY", "group__simple-metering.html#ga9edcbbf786ed92e19521ca7da83d6173", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_SIMPLE_METERING_GET_NTFY_MSG", "group__simple-metering.html#gacdbd67062d1c299f1a84040f2a8e93b7", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_SIMPLE_METERING_GET_PROFILE", "group__simple-metering.html#gac456c31e004a72eab36578d3c04f9166", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_SIMPLE_METERING_GET_SAMPLED_DATA", "group__simple-metering.html#ga64c130fb019f7201b27eeed34c800e73", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_SIMPLE_METERING_GET_SNAPSHOT", "group__simple-metering.html#ga6f3b2d7827620122065774e7e024442d", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_SIMPLE_METERING_LOCAL_CHG_SUPPLY", "group__simple-metering.html#ga15682934de39aa72f3868a7f15e38c73", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_SIMPLE_METERING_MIRROR_REMOVED", "group__simple-metering.html#ga6446a3076c10a2d63a16bad60e89bb44", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_SIMPLE_METERING_PUB_SS", "group__simple-metering.html#gac7ccdba7062d9084e57d0a4620333a04", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_SIMPLE_METERING_REMOVE_MIRROR", "group__simple-metering.html#ga3b6d502cb4209115c968a81384a46e19", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_SIMPLE_METERING_REQ_FAST_POLL_MODE", "group__simple-metering.html#ga3f17139fdaba753339ba5cce89696b73", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_SIMPLE_METERING_REQUEST_MIRROR", "group__simple-metering.html#ga99c99445df0a8d34bc662e1780bab3ae", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_SIMPLE_METERING_RST_LOAD_LIMIT_CTR", "group__simple-metering.html#ga35194b38d1448b378dce756507facde6", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_SIMPLE_METERING_SCH_SNAPSHOT", "group__simple-metering.html#ga1c46a398f45151af0f17420878784c7a", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_SIMPLE_METERING_SCH_SNAPSHOT_RESP", "group__simple-metering.html#ga331b4a1224af6441ed019115c3eff947", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_SIMPLE_METERING_SET_SUPPLY_STATUS", "group__simple-metering.html#gadeff0362faefaab30b251e87b69c306a", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_SIMPLE_METERING_SET_UNCNTRL_FLOW_THRESHOLD", "group__simple-metering.html#ga5b700f414428d98b1463ceba9616408a", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_SIMPLE_METERING_START_SAMP_RSP", "group__simple-metering.html#gad00dcea7688a0ca7ac2a486290670dd7", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_SIMPLE_METERING_START_SAMPLING", "group__simple-metering.html#ga6dad01b49643667dfeffd46fe98d0a50", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_SIMPLE_METERING_SUP_STAT_RSP", "group__simple-metering.html#gac25070bbca759e09f9eae73c3341e455", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_SIMPLE_METERING_TAKE_SNAPSHOT", "group__simple-metering.html#gac84ebbe2ca4fbfbda15e385cc8846e70", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_SIMPLE_METERING_TAKE_SNAPSHOT_RESP", "group__simple-metering.html#ga897df0251e81b32eecdf37267c47f716", null ]
+];

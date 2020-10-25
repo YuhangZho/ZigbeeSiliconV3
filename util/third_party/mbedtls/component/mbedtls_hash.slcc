@@ -1,0 +1,30 @@
+id: mbedtls_hash
+package: platform
+label: Mbed TLS generic hash api and HMAC support.
+description: >
+ This component provides support for the hash function api in Mbed TLS provided
+ by the md.h file. This component also provides support for HMAC.
+category: Platform|Security
+quality: production
+source:
+  - path: util/third_party/mbedtls/library/md.c
+  - path: util/third_party/mbedtls/library/md_wrap.c
+include:
+  - path: util/third_party/mbedtls/include
+    file_list:
+      - path: mbedtls/md.h
+      - path: mbedtls/md_internal.h
+provides:
+  - name: mbedtls_hash
+  - name: mbedtls_hmac
+requires:
+  - name: mbedtls_hash_function
+  - name: mbedtls_core
+recommends:
+  - id: mbedtls_sha
+template_contribution:
+  - name: mbedtls_config
+    value: MBEDTLS_MD_C
+documentation:
+  docset: mbed-tls
+  document: group-hashing-module

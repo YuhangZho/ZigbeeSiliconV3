@@ -1,0 +1,27 @@
+id: "bluetooth"
+label: "Bluetooth"
+package: "Bluetooth"
+description: >
+  Bluetooth stack and default selection of features
+
+  Configuration for Bluetooth stack is provided under Bluetooth core component.
+
+category: "Bluetooth"
+quality: "production"
+root_path: "protocol/bluetooth"
+requires:
+  - name: "bluetooth_stack"
+  - name: "bluetooth_feature_system"
+  - name: "bluetooth_feature_gap"
+  - name: "bluetooth_feature_scanner"
+  - name: "bluetooth_feature_advertiser"
+  - name: "bluetooth_feature_connection"
+  - name: "bluetooth_feature_gatt"
+  - name: "bluetooth_feature_gatt_server"
+  - name: "bluetooth_feature_nvm"
+  - name: "bluetooth_feature_sm"
+  - name: "sl_system"
+  - name: "device_init"
+provides:
+  - name: "bluetooth"
+  - name: "bluetooth_api"

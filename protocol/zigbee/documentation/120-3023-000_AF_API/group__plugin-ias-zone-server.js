@@ -1,0 +1,9 @@
+var group__plugin_ias_zone_server =
+[
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_IAS_ZONE_SERVER_PLUGIN_IAS_ZONE_SERVER_CHANGE_BACKOFF_CONFIG", "group__plugin-ias-zone-server.html#ga75694fb58a1e70b93ec4ec28380c7dac", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_IAS_ZONE_SERVER_PLUGIN_IAS_ZONE_SERVER_CHANGE_STATUS", "group__plugin-ias-zone-server.html#ga353a1fada9d142771a61cb405c7b8ceb", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_IAS_ZONE_SERVER_PLUGIN_IAS_ZONE_SERVER_INFO", "group__plugin-ias-zone-server.html#gabc506619fd9b6bbead7c2f3921aae2cb", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_IAS_ZONE_SERVER_PLUGIN_IAS_ZONE_SERVER_PRINT_QUEUE", "group__plugin-ias-zone-server.html#ga9cedb0fcb62d832644e92e2147bd4ff8", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_IAS_ZONE_SERVER_PLUGIN_IAS_ZONE_SERVER_PRINT_QUEUE_CONFIG", "group__plugin-ias-zone-server.html#gab446a4cc0a3c9c8999caf8887f539087", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_IAS_ZONE_SERVER_PLUGIN_IAS_ZONE_SERVER_SET_ENROLLMENT_MODE", "group__plugin-ias-zone-server.html#gacefdd96247c486d16848884d2b65b976", null ]
+];

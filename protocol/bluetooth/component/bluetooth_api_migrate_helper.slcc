@@ -1,0 +1,20 @@
+id: "bluetooth_api_migrate_helper"
+label: "Bluetooth API migration helper"
+package: "Bluetooth"
+description: >
+  Provides helper messages for how to migrate Bluetooth APIs from SDK v2.x to v3.0.
+category: "Bluetooth"
+quality: "production"
+root_path: "protocol/bluetooth"
+include:
+  - path: "inc/"
+    file_list:
+      - path: "native_gecko.h"
+      - path: "ncp_gecko.h"
+      - path: "rtos_gecko.h"
+      - path: "host_gecko.h"
+      - path: "sl_bt_api_migrate_helper.h"
+      - path: "sl_bt_api_types_migrate_helper.h"
+      - path: "sli_bt_migrate_types.h"
+provides:
+  - name: "bluetooth_api_migrate_helper"

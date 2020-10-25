@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="ASCII"?>
+<model:MDescriptors xmlns:model="http://www.silabs.com/ss/Studio.ecore">
+  <descriptors name="ncp_empty" label="Bluetooth - NCP Empty" description="Bluetooth NCP (Network Co-Processor) target application with a minimal GATT  database, that makes it possible to access  the Bluetooth stack from a host controller via UART. It provides access to the host layer via BGAPI and not to the link layer via HCI.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="example/ncp_empty/ncp_empty.slcp"/>
+    <properties key="boardCompatibility" value="brd4100a brd4101a brd4101b brd4103a brd4104a brd4150a brd4150b brd4150c brd4151a brd4152a brd4153a brd4154a brd4155a brd4158a brd4159a brd4161a brd4162a brd4163a brd4164a brd4165b brd4166a brd4167a brd4168a brd4169a brd4169b brd4170a brd4171a brd4172a brd4172b brd4173a brd4174a brd4174b brd4175a brd4176a brd4178a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4182a brd4183a brd4183b brd4184a brd4184b brd4300a brd4300b brd4301a brd4302a brd4303a brd4304a brd4305a brd4305c brd4305d brd4305e brd4306a brd4306b brd4306c brd4306d brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b brd4310a brd4311a brd4311b brd4312a brd4314a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*bgm1.* .*bgm13.* .*bgm22.* .*efr32bg12p.* .*efr32bg13p.* .*efr32bg1b.* .*efr32bg1p.* .*efr32bg22.* .*efr32mg12p.* .*efr32mg13p.* .*efr32mg14p.* .*efr32mg1p.* .*efr32mg21.* .*efr32mg22.* .*mgm1.* .*mgm12.* .*mgm13.* .*mgm21.* .*mgm22.*"/>
+    <properties key="category" value="Bluetooth Examples"/>
+  </descriptors>
+  <descriptors name="ncp_host" label="Bluetooth - NCP Host" description="Reference implementation of an NCP (Network Co-Processor) host, which is typically run on a central MCU without radio. It can connect to an NCP target via UART to access the Bluetooth stack of the target and to control it using BGAPI.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="example/ncp_host/ncp_host.slcp"/>
+    <properties key="boardCompatibility" value="brd4100a brd4101a brd4101b brd4103a brd4104a brd4150a brd4150b brd4150c brd4151a brd4152a brd4153a brd4154a brd4155a brd4158a brd4159a brd4161a brd4162a brd4163a brd4164a brd4165b brd4166a brd4167a brd4168a brd4169a brd4169b brd4170a brd4171a brd4172a brd4172b brd4173a brd4174a brd4174b brd4175a brd4176a brd4178a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4182a brd4183a brd4183b brd4184a brd4184b brd4300a brd4300b brd4301a brd4302a brd4303a brd4304a brd4305a brd4305c brd4305d brd4305e brd4306a brd4306b brd4306c brd4306d brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b brd4310a brd4311a brd4311b brd4312a brd4314a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*bgm1.* .*bgm13.* .*bgm22.* .*efr32bg12p.* .*efr32bg13p.* .*efr32bg1b.* .*efr32bg1p.* .*efr32bg22.* .*efr32mg12p.* .*efr32mg13p.* .*efr32mg14p.* .*efr32mg1p.* .*efr32mg21.* .*efr32mg22.* .*mgm1.* .*mgm12.* .*mgm13.* .*mgm21.* .*mgm22.*"/>
+    <properties key="category" value="Bluetooth Examples"/>
+  </descriptors>
+  <descriptors name="soc_dtm" label="Bluetooth - SoC DTM" description="This example demonstrates the direct test mode application.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="example/soc_dtm/soc_dtm.slcp"/>
+    <properties key="boardCompatibility" value="brd4100a brd4101a brd4101b brd4103a brd4104a brd4150a brd4150b brd4150c brd4151a brd4152a brd4153a brd4154a brd4155a brd4158a brd4159a brd4161a brd4162a brd4163a brd4164a brd4165b brd4166a brd4167a brd4168a brd4169a brd4169b brd4170a brd4171a brd4172a brd4172b brd4173a brd4174a brd4174b brd4175a brd4176a brd4178a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4182a brd4183a brd4183b brd4184a brd4184b brd4300a brd4300b brd4301a brd4302a brd4303a brd4304a brd4305a brd4305c brd4305d brd4305e brd4306a brd4306b brd4306c brd4306d brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b brd4310a brd4311a brd4311b brd4312a brd4314a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*bgm1.* .*bgm13.* .*bgm22.* .*efr32bg12p.* .*efr32bg13p.* .*efr32bg1b.* .*efr32bg1p.* .*efr32bg22.* .*efr32mg12p.* .*efr32mg13p.* .*efr32mg14p.* .*efr32mg1p.* .*efr32mg21.* .*efr32mg22.* .*mgm1.* .*mgm12.* .*mgm13.* .*mgm21.* .*mgm22.*"/>
+    <properties key="category" value="Bluetooth Examples"/>
+  </descriptors>
+  <descriptors name="soc_empty" label="Bluetooth - SoC Empty" description="This example demonstrates the bare minimum needed for a Bluetooth C application that allows Over-the-Air Device Firmware Upgrading (OTA DFU). The application starts advertising after boot and restarts advertising after a connection is closed.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="example/soc_empty/soc_empty.slcp"/>
+    <properties key="boardCompatibility" value="brd4100a brd4101a brd4101b brd4103a brd4104a brd4150a brd4150b brd4150c brd4151a brd4152a brd4153a brd4154a brd4155a brd4158a brd4159a brd4161a brd4162a brd4163a brd4164a brd4165b brd4166a brd4167a brd4168a brd4169a brd4169b brd4170a brd4171a brd4172a brd4172b brd4173a brd4174a brd4174b brd4175a brd4176a brd4178a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4182a brd4183a brd4183b brd4184a brd4184b brd4300a brd4300b brd4301a brd4302a brd4303a brd4304a brd4305a brd4305c brd4305d brd4305e brd4306a brd4306b brd4306c brd4306d brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b brd4310a brd4311a brd4311b brd4312a brd4314a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*bgm1.* .*bgm13.* .*bgm22.* .*efr32bg12p.* .*efr32bg13p.* .*efr32bg1b.* .*efr32bg1p.* .*efr32bg22.* .*efr32mg12p.* .*efr32mg13p.* .*efr32mg14p.* .*efr32mg1p.* .*efr32mg21.* .*efr32mg22.* .*mgm1.* .*mgm12.* .*mgm13.* .*mgm21.* .*mgm22.*"/>
+    <properties key="category" value="Bluetooth Examples"/>
+  </descriptors>
+  <descriptors name="soc_empty_rail_dmp" label="Bluetooth - SoC Empty RAIL DMP" description="A minimal project structure, used as a starting point for custom Bluetooth + Proprietary DMP (Dynamic Multiprotocol) applications. It runs on top of Micrium OS RTOS and multiprotocol RAIL.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="example/soc_empty_rail_dmp/soc_empty_rail_dmp.slcp"/>
+    <properties key="boardCompatibility" value="brd4103a brd4104a brd4158a brd4159a brd4161a brd4162a brd4163a brd4164a brd4165b brd4166a brd4167a brd4168a brd4170a brd4171a brd4172a brd4172b brd4173a brd4174a brd4174b brd4175a brd4176a brd4178a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4304a brd4305a brd4305c brd4305d brd4305e brd4306a brd4306b brd4306c brd4306d brd4309a brd4309b com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*bgm1.* .*bgm13.* .*bgm22.* .*efr32bg12p.* .*efr32bg13p.* .*efr32bg1b.* .*efr32bg1p.* .*efr32bg22.* .*efr32mg12p.* .*efr32mg13p.* .*efr32mg14p.* .*efr32mg1p.* .*efr32mg21.* .*efr32mg22.* .*mgm1.* .*mgm12.* .*mgm13.* .*mgm21.* .*mgm22.*"/>
+    <properties key="category" value="Bluetooth Examples"/>
+  </descriptors>
+  <descriptors name="soc_ibeacon" label="Bluetooth - SoC iBeacon" description="An iBeacon device implementation that sends non-connectable advertisements in iBeacon format. The iBeacon Service gives Bluetooth accessories a simple and convenient way to send iBeacons to smartphones. This example can be tested together with the EFR Connect mobile app.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="example/soc_ibeacon/soc_ibeacon.slcp"/>
+    <properties key="boardCompatibility" value="brd4100a brd4101a brd4101b brd4103a brd4104a brd4150a brd4150b brd4150c brd4151a brd4152a brd4153a brd4154a brd4155a brd4158a brd4159a brd4161a brd4162a brd4163a brd4164a brd4165b brd4166a brd4167a brd4168a brd4169a brd4169b brd4170a brd4171a brd4172a brd4172b brd4173a brd4174a brd4174b brd4175a brd4176a brd4178a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4182a brd4183a brd4183b brd4184a brd4184b brd4300a brd4300b brd4301a brd4302a brd4303a brd4304a brd4305a brd4305c brd4305d brd4305e brd4306a brd4306b brd4306c brd4306d brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b brd4310a brd4311a brd4311b brd4312a brd4314a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*bgm1.* .*bgm13.* .*bgm22.* .*efr32bg12p.* .*efr32bg13p.* .*efr32bg1b.* .*efr32bg1p.* .*efr32bg22.* .*efr32mg12p.* .*efr32mg13p.* .*efr32mg14p.* .*efr32mg1p.* .*efr32mg21.* .*efr32mg22.* .*mgm1.* .*mgm12.* .*mgm13.* .*mgm21.* .*mgm22.*"/>
+    <properties key="category" value="Bluetooth Examples"/>
+  </descriptors>
+  <descriptors name="soc_light_rail_dmp" label="Bluetooth - SoC Light RAIL DMP" description="This is a Dynamic Multiprotocol reference application demonstrating a light bulb that can be switched both via Bluetooth and via a Proprietary protocol. To switch it via Bluetooth use the Wireless Gecko smartphone app. To switch it via Proprietary protocol use the Flex (RAIL) - Switch sample app.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="example/soc_light_rail_dmp/soc_light_rail_dmp.slcp"/>
+    <properties key="boardCompatibility" value="brd4103a brd4104a brd4158a brd4159a brd4161a brd4162a brd4163a brd4164a brd4165b brd4167a brd4168a brd4170a brd4171a brd4172a brd4172b brd4173a brd4174a brd4174b brd4175a brd4176a brd4180a brd4180b brd4181a brd4181b brd4181c brd4304a brd4305a brd4305c brd4305d brd4305e brd4306a brd4306b brd4306c brd4306d com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*bgm1.* .*bgm13.* .*bgm22.* .*efr32bg12p.* .*efr32bg13p.* .*efr32bg1b.* .*efr32bg1p.* .*efr32bg22.* .*efr32mg12p.* .*efr32mg13p.* .*efr32mg14p.* .*efr32mg1p.* .*efr32mg21.* .*efr32mg22.* .*mgm1.* .*mgm12.* .*mgm13.* .*mgm21.* .*mgm22.*"/>
+    <properties key="category" value="Bluetooth Examples"/>
+  </descriptors>
+  <descriptors name="soc_thermometer" label="Bluetooth - SoC Thermometer" description="Implements a GATT Server with the Health Thermometer Profile, which enables a Client device to connect and get temperature data. Temperature is read from the Si7021 digital relative humidity and temperature sensor of the WSTK or of the Thunderboard.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="example/soc_thermometer/soc_thermometer.slcp"/>
+    <properties key="boardCompatibility" value="brd4100a brd4103a brd4104a brd4150a brd4150b brd4150c brd4151a brd4152a brd4153a brd4155a brd4158a brd4159a brd4161a brd4162a brd4163a brd4164a brd4165b brd4166a brd4167a brd4168a brd4169a brd4169b brd4170a brd4171a brd4172a brd4172b brd4173a brd4174a brd4174b brd4175a brd4176a brd4182a brd4184a brd4184b brd4300a brd4300b brd4301a brd4302a brd4303a brd4304a brd4305a brd4305c brd4305d brd4305e brd4306a brd4306b brd4306c brd4306d brd4310a brd4311a brd4311b brd4312a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*bgm1.* .*bgm13.* .*bgm22.* .*efr32bg12p.* .*efr32bg13p.* .*efr32bg1b.* .*efr32bg1p.* .*efr32bg22.* .*efr32mg12p.* .*efr32mg13p.* .*efr32mg14p.* .*efr32mg1p.* .*efr32mg21.* .*efr32mg22.* .*mgm1.* .*mgm12.* .*mgm13.* .*mgm21.* .*mgm22.*"/>
+    <properties key="category" value="Bluetooth Examples"/>
+  </descriptors>
+  <descriptors name="soc_thermometer_mock" label="Bluetooth - SoC Thermometer (Mock)" description="Implements a GATT Server with the Health Thermometer Profile, which enables a Client device to connect and get temperature data. Temperature is read from the mock relative humidity and temperature sensor.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="example/soc_thermometer/soc_thermometer_mock.slcp"/>
+    <properties key="boardCompatibility" value="brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4183a brd4183b brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b brd4314a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*bgm1.* .*bgm13.* .*bgm22.* .*efr32bg12p.* .*efr32bg13p.* .*efr32bg1b.* .*efr32bg1p.* .*efr32bg22.* .*efr32mg12p.* .*efr32mg13p.* .*efr32mg14p.* .*efr32mg1p.* .*efr32mg21.* .*efr32mg22.* .*mgm1.* .*mgm12.* .*mgm13.* .*mgm21.* .*mgm22.*"/>
+    <properties key="category" value="Bluetooth Examples"/>
+  </descriptors>
+  <descriptors name="soc_thermometer_client" label="Bluetooth - SoC Thermometer Client" description="Implements a GATT Client that discovers and connects with up to 4 BLE devices advertising themselves as Thermometer Servers. It displays the discovery process and the temperature values received via UART.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="example/soc_thermometer_client/soc_thermometer_client.slcp"/>
+    <properties key="boardCompatibility" value="brd4100a brd4101a brd4101b brd4103a brd4104a brd4150a brd4150b brd4150c brd4151a brd4152a brd4153a brd4154a brd4155a brd4158a brd4159a brd4161a brd4162a brd4163a brd4164a brd4165b brd4166a brd4167a brd4168a brd4169a brd4169b brd4170a brd4171a brd4172a brd4172b brd4173a brd4174a brd4174b brd4175a brd4176a brd4178a brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4182a brd4183a brd4183b brd4184a brd4184b brd4300a brd4300b brd4301a brd4302a brd4303a brd4304a brd4305a brd4305c brd4305d brd4305e brd4306a brd4306b brd4306c brd4306d brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b brd4310a brd4311a brd4311b brd4312a brd4314a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*bgm1.* .*bgm13.* .*bgm22.* .*efr32bg12p.* .*efr32bg13p.* .*efr32bg1b.* .*efr32bg1p.* .*efr32bg22.* .*efr32mg12p.* .*efr32mg13p.* .*efr32mg14p.* .*efr32mg1p.* .*efr32mg21.* .*efr32mg22.* .*mgm1.* .*mgm12.* .*mgm13.* .*mgm21.* .*mgm22.*"/>
+    <properties key="category" value="Bluetooth Examples"/>
+  </descriptors>
+  <descriptors name="soc_thermometer_rtos" label="Bluetooth - SoC Thermometer RTOS" description="Demonstrates the integration of Micrium RTOS into Bluetooth applications.  RTOS is added to the Bluetooth - SoC Thermometer sample app.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="example/soc_thermometer_rtos/soc_thermometer_rtos.slcp"/>
+    <properties key="boardCompatibility" value="brd4100a brd4103a brd4104a brd4150a brd4150b brd4150c brd4151a brd4152a brd4153a brd4155a brd4158a brd4159a brd4161a brd4162a brd4163a brd4164a brd4165b brd4166a brd4167a brd4168a brd4169a brd4169b brd4170a brd4171a brd4172a brd4172b brd4173a brd4174a brd4174b brd4175a brd4176a brd4182a brd4184a brd4184b brd4300a brd4300b brd4301a brd4302a brd4303a brd4304a brd4305a brd4305c brd4305d brd4305e brd4306a brd4306b brd4306c brd4306d brd4310a brd4311a brd4311b brd4312a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*bgm1.* .*bgm13.* .*bgm22.* .*efr32bg12p.* .*efr32bg13p.* .*efr32bg1b.* .*efr32bg1p.* .*efr32bg22.* .*efr32mg12p.* .*efr32mg13p.* .*efr32mg14p.* .*efr32mg1p.* .*efr32mg21.* .*efr32mg22.* .*mgm1.* .*mgm12.* .*mgm13.* .*mgm21.* .*mgm22.*"/>
+    <properties key="category" value="Bluetooth Examples"/>
+  </descriptors>
+  <descriptors name="soc_thermometer_rtos_mock" label="Bluetooth - SoC Thermometer (Mock) RTOS" description="Demonstrates the integration of Micrium RTOS into Bluetooth applications.  RTOS is added to the Bluetooth - SoC Thermometer (Mock) sample app.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="example/soc_thermometer_rtos/soc_thermometer_rtos_mock.slcp"/>
+    <properties key="boardCompatibility" value="brd4179b brd4180a brd4180b brd4181a brd4181b brd4181c brd4183a brd4183b brd4308a brd4308b brd4308c brd4308d brd4309a brd4309b brd4314a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*bgm1.* .*bgm13.* .*bgm22.* .*efr32bg12p.* .*efr32bg13p.* .*efr32bg1b.* .*efr32bg1p.* .*efr32bg22.* .*efr32mg12p.* .*efr32mg13p.* .*efr32mg14p.* .*efr32mg1p.* .*efr32mg21.* .*efr32mg22.* .*mgm1.* .*mgm12.* .*mgm13.* .*mgm21.* .*mgm22.*"/>
+    <properties key="category" value="Bluetooth Examples"/>
+  </descriptors>
+  <descriptors name="soc_thunderboard_brd4166a" label="Bluetooth - SoC Thunderboard Sense 2" description="Demonstrates the features of the Thunderboard Sense 2 Kit. This can be tested with the Thunderboard mobile app.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="example/soc_thunderboard/soc_thunderboard_brd4166a.slcp"/>
+    <properties key="boardCompatibility" value="brd4166a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32mg12p.*"/>
+    <properties key="category" value="Bluetooth Examples"/>
+  </descriptors>
+  <descriptors name="soc_thunderboard_brd4184a" label="Bluetooth - SoC Thunderboard EFR32BG22" description="Demonstrates the features of the Thunderboard EFR32BG22 Kit. This can be tested with the Thunderboard mobile app.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="example/soc_thunderboard/soc_thunderboard_brd4184a.slcp"/>
+    <properties key="boardCompatibility" value="brd4184a com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32bg22.*"/>
+    <properties key="category" value="Bluetooth Examples"/>
+  </descriptors>
+  <descriptors name="soc_thunderboard_brd4184b" label="Bluetooth - SoC Thunderboard EFR32BG22" description="Demonstrates the features of the Thunderboard EFR32BG22 Kit. This can be tested with the Thunderboard mobile app.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="example/soc_thunderboard/soc_thunderboard_brd4184b.slcp"/>
+    <properties key="boardCompatibility" value="brd4184b com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32bg22.*"/>
+    <properties key="category" value="Bluetooth Examples"/>
+  </descriptors>
+  <descriptors name="soc_voice" label="Bluetooth - SoC Voice" description="Voice over Bluetooth Low Energy sample application. It is supported by Thunderboard Sense 2 and Thunderboard EFR32BG22 boards and demonstrates how to send voice data over GATT, which is acquired from the on-board microphones.&#xA;">
+    <properties key="namespace" value="template.uc"/>
+    <properties key="keywords" value="universal\ configurator"/>
+    <properties key="ideCompatibility" value="simplicity-ide makefile-ide iar-embedded-workbench"/>
+    <properties key="projectFilePaths" value="example/soc_voice/soc_voice.slcp"/>
+    <properties key="boardCompatibility" value="brd4166a brd4184b com.silabs.board.none"/>
+    <properties key="partCompatibility" value=".*efr32bg22.* .*efr32mg12p.*"/>
+    <properties key="category" value="Bluetooth Examples"/>
+  </descriptors>
+</model:MDescriptors>

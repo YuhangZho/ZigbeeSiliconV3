@@ -1,0 +1,156 @@
+#ISD afv6
+# Simplicity Studio version: 5.3.1.qualifier
+
+# Application configuration
+appId: gpd
+frameworkRoot: app/gpd
+architecture: efr32~family[M]~series[1]~device_configuration[2]~performance[P]~radio[332]~flash[1024K]~temp[G]~package[L]~pins[125]~!module+BRD4162A+iar
+deviceName: gpd-sensor
+generationDirectory: PATH(ISC_RELATIVE):.
+
+
+# Plugin configuration
+appPlugin: adc=true
+appPlugin: antenna-stub=true
+appPlugin: apps=true
+appPlugin: button=true
+appPlugin: ccm-encryption=true
+appPlugin: cli=true
+appPlugin: coexistence-stub=true
+appPlugin: command-interpreter2=true
+appPlugin: ember-minimal-printf=true
+appPlugin: gpd-components=true
+appPlugin: gpd-hal=true
+appPlugin: gpd-mbedtls=true
+appPlugin: gpd-mbedtls-config=true
+appPlugin: gpd-startup=true
+appPlugin: hal-library=true
+appPlugin: led=true
+appPlugin: mbedtls=true
+appPlugin: nvm3=true
+appPlugin: rail-library=true
+appPlugin: rail-library-mp=false
+appPlugin: serial=true
+appPlugin: sim-eeprom2-to-nvm3-upgrade-stub=true
+
+# Setup configurations
+{setupId:additionalFiles
+}
+{setupId:boardHeader
+allowMissingHeader:false
+useHeaderInPlace:false
+EFR32MG1P132F256GM48=BOARD,efr32/brd4153a,,
+EFR32MG1P232F256GM48=BOARD,efr32/brd4151a,,
+EFR32MG1P233F256GM48=BOARD,efr32/brd4150a,,
+efr32~family[M]~series[1]~device_configuration[2]~performance[P]~radio[332]~flash[1024K]~temp[G]~package[L]~pins[125]~!module+BRD4162A+iar=USE_HARDWARE_CONFIGURATOR,,,
+}
+{setupId:bookkeeping
+}
+{setupId:bootloader
+efr32=null,
+}
+{setupId:callbackConfiguration
+emberGpdAfPluginMainCallback:false
+emberGpdAfPluginNvInitCallback:false
+emberGpdAfPluginNvSaveAndLoadCallback:false
+emberGpdAfPluginSleepCallback:false
+emberGpdAfPluginIncomingCommandCallback:false
+halButtonIsr:false
+}
+{setupId:commandLineConfiguration
+on
+sensor report,emberGpdAfCliSensorReport,,Unlocked
+sensor sleep,emberGpdAfCliSensorSleep,,Unlocked
+}
+{setupId:eventConfiguration
+}
+{setupId:ezsp
+}
+{setupId:genConfig
+}
+{setupId:halOptions
+}
+{setupId:hwConfig
+lastArchitectureId=efr32~family[M]~series[1]~device_configuration[2]~performance[P]~radio[332]~flash[1024K]~temp[G]~package[L]~pins[125]~!module+BRD4162A+iar
+featureLevel=1
+active=true
+}
+{setupId:information
+\{key:description
+Green Power Device Occupancy Sensor Application.
+This sample application demonstrates a green power occupancy sensor device with following capability that is pre-configured in plugin GPD App Configuration.
+    Device = GPD Occupancy Sensor (Device Id = 0x12)
+    Application Id = 0 , 4 Byte Device Src Address.
+    Fixed Location = True,
+    Commissioning = Bidirectional with Key Request and Key Protected
+    Security Level = 3
+    Security Key type used = OOB Individual (Key Type 4)
+
+This sample application maps its functionality with configured buttons as described here
+  BRD4183A Where there is one button available on the boards and is enabled as PB0
+    PB0 - Commissioning, Report
+    PB0 Long press for 5 seconds : Decommissioning
+  BRD4182A Where there are two buttons available on the boards and both are enabled as PB0 and PB1
+    PB0 - Commissioning, Decommissioning (together with PB1 pressed)
+    PB1 - Report
+
+GPD State Indication when the led plugin is enabled as follows
+  BRD4183A Where there is one LED available on the boards and is enabled as LED0
+    LED0 Activity and Commissioning state - ON indicates not commissioned, OFF indicates Commissioned. Blinks for a button press or serial command. The ON time is the measurement active time to complete the command.
+  BRD4182A Where there are two buttons available on the boards and both are enabled as PB0 and PB1
+    LED1 Commissioning state - ON indicates GPD is not commissioned, OFF indicates GPD is commissioned.
+    LED0 Activity - Blinks for a button press or serial command. The ON time is the measurement active time to complete the command.
+
+There are debug print available in the callback file to print the GPD state and activities on serial debug terminal using serial and ember-minimal-print plugins.
+
+Commissioning the GPD with the Z3LightCombo is as follows:
+    1. Enter the Z3LightCombo into commissioning state ( follow descriptions in the  Z3LightCombo sample application to do so).
+    2. Then follow the series of button presses on the GPD
+         Keep clicking (press and release) the PB0 (commissioning button) leaving a time of more than 1 second in between until the Commissioning state indicator
+         switches off indicating the GPD is commissioned.
+         Following series of commands will be sent out
+            i.   Channel request: To find the channel of the Zigbee network and use that for commissioning requests
+            ii.  Commissioning command: Commissioning request indicating report description to follow
+            iii. Commissioning command: To send the report descriptors
+            iv.  Commissioning command: To collect the commissioning reply
+            v.   Commissioning command: To indicate the successful commissioning
+    3. Then press the Report button on GPD to send an occupancy cluster report see the Z3LightCombo switches on if off.
+    4. To decommission the GPD and bring it to factory reset state press the PB0 (and PB1) button(s) to invoke decommissioning action.
+
+The GPD supports a set of CLI to help testing. This CLI can be turned off from this .isc file. The sample application by default becomes a non-sleepy application when CLI enabled. Some of the useful CLIs are here
+
+    help            : Prints the command table
+    node info       : Prints the information
+    node comm <1/0> : 1 - Sends a single comm command based on the gpd state, 0 - sends a decommissioning command
+    node comm 255   : This commands starts a self-triggering timer based state machine to complete all the states of commissioning.
+    sensor report   : Sends a report
+    sensor sleep    : enters sleepy behaviour, the CLI will stop working in this mode.
+
+Note :
+    1. In this sample application the RX window is kept as 80 milliseconds to accommodate the commissioning reply delay caused by debug prints
+in Z3LightCombo sample application. In specification it should be 8-10 milliseconds.
+    2. This sample application needs user to check and configure (as needed) buttons and LEDs.
+    3. For accurate power measurement, switch off the LEDs, switch off debug prints, CLI and power down on-board SPI flash.
+\}
+}
+{setupId:macros
+}
+{setupId:quizz
+}
+{setupId:serial
+useHwConfigurator=false
+}
+
+# Plugin options
+pluginOption(efr32): EMBER_AF_PLUGIN_HAL_CONFIG_VCOM_ENABLE,0
+pluginOption(efr32): EMBER_AF_PLUGIN_HAL_CONFIG_VUART_ENABLE,1
+pluginOption(efr32): EMBER_AF_PLUGIN_CCM_ENCRYPTION_MBEDTLS_CCM,true
+pluginOption(efr32): EMBER_AF_PLUGIN_CCM_ENCRYPTION_SOFTWARE_CCM,false
+pluginOption(efr32): EMBER_AF_PLUGIN_APPS_RX_WINDOW,80
+pluginOption(efr32): EMBER_AF_PLUGIN_APPS_APP_INFO,TRUE
+pluginOption(efr32): EMBER_AF_PLUGIN_APPS_APPS_GPD_MANUFACTURE_ID_PRESENT,true
+pluginOption(efr32): EMBER_AF_PLUGIN_APPS_APPS_GPD_MODEL_ID_PRESENT,true
+pluginOption(efr32): EMBER_AF_PLUGIN_APPS_GPD_SWITCH_INFO_PRESENT,false
+pluginOption(efr32): EMBER_AF_PLUGIN_APPS_GPD_APP_DESCRIPTION_FOLLOWS,true
+pluginOption(efr32): EMBER_AF_PLUGIN_APPS_APP_DEVICE_ID,0x12
+pluginOption(efr32): EMBER_AF_PLUGIN_APPS_SRC_ID,0x11223344

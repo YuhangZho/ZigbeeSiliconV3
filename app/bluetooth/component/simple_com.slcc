@@ -1,0 +1,26 @@
+id: simple_com
+label: Simple Communication Interface (UART)
+package: Bluetooth
+description: Component that provides simple communication interface using UART.
+category: Bluetooth|NCP
+quality: production
+root_path: app/bluetooth/common/simple_com
+config_file:
+  - path: config/sl_simple_com_config.h
+source:
+  - path: sl_simple_com.c
+include:
+  - path: .
+    file_list:
+      - path: sl_simple_com.h
+provides:
+  - name: simple_com
+requires:
+  - name: uartdrv_usart
+  - name: app_assert
+  - name: status
+  - name: emlib_common
+  - name: emlib_core
+template_contribution:
+  - name: component_catalog
+    value: simple_com

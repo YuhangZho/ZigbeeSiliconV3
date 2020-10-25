@@ -1,0 +1,29 @@
+# This file (or any included files) contains metadata for the plugin service.
+# File must be yaml map.
+# Special key 'include' allows you to add a list of included sub-yaml file.
+# Other keys are plugin service identifiers.
+#
+# Example for the pluginService files:
+# mbedtls: {
+#   description: Mbedtls security services.,
+#   generatedFile: mbedtls-config-generated.h,
+#   template: mbedtls.template,
+#   enablingPlugin: mbedtls,
+#   features: {
+#     sha256: {
+#       name: SHA256,
+#       macro: MBEDTLS_SHA256_C,
+#       include: random_header.h
+#     },
+#   }
+# }
+#
+# Plugins should put following in their plugin.properties:
+# setup(pluginService) {
+#   requires:mbedtls/aes
+#   requires:mbedtls/ccm
+#   requiresIf(EXPRESSION):mbedtls/ccp
+# }
+
+include:
+  - ../../../../util/plugin/plugin-common/mbedtls/pluginService.yaml

@@ -1,0 +1,41 @@
+id: memlcd
+package: platform
+label: Memory LCD
+description: >
+  This component contains functions that can be used by a range of
+  Memory LCDs. These Memory LCDs have an SPI interface and can draw one or
+  more rows on the display at a time. This component is used by the
+  Monochrome (LS013B7DH03) and Color (LS013B7DH06) Memory LCD Drivers.
+category: Platform|Board Drivers
+quality: production
+root_path: hardware/driver
+config_file:
+  - path: memlcd/config/sl_memlcd_config.h
+    file_id: sl_memlcd_config
+include:
+  - path: memlcd/inc
+    file_list:
+      - path: sl_memlcd.h
+      - path: sl_memlcd_spi.h
+source:
+  - path: memlcd/src/sl_memlcd.c
+  - path: memlcd/src/sl_memlcd_spi.c
+  - path: memlcd/src/sl_memlcd_display.c
+requires:
+  - name: sleeptimer
+  - name: udelay
+  - name: status
+  - name: emlib_usart
+  - name: emlib_cmu
+  - name: emlib_gpio
+  - name: memlcd_screen
+provides:
+  - name: memlcd
+template_contribution:
+  - name: component_catalog
+    value: memlcd
+recommends:
+  - id: ls013b7dh03
+documentation:
+    docset: gecko-platform
+    document: hardware-driver/api/group-memlcd

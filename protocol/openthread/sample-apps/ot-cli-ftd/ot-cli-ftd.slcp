@@ -1,0 +1,47 @@
+project_name: ot-cli-ftd
+label: ot-cli-ftd
+package: OpenThread
+description: This is a very simple CLI application to test the Openthread stack on a Full Thread Device.
+category: OpenThread Examples
+quality: production
+
+component:
+  - id: brd4001a
+  - id: ot_stack_ftd
+  - id: ot_cli_source
+  - id: uartdrv_usart
+    instance:
+      - vcom
+  - id: rail_util_pti
+
+source:
+  - path: main.c
+
+configuration:
+  - name: SL_BOARD_ENABLE_VCOM
+    value: 1
+  - name: SL_MBEDTLS_KEY_EXCHANGE_ECDHE_ECDSA_ENABLED
+    value: 1
+  - name: SL_MBEDTLS_KEY_EXCHANGE_PSK_ENABLED
+    value: 1
+  - name: OPENTHREAD_CONFIG_BORDER_ROUTER_ENABLE
+    value: 1
+  - name: OPENTHREAD_CONFIG_COAP_API_ENABLE
+    value: 1
+  - name: OPENTHREAD_CONFIG_COAP_SECURE_API_ENABLE
+    value: 1
+  - name: OPENTHREAD_CONFIG_COMMISSIONER_ENABLE
+    value: 1
+  - name: OPENTHREAD_CONFIG_DHCP6_CLIENT_ENABLE
+    value: 1
+  - name: OPENTHREAD_CONFIG_DHCP6_SERVER_ENABLE
+    value: 1
+  - name: OPENTHREAD_CONFIG_JOINER_ENABLE
+    value: 1
+  - name: OPENTHREAD_CONFIG_REFERENCE_DEVICE_ENABLE
+    value: 1
+  - name: OPENTHREAD_CONFIG_LOG_OUTPUT
+    value: OPENTHREAD_CONFIG_LOG_OUTPUT_APP
+
+tag:
+  - prebuilt_demo

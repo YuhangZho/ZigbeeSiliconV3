@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<device:DocumentRoot xmlns:device="http://www.silabs.com/ss/hwconfig/device.ecore">
+  <device description="" label="EZR32HG220F64R68" name="pin_tool.EZR32HG220F64R68" partId="mcu.arm.ezr32.hg.ezr32hg220f64r68" deviceExtensionIdRef="pin_tool.ezr32.ezr32hg.ezr32hg220f64r68.extension" revision="A" singleMode="true">
+    <powerModel/>
+    <portIo componentIdRef="pin_tool.ezr32.ezr32hg.ezr32hg220f64r68.portio" name="PORTIO" revision="A">
+      <crossBars/>
+      <interfaceToPinLists/>
+      <portBanks>
+        <portBank componentIdRef="pin_tool.ezr32.ezr32hg.port" displayName="Port A" name="gpioPortA" revision="A" index="0">
+          <pin componentIdRef="pin_tool.ezr32.ezr32hg.pin" displayName="PA0" name="PA0" index="0"/>
+          <pin componentIdRef="pin_tool.ezr32.ezr32hg.pin" displayName="PA1" name="PA1" index="1"/>
+        </portBank>
+        <portBank componentIdRef="pin_tool.ezr32.ezr32hg.port" displayName="Port B" name="gpioPortB" revision="A" index="1">
+          <pin componentIdRef="pin_tool.ezr32.ezr32hg.pin" displayName="PB7" name="PB7" index="7"/>
+          <pin componentIdRef="pin_tool.ezr32.ezr32hg.pin" displayName="PB8" name="PB8" index="8"/>
+          <pin componentIdRef="pin_tool.ezr32.ezr32hg.pin" displayName="PB11" name="PB11" index="11"/>
+          <pin componentIdRef="pin_tool.ezr32.ezr32hg.pin" displayName="PB13" name="PB13" index="13"/>
+          <pin componentIdRef="pin_tool.ezr32.ezr32hg.pin" displayName="PB14" name="PB14" index="14"/>
+        </portBank>
+        <portBank componentIdRef="pin_tool.ezr32.ezr32hg.port" displayName="Port C" name="gpioPortC" revision="A" index="2">
+          <pin componentIdRef="pin_tool.ezr32.ezr32hg.pin" displayName="PC8" name="PC8" index="8"/>
+          <pin componentIdRef="pin_tool.ezr32.ezr32hg.pin" displayName="PC9" name="PC9" index="9"/>
+          <pin componentIdRef="pin_tool.ezr32.ezr32hg.pin" displayName="PC10" name="PC10" index="10"/>
+          <pin componentIdRef="pin_tool.ezr32.ezr32hg.pin" displayName="PC11" name="PC11" index="11"/>
+          <pin componentIdRef="pin_tool.ezr32.ezr32hg.pin" displayName="PC13" name="PC13" index="13"/>
+          <pin componentIdRef="pin_tool.ezr32.ezr32hg.pin" displayName="PC14" name="PC14" index="14"/>
+          <pin componentIdRef="pin_tool.ezr32.ezr32hg.pin" displayName="PC15" name="PC15" index="15"/>
+        </portBank>
+        <portBank componentIdRef="pin_tool.ezr32.ezr32hg.port" displayName="Port D" name="gpioPortD" revision="A" index="3">
+          <pin componentIdRef="pin_tool.ezr32.ezr32hg.pin" displayName="PD4" name="PD4" index="4"/>
+          <pin componentIdRef="pin_tool.ezr32.ezr32hg.pin" displayName="PD5" name="PD5" index="5"/>
+          <pin componentIdRef="pin_tool.ezr32.ezr32hg.pin" displayName="PD6" name="PD6" index="6"/>
+          <pin componentIdRef="pin_tool.ezr32.ezr32hg.pin" displayName="PD7" name="PD7" index="7"/>
+        </portBank>
+        <portBank componentIdRef="pin_tool.ezr32.ezr32hg.port" displayName="Port E" name="gpioPortE" revision="A" index="4">
+          <pin componentIdRef="pin_tool.ezr32.ezr32hg.pin" displayName="PE10" name="PE10" index="10"/>
+          <pin componentIdRef="pin_tool.ezr32.ezr32hg.pin" displayName="PE11" name="PE11" index="11"/>
+          <pin componentIdRef="pin_tool.ezr32.ezr32hg.pin" displayName="PE12" name="PE12" index="12"/>
+          <pin componentIdRef="pin_tool.ezr32.ezr32hg.pin" displayName="PE13" name="PE13" index="13"/>
+        </portBank>
+        <portBank componentIdRef="pin_tool.ezr32.ezr32hg.port" displayName="Port F" name="gpioPortF" revision="A" index="5">
+          <pin componentIdRef="pin_tool.ezr32.ezr32hg.pin" displayName="PF0" name="PF0" index="0"/>
+          <pin componentIdRef="pin_tool.ezr32.ezr32hg.pin" displayName="PF1" name="PF1" index="1"/>
+          <pin componentIdRef="pin_tool.ezr32.ezr32hg.pin" displayName="PF2" name="PF2" index="2"/>
+          <pin componentIdRef="pin_tool.ezr32.ezr32hg.pin" displayName="PF3" name="PF3" index="3"/>
+          <pin componentIdRef="pin_tool.ezr32.ezr32hg.pin" displayName="PF4" name="PF4" index="4"/>
+        </portBank>
+      </portBanks>
+    </portIo>
+    <pinOut description="48-pin QFN, 7x7" indicatorLocation="topleft" package="QFN" padDescription="GND" subtitle="(top view)">
+      <pin defaultLabel="PF0" location="left:0" number="1" portBankIndex="5" pinIndex="0"/>
+      <pin defaultLabel="PF1" location="left:1" number="2" portBankIndex="5" pinIndex="1"/>
+      <pin defaultLabel="PF2" location="left:2" number="3" portBankIndex="5" pinIndex="2"/>
+      <pin defaultLabel="PF3" location="left:3" number="4" portBankIndex="5" pinIndex="3"/>
+      <pin defaultLabel="PF4" location="left:4" number="5" portBankIndex="5" pinIndex="4"/>
+      <pin defaultLabel="IOVDD_5" location="left:5" number="6"/>
+      <pin defaultLabel="PE10" location="left:6" number="7" portBankIndex="4" pinIndex="10"/>
+      <pin defaultLabel="PE11" location="left:7" number="8" portBankIndex="4" pinIndex="11"/>
+      <pin defaultLabel="PE12" location="left:8" number="9" portBankIndex="4" pinIndex="12"/>
+      <pin defaultLabel="PE13" location="left:9" number="10" portBankIndex="4" pinIndex="13"/>
+      <pin defaultLabel="PA0" location="left:10" number="11" portBankIndex="0" pinIndex="0"/>
+      <pin defaultLabel="PA1" location="left:11" number="12" portBankIndex="0" pinIndex="1"/>
+      <pin defaultLabel="XOUT" location="bottom:0" number="13"/>
+      <pin defaultLabel="XIN" location="bottom:1" number="14"/>
+      <pin defaultLabel="GPIO2" location="bottom:2" number="15"/>
+      <pin defaultLabel="GPIO3" location="bottom:3" number="16"/>
+      <pin defaultLabel="NC" location="bottom:4" number="17"/>
+      <pin defaultLabel="RXP" location="bottom:5" number="18"/>
+      <pin defaultLabel="RXN" location="bottom:6" number="19"/>
+      <pin defaultLabel="TX_20" location="bottom:7" number="20"/>
+      <pin defaultLabel="GND" location="bottom:8" number="21"/>
+      <pin defaultLabel="RFVDD_2" location="bottom:9" number="22"/>
+      <pin defaultLabel="TXRAMP" location="bottom:10" number="23"/>
+      <pin defaultLabel="RFVDD_1" location="bottom:11" number="24"/>
+      <pin defaultLabel="GPIO0" location="right:0" number="25"/>
+      <pin defaultLabel="GPIO1" location="right:1" number="26"/>
+      <pin defaultLabel="PB7" location="right:2" number="27" portBankIndex="1" pinIndex="7"/>
+      <pin defaultLabel="PB8" location="right:3" number="28" portBankIndex="1" pinIndex="8"/>
+      <pin defaultLabel="PAD_RESET" location="right:4" number="29"/>
+      <pin defaultLabel="PB11" location="right:5" number="30" portBankIndex="1" pinIndex="11"/>
+      <pin defaultLabel="AVDD_1" location="right:6" number="31"/>
+      <pin defaultLabel="PB13" location="right:7" number="32" portBankIndex="1" pinIndex="13"/>
+      <pin defaultLabel="PB14" location="right:8" number="33" portBankIndex="1" pinIndex="14"/>
+      <pin defaultLabel="IOVDD_3" location="right:9" number="34"/>
+      <pin defaultLabel="AVDD_0" location="right:10" number="35"/>
+      <pin defaultLabel="PD4" location="right:11" number="36" portBankIndex="3" pinIndex="4"/>
+      <pin defaultLabel="PD5" location="top:0" number="37" portBankIndex="3" pinIndex="5"/>
+      <pin defaultLabel="PD6" location="top:1" number="38" portBankIndex="3" pinIndex="6"/>
+      <pin defaultLabel="PD7" location="top:2" number="39" portBankIndex="3" pinIndex="7"/>
+      <pin defaultLabel="IOVDD_4" location="top:3" number="40"/>
+      <pin defaultLabel="PAD_DEC_0" location="top:4" number="41"/>
+      <pin defaultLabel="PC8" location="top:5" number="42" portBankIndex="2" pinIndex="8"/>
+      <pin defaultLabel="PC9" location="top:6" number="43" portBankIndex="2" pinIndex="9"/>
+      <pin defaultLabel="PC10" location="top:7" number="44" portBankIndex="2" pinIndex="10"/>
+      <pin defaultLabel="PC11" location="top:8" number="45" portBankIndex="2" pinIndex="11"/>
+      <pin defaultLabel="PC13" location="top:9" number="46" portBankIndex="2" pinIndex="13"/>
+      <pin defaultLabel="PC14" location="top:10" number="47" portBankIndex="2" pinIndex="14"/>
+      <pin defaultLabel="PC15" location="top:11" number="48" portBankIndex="2" pinIndex="15"/>
+    </pinOut>
+    <peripherals>
+      <peripheral componentIdRef="pin_tool.ezr32.ezr32hg.adc" displayName="ADC0" name="ADC0" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.ezr32.ezr32hg.aes" displayName="AES" name="AES" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.ezr32.ezr32hg.cmu" displayName="CMU" name="CMU" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.ezr32.ezr32hg.dbg" displayName="DBG" name="DBG" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.ezr32.ezr32hg.dma" displayName="DMA" name="DMA" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.ezr32.ezr32hg.emu" displayName="EMU" name="EMU" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.ezr32.ezr32hg.gpio" displayName="GPIO" name="GPIO" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.ezr32.ezr32hg.hfxo" displayName="HFXO" name="HFXO" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.ezr32.ezr32hg.i2c" displayName="I2C0" name="I2C0" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.ezr32.ezr32hg.idac" displayName="IDAC0" name="IDAC0" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.ezr32.ezr32hg.leuart" displayName="LEUART0" name="LEUART0" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.ezr32.ezr32hg.lfxo" displayName="LFXO" name="LFXO" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.ezr32.ezr32hg.mtb" displayName="MTB" name="MTB" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.ezr32.ezr32hg.pcnt" displayName="PCNT0" name="PCNT0" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.ezr32.ezr32hg.prs.ch0" displayName="PRS Channel CH0" name="PRS.CH0" revision="A" category="PRS" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.ezr32.ezr32hg.prs.ch1" displayName="PRS Channel CH1" name="PRS.CH1" revision="A" category="PRS" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.ezr32.ezr32hg.prs.ch2" displayName="PRS Channel CH2" name="PRS.CH2" revision="A" category="PRS" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.ezr32.ezr32hg.prs.ch3" displayName="PRS Channel CH3" name="PRS.CH3" revision="A" category="PRS" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.ezr32.ezr32hg.prs.ch4" displayName="PRS Channel CH4" name="PRS.CH4" revision="A" category="PRS" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.ezr32.ezr32hg.prs.ch5" displayName="PRS Channel CH5" name="PRS.CH5" revision="A" category="PRS" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.ezr32.ezr32hg.rtc" displayName="RTC" name="RTC" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.ezr32.ezr32hg.timer" displayName="TIMER0" name="TIMER0" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.ezr32.ezr32hg.timer" displayName="TIMER1" name="TIMER1" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.ezr32.ezr32hg.timer" displayName="TIMER2" name="TIMER2" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.ezr32.ezr32hg.usart" displayName="USART0" name="USART0" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.ezr32.ezr32hg.usart" displayName="USARTRF1" name="USARTRF1" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.ezr32.ezr32hg.ushfrco" displayName="USHFRCO" name="USHFRCO" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.ezr32.ezr32hg.vcmp" displayName="VCMP" name="VCMP" revision="A" category="Other" hidden="false"/>
+      <peripheral componentIdRef="pin_tool.ezr32.ezr32hg.wdog" displayName="WDOG" name="WDOG" revision="A" category="Other" hidden="false"/>
+    </peripherals>
+    <script uri="../../script/entrypoint.py">
+      <path>../../script</path>
+    </script>
+    <sourceMappings initialGroup="main_template">
+      <sourceMapping uri="../../script/generator/source_generator.srcmap"/>
+    </sourceMappings>
+  </device>
+</device:DocumentRoot>

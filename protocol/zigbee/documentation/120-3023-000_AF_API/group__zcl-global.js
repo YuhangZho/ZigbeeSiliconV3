@@ -1,0 +1,15 @@
+var group__zcl_global =
+[
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_ZCL_GLOBAL_ZCL_GLOBAL_DIRECTION", "group__zcl-global.html#ga79f78c67d22a6b04fab2dccd814ec554", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_ZCL_GLOBAL_ZCL_GLOBAL_DISC_COM_GEN", "group__zcl-global.html#ga9b2b511a23f2d9917ca3ef3129ccb951", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_ZCL_GLOBAL_ZCL_GLOBAL_DISC_COM_REC", "group__zcl-global.html#gac8a2f217f60cdfb9361364a9fda49d94", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_ZCL_GLOBAL_ZCL_GLOBAL_DISCOVER", "group__zcl-global.html#ga5dff90347aea3e9cfcf2d326d9e37793", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_ZCL_GLOBAL_ZCL_GLOBAL_EXPECT_REPORT_FROM_ME", "group__zcl-global.html#ga410a9b655b3a1f1056a17c18a59cded9", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_ZCL_GLOBAL_ZCL_GLOBAL_NWRITE", "group__zcl-global.html#ga74aa174b2a6550cd9a6535c8bc3ed755", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_ZCL_GLOBAL_ZCL_GLOBAL_READ", "group__zcl-global.html#ga9797b5451900b3ba561b4637c1ee1ccd", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_ZCL_GLOBAL_ZCL_GLOBAL_REPORT", "group__zcl-global.html#ga5ba945d34092797c175035069ae503b3", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_ZCL_GLOBAL_ZCL_GLOBAL_REPORT_READ", "group__zcl-global.html#ga6e5a6bb9ee924b48810b0fc5d64b0986", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_ZCL_GLOBAL_ZCL_GLOBAL_SEND_ME_A_REPORT", "group__zcl-global.html#ga6b7baaad9bab04a1e26184575e57150d", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_ZCL_GLOBAL_ZCL_GLOBAL_UWRITE", "group__zcl-global.html#ga7737914386566a7a168a36aa1788ab73", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_ZCL_GLOBAL_ZCL_GLOBAL_WRITE", "group__zcl-global.html#ga8210eb13b4d4063664b1d50f6cd1b30a", null ]
+];

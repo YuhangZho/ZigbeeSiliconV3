@@ -1,0 +1,17 @@
+id: "bluetooth_feature_cte_transmitter"
+label: "CTE Transmitter"
+package: "Bluetooth"
+description: >
+  Bluetooth Constant Tone Extension (CTE) transmission feature
+category: "Bluetooth|Feature"
+quality: "production"
+root_path: "protocol/bluetooth"
+requires:
+  - name: "bluetooth_stack"
+provides:
+  - name: "bluetooth_feature_cte_transmitter"
+template_contribution:
+  - name: bluetooth_stack_init
+    value:
+      function: "sl_bt_class_cte_transmitter_init"
+    priority: 10

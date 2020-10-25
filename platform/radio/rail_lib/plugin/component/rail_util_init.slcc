@@ -1,0 +1,43 @@
+id: rail_util_init
+label: RAIL Utility, Initialization
+description: Utility to aid with RAIL Initialization and Callback Support
+package: platform
+category: Platform|Radio
+quality: production
+requires:
+  - name: rail_lib
+  - name: dmadrv
+  - name: emlib_ldma
+  - name: device_init_hfxo # RAIL requires HFXO. Require this specific implementation for utility usage in an effort to help.
+provides:
+  - name: rail_util_init
+documentation:
+  docset: rail
+  document: rail-util-init
+config_file:
+  - path: platform/radio/rail_lib/plugin/rail_util_init/config/efr32xg1x/sl_rail_util_init_config.h
+    condition:
+      - device_series_1
+  - path: platform/radio/rail_lib/plugin/rail_util_init/config/efr32xg21/sl_rail_util_init_config.h
+    condition:
+      - device_series_2
+      - device_sdid_200
+  - path: platform/radio/rail_lib/plugin/rail_util_init/config/efr32xg22/sl_rail_util_init_config.h
+    condition:
+      - device_series_2
+      - device_sdid_205
+include:
+  - path: platform/radio/rail_lib/plugin/rail_util_init
+    file_list:
+      - path: sl_rail_util_init.h
+source:
+  - path: platform/radio/rail_lib/plugin/rail_util_init/sl_rail_util_init.c
+template_file:
+  - path: platform/radio/rail_lib/plugin/rail_util_init/sl_rail_util_callbacks.c.jinja
+template_contribution:
+  - name: event_handler
+    value:
+      event: stack_init
+      include: sl_rail_util_init.h
+      handler: sl_rail_util_init
+    priority: -9000

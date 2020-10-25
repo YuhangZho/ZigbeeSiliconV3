@@ -1,0 +1,59 @@
+project_name: sleepy-demo-mtd
+label: sleepy-demo-mtd
+package: OpenThread
+description: This is a sample application to demonstrate Sleepy End Device behaviour on an MTD using the EFR32's low power EM2 mode.
+category: OpenThread Examples
+quality: production
+
+component:
+  - id: brd4001a
+  - id: ot_stack_mtd
+  - id: ot_cli_source
+  - id: uartdrv_usart
+    instance:
+      - vcom
+  - id: simple_button
+    instance:
+      - btn0
+      - btn1
+  - id: simple_led
+    instance:
+      - led0
+  - id: rail_util_pti
+  - id: power_manager
+
+source:
+  - path: main.c
+
+configuration:
+  - name: SL_BOARD_ENABLE_VCOM
+    value: 1
+  - name: SL_POWER_MANAGER_DEBUG
+    value: 1
+  - name: UARTDRV_RESTRICT_ENERGY_MODE_TO_ALLOW_RECEPTION
+    value: 0
+  - name: SL_MBEDTLS_KEY_EXCHANGE_ECDHE_ECDSA_ENABLED
+    value: 1
+  - name: SL_MBEDTLS_KEY_EXCHANGE_PSK_ENABLED
+    value: 1
+  - name: OPENTHREAD_CONFIG_BORDER_ROUTER_ENABLE
+    value: 1
+  - name: OPENTHREAD_CONFIG_COAP_API_ENABLE
+    value: 1
+  - name: OPENTHREAD_CONFIG_COAP_SECURE_API_ENABLE
+    value: 1
+  - name: OPENTHREAD_CONFIG_COMMISSIONER_ENABLE
+    value: 1
+  - name: OPENTHREAD_CONFIG_DHCP6_CLIENT_ENABLE
+    value: 1
+  - name: OPENTHREAD_CONFIG_DHCP6_SERVER_ENABLE
+    value: 1
+  - name: OPENTHREAD_CONFIG_JOINER_ENABLE
+    value: 1
+  - name: OPENTHREAD_CONFIG_REFERENCE_DEVICE_ENABLE
+    value: 1
+  - name: OPENTHREAD_CONFIG_LOG_OUTPUT
+    value: OPENTHREAD_CONFIG_LOG_OUTPUT_APP
+
+tag:
+  - prebuilt_demo

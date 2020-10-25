@@ -1,0 +1,61 @@
+project_name: ncp_empty
+package: Bluetooth
+label: Bluetooth - NCP Empty
+description: >
+  Bluetooth NCP (Network Co-Processor) target application with a minimal GATT 
+  database, that makes it possible to access  the Bluetooth stack from a host
+  controller via UART. It provides access to the host layer via BGAPI and not
+  to the link layer via HCI.
+category: Bluetooth Examples
+quality: production
+
+component:
+  - id: bluetooth
+  - id: bluetooth_feature_test
+  - id: bluetooth_feature_cte_transmitter
+  - id: bluetooth_feature_cte_receiver
+  - id: ncp
+  - id: uartdrv_usart
+    instance:
+      - vcom
+      - exp
+  - id: mpu
+  - id: bootloader_interface
+
+source:
+  - path: main.c
+  - path: app.c
+  - path: app_properties.c
+
+include:
+  - path: .
+    file_list:
+    - path: app.h
+
+other_file:
+  - path: ../../script/create_bl_files.bat
+  - path: ../../script/create_bl_files.sh
+
+configuration:
+  - name: SL_STACK_SIZE
+    value: "2048"
+  - name: SL_HEAP_SIZE
+    value: "8630"
+  - name: SL_BOARD_ENABLE_VCOM
+    value: 1
+  - name: SL_UARTDRV_USART_VCOM_FLOW_CONTROL_TYPE
+    value: uartdrvFlowControlNone
+    condition:
+      - hardware_board_tb
+
+define:
+  - name: "SL_BT_API_FULL"
+
+tag:
+  - prebuilt_demo
+  - hardware:rf:band:2400
+
+ui_hints:
+  highlight:
+    - path: config/btconf/gatt_configuration.btconf
+      focus: true

@@ -1,0 +1,8 @@
+var group__plugin_slot_manager =
+[
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_SLOT_MANAGER_PLUGIN_SLOT_MANAGER_BOOT_SLOT", "group__plugin-slot-manager.html#ga80be6f79230236031fabcbf50a9430ab", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_SLOT_MANAGER_PLUGIN_SLOT_MANAGER_ERASE_SLOT", "group__plugin-slot-manager.html#ga9e8e524f5a01979b87a7f7425196be53", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_SLOT_MANAGER_PLUGIN_SLOT_MANAGER_EXT_FLASH_INFO", "group__plugin-slot-manager.html#gab79ef8a2e9c189771a24945e94b3fbd6", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_SLOT_MANAGER_PLUGIN_SLOT_MANAGER_READ", "group__plugin-slot-manager.html#ga11f86372a9a01dad93486b9268ba78e2", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_SLOT_MANAGER_PLUGIN_SLOT_MANAGER_SLOTS_INFO", "group__plugin-slot-manager.html#gaaaf321d21dfa876c77d0e54f1276be95", null ]
+];

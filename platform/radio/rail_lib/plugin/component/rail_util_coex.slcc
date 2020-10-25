@@ -1,0 +1,51 @@
+id: rail_util_coex
+label: RAIL Utility, Coexistence
+description: Utility to aid with RAIL Coexistence Support
+package: platform
+category: Platform|Radio
+quality: production
+requires:
+  - name: rail_lib
+  - name: gpiointerrupt
+  - name: emlib_gpio
+  - name: emlib_prs
+  - name: emlib_timer
+  - name: emlib_cmu
+provides:
+  - name: rail_util_coex
+documentation:
+  docset: rail
+  document: rail-util-coex
+config_file:
+  - path: platform/radio/rail_lib/plugin/coexistence/config/efr32xg1x/sl_rail_util_coex_config.h
+    condition:
+      - device_series_1
+  - path: platform/radio/rail_lib/plugin/coexistence/config/efr32xg2x/sl_rail_util_coex_config.h
+    condition:
+      - device_series_2
+include:
+  - path: platform/radio/rail_lib/plugin
+  - path: platform/radio/rail_lib/plugin/coexistence/common
+    file_list:
+      - path: coexistence.h
+  - path: platform/radio/rail_lib/plugin/coexistence/hal/efr32
+    file_list:
+      - path: coexistence-hal.h
+  - path: platform/radio/rail_lib/plugin/coexistence/protocol/ble
+    file_list:
+      - path: coexistence-ble.h
+      - path: coexistence-ble-ll.h
+  # - path: platform/radio/rail_lib/plugin/coexistence/protocol/ieee802154
+  #   file_list:
+  #     - path: coexistence-802154.h
+  #     - path: coulomb-counter-802154.h
+source:
+  - path: platform/radio/rail_lib/plugin/coexistence/common/coexistence.c
+  - path: platform/radio/rail_lib/plugin/coexistence/common/coexistence-pwm.c
+  - path: platform/radio/rail_lib/plugin/coexistence/hal/efr32/coexistence-directional-priority.c
+  - path: platform/radio/rail_lib/plugin/coexistence/hal/efr32/coexistence-hal.c
+  - path: platform/radio/rail_lib/plugin/coexistence/protocol/ble/coexistence-ble.c
+  - path: platform/radio/rail_lib/plugin/coexistence/protocol/ble/coexistence-ble-counters.c
+
+  # - path: platform/radio/rail_lib/plugin/coexistence/protocol/ieee802154/coexistence-802154.c
+  # - path: platform/radio/rail_lib/plugin/coexistence/protocol/ieee802154/coulomb-counter-802154.c

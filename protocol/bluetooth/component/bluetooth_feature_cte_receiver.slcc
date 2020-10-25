@@ -1,0 +1,17 @@
+id: "bluetooth_feature_cte_receiver"
+label: "CTE Receiver"
+package: "Bluetooth"
+description: >
+  Bluetooth Constant Tone Extension (CTE) receiving feature
+category: "Bluetooth|Feature"
+quality: "production"
+root_path: "protocol/bluetooth"
+requires:
+  - name: "bluetooth_stack"
+provides:
+  - name: "bluetooth_feature_cte_receiver"
+template_contribution:
+  - name: bluetooth_stack_init
+    value:
+      function: "sl_bt_class_cte_receiver_init"
+    priority: 10

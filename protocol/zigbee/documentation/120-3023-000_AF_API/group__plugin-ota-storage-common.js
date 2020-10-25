@@ -1,0 +1,8 @@
+var group__plugin_ota_storage_common =
+[
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_OTA_STORAGE_COMMON_PLUGIN_OTA_STORAGE_COMMON_DATA_PRINT", "group__plugin-ota-storage-common.html#ga4b9476ebe1fa958ffa96f21ff7ebbed3", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_OTA_STORAGE_COMMON_PLUGIN_OTA_STORAGE_COMMON_DELETE", "group__plugin-ota-storage-common.html#ga996290d876c1e1e91bf2e9c57a0b7f99", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_OTA_STORAGE_COMMON_PLUGIN_OTA_STORAGE_COMMON_PRINT_IMAGES", "group__plugin-ota-storage-common.html#ga1fe44178ed1be6349baf09939e883c85", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_OTA_STORAGE_COMMON_PLUGIN_OTA_STORAGE_COMMON_RELOAD", "group__plugin-ota-storage-common.html#gad198afcb5880954a2017f16c1718d948", null ],
+    [ "EMBER_AF_DOXYGEN_CLI_COMMAND_PLUGIN_OTA_STORAGE_COMMON_PLUGIN_OTA_STORAGE_COMMON_STORAGE_INFO", "group__plugin-ota-storage-common.html#ga4364f7fdc5551c72dfb28487099adff1", null ]
+];

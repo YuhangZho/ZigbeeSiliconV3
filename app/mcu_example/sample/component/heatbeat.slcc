@@ -1,0 +1,30 @@
+id: heartbeat
+label: Heartbeat
+version: 1
+package: platform
+description: Heartbeat example
+category: "App|Example"
+quality: production
+root_path: "app/mcu_example/sample/heartbeat"
+config_file:
+  - path: "config/heartbeat_led_config.h"
+  - path: "config/heartbeat_task_config.h"
+    condition: ["micriumos_kernel"]
+include:
+  - path: "kernel"
+    condition: ["micriumos_kernel"]
+    file_list:
+      - path: "heartbeat.h"
+  - path: "baremetal"
+    unless: ["micriumos_kernel"]
+    file_list:
+      - path: "heartbeat.h"
+source:
+  - path: "kernel/heartbeat.c"
+    condition: ["micriumos_kernel"]
+  - path: "baremetal/heartbeat.c"
+    unless: ["micriumos_kernel"]
+provides:
+  - name: "heartbeat"
+requires:
+  - name: "simple_led"

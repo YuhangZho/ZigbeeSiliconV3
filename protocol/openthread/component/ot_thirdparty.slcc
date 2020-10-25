@@ -1,0 +1,24 @@
+id: ot_thirdparty
+label: Thirdparty
+package: OpenThread
+category: OpenThread
+quality: production
+description: This component references to all the third party support needed by the OpenThread stack
+provides:
+  - name: ot_thirdparty
+requires:
+  - name: mbedtls_dtls
+  - name: mbedtls_jpake
+  - name: mbedtls_cmac
+  - name: mbedtls_ecdsa
+  - name: mbedtls_ecdh
+  - name: mbedtls_tls_server
+  - name: segger_rtt
+include:
+  - path: util/third_party/mbedtls/include
+    file_list:
+      # Unused (yet included) header files in OpenThread source.
+      - path: mbedtls/certs.h
+define:
+  - name: OPENTHREAD_CONFIG_ENABLE_BUILTIN_MBEDTLS
+    value: 0

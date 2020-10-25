@@ -1,0 +1,55 @@
+project_name: ot-ble-dmp
+label: ot-ble-dmp
+package: OpenThread
+description: This is a simple application to test DMP with OpenThread and Bluetooth running on FreeRTOS.
+category: OpenThread Examples
+quality: production
+
+component:
+  - id: brd4001a
+  - id: ot_cli_source
+  - id: bluetooth_stack
+  - id: freertos
+  - id: freertos_heap_3
+  - id: rail_lib_multiprotocol
+  - id: nvm3_lib
+  - id: power_manager
+  - id: simple_button
+    instance:
+      - btn0
+      - btn1
+  - id: uartdrv_usart
+    instance:
+      - vcom
+
+include:
+  - path: .
+    file_list:
+    - path: bluetooth_cli.h
+
+source:
+  - path: main.c
+  - path: bluetooth_cli.c
+  - path: bluetooth_event_callback.c
+
+other_file:
+  - path: readme-ot-ble-dmp.txt
+
+configuration:
+  - name: SL_BOARD_ENABLE_VCOM
+    value: 1
+  - name: SL_MBEDTLS_KEY_EXCHANGE_ECDHE_ECDSA_ENABLED
+    value: 1
+  - name: SL_MBEDTLS_KEY_EXCHANGE_PSK_ENABLED
+    value: 1
+  - name: UARTDRV_RESTRICT_ENERGY_MODE_TO_ALLOW_RECEPTION
+    value: 0
+  - name: SL_HEAP_SIZE
+    value: 16384
+
+define:
+  - name: SL_BT_DISABLE_EVENT_TASK
+    value: 1
+
+tag:
+  - prebuilt_demo

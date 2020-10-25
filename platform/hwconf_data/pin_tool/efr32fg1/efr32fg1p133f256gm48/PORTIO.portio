@@ -1,0 +1,3248 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<portio:DocumentRoot xmlns:portio="http://www.silabs.com/ss/hwconfig/portio.ecore">
+  <portIo id="pin_tool.efr32.efr32fg1.efr32fg1p133f256gm48.portio" label="Pinout Configuration" name="PORTIO" description="" version="A">
+    <properties>
+      <enumProperty label="OUT" id="portio.acmp0.enable.out" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.acmp0.location.out" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="12"/>
+        <enumValue value="13"/>
+        <enumValue value="14"/>
+        <enumValue value="15"/>
+        <enumValue value="16"/>
+        <enumValue value="21"/>
+        <enumValue value="22"/>
+        <enumValue value="23"/>
+        <enumValue value="24"/>
+        <enumValue value="25"/>
+        <enumValue value="26"/>
+        <enumValue value="27"/>
+        <enumValue value="28"/>
+        <enumValue value="29"/>
+        <enumValue value="30"/>
+        <enumValue value="31"/>
+      </enumProperty>
+      <enumProperty label="OUT" id="portio.acmp1.enable.out" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.acmp1.location.out" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="12"/>
+        <enumValue value="13"/>
+        <enumValue value="14"/>
+        <enumValue value="15"/>
+        <enumValue value="16"/>
+        <enumValue value="21"/>
+        <enumValue value="22"/>
+        <enumValue value="23"/>
+        <enumValue value="24"/>
+        <enumValue value="25"/>
+        <enumValue value="26"/>
+        <enumValue value="27"/>
+        <enumValue value="28"/>
+        <enumValue value="29"/>
+        <enumValue value="30"/>
+        <enumValue value="31"/>
+      </enumProperty>
+      <enumProperty label="ADCTESTN" id="portio.adc0.enable.adctestn" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="ADCTESTP" id="portio.adc0.enable.adctestp" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="EXTN" id="portio.adc0.enable.extn" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="EXTP" id="portio.adc0.enable.extp" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="CLK0" id="portio.cmu.enable.clk0" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.cmu.location.clkout0" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+      </enumProperty>
+      <enumProperty label="CLK1" id="portio.cmu.enable.clk1" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.cmu.location.clkout1" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+      </enumProperty>
+      <enumProperty label="SWCLKTCK" id="portio.dbg.enable.swclktck" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="SWDIOTMS" id="portio.dbg.enable.swdiotms" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="TDI" id="portio.dbg.enable.tdi" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="TDO" id="portio.dbg.enable.tdo" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.dbg.location.route" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="0"/>
+        <enumValue value="0"/>
+        <enumValue value="0"/>
+      </enumProperty>
+      <enumProperty label="SWV" id="portio.dbg.enable.swv" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.dbg.location.swv" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+      </enumProperty>
+      <enumProperty label="EM4WU0" id="portio.gpio.enable.em4wu0" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="EM4WU1" id="portio.gpio.enable.em4wu1" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="EM4WU4" id="portio.gpio.enable.em4wu4" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="EM4WU8" id="portio.gpio.enable.em4wu8" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="EM4WU9" id="portio.gpio.enable.em4wu9" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="EM4WU12" id="portio.gpio.enable.em4wu12" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="SCL" id="portio.i2c0.enable.scl" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.i2c0.location.scl" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="12"/>
+        <enumValue value="13"/>
+        <enumValue value="14"/>
+        <enumValue value="15"/>
+        <enumValue value="20"/>
+        <enumValue value="21"/>
+        <enumValue value="22"/>
+        <enumValue value="23"/>
+        <enumValue value="24"/>
+        <enumValue value="25"/>
+        <enumValue value="26"/>
+        <enumValue value="27"/>
+        <enumValue value="28"/>
+        <enumValue value="29"/>
+        <enumValue value="30"/>
+        <enumValue value="31"/>
+      </enumProperty>
+      <enumProperty label="SDA" id="portio.i2c0.enable.sda" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.i2c0.location.sda" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="12"/>
+        <enumValue value="13"/>
+        <enumValue value="14"/>
+        <enumValue value="15"/>
+        <enumValue value="16"/>
+        <enumValue value="21"/>
+        <enumValue value="22"/>
+        <enumValue value="23"/>
+        <enumValue value="24"/>
+        <enumValue value="25"/>
+        <enumValue value="26"/>
+        <enumValue value="27"/>
+        <enumValue value="28"/>
+        <enumValue value="29"/>
+        <enumValue value="30"/>
+        <enumValue value="31"/>
+      </enumProperty>
+      <enumProperty label="OUT0" id="portio.letimer0.enable.out0" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.letimer0.location.out0" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="12"/>
+        <enumValue value="13"/>
+        <enumValue value="14"/>
+        <enumValue value="15"/>
+        <enumValue value="16"/>
+        <enumValue value="21"/>
+        <enumValue value="22"/>
+        <enumValue value="23"/>
+        <enumValue value="24"/>
+        <enumValue value="25"/>
+        <enumValue value="26"/>
+        <enumValue value="27"/>
+        <enumValue value="28"/>
+        <enumValue value="29"/>
+        <enumValue value="30"/>
+        <enumValue value="31"/>
+      </enumProperty>
+      <enumProperty label="OUT1" id="portio.letimer0.enable.out1" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.letimer0.location.out1" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="12"/>
+        <enumValue value="13"/>
+        <enumValue value="14"/>
+        <enumValue value="15"/>
+        <enumValue value="20"/>
+        <enumValue value="21"/>
+        <enumValue value="22"/>
+        <enumValue value="23"/>
+        <enumValue value="24"/>
+        <enumValue value="25"/>
+        <enumValue value="26"/>
+        <enumValue value="27"/>
+        <enumValue value="28"/>
+        <enumValue value="29"/>
+        <enumValue value="30"/>
+        <enumValue value="31"/>
+      </enumProperty>
+      <enumProperty label="RX" id="portio.leuart0.enable.rx" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.leuart0.location.rx" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="12"/>
+        <enumValue value="13"/>
+        <enumValue value="14"/>
+        <enumValue value="15"/>
+        <enumValue value="20"/>
+        <enumValue value="21"/>
+        <enumValue value="22"/>
+        <enumValue value="23"/>
+        <enumValue value="24"/>
+        <enumValue value="25"/>
+        <enumValue value="26"/>
+        <enumValue value="27"/>
+        <enumValue value="28"/>
+        <enumValue value="29"/>
+        <enumValue value="30"/>
+        <enumValue value="31"/>
+      </enumProperty>
+      <enumProperty label="TX" id="portio.leuart0.enable.tx" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.leuart0.location.tx" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="12"/>
+        <enumValue value="13"/>
+        <enumValue value="14"/>
+        <enumValue value="15"/>
+        <enumValue value="16"/>
+        <enumValue value="21"/>
+        <enumValue value="22"/>
+        <enumValue value="23"/>
+        <enumValue value="24"/>
+        <enumValue value="25"/>
+        <enumValue value="26"/>
+        <enumValue value="27"/>
+        <enumValue value="28"/>
+        <enumValue value="29"/>
+        <enumValue value="30"/>
+        <enumValue value="31"/>
+      </enumProperty>
+      <enumProperty label="N" id="portio.lfxo.enable.n" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="P" id="portio.lfxo.enable.p" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="ANT0" id="portio.modem.enable.ant0" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.modem.location.ant0" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="12"/>
+        <enumValue value="13"/>
+        <enumValue value="18"/>
+        <enumValue value="19"/>
+        <enumValue value="20"/>
+        <enumValue value="21"/>
+        <enumValue value="22"/>
+        <enumValue value="23"/>
+        <enumValue value="24"/>
+        <enumValue value="25"/>
+        <enumValue value="26"/>
+        <enumValue value="27"/>
+        <enumValue value="28"/>
+        <enumValue value="29"/>
+        <enumValue value="30"/>
+        <enumValue value="31"/>
+      </enumProperty>
+      <enumProperty label="ANT1" id="portio.modem.enable.ant1" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.modem.location.ant1" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="12"/>
+        <enumValue value="17"/>
+        <enumValue value="18"/>
+        <enumValue value="19"/>
+        <enumValue value="20"/>
+        <enumValue value="21"/>
+        <enumValue value="22"/>
+        <enumValue value="23"/>
+        <enumValue value="24"/>
+        <enumValue value="25"/>
+        <enumValue value="26"/>
+        <enumValue value="27"/>
+        <enumValue value="28"/>
+        <enumValue value="29"/>
+        <enumValue value="30"/>
+        <enumValue value="31"/>
+      </enumProperty>
+      <enumProperty label="DCLK" id="portio.modem.enable.dclk" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.modem.location.dclk" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="12"/>
+        <enumValue value="13"/>
+        <enumValue value="14"/>
+        <enumValue value="15"/>
+        <enumValue value="16"/>
+        <enumValue value="21"/>
+        <enumValue value="22"/>
+        <enumValue value="23"/>
+        <enumValue value="24"/>
+        <enumValue value="25"/>
+        <enumValue value="26"/>
+        <enumValue value="27"/>
+        <enumValue value="28"/>
+        <enumValue value="29"/>
+        <enumValue value="30"/>
+        <enumValue value="31"/>
+      </enumProperty>
+      <enumProperty label="DIN" id="portio.modem.enable.din" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.modem.location.din" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="12"/>
+        <enumValue value="13"/>
+        <enumValue value="14"/>
+        <enumValue value="15"/>
+        <enumValue value="20"/>
+        <enumValue value="21"/>
+        <enumValue value="22"/>
+        <enumValue value="23"/>
+        <enumValue value="24"/>
+        <enumValue value="25"/>
+        <enumValue value="26"/>
+        <enumValue value="27"/>
+        <enumValue value="28"/>
+        <enumValue value="29"/>
+        <enumValue value="30"/>
+        <enumValue value="31"/>
+      </enumProperty>
+      <enumProperty label="DOUT" id="portio.modem.enable.dout" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.modem.location.dout" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="12"/>
+        <enumValue value="13"/>
+        <enumValue value="14"/>
+        <enumValue value="19"/>
+        <enumValue value="20"/>
+        <enumValue value="21"/>
+        <enumValue value="22"/>
+        <enumValue value="23"/>
+        <enumValue value="24"/>
+        <enumValue value="25"/>
+        <enumValue value="26"/>
+        <enumValue value="27"/>
+        <enumValue value="28"/>
+        <enumValue value="29"/>
+        <enumValue value="30"/>
+        <enumValue value="31"/>
+      </enumProperty>
+      <enumProperty label="S0IN" id="portio.pcnt0.enable.s0in" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.pcnt0.location.s0in" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="12"/>
+        <enumValue value="13"/>
+        <enumValue value="14"/>
+        <enumValue value="15"/>
+        <enumValue value="16"/>
+        <enumValue value="21"/>
+        <enumValue value="22"/>
+        <enumValue value="23"/>
+        <enumValue value="24"/>
+        <enumValue value="25"/>
+        <enumValue value="26"/>
+        <enumValue value="27"/>
+        <enumValue value="28"/>
+        <enumValue value="29"/>
+        <enumValue value="30"/>
+        <enumValue value="31"/>
+      </enumProperty>
+      <enumProperty label="S1IN" id="portio.pcnt0.enable.s1in" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.pcnt0.location.s1in" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="12"/>
+        <enumValue value="13"/>
+        <enumValue value="14"/>
+        <enumValue value="15"/>
+        <enumValue value="20"/>
+        <enumValue value="21"/>
+        <enumValue value="22"/>
+        <enumValue value="23"/>
+        <enumValue value="24"/>
+        <enumValue value="25"/>
+        <enumValue value="26"/>
+        <enumValue value="27"/>
+        <enumValue value="28"/>
+        <enumValue value="29"/>
+        <enumValue value="30"/>
+        <enumValue value="31"/>
+      </enumProperty>
+      <enumProperty label="CH0" id="portio.prs.enable.ch0" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.prs.location.ch0" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="12"/>
+        <enumValue value="13"/>
+      </enumProperty>
+      <enumProperty label="CH1" id="portio.prs.enable.ch1" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.prs.location.ch1" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+      </enumProperty>
+      <enumProperty label="CH2" id="portio.prs.enable.ch2" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.prs.location.ch2" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+      </enumProperty>
+      <enumProperty label="CH3" id="portio.prs.enable.ch3" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.prs.location.ch3" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="12"/>
+        <enumValue value="13"/>
+        <enumValue value="14"/>
+      </enumProperty>
+      <enumProperty label="CH4" id="portio.prs.enable.ch4" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.prs.location.ch4" description="" defaultValueIndex="0">
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+      </enumProperty>
+      <enumProperty label="CH5" id="portio.prs.enable.ch5" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.prs.location.ch5" description="" defaultValueIndex="0">
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+      </enumProperty>
+      <enumProperty label="CH6" id="portio.prs.enable.ch6" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.prs.location.ch6" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="15"/>
+        <enumValue value="16"/>
+        <enumValue value="17"/>
+      </enumProperty>
+      <enumProperty label="CH7" id="portio.prs.enable.ch7" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.prs.location.ch7" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+      </enumProperty>
+      <enumProperty label="CH8" id="portio.prs.enable.ch8" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.prs.location.ch8" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+      </enumProperty>
+      <enumProperty label="CH9" id="portio.prs.enable.ch9" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.prs.location.ch9" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="12"/>
+        <enumValue value="13"/>
+        <enumValue value="14"/>
+        <enumValue value="15"/>
+        <enumValue value="16"/>
+      </enumProperty>
+      <enumProperty label="CH10" id="portio.prs.enable.ch10" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.prs.location.ch10" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+      </enumProperty>
+      <enumProperty label="CH11" id="portio.prs.enable.ch11" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.prs.location.ch11" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+      </enumProperty>
+      <enumProperty label="DCLK" id="portio.pti.enable.dclk" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.pti.location.dclk" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="12"/>
+        <enumValue value="13"/>
+        <enumValue value="14"/>
+        <enumValue value="15"/>
+        <enumValue value="16"/>
+        <enumValue value="21"/>
+        <enumValue value="22"/>
+        <enumValue value="23"/>
+        <enumValue value="24"/>
+        <enumValue value="25"/>
+        <enumValue value="26"/>
+        <enumValue value="27"/>
+        <enumValue value="28"/>
+        <enumValue value="29"/>
+        <enumValue value="30"/>
+        <enumValue value="31"/>
+      </enumProperty>
+      <enumProperty label="DFRAME" id="portio.pti.enable.dframe" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.pti.location.dframe" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="12"/>
+        <enumValue value="13"/>
+        <enumValue value="14"/>
+        <enumValue value="19"/>
+        <enumValue value="20"/>
+        <enumValue value="21"/>
+        <enumValue value="22"/>
+        <enumValue value="23"/>
+        <enumValue value="24"/>
+        <enumValue value="25"/>
+        <enumValue value="26"/>
+        <enumValue value="27"/>
+        <enumValue value="28"/>
+        <enumValue value="29"/>
+        <enumValue value="30"/>
+        <enumValue value="31"/>
+      </enumProperty>
+      <enumProperty label="DOUT" id="portio.pti.enable.dout" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.pti.location.dout" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="12"/>
+        <enumValue value="13"/>
+        <enumValue value="14"/>
+        <enumValue value="15"/>
+        <enumValue value="20"/>
+        <enumValue value="21"/>
+        <enumValue value="22"/>
+        <enumValue value="23"/>
+        <enumValue value="24"/>
+        <enumValue value="25"/>
+        <enumValue value="26"/>
+        <enumValue value="27"/>
+        <enumValue value="28"/>
+        <enumValue value="29"/>
+        <enumValue value="30"/>
+        <enumValue value="31"/>
+      </enumProperty>
+      <enumProperty label="CC0" id="portio.timer0.enable.cc0" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.timer0.location.cc0" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="12"/>
+        <enumValue value="13"/>
+        <enumValue value="14"/>
+        <enumValue value="15"/>
+        <enumValue value="16"/>
+        <enumValue value="21"/>
+        <enumValue value="22"/>
+        <enumValue value="23"/>
+        <enumValue value="24"/>
+        <enumValue value="25"/>
+        <enumValue value="26"/>
+        <enumValue value="27"/>
+        <enumValue value="28"/>
+        <enumValue value="29"/>
+        <enumValue value="30"/>
+        <enumValue value="31"/>
+      </enumProperty>
+      <enumProperty label="CC1" id="portio.timer0.enable.cc1" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.timer0.location.cc1" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="12"/>
+        <enumValue value="13"/>
+        <enumValue value="14"/>
+        <enumValue value="15"/>
+        <enumValue value="20"/>
+        <enumValue value="21"/>
+        <enumValue value="22"/>
+        <enumValue value="23"/>
+        <enumValue value="24"/>
+        <enumValue value="25"/>
+        <enumValue value="26"/>
+        <enumValue value="27"/>
+        <enumValue value="28"/>
+        <enumValue value="29"/>
+        <enumValue value="30"/>
+        <enumValue value="31"/>
+      </enumProperty>
+      <enumProperty label="CC2" id="portio.timer0.enable.cc2" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.timer0.location.cc2" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="12"/>
+        <enumValue value="13"/>
+        <enumValue value="14"/>
+        <enumValue value="19"/>
+        <enumValue value="20"/>
+        <enumValue value="21"/>
+        <enumValue value="22"/>
+        <enumValue value="23"/>
+        <enumValue value="24"/>
+        <enumValue value="25"/>
+        <enumValue value="26"/>
+        <enumValue value="27"/>
+        <enumValue value="28"/>
+        <enumValue value="29"/>
+        <enumValue value="30"/>
+        <enumValue value="31"/>
+      </enumProperty>
+      <enumProperty label="CDTI0" id="portio.timer0.enable.cdti0" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.timer0.location.cdti0" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="12"/>
+        <enumValue value="13"/>
+        <enumValue value="18"/>
+        <enumValue value="19"/>
+        <enumValue value="20"/>
+        <enumValue value="21"/>
+        <enumValue value="22"/>
+        <enumValue value="23"/>
+        <enumValue value="24"/>
+        <enumValue value="25"/>
+        <enumValue value="26"/>
+        <enumValue value="27"/>
+        <enumValue value="28"/>
+        <enumValue value="29"/>
+        <enumValue value="30"/>
+        <enumValue value="31"/>
+      </enumProperty>
+      <enumProperty label="CDTI1" id="portio.timer0.enable.cdti1" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.timer0.location.cdti1" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="12"/>
+        <enumValue value="17"/>
+        <enumValue value="18"/>
+        <enumValue value="19"/>
+        <enumValue value="20"/>
+        <enumValue value="21"/>
+        <enumValue value="22"/>
+        <enumValue value="23"/>
+        <enumValue value="24"/>
+        <enumValue value="25"/>
+        <enumValue value="26"/>
+        <enumValue value="27"/>
+        <enumValue value="28"/>
+        <enumValue value="29"/>
+        <enumValue value="30"/>
+        <enumValue value="31"/>
+      </enumProperty>
+      <enumProperty label="CDTI2" id="portio.timer0.enable.cdti2" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.timer0.location.cdti2" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="16"/>
+        <enumValue value="17"/>
+        <enumValue value="18"/>
+        <enumValue value="19"/>
+        <enumValue value="20"/>
+        <enumValue value="21"/>
+        <enumValue value="22"/>
+        <enumValue value="23"/>
+        <enumValue value="24"/>
+        <enumValue value="25"/>
+        <enumValue value="26"/>
+        <enumValue value="27"/>
+        <enumValue value="28"/>
+        <enumValue value="29"/>
+        <enumValue value="30"/>
+        <enumValue value="31"/>
+      </enumProperty>
+      <enumProperty label="CC0" id="portio.timer1.enable.cc0" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.timer1.location.cc0" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="12"/>
+        <enumValue value="13"/>
+        <enumValue value="14"/>
+        <enumValue value="15"/>
+        <enumValue value="16"/>
+        <enumValue value="21"/>
+        <enumValue value="22"/>
+        <enumValue value="23"/>
+        <enumValue value="24"/>
+        <enumValue value="25"/>
+        <enumValue value="26"/>
+        <enumValue value="27"/>
+        <enumValue value="28"/>
+        <enumValue value="29"/>
+        <enumValue value="30"/>
+        <enumValue value="31"/>
+      </enumProperty>
+      <enumProperty label="CC1" id="portio.timer1.enable.cc1" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.timer1.location.cc1" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="12"/>
+        <enumValue value="13"/>
+        <enumValue value="14"/>
+        <enumValue value="15"/>
+        <enumValue value="20"/>
+        <enumValue value="21"/>
+        <enumValue value="22"/>
+        <enumValue value="23"/>
+        <enumValue value="24"/>
+        <enumValue value="25"/>
+        <enumValue value="26"/>
+        <enumValue value="27"/>
+        <enumValue value="28"/>
+        <enumValue value="29"/>
+        <enumValue value="30"/>
+        <enumValue value="31"/>
+      </enumProperty>
+      <enumProperty label="CC2" id="portio.timer1.enable.cc2" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.timer1.location.cc2" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="12"/>
+        <enumValue value="13"/>
+        <enumValue value="14"/>
+        <enumValue value="19"/>
+        <enumValue value="20"/>
+        <enumValue value="21"/>
+        <enumValue value="22"/>
+        <enumValue value="23"/>
+        <enumValue value="24"/>
+        <enumValue value="25"/>
+        <enumValue value="26"/>
+        <enumValue value="27"/>
+        <enumValue value="28"/>
+        <enumValue value="29"/>
+        <enumValue value="30"/>
+        <enumValue value="31"/>
+      </enumProperty>
+      <enumProperty label="CC3" id="portio.timer1.enable.cc3" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.timer1.location.cc3" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="12"/>
+        <enumValue value="13"/>
+        <enumValue value="18"/>
+        <enumValue value="19"/>
+        <enumValue value="20"/>
+        <enumValue value="21"/>
+        <enumValue value="22"/>
+        <enumValue value="23"/>
+        <enumValue value="24"/>
+        <enumValue value="25"/>
+        <enumValue value="26"/>
+        <enumValue value="27"/>
+        <enumValue value="28"/>
+        <enumValue value="29"/>
+        <enumValue value="30"/>
+        <enumValue value="31"/>
+      </enumProperty>
+      <enumProperty label="CLK" id="portio.usart0.enable.clk" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.usart0.location.clk" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="12"/>
+        <enumValue value="13"/>
+        <enumValue value="14"/>
+        <enumValue value="19"/>
+        <enumValue value="20"/>
+        <enumValue value="21"/>
+        <enumValue value="22"/>
+        <enumValue value="23"/>
+        <enumValue value="24"/>
+        <enumValue value="25"/>
+        <enumValue value="26"/>
+        <enumValue value="27"/>
+        <enumValue value="28"/>
+        <enumValue value="29"/>
+        <enumValue value="30"/>
+        <enumValue value="31"/>
+      </enumProperty>
+      <enumProperty label="CS" id="portio.usart0.enable.cs" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.usart0.location.cs" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="12"/>
+        <enumValue value="13"/>
+        <enumValue value="18"/>
+        <enumValue value="19"/>
+        <enumValue value="20"/>
+        <enumValue value="21"/>
+        <enumValue value="22"/>
+        <enumValue value="23"/>
+        <enumValue value="24"/>
+        <enumValue value="25"/>
+        <enumValue value="26"/>
+        <enumValue value="27"/>
+        <enumValue value="28"/>
+        <enumValue value="29"/>
+        <enumValue value="30"/>
+        <enumValue value="31"/>
+      </enumProperty>
+      <enumProperty label="CTS" id="portio.usart0.enable.cts" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.usart0.location.cts" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="12"/>
+        <enumValue value="17"/>
+        <enumValue value="18"/>
+        <enumValue value="19"/>
+        <enumValue value="20"/>
+        <enumValue value="21"/>
+        <enumValue value="22"/>
+        <enumValue value="23"/>
+        <enumValue value="24"/>
+        <enumValue value="25"/>
+        <enumValue value="26"/>
+        <enumValue value="27"/>
+        <enumValue value="28"/>
+        <enumValue value="29"/>
+        <enumValue value="30"/>
+        <enumValue value="31"/>
+      </enumProperty>
+      <enumProperty label="RTS" id="portio.usart0.enable.rts" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.usart0.location.rts" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="16"/>
+        <enumValue value="17"/>
+        <enumValue value="18"/>
+        <enumValue value="19"/>
+        <enumValue value="20"/>
+        <enumValue value="21"/>
+        <enumValue value="22"/>
+        <enumValue value="23"/>
+        <enumValue value="24"/>
+        <enumValue value="25"/>
+        <enumValue value="26"/>
+        <enumValue value="27"/>
+        <enumValue value="28"/>
+        <enumValue value="29"/>
+        <enumValue value="30"/>
+        <enumValue value="31"/>
+      </enumProperty>
+      <enumProperty label="RX" id="portio.usart0.enable.rx" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.usart0.location.rx" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="12"/>
+        <enumValue value="13"/>
+        <enumValue value="14"/>
+        <enumValue value="15"/>
+        <enumValue value="20"/>
+        <enumValue value="21"/>
+        <enumValue value="22"/>
+        <enumValue value="23"/>
+        <enumValue value="24"/>
+        <enumValue value="25"/>
+        <enumValue value="26"/>
+        <enumValue value="27"/>
+        <enumValue value="28"/>
+        <enumValue value="29"/>
+        <enumValue value="30"/>
+        <enumValue value="31"/>
+      </enumProperty>
+      <enumProperty label="TX" id="portio.usart0.enable.tx" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.usart0.location.tx" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="12"/>
+        <enumValue value="13"/>
+        <enumValue value="14"/>
+        <enumValue value="15"/>
+        <enumValue value="16"/>
+        <enumValue value="21"/>
+        <enumValue value="22"/>
+        <enumValue value="23"/>
+        <enumValue value="24"/>
+        <enumValue value="25"/>
+        <enumValue value="26"/>
+        <enumValue value="27"/>
+        <enumValue value="28"/>
+        <enumValue value="29"/>
+        <enumValue value="30"/>
+        <enumValue value="31"/>
+      </enumProperty>
+      <enumProperty label="CLK" id="portio.usart1.enable.clk" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.usart1.location.clk" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="12"/>
+        <enumValue value="13"/>
+        <enumValue value="14"/>
+        <enumValue value="19"/>
+        <enumValue value="20"/>
+        <enumValue value="21"/>
+        <enumValue value="22"/>
+        <enumValue value="23"/>
+        <enumValue value="24"/>
+        <enumValue value="25"/>
+        <enumValue value="26"/>
+        <enumValue value="27"/>
+        <enumValue value="28"/>
+        <enumValue value="29"/>
+        <enumValue value="30"/>
+        <enumValue value="31"/>
+      </enumProperty>
+      <enumProperty label="CS" id="portio.usart1.enable.cs" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.usart1.location.cs" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="12"/>
+        <enumValue value="13"/>
+        <enumValue value="18"/>
+        <enumValue value="19"/>
+        <enumValue value="20"/>
+        <enumValue value="21"/>
+        <enumValue value="22"/>
+        <enumValue value="23"/>
+        <enumValue value="24"/>
+        <enumValue value="25"/>
+        <enumValue value="26"/>
+        <enumValue value="27"/>
+        <enumValue value="28"/>
+        <enumValue value="29"/>
+        <enumValue value="30"/>
+        <enumValue value="31"/>
+      </enumProperty>
+      <enumProperty label="CTS" id="portio.usart1.enable.cts" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.usart1.location.cts" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="12"/>
+        <enumValue value="17"/>
+        <enumValue value="18"/>
+        <enumValue value="19"/>
+        <enumValue value="20"/>
+        <enumValue value="21"/>
+        <enumValue value="22"/>
+        <enumValue value="23"/>
+        <enumValue value="24"/>
+        <enumValue value="25"/>
+        <enumValue value="26"/>
+        <enumValue value="27"/>
+        <enumValue value="28"/>
+        <enumValue value="29"/>
+        <enumValue value="30"/>
+        <enumValue value="31"/>
+      </enumProperty>
+      <enumProperty label="RTS" id="portio.usart1.enable.rts" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.usart1.location.rts" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="16"/>
+        <enumValue value="17"/>
+        <enumValue value="18"/>
+        <enumValue value="19"/>
+        <enumValue value="20"/>
+        <enumValue value="21"/>
+        <enumValue value="22"/>
+        <enumValue value="23"/>
+        <enumValue value="24"/>
+        <enumValue value="25"/>
+        <enumValue value="26"/>
+        <enumValue value="27"/>
+        <enumValue value="28"/>
+        <enumValue value="29"/>
+        <enumValue value="30"/>
+        <enumValue value="31"/>
+      </enumProperty>
+      <enumProperty label="RX" id="portio.usart1.enable.rx" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.usart1.location.rx" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="12"/>
+        <enumValue value="13"/>
+        <enumValue value="14"/>
+        <enumValue value="15"/>
+        <enumValue value="20"/>
+        <enumValue value="21"/>
+        <enumValue value="22"/>
+        <enumValue value="23"/>
+        <enumValue value="24"/>
+        <enumValue value="25"/>
+        <enumValue value="26"/>
+        <enumValue value="27"/>
+        <enumValue value="28"/>
+        <enumValue value="29"/>
+        <enumValue value="30"/>
+        <enumValue value="31"/>
+      </enumProperty>
+      <enumProperty label="TX" id="portio.usart1.enable.tx" description="" defaultValueIndex="0">
+        <enumValue value="Disabled"/>
+        <enumValue value="Enabled"/>
+      </enumProperty>
+      <enumProperty label="Location" id="portio.usart1.location.tx" description="" defaultValueIndex="0">
+        <enumValue value="0"/>
+        <enumValue value="1"/>
+        <enumValue value="2"/>
+        <enumValue value="3"/>
+        <enumValue value="4"/>
+        <enumValue value="5"/>
+        <enumValue value="6"/>
+        <enumValue value="7"/>
+        <enumValue value="8"/>
+        <enumValue value="9"/>
+        <enumValue value="10"/>
+        <enumValue value="11"/>
+        <enumValue value="12"/>
+        <enumValue value="13"/>
+        <enumValue value="14"/>
+        <enumValue value="15"/>
+        <enumValue value="16"/>
+        <enumValue value="21"/>
+        <enumValue value="22"/>
+        <enumValue value="23"/>
+        <enumValue value="24"/>
+        <enumValue value="25"/>
+        <enumValue value="26"/>
+        <enumValue value="27"/>
+        <enumValue value="28"/>
+        <enumValue value="29"/>
+        <enumValue value="30"/>
+        <enumValue value="31"/>
+      </enumProperty>
+    </properties>
+    <propertyCategories>
+      <category label="Port Config"/>
+    </propertyCategories>
+    <signals/>
+    <propertyToInterfaceInfos/>
+    <pinRoutes>
+      <module name="ACMP0">
+        <selector name="ACMP0_OUT" locationPropertyId="portio.acmp0.location.out">
+          <route name="OUT" enablePropertyId="portio.acmp0.enable.out">
+            <location number="0" portBankIndex="0" pinIndex="0"/>
+            <location number="1" portBankIndex="0" pinIndex="1"/>
+            <location number="2" portBankIndex="0" pinIndex="2"/>
+            <location number="3" portBankIndex="0" pinIndex="3"/>
+            <location number="4" portBankIndex="0" pinIndex="4"/>
+            <location number="5" portBankIndex="0" pinIndex="5"/>
+            <location number="6" portBankIndex="1" pinIndex="11"/>
+            <location number="7" portBankIndex="1" pinIndex="12"/>
+            <location number="8" portBankIndex="1" pinIndex="13"/>
+            <location number="9" portBankIndex="1" pinIndex="14"/>
+            <location number="10" portBankIndex="1" pinIndex="15"/>
+            <location number="11" portBankIndex="2" pinIndex="6"/>
+            <location number="12" portBankIndex="2" pinIndex="7"/>
+            <location number="13" portBankIndex="2" pinIndex="8"/>
+            <location number="14" portBankIndex="2" pinIndex="9"/>
+            <location number="15" portBankIndex="2" pinIndex="10"/>
+            <location number="16" portBankIndex="2" pinIndex="11"/>
+            <location number="21" portBankIndex="3" pinIndex="13"/>
+            <location number="22" portBankIndex="3" pinIndex="14"/>
+            <location number="23" portBankIndex="3" pinIndex="15"/>
+            <location number="24" portBankIndex="5" pinIndex="0"/>
+            <location number="25" portBankIndex="5" pinIndex="1"/>
+            <location number="26" portBankIndex="5" pinIndex="2"/>
+            <location number="27" portBankIndex="5" pinIndex="3"/>
+            <location number="28" portBankIndex="5" pinIndex="4"/>
+            <location number="29" portBankIndex="5" pinIndex="5"/>
+            <location number="30" portBankIndex="5" pinIndex="6"/>
+            <location number="31" portBankIndex="5" pinIndex="7"/>
+          </route>
+        </selector>
+      </module>
+      <module name="ACMP1">
+        <selector name="ACMP1_OUT" locationPropertyId="portio.acmp1.location.out">
+          <route name="OUT" enablePropertyId="portio.acmp1.enable.out">
+            <location number="0" portBankIndex="0" pinIndex="0"/>
+            <location number="1" portBankIndex="0" pinIndex="1"/>
+            <location number="2" portBankIndex="0" pinIndex="2"/>
+            <location number="3" portBankIndex="0" pinIndex="3"/>
+            <location number="4" portBankIndex="0" pinIndex="4"/>
+            <location number="5" portBankIndex="0" pinIndex="5"/>
+            <location number="6" portBankIndex="1" pinIndex="11"/>
+            <location number="7" portBankIndex="1" pinIndex="12"/>
+            <location number="8" portBankIndex="1" pinIndex="13"/>
+            <location number="9" portBankIndex="1" pinIndex="14"/>
+            <location number="10" portBankIndex="1" pinIndex="15"/>
+            <location number="11" portBankIndex="2" pinIndex="6"/>
+            <location number="12" portBankIndex="2" pinIndex="7"/>
+            <location number="13" portBankIndex="2" pinIndex="8"/>
+            <location number="14" portBankIndex="2" pinIndex="9"/>
+            <location number="15" portBankIndex="2" pinIndex="10"/>
+            <location number="16" portBankIndex="2" pinIndex="11"/>
+            <location number="21" portBankIndex="3" pinIndex="13"/>
+            <location number="22" portBankIndex="3" pinIndex="14"/>
+            <location number="23" portBankIndex="3" pinIndex="15"/>
+            <location number="24" portBankIndex="5" pinIndex="0"/>
+            <location number="25" portBankIndex="5" pinIndex="1"/>
+            <location number="26" portBankIndex="5" pinIndex="2"/>
+            <location number="27" portBankIndex="5" pinIndex="3"/>
+            <location number="28" portBankIndex="5" pinIndex="4"/>
+            <location number="29" portBankIndex="5" pinIndex="5"/>
+            <location number="30" portBankIndex="5" pinIndex="6"/>
+            <location number="31" portBankIndex="5" pinIndex="7"/>
+          </route>
+        </selector>
+      </module>
+      <module name="ADC0">
+        <selector name="ADC0">
+          <route name="ADCTESTN" enablePropertyId="portio.adc0.enable.adctestn">
+            <location number="0" portBankIndex="3" pinIndex="14"/>
+          </route>
+          <route name="ADCTESTP" enablePropertyId="portio.adc0.enable.adctestp">
+            <location number="0" portBankIndex="3" pinIndex="15"/>
+          </route>
+          <route name="EXTN" enablePropertyId="portio.adc0.enable.extn">
+            <location number="0" portBankIndex="0" pinIndex="0"/>
+          </route>
+          <route name="EXTP" enablePropertyId="portio.adc0.enable.extp">
+            <location number="0" portBankIndex="0" pinIndex="1"/>
+          </route>
+        </selector>
+      </module>
+      <module name="CMU">
+        <selector name="CMU_CLKOUT0" locationPropertyId="portio.cmu.location.clkout0">
+          <route name="CLK0" enablePropertyId="portio.cmu.enable.clk0">
+            <location number="0" portBankIndex="0" pinIndex="1"/>
+            <location number="1" portBankIndex="1" pinIndex="15"/>
+            <location number="2" portBankIndex="2" pinIndex="6"/>
+            <location number="3" portBankIndex="2" pinIndex="11"/>
+            <location number="5" portBankIndex="3" pinIndex="14"/>
+            <location number="6" portBankIndex="5" pinIndex="2"/>
+            <location number="7" portBankIndex="5" pinIndex="7"/>
+          </route>
+        </selector>
+        <selector name="CMU_CLKOUT1" locationPropertyId="portio.cmu.location.clkout1">
+          <route name="CLK1" enablePropertyId="portio.cmu.enable.clk1">
+            <location number="0" portBankIndex="0" pinIndex="0"/>
+            <location number="1" portBankIndex="1" pinIndex="14"/>
+            <location number="2" portBankIndex="2" pinIndex="7"/>
+            <location number="3" portBankIndex="2" pinIndex="10"/>
+            <location number="5" portBankIndex="3" pinIndex="15"/>
+            <location number="6" portBankIndex="5" pinIndex="3"/>
+            <location number="7" portBankIndex="5" pinIndex="6"/>
+          </route>
+        </selector>
+      </module>
+      <module name="DBG">
+        <selector name="DBG_ROUTE" locationPropertyId="portio.dbg.location.route">
+          <route name="SWCLKTCK" enablePropertyId="portio.dbg.enable.swclktck">
+            <location number="0" portBankIndex="5" pinIndex="0"/>
+          </route>
+          <route name="SWDIOTMS" enablePropertyId="portio.dbg.enable.swdiotms">
+            <location number="0" portBankIndex="5" pinIndex="1"/>
+          </route>
+          <route name="TDI" enablePropertyId="portio.dbg.enable.tdi">
+            <location number="0" portBankIndex="5" pinIndex="3"/>
+          </route>
+          <route name="TDO" enablePropertyId="portio.dbg.enable.tdo">
+            <location number="0" portBankIndex="5" pinIndex="2"/>
+          </route>
+        </selector>
+        <selector name="DBG_SWV" locationPropertyId="portio.dbg.location.swv">
+          <route name="SWV" enablePropertyId="portio.dbg.enable.swv">
+            <location number="0" portBankIndex="5" pinIndex="2"/>
+            <location number="1" portBankIndex="1" pinIndex="13"/>
+            <location number="2" portBankIndex="3" pinIndex="15"/>
+            <location number="3" portBankIndex="2" pinIndex="11"/>
+          </route>
+        </selector>
+      </module>
+      <module name="GPIO">
+        <selector name="GPIO">
+          <route name="EM4WU0" enablePropertyId="portio.gpio.enable.em4wu0">
+            <location number="0" portBankIndex="5" pinIndex="2"/>
+          </route>
+          <route name="EM4WU1" enablePropertyId="portio.gpio.enable.em4wu1">
+            <location number="0" portBankIndex="5" pinIndex="7"/>
+          </route>
+          <route name="EM4WU4" enablePropertyId="portio.gpio.enable.em4wu4">
+            <location number="0" portBankIndex="3" pinIndex="14"/>
+          </route>
+          <route name="EM4WU8" enablePropertyId="portio.gpio.enable.em4wu8">
+            <location number="0" portBankIndex="0" pinIndex="3"/>
+          </route>
+          <route name="EM4WU9" enablePropertyId="portio.gpio.enable.em4wu9">
+            <location number="0" portBankIndex="1" pinIndex="13"/>
+          </route>
+          <route name="EM4WU12" enablePropertyId="portio.gpio.enable.em4wu12">
+            <location number="0" portBankIndex="2" pinIndex="10"/>
+          </route>
+        </selector>
+      </module>
+      <module name="I2C0">
+        <selector name="I2C0_SCL" locationPropertyId="portio.i2c0.location.scl">
+          <route name="SCL" enablePropertyId="portio.i2c0.enable.scl">
+            <location number="0" portBankIndex="0" pinIndex="1"/>
+            <location number="1" portBankIndex="0" pinIndex="2"/>
+            <location number="2" portBankIndex="0" pinIndex="3"/>
+            <location number="3" portBankIndex="0" pinIndex="4"/>
+            <location number="4" portBankIndex="0" pinIndex="5"/>
+            <location number="5" portBankIndex="1" pinIndex="11"/>
+            <location number="6" portBankIndex="1" pinIndex="12"/>
+            <location number="7" portBankIndex="1" pinIndex="13"/>
+            <location number="8" portBankIndex="1" pinIndex="14"/>
+            <location number="9" portBankIndex="1" pinIndex="15"/>
+            <location number="10" portBankIndex="2" pinIndex="6"/>
+            <location number="11" portBankIndex="2" pinIndex="7"/>
+            <location number="12" portBankIndex="2" pinIndex="8"/>
+            <location number="13" portBankIndex="2" pinIndex="9"/>
+            <location number="14" portBankIndex="2" pinIndex="10"/>
+            <location number="15" portBankIndex="2" pinIndex="11"/>
+            <location number="20" portBankIndex="3" pinIndex="13"/>
+            <location number="21" portBankIndex="3" pinIndex="14"/>
+            <location number="22" portBankIndex="3" pinIndex="15"/>
+            <location number="23" portBankIndex="5" pinIndex="0"/>
+            <location number="24" portBankIndex="5" pinIndex="1"/>
+            <location number="25" portBankIndex="5" pinIndex="2"/>
+            <location number="26" portBankIndex="5" pinIndex="3"/>
+            <location number="27" portBankIndex="5" pinIndex="4"/>
+            <location number="28" portBankIndex="5" pinIndex="5"/>
+            <location number="29" portBankIndex="5" pinIndex="6"/>
+            <location number="30" portBankIndex="5" pinIndex="7"/>
+            <location number="31" portBankIndex="0" pinIndex="0"/>
+          </route>
+        </selector>
+        <selector name="I2C0_SDA" locationPropertyId="portio.i2c0.location.sda">
+          <route name="SDA" enablePropertyId="portio.i2c0.enable.sda">
+            <location number="0" portBankIndex="0" pinIndex="0"/>
+            <location number="1" portBankIndex="0" pinIndex="1"/>
+            <location number="2" portBankIndex="0" pinIndex="2"/>
+            <location number="3" portBankIndex="0" pinIndex="3"/>
+            <location number="4" portBankIndex="0" pinIndex="4"/>
+            <location number="5" portBankIndex="0" pinIndex="5"/>
+            <location number="6" portBankIndex="1" pinIndex="11"/>
+            <location number="7" portBankIndex="1" pinIndex="12"/>
+            <location number="8" portBankIndex="1" pinIndex="13"/>
+            <location number="9" portBankIndex="1" pinIndex="14"/>
+            <location number="10" portBankIndex="1" pinIndex="15"/>
+            <location number="11" portBankIndex="2" pinIndex="6"/>
+            <location number="12" portBankIndex="2" pinIndex="7"/>
+            <location number="13" portBankIndex="2" pinIndex="8"/>
+            <location number="14" portBankIndex="2" pinIndex="9"/>
+            <location number="15" portBankIndex="2" pinIndex="10"/>
+            <location number="16" portBankIndex="2" pinIndex="11"/>
+            <location number="21" portBankIndex="3" pinIndex="13"/>
+            <location number="22" portBankIndex="3" pinIndex="14"/>
+            <location number="23" portBankIndex="3" pinIndex="15"/>
+            <location number="24" portBankIndex="5" pinIndex="0"/>
+            <location number="25" portBankIndex="5" pinIndex="1"/>
+            <location number="26" portBankIndex="5" pinIndex="2"/>
+            <location number="27" portBankIndex="5" pinIndex="3"/>
+            <location number="28" portBankIndex="5" pinIndex="4"/>
+            <location number="29" portBankIndex="5" pinIndex="5"/>
+            <location number="30" portBankIndex="5" pinIndex="6"/>
+            <location number="31" portBankIndex="5" pinIndex="7"/>
+          </route>
+        </selector>
+      </module>
+      <module name="LETIMER0">
+        <selector name="LETIMER0_OUT0" locationPropertyId="portio.letimer0.location.out0">
+          <route name="OUT0" enablePropertyId="portio.letimer0.enable.out0">
+            <location number="0" portBankIndex="0" pinIndex="0"/>
+            <location number="1" portBankIndex="0" pinIndex="1"/>
+            <location number="2" portBankIndex="0" pinIndex="2"/>
+            <location number="3" portBankIndex="0" pinIndex="3"/>
+            <location number="4" portBankIndex="0" pinIndex="4"/>
+            <location number="5" portBankIndex="0" pinIndex="5"/>
+            <location number="6" portBankIndex="1" pinIndex="11"/>
+            <location number="7" portBankIndex="1" pinIndex="12"/>
+            <location number="8" portBankIndex="1" pinIndex="13"/>
+            <location number="9" portBankIndex="1" pinIndex="14"/>
+            <location number="10" portBankIndex="1" pinIndex="15"/>
+            <location number="11" portBankIndex="2" pinIndex="6"/>
+            <location number="12" portBankIndex="2" pinIndex="7"/>
+            <location number="13" portBankIndex="2" pinIndex="8"/>
+            <location number="14" portBankIndex="2" pinIndex="9"/>
+            <location number="15" portBankIndex="2" pinIndex="10"/>
+            <location number="16" portBankIndex="2" pinIndex="11"/>
+            <location number="21" portBankIndex="3" pinIndex="13"/>
+            <location number="22" portBankIndex="3" pinIndex="14"/>
+            <location number="23" portBankIndex="3" pinIndex="15"/>
+            <location number="24" portBankIndex="5" pinIndex="0"/>
+            <location number="25" portBankIndex="5" pinIndex="1"/>
+            <location number="26" portBankIndex="5" pinIndex="2"/>
+            <location number="27" portBankIndex="5" pinIndex="3"/>
+            <location number="28" portBankIndex="5" pinIndex="4"/>
+            <location number="29" portBankIndex="5" pinIndex="5"/>
+            <location number="30" portBankIndex="5" pinIndex="6"/>
+            <location number="31" portBankIndex="5" pinIndex="7"/>
+          </route>
+        </selector>
+        <selector name="LETIMER0_OUT1" locationPropertyId="portio.letimer0.location.out1">
+          <route name="OUT1" enablePropertyId="portio.letimer0.enable.out1">
+            <location number="0" portBankIndex="0" pinIndex="1"/>
+            <location number="1" portBankIndex="0" pinIndex="2"/>
+            <location number="2" portBankIndex="0" pinIndex="3"/>
+            <location number="3" portBankIndex="0" pinIndex="4"/>
+            <location number="4" portBankIndex="0" pinIndex="5"/>
+            <location number="5" portBankIndex="1" pinIndex="11"/>
+            <location number="6" portBankIndex="1" pinIndex="12"/>
+            <location number="7" portBankIndex="1" pinIndex="13"/>
+            <location number="8" portBankIndex="1" pinIndex="14"/>
+            <location number="9" portBankIndex="1" pinIndex="15"/>
+            <location number="10" portBankIndex="2" pinIndex="6"/>
+            <location number="11" portBankIndex="2" pinIndex="7"/>
+            <location number="12" portBankIndex="2" pinIndex="8"/>
+            <location number="13" portBankIndex="2" pinIndex="9"/>
+            <location number="14" portBankIndex="2" pinIndex="10"/>
+            <location number="15" portBankIndex="2" pinIndex="11"/>
+            <location number="20" portBankIndex="3" pinIndex="13"/>
+            <location number="21" portBankIndex="3" pinIndex="14"/>
+            <location number="22" portBankIndex="3" pinIndex="15"/>
+            <location number="23" portBankIndex="5" pinIndex="0"/>
+            <location number="24" portBankIndex="5" pinIndex="1"/>
+            <location number="25" portBankIndex="5" pinIndex="2"/>
+            <location number="26" portBankIndex="5" pinIndex="3"/>
+            <location number="27" portBankIndex="5" pinIndex="4"/>
+            <location number="28" portBankIndex="5" pinIndex="5"/>
+            <location number="29" portBankIndex="5" pinIndex="6"/>
+            <location number="30" portBankIndex="5" pinIndex="7"/>
+            <location number="31" portBankIndex="0" pinIndex="0"/>
+          </route>
+        </selector>
+      </module>
+      <module name="LEUART0">
+        <selector name="LEUART0_RX" locationPropertyId="portio.leuart0.location.rx">
+          <route name="RX" enablePropertyId="portio.leuart0.enable.rx">
+            <location number="0" portBankIndex="0" pinIndex="1"/>
+            <location number="1" portBankIndex="0" pinIndex="2"/>
+            <location number="2" portBankIndex="0" pinIndex="3"/>
+            <location number="3" portBankIndex="0" pinIndex="4"/>
+            <location number="4" portBankIndex="0" pinIndex="5"/>
+            <location number="5" portBankIndex="1" pinIndex="11"/>
+            <location number="6" portBankIndex="1" pinIndex="12"/>
+            <location number="7" portBankIndex="1" pinIndex="13"/>
+            <location number="8" portBankIndex="1" pinIndex="14"/>
+            <location number="9" portBankIndex="1" pinIndex="15"/>
+            <location number="10" portBankIndex="2" pinIndex="6"/>
+            <location number="11" portBankIndex="2" pinIndex="7"/>
+            <location number="12" portBankIndex="2" pinIndex="8"/>
+            <location number="13" portBankIndex="2" pinIndex="9"/>
+            <location number="14" portBankIndex="2" pinIndex="10"/>
+            <location number="15" portBankIndex="2" pinIndex="11"/>
+            <location number="20" portBankIndex="3" pinIndex="13"/>
+            <location number="21" portBankIndex="3" pinIndex="14"/>
+            <location number="22" portBankIndex="3" pinIndex="15"/>
+            <location number="23" portBankIndex="5" pinIndex="0"/>
+            <location number="24" portBankIndex="5" pinIndex="1"/>
+            <location number="25" portBankIndex="5" pinIndex="2"/>
+            <location number="26" portBankIndex="5" pinIndex="3"/>
+            <location number="27" portBankIndex="5" pinIndex="4"/>
+            <location number="28" portBankIndex="5" pinIndex="5"/>
+            <location number="29" portBankIndex="5" pinIndex="6"/>
+            <location number="30" portBankIndex="5" pinIndex="7"/>
+            <location number="31" portBankIndex="0" pinIndex="0"/>
+          </route>
+        </selector>
+        <selector name="LEUART0_TX" locationPropertyId="portio.leuart0.location.tx">
+          <route name="TX" enablePropertyId="portio.leuart0.enable.tx">
+            <location number="0" portBankIndex="0" pinIndex="0"/>
+            <location number="1" portBankIndex="0" pinIndex="1"/>
+            <location number="2" portBankIndex="0" pinIndex="2"/>
+            <location number="3" portBankIndex="0" pinIndex="3"/>
+            <location number="4" portBankIndex="0" pinIndex="4"/>
+            <location number="5" portBankIndex="0" pinIndex="5"/>
+            <location number="6" portBankIndex="1" pinIndex="11"/>
+            <location number="7" portBankIndex="1" pinIndex="12"/>
+            <location number="8" portBankIndex="1" pinIndex="13"/>
+            <location number="9" portBankIndex="1" pinIndex="14"/>
+            <location number="10" portBankIndex="1" pinIndex="15"/>
+            <location number="11" portBankIndex="2" pinIndex="6"/>
+            <location number="12" portBankIndex="2" pinIndex="7"/>
+            <location number="13" portBankIndex="2" pinIndex="8"/>
+            <location number="14" portBankIndex="2" pinIndex="9"/>
+            <location number="15" portBankIndex="2" pinIndex="10"/>
+            <location number="16" portBankIndex="2" pinIndex="11"/>
+            <location number="21" portBankIndex="3" pinIndex="13"/>
+            <location number="22" portBankIndex="3" pinIndex="14"/>
+            <location number="23" portBankIndex="3" pinIndex="15"/>
+            <location number="24" portBankIndex="5" pinIndex="0"/>
+            <location number="25" portBankIndex="5" pinIndex="1"/>
+            <location number="26" portBankIndex="5" pinIndex="2"/>
+            <location number="27" portBankIndex="5" pinIndex="3"/>
+            <location number="28" portBankIndex="5" pinIndex="4"/>
+            <location number="29" portBankIndex="5" pinIndex="5"/>
+            <location number="30" portBankIndex="5" pinIndex="6"/>
+            <location number="31" portBankIndex="5" pinIndex="7"/>
+          </route>
+        </selector>
+      </module>
+      <module name="LFXO">
+        <selector name="LFXO">
+          <route name="N" enablePropertyId="portio.lfxo.enable.n">
+            <location number="0" portBankIndex="1" pinIndex="14"/>
+          </route>
+          <route name="P" enablePropertyId="portio.lfxo.enable.p">
+            <location number="0" portBankIndex="1" pinIndex="15"/>
+          </route>
+        </selector>
+      </module>
+      <module name="MODEM">
+        <selector name="MODEM_ANT0" locationPropertyId="portio.modem.location.ant0">
+          <route name="ANT0" enablePropertyId="portio.modem.enable.ant0">
+            <location number="0" portBankIndex="0" pinIndex="3"/>
+            <location number="1" portBankIndex="0" pinIndex="4"/>
+            <location number="2" portBankIndex="0" pinIndex="5"/>
+            <location number="3" portBankIndex="1" pinIndex="11"/>
+            <location number="4" portBankIndex="1" pinIndex="12"/>
+            <location number="5" portBankIndex="1" pinIndex="13"/>
+            <location number="6" portBankIndex="1" pinIndex="14"/>
+            <location number="7" portBankIndex="1" pinIndex="15"/>
+            <location number="8" portBankIndex="2" pinIndex="6"/>
+            <location number="9" portBankIndex="2" pinIndex="7"/>
+            <location number="10" portBankIndex="2" pinIndex="8"/>
+            <location number="11" portBankIndex="2" pinIndex="9"/>
+            <location number="12" portBankIndex="2" pinIndex="10"/>
+            <location number="13" portBankIndex="2" pinIndex="11"/>
+            <location number="18" portBankIndex="3" pinIndex="13"/>
+            <location number="19" portBankIndex="3" pinIndex="14"/>
+            <location number="20" portBankIndex="3" pinIndex="15"/>
+            <location number="21" portBankIndex="5" pinIndex="0"/>
+            <location number="22" portBankIndex="5" pinIndex="1"/>
+            <location number="23" portBankIndex="5" pinIndex="2"/>
+            <location number="24" portBankIndex="5" pinIndex="3"/>
+            <location number="25" portBankIndex="5" pinIndex="4"/>
+            <location number="26" portBankIndex="5" pinIndex="5"/>
+            <location number="27" portBankIndex="5" pinIndex="6"/>
+            <location number="28" portBankIndex="5" pinIndex="7"/>
+            <location number="29" portBankIndex="0" pinIndex="0"/>
+            <location number="30" portBankIndex="0" pinIndex="1"/>
+            <location number="31" portBankIndex="0" pinIndex="2"/>
+          </route>
+        </selector>
+        <selector name="MODEM_ANT1" locationPropertyId="portio.modem.location.ant1">
+          <route name="ANT1" enablePropertyId="portio.modem.enable.ant1">
+            <location number="0" portBankIndex="0" pinIndex="4"/>
+            <location number="1" portBankIndex="0" pinIndex="5"/>
+            <location number="2" portBankIndex="1" pinIndex="11"/>
+            <location number="3" portBankIndex="1" pinIndex="12"/>
+            <location number="4" portBankIndex="1" pinIndex="13"/>
+            <location number="5" portBankIndex="1" pinIndex="14"/>
+            <location number="6" portBankIndex="1" pinIndex="15"/>
+            <location number="7" portBankIndex="2" pinIndex="6"/>
+            <location number="8" portBankIndex="2" pinIndex="7"/>
+            <location number="9" portBankIndex="2" pinIndex="8"/>
+            <location number="10" portBankIndex="2" pinIndex="9"/>
+            <location number="11" portBankIndex="2" pinIndex="10"/>
+            <location number="12" portBankIndex="2" pinIndex="11"/>
+            <location number="17" portBankIndex="3" pinIndex="13"/>
+            <location number="18" portBankIndex="3" pinIndex="14"/>
+            <location number="19" portBankIndex="3" pinIndex="15"/>
+            <location number="20" portBankIndex="5" pinIndex="0"/>
+            <location number="21" portBankIndex="5" pinIndex="1"/>
+            <location number="22" portBankIndex="5" pinIndex="2"/>
+            <location number="23" portBankIndex="5" pinIndex="3"/>
+            <location number="24" portBankIndex="5" pinIndex="4"/>
+            <location number="25" portBankIndex="5" pinIndex="5"/>
+            <location number="26" portBankIndex="5" pinIndex="6"/>
+            <location number="27" portBankIndex="5" pinIndex="7"/>
+            <location number="28" portBankIndex="0" pinIndex="0"/>
+            <location number="29" portBankIndex="0" pinIndex="1"/>
+            <location number="30" portBankIndex="0" pinIndex="2"/>
+            <location number="31" portBankIndex="0" pinIndex="3"/>
+          </route>
+        </selector>
+        <selector name="MODEM_DCLK" locationPropertyId="portio.modem.location.dclk">
+          <route name="DCLK" enablePropertyId="portio.modem.enable.dclk">
+            <location number="0" portBankIndex="0" pinIndex="0"/>
+            <location number="1" portBankIndex="0" pinIndex="1"/>
+            <location number="2" portBankIndex="0" pinIndex="2"/>
+            <location number="3" portBankIndex="0" pinIndex="3"/>
+            <location number="4" portBankIndex="0" pinIndex="4"/>
+            <location number="5" portBankIndex="0" pinIndex="5"/>
+            <location number="6" portBankIndex="1" pinIndex="11"/>
+            <location number="7" portBankIndex="1" pinIndex="12"/>
+            <location number="8" portBankIndex="1" pinIndex="13"/>
+            <location number="9" portBankIndex="1" pinIndex="14"/>
+            <location number="10" portBankIndex="1" pinIndex="15"/>
+            <location number="11" portBankIndex="2" pinIndex="6"/>
+            <location number="12" portBankIndex="2" pinIndex="7"/>
+            <location number="13" portBankIndex="2" pinIndex="8"/>
+            <location number="14" portBankIndex="2" pinIndex="9"/>
+            <location number="15" portBankIndex="2" pinIndex="10"/>
+            <location number="16" portBankIndex="2" pinIndex="11"/>
+            <location number="21" portBankIndex="3" pinIndex="13"/>
+            <location number="22" portBankIndex="3" pinIndex="14"/>
+            <location number="23" portBankIndex="3" pinIndex="15"/>
+            <location number="24" portBankIndex="5" pinIndex="0"/>
+            <location number="25" portBankIndex="5" pinIndex="1"/>
+            <location number="26" portBankIndex="5" pinIndex="2"/>
+            <location number="27" portBankIndex="5" pinIndex="3"/>
+            <location number="28" portBankIndex="5" pinIndex="4"/>
+            <location number="29" portBankIndex="5" pinIndex="5"/>
+            <location number="30" portBankIndex="5" pinIndex="6"/>
+            <location number="31" portBankIndex="5" pinIndex="7"/>
+          </route>
+        </selector>
+        <selector name="MODEM_DIN" locationPropertyId="portio.modem.location.din">
+          <route name="DIN" enablePropertyId="portio.modem.enable.din">
+            <location number="0" portBankIndex="0" pinIndex="1"/>
+            <location number="1" portBankIndex="0" pinIndex="2"/>
+            <location number="2" portBankIndex="0" pinIndex="3"/>
+            <location number="3" portBankIndex="0" pinIndex="4"/>
+            <location number="4" portBankIndex="0" pinIndex="5"/>
+            <location number="5" portBankIndex="1" pinIndex="11"/>
+            <location number="6" portBankIndex="1" pinIndex="12"/>
+            <location number="7" portBankIndex="1" pinIndex="13"/>
+            <location number="8" portBankIndex="1" pinIndex="14"/>
+            <location number="9" portBankIndex="1" pinIndex="15"/>
+            <location number="10" portBankIndex="2" pinIndex="6"/>
+            <location number="11" portBankIndex="2" pinIndex="7"/>
+            <location number="12" portBankIndex="2" pinIndex="8"/>
+            <location number="13" portBankIndex="2" pinIndex="9"/>
+            <location number="14" portBankIndex="2" pinIndex="10"/>
+            <location number="15" portBankIndex="2" pinIndex="11"/>
+            <location number="20" portBankIndex="3" pinIndex="13"/>
+            <location number="21" portBankIndex="3" pinIndex="14"/>
+            <location number="22" portBankIndex="3" pinIndex="15"/>
+            <location number="23" portBankIndex="5" pinIndex="0"/>
+            <location number="24" portBankIndex="5" pinIndex="1"/>
+            <location number="25" portBankIndex="5" pinIndex="2"/>
+            <location number="26" portBankIndex="5" pinIndex="3"/>
+            <location number="27" portBankIndex="5" pinIndex="4"/>
+            <location number="28" portBankIndex="5" pinIndex="5"/>
+            <location number="29" portBankIndex="5" pinIndex="6"/>
+            <location number="30" portBankIndex="5" pinIndex="7"/>
+            <location number="31" portBankIndex="0" pinIndex="0"/>
+          </route>
+        </selector>
+        <selector name="MODEM_DOUT" locationPropertyId="portio.modem.location.dout">
+          <route name="DOUT" enablePropertyId="portio.modem.enable.dout">
+            <location number="0" portBankIndex="0" pinIndex="2"/>
+            <location number="1" portBankIndex="0" pinIndex="3"/>
+            <location number="2" portBankIndex="0" pinIndex="4"/>
+            <location number="3" portBankIndex="0" pinIndex="5"/>
+            <location number="4" portBankIndex="1" pinIndex="11"/>
+            <location number="5" portBankIndex="1" pinIndex="12"/>
+            <location number="6" portBankIndex="1" pinIndex="13"/>
+            <location number="7" portBankIndex="1" pinIndex="14"/>
+            <location number="8" portBankIndex="1" pinIndex="15"/>
+            <location number="9" portBankIndex="2" pinIndex="6"/>
+            <location number="10" portBankIndex="2" pinIndex="7"/>
+            <location number="11" portBankIndex="2" pinIndex="8"/>
+            <location number="12" portBankIndex="2" pinIndex="9"/>
+            <location number="13" portBankIndex="2" pinIndex="10"/>
+            <location number="14" portBankIndex="2" pinIndex="11"/>
+            <location number="19" portBankIndex="3" pinIndex="13"/>
+            <location number="20" portBankIndex="3" pinIndex="14"/>
+            <location number="21" portBankIndex="3" pinIndex="15"/>
+            <location number="22" portBankIndex="5" pinIndex="0"/>
+            <location number="23" portBankIndex="5" pinIndex="1"/>
+            <location number="24" portBankIndex="5" pinIndex="2"/>
+            <location number="25" portBankIndex="5" pinIndex="3"/>
+            <location number="26" portBankIndex="5" pinIndex="4"/>
+            <location number="27" portBankIndex="5" pinIndex="5"/>
+            <location number="28" portBankIndex="5" pinIndex="6"/>
+            <location number="29" portBankIndex="5" pinIndex="7"/>
+            <location number="30" portBankIndex="0" pinIndex="0"/>
+            <location number="31" portBankIndex="0" pinIndex="1"/>
+          </route>
+        </selector>
+      </module>
+      <module name="PCNT0">
+        <selector name="PCNT0_S0IN" locationPropertyId="portio.pcnt0.location.s0in">
+          <route name="S0IN" enablePropertyId="portio.pcnt0.enable.s0in">
+            <location number="0" portBankIndex="0" pinIndex="0"/>
+            <location number="1" portBankIndex="0" pinIndex="1"/>
+            <location number="2" portBankIndex="0" pinIndex="2"/>
+            <location number="3" portBankIndex="0" pinIndex="3"/>
+            <location number="4" portBankIndex="0" pinIndex="4"/>
+            <location number="5" portBankIndex="0" pinIndex="5"/>
+            <location number="6" portBankIndex="1" pinIndex="11"/>
+            <location number="7" portBankIndex="1" pinIndex="12"/>
+            <location number="8" portBankIndex="1" pinIndex="13"/>
+            <location number="9" portBankIndex="1" pinIndex="14"/>
+            <location number="10" portBankIndex="1" pinIndex="15"/>
+            <location number="11" portBankIndex="2" pinIndex="6"/>
+            <location number="12" portBankIndex="2" pinIndex="7"/>
+            <location number="13" portBankIndex="2" pinIndex="8"/>
+            <location number="14" portBankIndex="2" pinIndex="9"/>
+            <location number="15" portBankIndex="2" pinIndex="10"/>
+            <location number="16" portBankIndex="2" pinIndex="11"/>
+            <location number="21" portBankIndex="3" pinIndex="13"/>
+            <location number="22" portBankIndex="3" pinIndex="14"/>
+            <location number="23" portBankIndex="3" pinIndex="15"/>
+            <location number="24" portBankIndex="5" pinIndex="0"/>
+            <location number="25" portBankIndex="5" pinIndex="1"/>
+            <location number="26" portBankIndex="5" pinIndex="2"/>
+            <location number="27" portBankIndex="5" pinIndex="3"/>
+            <location number="28" portBankIndex="5" pinIndex="4"/>
+            <location number="29" portBankIndex="5" pinIndex="5"/>
+            <location number="30" portBankIndex="5" pinIndex="6"/>
+            <location number="31" portBankIndex="5" pinIndex="7"/>
+          </route>
+        </selector>
+        <selector name="PCNT0_S1IN" locationPropertyId="portio.pcnt0.location.s1in">
+          <route name="S1IN" enablePropertyId="portio.pcnt0.enable.s1in">
+            <location number="0" portBankIndex="0" pinIndex="1"/>
+            <location number="1" portBankIndex="0" pinIndex="2"/>
+            <location number="2" portBankIndex="0" pinIndex="3"/>
+            <location number="3" portBankIndex="0" pinIndex="4"/>
+            <location number="4" portBankIndex="0" pinIndex="5"/>
+            <location number="5" portBankIndex="1" pinIndex="11"/>
+            <location number="6" portBankIndex="1" pinIndex="12"/>
+            <location number="7" portBankIndex="1" pinIndex="13"/>
+            <location number="8" portBankIndex="1" pinIndex="14"/>
+            <location number="9" portBankIndex="1" pinIndex="15"/>
+            <location number="10" portBankIndex="2" pinIndex="6"/>
+            <location number="11" portBankIndex="2" pinIndex="7"/>
+            <location number="12" portBankIndex="2" pinIndex="8"/>
+            <location number="13" portBankIndex="2" pinIndex="9"/>
+            <location number="14" portBankIndex="2" pinIndex="10"/>
+            <location number="15" portBankIndex="2" pinIndex="11"/>
+            <location number="20" portBankIndex="3" pinIndex="13"/>
+            <location number="21" portBankIndex="3" pinIndex="14"/>
+            <location number="22" portBankIndex="3" pinIndex="15"/>
+            <location number="23" portBankIndex="5" pinIndex="0"/>
+            <location number="24" portBankIndex="5" pinIndex="1"/>
+            <location number="25" portBankIndex="5" pinIndex="2"/>
+            <location number="26" portBankIndex="5" pinIndex="3"/>
+            <location number="27" portBankIndex="5" pinIndex="4"/>
+            <location number="28" portBankIndex="5" pinIndex="5"/>
+            <location number="29" portBankIndex="5" pinIndex="6"/>
+            <location number="30" portBankIndex="5" pinIndex="7"/>
+            <location number="31" portBankIndex="0" pinIndex="0"/>
+          </route>
+        </selector>
+      </module>
+      <module name="PRS.CH0">
+        <selector name="PRS_CH0" locationPropertyId="portio.prs.location.ch0">
+          <route name="CH0" enablePropertyId="portio.prs.enable.ch0">
+            <location number="0" portBankIndex="5" pinIndex="0"/>
+            <location number="1" portBankIndex="5" pinIndex="1"/>
+            <location number="2" portBankIndex="5" pinIndex="2"/>
+            <location number="3" portBankIndex="5" pinIndex="3"/>
+            <location number="4" portBankIndex="5" pinIndex="4"/>
+            <location number="5" portBankIndex="5" pinIndex="5"/>
+            <location number="6" portBankIndex="5" pinIndex="6"/>
+            <location number="7" portBankIndex="5" pinIndex="7"/>
+            <location number="8" portBankIndex="2" pinIndex="6"/>
+            <location number="9" portBankIndex="2" pinIndex="7"/>
+            <location number="10" portBankIndex="2" pinIndex="8"/>
+            <location number="11" portBankIndex="2" pinIndex="9"/>
+            <location number="12" portBankIndex="2" pinIndex="10"/>
+            <location number="13" portBankIndex="2" pinIndex="11"/>
+          </route>
+        </selector>
+      </module>
+      <module name="PRS.CH1">
+        <selector name="PRS_CH1" locationPropertyId="portio.prs.location.ch1">
+          <route name="CH1" enablePropertyId="portio.prs.enable.ch1">
+            <location number="0" portBankIndex="5" pinIndex="1"/>
+            <location number="1" portBankIndex="5" pinIndex="2"/>
+            <location number="2" portBankIndex="5" pinIndex="3"/>
+            <location number="3" portBankIndex="5" pinIndex="4"/>
+            <location number="4" portBankIndex="5" pinIndex="5"/>
+            <location number="5" portBankIndex="5" pinIndex="6"/>
+            <location number="6" portBankIndex="5" pinIndex="7"/>
+            <location number="7" portBankIndex="5" pinIndex="0"/>
+          </route>
+        </selector>
+      </module>
+      <module name="PRS.CH2">
+        <selector name="PRS_CH2" locationPropertyId="portio.prs.location.ch2">
+          <route name="CH2" enablePropertyId="portio.prs.enable.ch2">
+            <location number="0" portBankIndex="5" pinIndex="2"/>
+            <location number="1" portBankIndex="5" pinIndex="3"/>
+            <location number="2" portBankIndex="5" pinIndex="4"/>
+            <location number="3" portBankIndex="5" pinIndex="5"/>
+            <location number="4" portBankIndex="5" pinIndex="6"/>
+            <location number="5" portBankIndex="5" pinIndex="7"/>
+            <location number="6" portBankIndex="5" pinIndex="0"/>
+            <location number="7" portBankIndex="5" pinIndex="1"/>
+          </route>
+        </selector>
+      </module>
+      <module name="PRS.CH3">
+        <selector name="PRS_CH3" locationPropertyId="portio.prs.location.ch3">
+          <route name="CH3" enablePropertyId="portio.prs.enable.ch3">
+            <location number="0" portBankIndex="5" pinIndex="3"/>
+            <location number="1" portBankIndex="5" pinIndex="4"/>
+            <location number="2" portBankIndex="5" pinIndex="5"/>
+            <location number="3" portBankIndex="5" pinIndex="6"/>
+            <location number="4" portBankIndex="5" pinIndex="7"/>
+            <location number="5" portBankIndex="5" pinIndex="0"/>
+            <location number="6" portBankIndex="5" pinIndex="1"/>
+            <location number="7" portBankIndex="5" pinIndex="2"/>
+            <location number="12" portBankIndex="3" pinIndex="13"/>
+            <location number="13" portBankIndex="3" pinIndex="14"/>
+            <location number="14" portBankIndex="3" pinIndex="15"/>
+          </route>
+        </selector>
+      </module>
+      <module name="PRS.CH4">
+        <selector name="PRS_CH4" locationPropertyId="portio.prs.location.ch4">
+          <route name="CH4" enablePropertyId="portio.prs.enable.ch4">
+            <location number="4" portBankIndex="3" pinIndex="13"/>
+            <location number="5" portBankIndex="3" pinIndex="14"/>
+            <location number="6" portBankIndex="3" pinIndex="15"/>
+          </route>
+        </selector>
+      </module>
+      <module name="PRS.CH5">
+        <selector name="PRS_CH5" locationPropertyId="portio.prs.location.ch5">
+          <route name="CH5" enablePropertyId="portio.prs.enable.ch5">
+            <location number="3" portBankIndex="3" pinIndex="13"/>
+            <location number="4" portBankIndex="3" pinIndex="14"/>
+            <location number="5" portBankIndex="3" pinIndex="15"/>
+          </route>
+        </selector>
+      </module>
+      <module name="PRS.CH6">
+        <selector name="PRS_CH6" locationPropertyId="portio.prs.location.ch6">
+          <route name="CH6" enablePropertyId="portio.prs.enable.ch6">
+            <location number="0" portBankIndex="0" pinIndex="0"/>
+            <location number="1" portBankIndex="0" pinIndex="1"/>
+            <location number="2" portBankIndex="0" pinIndex="2"/>
+            <location number="3" portBankIndex="0" pinIndex="3"/>
+            <location number="4" portBankIndex="0" pinIndex="4"/>
+            <location number="5" portBankIndex="0" pinIndex="5"/>
+            <location number="6" portBankIndex="1" pinIndex="11"/>
+            <location number="7" portBankIndex="1" pinIndex="12"/>
+            <location number="8" portBankIndex="1" pinIndex="13"/>
+            <location number="9" portBankIndex="1" pinIndex="14"/>
+            <location number="10" portBankIndex="1" pinIndex="15"/>
+            <location number="15" portBankIndex="3" pinIndex="13"/>
+            <location number="16" portBankIndex="3" pinIndex="14"/>
+            <location number="17" portBankIndex="3" pinIndex="15"/>
+          </route>
+        </selector>
+      </module>
+      <module name="PRS.CH7">
+        <selector name="PRS_CH7" locationPropertyId="portio.prs.location.ch7">
+          <route name="CH7" enablePropertyId="portio.prs.enable.ch7">
+            <location number="0" portBankIndex="0" pinIndex="1"/>
+            <location number="1" portBankIndex="0" pinIndex="2"/>
+            <location number="2" portBankIndex="0" pinIndex="3"/>
+            <location number="3" portBankIndex="0" pinIndex="4"/>
+            <location number="4" portBankIndex="0" pinIndex="5"/>
+            <location number="5" portBankIndex="1" pinIndex="11"/>
+            <location number="6" portBankIndex="1" pinIndex="12"/>
+            <location number="7" portBankIndex="1" pinIndex="13"/>
+            <location number="8" portBankIndex="1" pinIndex="14"/>
+            <location number="9" portBankIndex="1" pinIndex="15"/>
+            <location number="10" portBankIndex="0" pinIndex="0"/>
+          </route>
+        </selector>
+      </module>
+      <module name="PRS.CH8">
+        <selector name="PRS_CH8" locationPropertyId="portio.prs.location.ch8">
+          <route name="CH8" enablePropertyId="portio.prs.enable.ch8">
+            <location number="0" portBankIndex="0" pinIndex="2"/>
+            <location number="1" portBankIndex="0" pinIndex="3"/>
+            <location number="2" portBankIndex="0" pinIndex="4"/>
+            <location number="3" portBankIndex="0" pinIndex="5"/>
+            <location number="4" portBankIndex="1" pinIndex="11"/>
+            <location number="5" portBankIndex="1" pinIndex="12"/>
+            <location number="6" portBankIndex="1" pinIndex="13"/>
+            <location number="7" portBankIndex="1" pinIndex="14"/>
+            <location number="8" portBankIndex="1" pinIndex="15"/>
+            <location number="9" portBankIndex="0" pinIndex="0"/>
+            <location number="10" portBankIndex="0" pinIndex="1"/>
+          </route>
+        </selector>
+      </module>
+      <module name="PRS.CH9">
+        <selector name="PRS_CH9" locationPropertyId="portio.prs.location.ch9">
+          <route name="CH9" enablePropertyId="portio.prs.enable.ch9">
+            <location number="0" portBankIndex="0" pinIndex="3"/>
+            <location number="1" portBankIndex="0" pinIndex="4"/>
+            <location number="2" portBankIndex="0" pinIndex="5"/>
+            <location number="3" portBankIndex="1" pinIndex="11"/>
+            <location number="4" portBankIndex="1" pinIndex="12"/>
+            <location number="5" portBankIndex="1" pinIndex="13"/>
+            <location number="6" portBankIndex="1" pinIndex="14"/>
+            <location number="7" portBankIndex="1" pinIndex="15"/>
+            <location number="8" portBankIndex="0" pinIndex="0"/>
+            <location number="9" portBankIndex="0" pinIndex="1"/>
+            <location number="10" portBankIndex="0" pinIndex="2"/>
+            <location number="11" portBankIndex="2" pinIndex="6"/>
+            <location number="12" portBankIndex="2" pinIndex="7"/>
+            <location number="13" portBankIndex="2" pinIndex="8"/>
+            <location number="14" portBankIndex="2" pinIndex="9"/>
+            <location number="15" portBankIndex="2" pinIndex="10"/>
+            <location number="16" portBankIndex="2" pinIndex="11"/>
+          </route>
+        </selector>
+      </module>
+      <module name="PRS.CH10">
+        <selector name="PRS_CH10" locationPropertyId="portio.prs.location.ch10">
+          <route name="CH10" enablePropertyId="portio.prs.enable.ch10">
+            <location number="0" portBankIndex="2" pinIndex="6"/>
+            <location number="1" portBankIndex="2" pinIndex="7"/>
+            <location number="2" portBankIndex="2" pinIndex="8"/>
+            <location number="3" portBankIndex="2" pinIndex="9"/>
+            <location number="4" portBankIndex="2" pinIndex="10"/>
+            <location number="5" portBankIndex="2" pinIndex="11"/>
+          </route>
+        </selector>
+      </module>
+      <module name="PRS.CH11">
+        <selector name="PRS_CH11" locationPropertyId="portio.prs.location.ch11">
+          <route name="CH11" enablePropertyId="portio.prs.enable.ch11">
+            <location number="0" portBankIndex="2" pinIndex="7"/>
+            <location number="1" portBankIndex="2" pinIndex="8"/>
+            <location number="2" portBankIndex="2" pinIndex="9"/>
+            <location number="3" portBankIndex="2" pinIndex="10"/>
+            <location number="4" portBankIndex="2" pinIndex="11"/>
+            <location number="5" portBankIndex="2" pinIndex="6"/>
+          </route>
+        </selector>
+      </module>
+      <module name="PTI">
+        <selector name="PTI_DCLK" locationPropertyId="portio.pti.location.dclk">
+          <route name="DCLK" enablePropertyId="portio.pti.enable.dclk">
+            <location number="0" portBankIndex="0" pinIndex="0"/>
+            <location number="1" portBankIndex="0" pinIndex="1"/>
+            <location number="2" portBankIndex="0" pinIndex="2"/>
+            <location number="3" portBankIndex="0" pinIndex="3"/>
+            <location number="4" portBankIndex="0" pinIndex="4"/>
+            <location number="5" portBankIndex="0" pinIndex="5"/>
+            <location number="6" portBankIndex="1" pinIndex="11"/>
+            <location number="7" portBankIndex="1" pinIndex="12"/>
+            <location number="8" portBankIndex="1" pinIndex="13"/>
+            <location number="9" portBankIndex="1" pinIndex="14"/>
+            <location number="10" portBankIndex="1" pinIndex="15"/>
+            <location number="11" portBankIndex="2" pinIndex="6"/>
+            <location number="12" portBankIndex="2" pinIndex="7"/>
+            <location number="13" portBankIndex="2" pinIndex="8"/>
+            <location number="14" portBankIndex="2" pinIndex="9"/>
+            <location number="15" portBankIndex="2" pinIndex="10"/>
+            <location number="16" portBankIndex="2" pinIndex="11"/>
+            <location number="21" portBankIndex="3" pinIndex="13"/>
+            <location number="22" portBankIndex="3" pinIndex="14"/>
+            <location number="23" portBankIndex="3" pinIndex="15"/>
+            <location number="24" portBankIndex="5" pinIndex="0"/>
+            <location number="25" portBankIndex="5" pinIndex="1"/>
+            <location number="26" portBankIndex="5" pinIndex="2"/>
+            <location number="27" portBankIndex="5" pinIndex="3"/>
+            <location number="28" portBankIndex="5" pinIndex="4"/>
+            <location number="29" portBankIndex="5" pinIndex="5"/>
+            <location number="30" portBankIndex="5" pinIndex="6"/>
+            <location number="31" portBankIndex="5" pinIndex="7"/>
+          </route>
+        </selector>
+        <selector name="PTI_DFRAME" locationPropertyId="portio.pti.location.dframe">
+          <route name="DFRAME" enablePropertyId="portio.pti.enable.dframe">
+            <location number="0" portBankIndex="0" pinIndex="2"/>
+            <location number="1" portBankIndex="0" pinIndex="3"/>
+            <location number="2" portBankIndex="0" pinIndex="4"/>
+            <location number="3" portBankIndex="0" pinIndex="5"/>
+            <location number="4" portBankIndex="1" pinIndex="11"/>
+            <location number="5" portBankIndex="1" pinIndex="12"/>
+            <location number="6" portBankIndex="1" pinIndex="13"/>
+            <location number="7" portBankIndex="1" pinIndex="14"/>
+            <location number="8" portBankIndex="1" pinIndex="15"/>
+            <location number="9" portBankIndex="2" pinIndex="6"/>
+            <location number="10" portBankIndex="2" pinIndex="7"/>
+            <location number="11" portBankIndex="2" pinIndex="8"/>
+            <location number="12" portBankIndex="2" pinIndex="9"/>
+            <location number="13" portBankIndex="2" pinIndex="10"/>
+            <location number="14" portBankIndex="2" pinIndex="11"/>
+            <location number="19" portBankIndex="3" pinIndex="13"/>
+            <location number="20" portBankIndex="3" pinIndex="14"/>
+            <location number="21" portBankIndex="3" pinIndex="15"/>
+            <location number="22" portBankIndex="5" pinIndex="0"/>
+            <location number="23" portBankIndex="5" pinIndex="1"/>
+            <location number="24" portBankIndex="5" pinIndex="2"/>
+            <location number="25" portBankIndex="5" pinIndex="3"/>
+            <location number="26" portBankIndex="5" pinIndex="4"/>
+            <location number="27" portBankIndex="5" pinIndex="5"/>
+            <location number="28" portBankIndex="5" pinIndex="6"/>
+            <location number="29" portBankIndex="5" pinIndex="7"/>
+            <location number="30" portBankIndex="0" pinIndex="0"/>
+            <location number="31" portBankIndex="0" pinIndex="1"/>
+          </route>
+        </selector>
+        <selector name="PTI_DOUT" locationPropertyId="portio.pti.location.dout">
+          <route name="DOUT" enablePropertyId="portio.pti.enable.dout">
+            <location number="0" portBankIndex="0" pinIndex="1"/>
+            <location number="1" portBankIndex="0" pinIndex="2"/>
+            <location number="2" portBankIndex="0" pinIndex="3"/>
+            <location number="3" portBankIndex="0" pinIndex="4"/>
+            <location number="4" portBankIndex="0" pinIndex="5"/>
+            <location number="5" portBankIndex="1" pinIndex="11"/>
+            <location number="6" portBankIndex="1" pinIndex="12"/>
+            <location number="7" portBankIndex="1" pinIndex="13"/>
+            <location number="8" portBankIndex="1" pinIndex="14"/>
+            <location number="9" portBankIndex="1" pinIndex="15"/>
+            <location number="10" portBankIndex="2" pinIndex="6"/>
+            <location number="11" portBankIndex="2" pinIndex="7"/>
+            <location number="12" portBankIndex="2" pinIndex="8"/>
+            <location number="13" portBankIndex="2" pinIndex="9"/>
+            <location number="14" portBankIndex="2" pinIndex="10"/>
+            <location number="15" portBankIndex="2" pinIndex="11"/>
+            <location number="20" portBankIndex="3" pinIndex="13"/>
+            <location number="21" portBankIndex="3" pinIndex="14"/>
+            <location number="22" portBankIndex="3" pinIndex="15"/>
+            <location number="23" portBankIndex="5" pinIndex="0"/>
+            <location number="24" portBankIndex="5" pinIndex="1"/>
+            <location number="25" portBankIndex="5" pinIndex="2"/>
+            <location number="26" portBankIndex="5" pinIndex="3"/>
+            <location number="27" portBankIndex="5" pinIndex="4"/>
+            <location number="28" portBankIndex="5" pinIndex="5"/>
+            <location number="29" portBankIndex="5" pinIndex="6"/>
+            <location number="30" portBankIndex="5" pinIndex="7"/>
+            <location number="31" portBankIndex="0" pinIndex="0"/>
+          </route>
+        </selector>
+      </module>
+      <module name="TIMER0">
+        <selector name="TIMER0_CC0" locationPropertyId="portio.timer0.location.cc0">
+          <route name="CC0" enablePropertyId="portio.timer0.enable.cc0">
+            <location number="0" portBankIndex="0" pinIndex="0"/>
+            <location number="1" portBankIndex="0" pinIndex="1"/>
+            <location number="2" portBankIndex="0" pinIndex="2"/>
+            <location number="3" portBankIndex="0" pinIndex="3"/>
+            <location number="4" portBankIndex="0" pinIndex="4"/>
+            <location number="5" portBankIndex="0" pinIndex="5"/>
+            <location number="6" portBankIndex="1" pinIndex="11"/>
+            <location number="7" portBankIndex="1" pinIndex="12"/>
+            <location number="8" portBankIndex="1" pinIndex="13"/>
+            <location number="9" portBankIndex="1" pinIndex="14"/>
+            <location number="10" portBankIndex="1" pinIndex="15"/>
+            <location number="11" portBankIndex="2" pinIndex="6"/>
+            <location number="12" portBankIndex="2" pinIndex="7"/>
+            <location number="13" portBankIndex="2" pinIndex="8"/>
+            <location number="14" portBankIndex="2" pinIndex="9"/>
+            <location number="15" portBankIndex="2" pinIndex="10"/>
+            <location number="16" portBankIndex="2" pinIndex="11"/>
+            <location number="21" portBankIndex="3" pinIndex="13"/>
+            <location number="22" portBankIndex="3" pinIndex="14"/>
+            <location number="23" portBankIndex="3" pinIndex="15"/>
+            <location number="24" portBankIndex="5" pinIndex="0"/>
+            <location number="25" portBankIndex="5" pinIndex="1"/>
+            <location number="26" portBankIndex="5" pinIndex="2"/>
+            <location number="27" portBankIndex="5" pinIndex="3"/>
+            <location number="28" portBankIndex="5" pinIndex="4"/>
+            <location number="29" portBankIndex="5" pinIndex="5"/>
+            <location number="30" portBankIndex="5" pinIndex="6"/>
+            <location number="31" portBankIndex="5" pinIndex="7"/>
+          </route>
+        </selector>
+        <selector name="TIMER0_CC1" locationPropertyId="portio.timer0.location.cc1">
+          <route name="CC1" enablePropertyId="portio.timer0.enable.cc1">
+            <location number="0" portBankIndex="0" pinIndex="1"/>
+            <location number="1" portBankIndex="0" pinIndex="2"/>
+            <location number="2" portBankIndex="0" pinIndex="3"/>
+            <location number="3" portBankIndex="0" pinIndex="4"/>
+            <location number="4" portBankIndex="0" pinIndex="5"/>
+            <location number="5" portBankIndex="1" pinIndex="11"/>
+            <location number="6" portBankIndex="1" pinIndex="12"/>
+            <location number="7" portBankIndex="1" pinIndex="13"/>
+            <location number="8" portBankIndex="1" pinIndex="14"/>
+            <location number="9" portBankIndex="1" pinIndex="15"/>
+            <location number="10" portBankIndex="2" pinIndex="6"/>
+            <location number="11" portBankIndex="2" pinIndex="7"/>
+            <location number="12" portBankIndex="2" pinIndex="8"/>
+            <location number="13" portBankIndex="2" pinIndex="9"/>
+            <location number="14" portBankIndex="2" pinIndex="10"/>
+            <location number="15" portBankIndex="2" pinIndex="11"/>
+            <location number="20" portBankIndex="3" pinIndex="13"/>
+            <location number="21" portBankIndex="3" pinIndex="14"/>
+            <location number="22" portBankIndex="3" pinIndex="15"/>
+            <location number="23" portBankIndex="5" pinIndex="0"/>
+            <location number="24" portBankIndex="5" pinIndex="1"/>
+            <location number="25" portBankIndex="5" pinIndex="2"/>
+            <location number="26" portBankIndex="5" pinIndex="3"/>
+            <location number="27" portBankIndex="5" pinIndex="4"/>
+            <location number="28" portBankIndex="5" pinIndex="5"/>
+            <location number="29" portBankIndex="5" pinIndex="6"/>
+            <location number="30" portBankIndex="5" pinIndex="7"/>
+            <location number="31" portBankIndex="0" pinIndex="0"/>
+          </route>
+        </selector>
+        <selector name="TIMER0_CC2" locationPropertyId="portio.timer0.location.cc2">
+          <route name="CC2" enablePropertyId="portio.timer0.enable.cc2">
+            <location number="0" portBankIndex="0" pinIndex="2"/>
+            <location number="1" portBankIndex="0" pinIndex="3"/>
+            <location number="2" portBankIndex="0" pinIndex="4"/>
+            <location number="3" portBankIndex="0" pinIndex="5"/>
+            <location number="4" portBankIndex="1" pinIndex="11"/>
+            <location number="5" portBankIndex="1" pinIndex="12"/>
+            <location number="6" portBankIndex="1" pinIndex="13"/>
+            <location number="7" portBankIndex="1" pinIndex="14"/>
+            <location number="8" portBankIndex="1" pinIndex="15"/>
+            <location number="9" portBankIndex="2" pinIndex="6"/>
+            <location number="10" portBankIndex="2" pinIndex="7"/>
+            <location number="11" portBankIndex="2" pinIndex="8"/>
+            <location number="12" portBankIndex="2" pinIndex="9"/>
+            <location number="13" portBankIndex="2" pinIndex="10"/>
+            <location number="14" portBankIndex="2" pinIndex="11"/>
+            <location number="19" portBankIndex="3" pinIndex="13"/>
+            <location number="20" portBankIndex="3" pinIndex="14"/>
+            <location number="21" portBankIndex="3" pinIndex="15"/>
+            <location number="22" portBankIndex="5" pinIndex="0"/>
+            <location number="23" portBankIndex="5" pinIndex="1"/>
+            <location number="24" portBankIndex="5" pinIndex="2"/>
+            <location number="25" portBankIndex="5" pinIndex="3"/>
+            <location number="26" portBankIndex="5" pinIndex="4"/>
+            <location number="27" portBankIndex="5" pinIndex="5"/>
+            <location number="28" portBankIndex="5" pinIndex="6"/>
+            <location number="29" portBankIndex="5" pinIndex="7"/>
+            <location number="30" portBankIndex="0" pinIndex="0"/>
+            <location number="31" portBankIndex="0" pinIndex="1"/>
+          </route>
+        </selector>
+        <selector name="TIMER0_CDTI0" locationPropertyId="portio.timer0.location.cdti0">
+          <route name="CDTI0" enablePropertyId="portio.timer0.enable.cdti0">
+            <location number="0" portBankIndex="0" pinIndex="3"/>
+            <location number="1" portBankIndex="0" pinIndex="4"/>
+            <location number="2" portBankIndex="0" pinIndex="5"/>
+            <location number="3" portBankIndex="1" pinIndex="11"/>
+            <location number="4" portBankIndex="1" pinIndex="12"/>
+            <location number="5" portBankIndex="1" pinIndex="13"/>
+            <location number="6" portBankIndex="1" pinIndex="14"/>
+            <location number="7" portBankIndex="1" pinIndex="15"/>
+            <location number="8" portBankIndex="2" pinIndex="6"/>
+            <location number="9" portBankIndex="2" pinIndex="7"/>
+            <location number="10" portBankIndex="2" pinIndex="8"/>
+            <location number="11" portBankIndex="2" pinIndex="9"/>
+            <location number="12" portBankIndex="2" pinIndex="10"/>
+            <location number="13" portBankIndex="2" pinIndex="11"/>
+            <location number="18" portBankIndex="3" pinIndex="13"/>
+            <location number="19" portBankIndex="3" pinIndex="14"/>
+            <location number="20" portBankIndex="3" pinIndex="15"/>
+            <location number="21" portBankIndex="5" pinIndex="0"/>
+            <location number="22" portBankIndex="5" pinIndex="1"/>
+            <location number="23" portBankIndex="5" pinIndex="2"/>
+            <location number="24" portBankIndex="5" pinIndex="3"/>
+            <location number="25" portBankIndex="5" pinIndex="4"/>
+            <location number="26" portBankIndex="5" pinIndex="5"/>
+            <location number="27" portBankIndex="5" pinIndex="6"/>
+            <location number="28" portBankIndex="5" pinIndex="7"/>
+            <location number="29" portBankIndex="0" pinIndex="0"/>
+            <location number="30" portBankIndex="0" pinIndex="1"/>
+            <location number="31" portBankIndex="0" pinIndex="2"/>
+          </route>
+        </selector>
+        <selector name="TIMER0_CDTI1" locationPropertyId="portio.timer0.location.cdti1">
+          <route name="CDTI1" enablePropertyId="portio.timer0.enable.cdti1">
+            <location number="0" portBankIndex="0" pinIndex="4"/>
+            <location number="1" portBankIndex="0" pinIndex="5"/>
+            <location number="2" portBankIndex="1" pinIndex="11"/>
+            <location number="3" portBankIndex="1" pinIndex="12"/>
+            <location number="4" portBankIndex="1" pinIndex="13"/>
+            <location number="5" portBankIndex="1" pinIndex="14"/>
+            <location number="6" portBankIndex="1" pinIndex="15"/>
+            <location number="7" portBankIndex="2" pinIndex="6"/>
+            <location number="8" portBankIndex="2" pinIndex="7"/>
+            <location number="9" portBankIndex="2" pinIndex="8"/>
+            <location number="10" portBankIndex="2" pinIndex="9"/>
+            <location number="11" portBankIndex="2" pinIndex="10"/>
+            <location number="12" portBankIndex="2" pinIndex="11"/>
+            <location number="17" portBankIndex="3" pinIndex="13"/>
+            <location number="18" portBankIndex="3" pinIndex="14"/>
+            <location number="19" portBankIndex="3" pinIndex="15"/>
+            <location number="20" portBankIndex="5" pinIndex="0"/>
+            <location number="21" portBankIndex="5" pinIndex="1"/>
+            <location number="22" portBankIndex="5" pinIndex="2"/>
+            <location number="23" portBankIndex="5" pinIndex="3"/>
+            <location number="24" portBankIndex="5" pinIndex="4"/>
+            <location number="25" portBankIndex="5" pinIndex="5"/>
+            <location number="26" portBankIndex="5" pinIndex="6"/>
+            <location number="27" portBankIndex="5" pinIndex="7"/>
+            <location number="28" portBankIndex="0" pinIndex="0"/>
+            <location number="29" portBankIndex="0" pinIndex="1"/>
+            <location number="30" portBankIndex="0" pinIndex="2"/>
+            <location number="31" portBankIndex="0" pinIndex="3"/>
+          </route>
+        </selector>
+        <selector name="TIMER0_CDTI2" locationPropertyId="portio.timer0.location.cdti2">
+          <route name="CDTI2" enablePropertyId="portio.timer0.enable.cdti2">
+            <location number="0" portBankIndex="0" pinIndex="5"/>
+            <location number="1" portBankIndex="1" pinIndex="11"/>
+            <location number="2" portBankIndex="1" pinIndex="12"/>
+            <location number="3" portBankIndex="1" pinIndex="13"/>
+            <location number="4" portBankIndex="1" pinIndex="14"/>
+            <location number="5" portBankIndex="1" pinIndex="15"/>
+            <location number="6" portBankIndex="2" pinIndex="6"/>
+            <location number="7" portBankIndex="2" pinIndex="7"/>
+            <location number="8" portBankIndex="2" pinIndex="8"/>
+            <location number="9" portBankIndex="2" pinIndex="9"/>
+            <location number="10" portBankIndex="2" pinIndex="10"/>
+            <location number="11" portBankIndex="2" pinIndex="11"/>
+            <location number="16" portBankIndex="3" pinIndex="13"/>
+            <location number="17" portBankIndex="3" pinIndex="14"/>
+            <location number="18" portBankIndex="3" pinIndex="15"/>
+            <location number="19" portBankIndex="5" pinIndex="0"/>
+            <location number="20" portBankIndex="5" pinIndex="1"/>
+            <location number="21" portBankIndex="5" pinIndex="2"/>
+            <location number="22" portBankIndex="5" pinIndex="3"/>
+            <location number="23" portBankIndex="5" pinIndex="4"/>
+            <location number="24" portBankIndex="5" pinIndex="5"/>
+            <location number="25" portBankIndex="5" pinIndex="6"/>
+            <location number="26" portBankIndex="5" pinIndex="7"/>
+            <location number="27" portBankIndex="0" pinIndex="0"/>
+            <location number="28" portBankIndex="0" pinIndex="1"/>
+            <location number="29" portBankIndex="0" pinIndex="2"/>
+            <location number="30" portBankIndex="0" pinIndex="3"/>
+            <location number="31" portBankIndex="0" pinIndex="4"/>
+          </route>
+        </selector>
+      </module>
+      <module name="TIMER1">
+        <selector name="TIMER1_CC0" locationPropertyId="portio.timer1.location.cc0">
+          <route name="CC0" enablePropertyId="portio.timer1.enable.cc0">
+            <location number="0" portBankIndex="0" pinIndex="0"/>
+            <location number="1" portBankIndex="0" pinIndex="1"/>
+            <location number="2" portBankIndex="0" pinIndex="2"/>
+            <location number="3" portBankIndex="0" pinIndex="3"/>
+            <location number="4" portBankIndex="0" pinIndex="4"/>
+            <location number="5" portBankIndex="0" pinIndex="5"/>
+            <location number="6" portBankIndex="1" pinIndex="11"/>
+            <location number="7" portBankIndex="1" pinIndex="12"/>
+            <location number="8" portBankIndex="1" pinIndex="13"/>
+            <location number="9" portBankIndex="1" pinIndex="14"/>
+            <location number="10" portBankIndex="1" pinIndex="15"/>
+            <location number="11" portBankIndex="2" pinIndex="6"/>
+            <location number="12" portBankIndex="2" pinIndex="7"/>
+            <location number="13" portBankIndex="2" pinIndex="8"/>
+            <location number="14" portBankIndex="2" pinIndex="9"/>
+            <location number="15" portBankIndex="2" pinIndex="10"/>
+            <location number="16" portBankIndex="2" pinIndex="11"/>
+            <location number="21" portBankIndex="3" pinIndex="13"/>
+            <location number="22" portBankIndex="3" pinIndex="14"/>
+            <location number="23" portBankIndex="3" pinIndex="15"/>
+            <location number="24" portBankIndex="5" pinIndex="0"/>
+            <location number="25" portBankIndex="5" pinIndex="1"/>
+            <location number="26" portBankIndex="5" pinIndex="2"/>
+            <location number="27" portBankIndex="5" pinIndex="3"/>
+            <location number="28" portBankIndex="5" pinIndex="4"/>
+            <location number="29" portBankIndex="5" pinIndex="5"/>
+            <location number="30" portBankIndex="5" pinIndex="6"/>
+            <location number="31" portBankIndex="5" pinIndex="7"/>
+          </route>
+        </selector>
+        <selector name="TIMER1_CC1" locationPropertyId="portio.timer1.location.cc1">
+          <route name="CC1" enablePropertyId="portio.timer1.enable.cc1">
+            <location number="0" portBankIndex="0" pinIndex="1"/>
+            <location number="1" portBankIndex="0" pinIndex="2"/>
+            <location number="2" portBankIndex="0" pinIndex="3"/>
+            <location number="3" portBankIndex="0" pinIndex="4"/>
+            <location number="4" portBankIndex="0" pinIndex="5"/>
+            <location number="5" portBankIndex="1" pinIndex="11"/>
+            <location number="6" portBankIndex="1" pinIndex="12"/>
+            <location number="7" portBankIndex="1" pinIndex="13"/>
+            <location number="8" portBankIndex="1" pinIndex="14"/>
+            <location number="9" portBankIndex="1" pinIndex="15"/>
+            <location number="10" portBankIndex="2" pinIndex="6"/>
+            <location number="11" portBankIndex="2" pinIndex="7"/>
+            <location number="12" portBankIndex="2" pinIndex="8"/>
+            <location number="13" portBankIndex="2" pinIndex="9"/>
+            <location number="14" portBankIndex="2" pinIndex="10"/>
+            <location number="15" portBankIndex="2" pinIndex="11"/>
+            <location number="20" portBankIndex="3" pinIndex="13"/>
+            <location number="21" portBankIndex="3" pinIndex="14"/>
+            <location number="22" portBankIndex="3" pinIndex="15"/>
+            <location number="23" portBankIndex="5" pinIndex="0"/>
+            <location number="24" portBankIndex="5" pinIndex="1"/>
+            <location number="25" portBankIndex="5" pinIndex="2"/>
+            <location number="26" portBankIndex="5" pinIndex="3"/>
+            <location number="27" portBankIndex="5" pinIndex="4"/>
+            <location number="28" portBankIndex="5" pinIndex="5"/>
+            <location number="29" portBankIndex="5" pinIndex="6"/>
+            <location number="30" portBankIndex="5" pinIndex="7"/>
+            <location number="31" portBankIndex="0" pinIndex="0"/>
+          </route>
+        </selector>
+        <selector name="TIMER1_CC2" locationPropertyId="portio.timer1.location.cc2">
+          <route name="CC2" enablePropertyId="portio.timer1.enable.cc2">
+            <location number="0" portBankIndex="0" pinIndex="2"/>
+            <location number="1" portBankIndex="0" pinIndex="3"/>
+            <location number="2" portBankIndex="0" pinIndex="4"/>
+            <location number="3" portBankIndex="0" pinIndex="5"/>
+            <location number="4" portBankIndex="1" pinIndex="11"/>
+            <location number="5" portBankIndex="1" pinIndex="12"/>
+            <location number="6" portBankIndex="1" pinIndex="13"/>
+            <location number="7" portBankIndex="1" pinIndex="14"/>
+            <location number="8" portBankIndex="1" pinIndex="15"/>
+            <location number="9" portBankIndex="2" pinIndex="6"/>
+            <location number="10" portBankIndex="2" pinIndex="7"/>
+            <location number="11" portBankIndex="2" pinIndex="8"/>
+            <location number="12" portBankIndex="2" pinIndex="9"/>
+            <location number="13" portBankIndex="2" pinIndex="10"/>
+            <location number="14" portBankIndex="2" pinIndex="11"/>
+            <location number="19" portBankIndex="3" pinIndex="13"/>
+            <location number="20" portBankIndex="3" pinIndex="14"/>
+            <location number="21" portBankIndex="3" pinIndex="15"/>
+            <location number="22" portBankIndex="5" pinIndex="0"/>
+            <location number="23" portBankIndex="5" pinIndex="1"/>
+            <location number="24" portBankIndex="5" pinIndex="2"/>
+            <location number="25" portBankIndex="5" pinIndex="3"/>
+            <location number="26" portBankIndex="5" pinIndex="4"/>
+            <location number="27" portBankIndex="5" pinIndex="5"/>
+            <location number="28" portBankIndex="5" pinIndex="6"/>
+            <location number="29" portBankIndex="5" pinIndex="7"/>
+            <location number="30" portBankIndex="0" pinIndex="0"/>
+            <location number="31" portBankIndex="0" pinIndex="1"/>
+          </route>
+        </selector>
+        <selector name="TIMER1_CC3" locationPropertyId="portio.timer1.location.cc3">
+          <route name="CC3" enablePropertyId="portio.timer1.enable.cc3">
+            <location number="0" portBankIndex="0" pinIndex="3"/>
+            <location number="1" portBankIndex="0" pinIndex="4"/>
+            <location number="2" portBankIndex="0" pinIndex="5"/>
+            <location number="3" portBankIndex="1" pinIndex="11"/>
+            <location number="4" portBankIndex="1" pinIndex="12"/>
+            <location number="5" portBankIndex="1" pinIndex="13"/>
+            <location number="6" portBankIndex="1" pinIndex="14"/>
+            <location number="7" portBankIndex="1" pinIndex="15"/>
+            <location number="8" portBankIndex="2" pinIndex="6"/>
+            <location number="9" portBankIndex="2" pinIndex="7"/>
+            <location number="10" portBankIndex="2" pinIndex="8"/>
+            <location number="11" portBankIndex="2" pinIndex="9"/>
+            <location number="12" portBankIndex="2" pinIndex="10"/>
+            <location number="13" portBankIndex="2" pinIndex="11"/>
+            <location number="18" portBankIndex="3" pinIndex="13"/>
+            <location number="19" portBankIndex="3" pinIndex="14"/>
+            <location number="20" portBankIndex="3" pinIndex="15"/>
+            <location number="21" portBankIndex="5" pinIndex="0"/>
+            <location number="22" portBankIndex="5" pinIndex="1"/>
+            <location number="23" portBankIndex="5" pinIndex="2"/>
+            <location number="24" portBankIndex="5" pinIndex="3"/>
+            <location number="25" portBankIndex="5" pinIndex="4"/>
+            <location number="26" portBankIndex="5" pinIndex="5"/>
+            <location number="27" portBankIndex="5" pinIndex="6"/>
+            <location number="28" portBankIndex="5" pinIndex="7"/>
+            <location number="29" portBankIndex="0" pinIndex="0"/>
+            <location number="30" portBankIndex="0" pinIndex="1"/>
+            <location number="31" portBankIndex="0" pinIndex="2"/>
+          </route>
+        </selector>
+      </module>
+      <module name="USART0">
+        <selector name="USART0_CLK" locationPropertyId="portio.usart0.location.clk">
+          <route name="CLK" enablePropertyId="portio.usart0.enable.clk">
+            <location number="0" portBankIndex="0" pinIndex="2"/>
+            <location number="1" portBankIndex="0" pinIndex="3"/>
+            <location number="2" portBankIndex="0" pinIndex="4"/>
+            <location number="3" portBankIndex="0" pinIndex="5"/>
+            <location number="4" portBankIndex="1" pinIndex="11"/>
+            <location number="5" portBankIndex="1" pinIndex="12"/>
+            <location number="6" portBankIndex="1" pinIndex="13"/>
+            <location number="7" portBankIndex="1" pinIndex="14"/>
+            <location number="8" portBankIndex="1" pinIndex="15"/>
+            <location number="9" portBankIndex="2" pinIndex="6"/>
+            <location number="10" portBankIndex="2" pinIndex="7"/>
+            <location number="11" portBankIndex="2" pinIndex="8"/>
+            <location number="12" portBankIndex="2" pinIndex="9"/>
+            <location number="13" portBankIndex="2" pinIndex="10"/>
+            <location number="14" portBankIndex="2" pinIndex="11"/>
+            <location number="19" portBankIndex="3" pinIndex="13"/>
+            <location number="20" portBankIndex="3" pinIndex="14"/>
+            <location number="21" portBankIndex="3" pinIndex="15"/>
+            <location number="22" portBankIndex="5" pinIndex="0"/>
+            <location number="23" portBankIndex="5" pinIndex="1"/>
+            <location number="24" portBankIndex="5" pinIndex="2"/>
+            <location number="25" portBankIndex="5" pinIndex="3"/>
+            <location number="26" portBankIndex="5" pinIndex="4"/>
+            <location number="27" portBankIndex="5" pinIndex="5"/>
+            <location number="28" portBankIndex="5" pinIndex="6"/>
+            <location number="29" portBankIndex="5" pinIndex="7"/>
+            <location number="30" portBankIndex="0" pinIndex="0"/>
+            <location number="31" portBankIndex="0" pinIndex="1"/>
+          </route>
+        </selector>
+        <selector name="USART0_CS" locationPropertyId="portio.usart0.location.cs">
+          <route name="CS" enablePropertyId="portio.usart0.enable.cs">
+            <location number="0" portBankIndex="0" pinIndex="3"/>
+            <location number="1" portBankIndex="0" pinIndex="4"/>
+            <location number="2" portBankIndex="0" pinIndex="5"/>
+            <location number="3" portBankIndex="1" pinIndex="11"/>
+            <location number="4" portBankIndex="1" pinIndex="12"/>
+            <location number="5" portBankIndex="1" pinIndex="13"/>
+            <location number="6" portBankIndex="1" pinIndex="14"/>
+            <location number="7" portBankIndex="1" pinIndex="15"/>
+            <location number="8" portBankIndex="2" pinIndex="6"/>
+            <location number="9" portBankIndex="2" pinIndex="7"/>
+            <location number="10" portBankIndex="2" pinIndex="8"/>
+            <location number="11" portBankIndex="2" pinIndex="9"/>
+            <location number="12" portBankIndex="2" pinIndex="10"/>
+            <location number="13" portBankIndex="2" pinIndex="11"/>
+            <location number="18" portBankIndex="3" pinIndex="13"/>
+            <location number="19" portBankIndex="3" pinIndex="14"/>
+            <location number="20" portBankIndex="3" pinIndex="15"/>
+            <location number="21" portBankIndex="5" pinIndex="0"/>
+            <location number="22" portBankIndex="5" pinIndex="1"/>
+            <location number="23" portBankIndex="5" pinIndex="2"/>
+            <location number="24" portBankIndex="5" pinIndex="3"/>
+            <location number="25" portBankIndex="5" pinIndex="4"/>
+            <location number="26" portBankIndex="5" pinIndex="5"/>
+            <location number="27" portBankIndex="5" pinIndex="6"/>
+            <location number="28" portBankIndex="5" pinIndex="7"/>
+            <location number="29" portBankIndex="0" pinIndex="0"/>
+            <location number="30" portBankIndex="0" pinIndex="1"/>
+            <location number="31" portBankIndex="0" pinIndex="2"/>
+          </route>
+        </selector>
+        <selector name="USART0_CTS" locationPropertyId="portio.usart0.location.cts">
+          <route name="CTS" enablePropertyId="portio.usart0.enable.cts">
+            <location number="0" portBankIndex="0" pinIndex="4"/>
+            <location number="1" portBankIndex="0" pinIndex="5"/>
+            <location number="2" portBankIndex="1" pinIndex="11"/>
+            <location number="3" portBankIndex="1" pinIndex="12"/>
+            <location number="4" portBankIndex="1" pinIndex="13"/>
+            <location number="5" portBankIndex="1" pinIndex="14"/>
+            <location number="6" portBankIndex="1" pinIndex="15"/>
+            <location number="7" portBankIndex="2" pinIndex="6"/>
+            <location number="8" portBankIndex="2" pinIndex="7"/>
+            <location number="9" portBankIndex="2" pinIndex="8"/>
+            <location number="10" portBankIndex="2" pinIndex="9"/>
+            <location number="11" portBankIndex="2" pinIndex="10"/>
+            <location number="12" portBankIndex="2" pinIndex="11"/>
+            <location number="17" portBankIndex="3" pinIndex="13"/>
+            <location number="18" portBankIndex="3" pinIndex="14"/>
+            <location number="19" portBankIndex="3" pinIndex="15"/>
+            <location number="20" portBankIndex="5" pinIndex="0"/>
+            <location number="21" portBankIndex="5" pinIndex="1"/>
+            <location number="22" portBankIndex="5" pinIndex="2"/>
+            <location number="23" portBankIndex="5" pinIndex="3"/>
+            <location number="24" portBankIndex="5" pinIndex="4"/>
+            <location number="25" portBankIndex="5" pinIndex="5"/>
+            <location number="26" portBankIndex="5" pinIndex="6"/>
+            <location number="27" portBankIndex="5" pinIndex="7"/>
+            <location number="28" portBankIndex="0" pinIndex="0"/>
+            <location number="29" portBankIndex="0" pinIndex="1"/>
+            <location number="30" portBankIndex="0" pinIndex="2"/>
+            <location number="31" portBankIndex="0" pinIndex="3"/>
+          </route>
+        </selector>
+        <selector name="USART0_RTS" locationPropertyId="portio.usart0.location.rts">
+          <route name="RTS" enablePropertyId="portio.usart0.enable.rts">
+            <location number="0" portBankIndex="0" pinIndex="5"/>
+            <location number="1" portBankIndex="1" pinIndex="11"/>
+            <location number="2" portBankIndex="1" pinIndex="12"/>
+            <location number="3" portBankIndex="1" pinIndex="13"/>
+            <location number="4" portBankIndex="1" pinIndex="14"/>
+            <location number="5" portBankIndex="1" pinIndex="15"/>
+            <location number="6" portBankIndex="2" pinIndex="6"/>
+            <location number="7" portBankIndex="2" pinIndex="7"/>
+            <location number="8" portBankIndex="2" pinIndex="8"/>
+            <location number="9" portBankIndex="2" pinIndex="9"/>
+            <location number="10" portBankIndex="2" pinIndex="10"/>
+            <location number="11" portBankIndex="2" pinIndex="11"/>
+            <location number="16" portBankIndex="3" pinIndex="13"/>
+            <location number="17" portBankIndex="3" pinIndex="14"/>
+            <location number="18" portBankIndex="3" pinIndex="15"/>
+            <location number="19" portBankIndex="5" pinIndex="0"/>
+            <location number="20" portBankIndex="5" pinIndex="1"/>
+            <location number="21" portBankIndex="5" pinIndex="2"/>
+            <location number="22" portBankIndex="5" pinIndex="3"/>
+            <location number="23" portBankIndex="5" pinIndex="4"/>
+            <location number="24" portBankIndex="5" pinIndex="5"/>
+            <location number="25" portBankIndex="5" pinIndex="6"/>
+            <location number="26" portBankIndex="5" pinIndex="7"/>
+            <location number="27" portBankIndex="0" pinIndex="0"/>
+            <location number="28" portBankIndex="0" pinIndex="1"/>
+            <location number="29" portBankIndex="0" pinIndex="2"/>
+            <location number="30" portBankIndex="0" pinIndex="3"/>
+            <location number="31" portBankIndex="0" pinIndex="4"/>
+          </route>
+        </selector>
+        <selector name="USART0_RX" locationPropertyId="portio.usart0.location.rx">
+          <route name="RX" enablePropertyId="portio.usart0.enable.rx">
+            <location number="0" portBankIndex="0" pinIndex="1"/>
+            <location number="1" portBankIndex="0" pinIndex="2"/>
+            <location number="2" portBankIndex="0" pinIndex="3"/>
+            <location number="3" portBankIndex="0" pinIndex="4"/>
+            <location number="4" portBankIndex="0" pinIndex="5"/>
+            <location number="5" portBankIndex="1" pinIndex="11"/>
+            <location number="6" portBankIndex="1" pinIndex="12"/>
+            <location number="7" portBankIndex="1" pinIndex="13"/>
+            <location number="8" portBankIndex="1" pinIndex="14"/>
+            <location number="9" portBankIndex="1" pinIndex="15"/>
+            <location number="10" portBankIndex="2" pinIndex="6"/>
+            <location number="11" portBankIndex="2" pinIndex="7"/>
+            <location number="12" portBankIndex="2" pinIndex="8"/>
+            <location number="13" portBankIndex="2" pinIndex="9"/>
+            <location number="14" portBankIndex="2" pinIndex="10"/>
+            <location number="15" portBankIndex="2" pinIndex="11"/>
+            <location number="20" portBankIndex="3" pinIndex="13"/>
+            <location number="21" portBankIndex="3" pinIndex="14"/>
+            <location number="22" portBankIndex="3" pinIndex="15"/>
+            <location number="23" portBankIndex="5" pinIndex="0"/>
+            <location number="24" portBankIndex="5" pinIndex="1"/>
+            <location number="25" portBankIndex="5" pinIndex="2"/>
+            <location number="26" portBankIndex="5" pinIndex="3"/>
+            <location number="27" portBankIndex="5" pinIndex="4"/>
+            <location number="28" portBankIndex="5" pinIndex="5"/>
+            <location number="29" portBankIndex="5" pinIndex="6"/>
+            <location number="30" portBankIndex="5" pinIndex="7"/>
+            <location number="31" portBankIndex="0" pinIndex="0"/>
+          </route>
+        </selector>
+        <selector name="USART0_TX" locationPropertyId="portio.usart0.location.tx">
+          <route name="TX" enablePropertyId="portio.usart0.enable.tx">
+            <location number="0" portBankIndex="0" pinIndex="0"/>
+            <location number="1" portBankIndex="0" pinIndex="1"/>
+            <location number="2" portBankIndex="0" pinIndex="2"/>
+            <location number="3" portBankIndex="0" pinIndex="3"/>
+            <location number="4" portBankIndex="0" pinIndex="4"/>
+            <location number="5" portBankIndex="0" pinIndex="5"/>
+            <location number="6" portBankIndex="1" pinIndex="11"/>
+            <location number="7" portBankIndex="1" pinIndex="12"/>
+            <location number="8" portBankIndex="1" pinIndex="13"/>
+            <location number="9" portBankIndex="1" pinIndex="14"/>
+            <location number="10" portBankIndex="1" pinIndex="15"/>
+            <location number="11" portBankIndex="2" pinIndex="6"/>
+            <location number="12" portBankIndex="2" pinIndex="7"/>
+            <location number="13" portBankIndex="2" pinIndex="8"/>
+            <location number="14" portBankIndex="2" pinIndex="9"/>
+            <location number="15" portBankIndex="2" pinIndex="10"/>
+            <location number="16" portBankIndex="2" pinIndex="11"/>
+            <location number="21" portBankIndex="3" pinIndex="13"/>
+            <location number="22" portBankIndex="3" pinIndex="14"/>
+            <location number="23" portBankIndex="3" pinIndex="15"/>
+            <location number="24" portBankIndex="5" pinIndex="0"/>
+            <location number="25" portBankIndex="5" pinIndex="1"/>
+            <location number="26" portBankIndex="5" pinIndex="2"/>
+            <location number="27" portBankIndex="5" pinIndex="3"/>
+            <location number="28" portBankIndex="5" pinIndex="4"/>
+            <location number="29" portBankIndex="5" pinIndex="5"/>
+            <location number="30" portBankIndex="5" pinIndex="6"/>
+            <location number="31" portBankIndex="5" pinIndex="7"/>
+          </route>
+        </selector>
+      </module>
+      <module name="USART1">
+        <selector name="USART1_CLK" locationPropertyId="portio.usart1.location.clk">
+          <route name="CLK" enablePropertyId="portio.usart1.enable.clk">
+            <location number="0" portBankIndex="0" pinIndex="2"/>
+            <location number="1" portBankIndex="0" pinIndex="3"/>
+            <location number="2" portBankIndex="0" pinIndex="4"/>
+            <location number="3" portBankIndex="0" pinIndex="5"/>
+            <location number="4" portBankIndex="1" pinIndex="11"/>
+            <location number="5" portBankIndex="1" pinIndex="12"/>
+            <location number="6" portBankIndex="1" pinIndex="13"/>
+            <location number="7" portBankIndex="1" pinIndex="14"/>
+            <location number="8" portBankIndex="1" pinIndex="15"/>
+            <location number="9" portBankIndex="2" pinIndex="6"/>
+            <location number="10" portBankIndex="2" pinIndex="7"/>
+            <location number="11" portBankIndex="2" pinIndex="8"/>
+            <location number="12" portBankIndex="2" pinIndex="9"/>
+            <location number="13" portBankIndex="2" pinIndex="10"/>
+            <location number="14" portBankIndex="2" pinIndex="11"/>
+            <location number="19" portBankIndex="3" pinIndex="13"/>
+            <location number="20" portBankIndex="3" pinIndex="14"/>
+            <location number="21" portBankIndex="3" pinIndex="15"/>
+            <location number="22" portBankIndex="5" pinIndex="0"/>
+            <location number="23" portBankIndex="5" pinIndex="1"/>
+            <location number="24" portBankIndex="5" pinIndex="2"/>
+            <location number="25" portBankIndex="5" pinIndex="3"/>
+            <location number="26" portBankIndex="5" pinIndex="4"/>
+            <location number="27" portBankIndex="5" pinIndex="5"/>
+            <location number="28" portBankIndex="5" pinIndex="6"/>
+            <location number="29" portBankIndex="5" pinIndex="7"/>
+            <location number="30" portBankIndex="0" pinIndex="0"/>
+            <location number="31" portBankIndex="0" pinIndex="1"/>
+          </route>
+        </selector>
+        <selector name="USART1_CS" locationPropertyId="portio.usart1.location.cs">
+          <route name="CS" enablePropertyId="portio.usart1.enable.cs">
+            <location number="0" portBankIndex="0" pinIndex="3"/>
+            <location number="1" portBankIndex="0" pinIndex="4"/>
+            <location number="2" portBankIndex="0" pinIndex="5"/>
+            <location number="3" portBankIndex="1" pinIndex="11"/>
+            <location number="4" portBankIndex="1" pinIndex="12"/>
+            <location number="5" portBankIndex="1" pinIndex="13"/>
+            <location number="6" portBankIndex="1" pinIndex="14"/>
+            <location number="7" portBankIndex="1" pinIndex="15"/>
+            <location number="8" portBankIndex="2" pinIndex="6"/>
+            <location number="9" portBankIndex="2" pinIndex="7"/>
+            <location number="10" portBankIndex="2" pinIndex="8"/>
+            <location number="11" portBankIndex="2" pinIndex="9"/>
+            <location number="12" portBankIndex="2" pinIndex="10"/>
+            <location number="13" portBankIndex="2" pinIndex="11"/>
+            <location number="18" portBankIndex="3" pinIndex="13"/>
+            <location number="19" portBankIndex="3" pinIndex="14"/>
+            <location number="20" portBankIndex="3" pinIndex="15"/>
+            <location number="21" portBankIndex="5" pinIndex="0"/>
+            <location number="22" portBankIndex="5" pinIndex="1"/>
+            <location number="23" portBankIndex="5" pinIndex="2"/>
+            <location number="24" portBankIndex="5" pinIndex="3"/>
+            <location number="25" portBankIndex="5" pinIndex="4"/>
+            <location number="26" portBankIndex="5" pinIndex="5"/>
+            <location number="27" portBankIndex="5" pinIndex="6"/>
+            <location number="28" portBankIndex="5" pinIndex="7"/>
+            <location number="29" portBankIndex="0" pinIndex="0"/>
+            <location number="30" portBankIndex="0" pinIndex="1"/>
+            <location number="31" portBankIndex="0" pinIndex="2"/>
+          </route>
+        </selector>
+        <selector name="USART1_CTS" locationPropertyId="portio.usart1.location.cts">
+          <route name="CTS" enablePropertyId="portio.usart1.enable.cts">
+            <location number="0" portBankIndex="0" pinIndex="4"/>
+            <location number="1" portBankIndex="0" pinIndex="5"/>
+            <location number="2" portBankIndex="1" pinIndex="11"/>
+            <location number="3" portBankIndex="1" pinIndex="12"/>
+            <location number="4" portBankIndex="1" pinIndex="13"/>
+            <location number="5" portBankIndex="1" pinIndex="14"/>
+            <location number="6" portBankIndex="1" pinIndex="15"/>
+            <location number="7" portBankIndex="2" pinIndex="6"/>
+            <location number="8" portBankIndex="2" pinIndex="7"/>
+            <location number="9" portBankIndex="2" pinIndex="8"/>
+            <location number="10" portBankIndex="2" pinIndex="9"/>
+            <location number="11" portBankIndex="2" pinIndex="10"/>
+            <location number="12" portBankIndex="2" pinIndex="11"/>
+            <location number="17" portBankIndex="3" pinIndex="13"/>
+            <location number="18" portBankIndex="3" pinIndex="14"/>
+            <location number="19" portBankIndex="3" pinIndex="15"/>
+            <location number="20" portBankIndex="5" pinIndex="0"/>
+            <location number="21" portBankIndex="5" pinIndex="1"/>
+            <location number="22" portBankIndex="5" pinIndex="2"/>
+            <location number="23" portBankIndex="5" pinIndex="3"/>
+            <location number="24" portBankIndex="5" pinIndex="4"/>
+            <location number="25" portBankIndex="5" pinIndex="5"/>
+            <location number="26" portBankIndex="5" pinIndex="6"/>
+            <location number="27" portBankIndex="5" pinIndex="7"/>
+            <location number="28" portBankIndex="0" pinIndex="0"/>
+            <location number="29" portBankIndex="0" pinIndex="1"/>
+            <location number="30" portBankIndex="0" pinIndex="2"/>
+            <location number="31" portBankIndex="0" pinIndex="3"/>
+          </route>
+        </selector>
+        <selector name="USART1_RTS" locationPropertyId="portio.usart1.location.rts">
+          <route name="RTS" enablePropertyId="portio.usart1.enable.rts">
+            <location number="0" portBankIndex="0" pinIndex="5"/>
+            <location number="1" portBankIndex="1" pinIndex="11"/>
+            <location number="2" portBankIndex="1" pinIndex="12"/>
+            <location number="3" portBankIndex="1" pinIndex="13"/>
+            <location number="4" portBankIndex="1" pinIndex="14"/>
+            <location number="5" portBankIndex="1" pinIndex="15"/>
+            <location number="6" portBankIndex="2" pinIndex="6"/>
+            <location number="7" portBankIndex="2" pinIndex="7"/>
+            <location number="8" portBankIndex="2" pinIndex="8"/>
+            <location number="9" portBankIndex="2" pinIndex="9"/>
+            <location number="10" portBankIndex="2" pinIndex="10"/>
+            <location number="11" portBankIndex="2" pinIndex="11"/>
+            <location number="16" portBankIndex="3" pinIndex="13"/>
+            <location number="17" portBankIndex="3" pinIndex="14"/>
+            <location number="18" portBankIndex="3" pinIndex="15"/>
+            <location number="19" portBankIndex="5" pinIndex="0"/>
+            <location number="20" portBankIndex="5" pinIndex="1"/>
+            <location number="21" portBankIndex="5" pinIndex="2"/>
+            <location number="22" portBankIndex="5" pinIndex="3"/>
+            <location number="23" portBankIndex="5" pinIndex="4"/>
+            <location number="24" portBankIndex="5" pinIndex="5"/>
+            <location number="25" portBankIndex="5" pinIndex="6"/>
+            <location number="26" portBankIndex="5" pinIndex="7"/>
+            <location number="27" portBankIndex="0" pinIndex="0"/>
+            <location number="28" portBankIndex="0" pinIndex="1"/>
+            <location number="29" portBankIndex="0" pinIndex="2"/>
+            <location number="30" portBankIndex="0" pinIndex="3"/>
+            <location number="31" portBankIndex="0" pinIndex="4"/>
+          </route>
+        </selector>
+        <selector name="USART1_RX" locationPropertyId="portio.usart1.location.rx">
+          <route name="RX" enablePropertyId="portio.usart1.enable.rx">
+            <location number="0" portBankIndex="0" pinIndex="1"/>
+            <location number="1" portBankIndex="0" pinIndex="2"/>
+            <location number="2" portBankIndex="0" pinIndex="3"/>
+            <location number="3" portBankIndex="0" pinIndex="4"/>
+            <location number="4" portBankIndex="0" pinIndex="5"/>
+            <location number="5" portBankIndex="1" pinIndex="11"/>
+            <location number="6" portBankIndex="1" pinIndex="12"/>
+            <location number="7" portBankIndex="1" pinIndex="13"/>
+            <location number="8" portBankIndex="1" pinIndex="14"/>
+            <location number="9" portBankIndex="1" pinIndex="15"/>
+            <location number="10" portBankIndex="2" pinIndex="6"/>
+            <location number="11" portBankIndex="2" pinIndex="7"/>
+            <location number="12" portBankIndex="2" pinIndex="8"/>
+            <location number="13" portBankIndex="2" pinIndex="9"/>
+            <location number="14" portBankIndex="2" pinIndex="10"/>
+            <location number="15" portBankIndex="2" pinIndex="11"/>
+            <location number="20" portBankIndex="3" pinIndex="13"/>
+            <location number="21" portBankIndex="3" pinIndex="14"/>
+            <location number="22" portBankIndex="3" pinIndex="15"/>
+            <location number="23" portBankIndex="5" pinIndex="0"/>
+            <location number="24" portBankIndex="5" pinIndex="1"/>
+            <location number="25" portBankIndex="5" pinIndex="2"/>
+            <location number="26" portBankIndex="5" pinIndex="3"/>
+            <location number="27" portBankIndex="5" pinIndex="4"/>
+            <location number="28" portBankIndex="5" pinIndex="5"/>
+            <location number="29" portBankIndex="5" pinIndex="6"/>
+            <location number="30" portBankIndex="5" pinIndex="7"/>
+            <location number="31" portBankIndex="0" pinIndex="0"/>
+          </route>
+        </selector>
+        <selector name="USART1_TX" locationPropertyId="portio.usart1.location.tx">
+          <route name="TX" enablePropertyId="portio.usart1.enable.tx">
+            <location number="0" portBankIndex="0" pinIndex="0"/>
+            <location number="1" portBankIndex="0" pinIndex="1"/>
+            <location number="2" portBankIndex="0" pinIndex="2"/>
+            <location number="3" portBankIndex="0" pinIndex="3"/>
+            <location number="4" portBankIndex="0" pinIndex="4"/>
+            <location number="5" portBankIndex="0" pinIndex="5"/>
+            <location number="6" portBankIndex="1" pinIndex="11"/>
+            <location number="7" portBankIndex="1" pinIndex="12"/>
+            <location number="8" portBankIndex="1" pinIndex="13"/>
+            <location number="9" portBankIndex="1" pinIndex="14"/>
+            <location number="10" portBankIndex="1" pinIndex="15"/>
+            <location number="11" portBankIndex="2" pinIndex="6"/>
+            <location number="12" portBankIndex="2" pinIndex="7"/>
+            <location number="13" portBankIndex="2" pinIndex="8"/>
+            <location number="14" portBankIndex="2" pinIndex="9"/>
+            <location number="15" portBankIndex="2" pinIndex="10"/>
+            <location number="16" portBankIndex="2" pinIndex="11"/>
+            <location number="21" portBankIndex="3" pinIndex="13"/>
+            <location number="22" portBankIndex="3" pinIndex="14"/>
+            <location number="23" portBankIndex="3" pinIndex="15"/>
+            <location number="24" portBankIndex="5" pinIndex="0"/>
+            <location number="25" portBankIndex="5" pinIndex="1"/>
+            <location number="26" portBankIndex="5" pinIndex="2"/>
+            <location number="27" portBankIndex="5" pinIndex="3"/>
+            <location number="28" portBankIndex="5" pinIndex="4"/>
+            <location number="29" portBankIndex="5" pinIndex="5"/>
+            <location number="30" portBankIndex="5" pinIndex="6"/>
+            <location number="31" portBankIndex="5" pinIndex="7"/>
+          </route>
+        </selector>
+      </module>
+    </pinRoutes>
+  </portIo>
+</portio:DocumentRoot>
